@@ -119,8 +119,13 @@ body{
 }
 
 .hero h1{
+  font-family:'Montserrat', sans-serif;
   font-size:56px;
+  font-weight:700;
+  color:var(--gold);
   margin-bottom:20px;
+}
+
 }
 
 .hero p{
@@ -264,7 +269,8 @@ textarea{
 }
 /* HERO SECTION */
 #home {
-  background: linear-gradient(135deg, #0A1A2F 0%, #07101F 100%);
+  #home {
+  background: linear-gradient(135deg, #0A1A2F 0%, #07101F 100%) !important;
   color: #FFFFFF;
   padding: 140px 40px;
   text-align: left;
