@@ -1,60 +1,51 @@
-/* Paleta */
-:root {
-  --azul: #0A1A2F;
-  --dourado: #E4B34A;
-  --turquesa: #2CCCD3;
-  --branco: #FFFFFF;
-  --cinza-claro: #F2F2F2;
-  --cinza-medio: #A7A7A7;
+/* HERO SECTION */
+#home {
+  background: linear-gradient(135deg, #0A1A2F 0%, #07101F 100%);
+  color: #FFFFFF;
+  padding: 140px 40px;
+  text-align: left;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Tipografia */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--azul);
-  color: var(--branco);
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
+/* HERO TITLE */
+#home h1 {
   font-family: 'Montserrat', sans-serif;
-  color: var(--dourado);
+  font-size: 48px;
+  font-weight: 700;
+  color: #E4B34A;
   margin-bottom: 20px;
 }
 
-/* Secções */
-section {
-  padding: 100px 40px;
-}
-
-/* Botões */
-button, .btn {
-  background-color: var(--dourado);
-  color: var(--azul);
-  padding: 12px 24px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover, .btn:hover {
-  background-color: var(--turquesa);
-}
-
-/* Cartões de serviços */
-.service-card {
-  background-color: var(--cinza-claro);
-  color: var(--azul);
-  padding: 30px;
-  border-radius: 12px;
+/* HERO SUBTITLE */
+#home p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: #F2F2F2;
+  max-width: 600px;
+  line-height: 1.6;
   margin-bottom: 40px;
 }
 
-/* Rodapé */
-footer {
-  background-color: #07101F;
-  padding: 60px 40px;
-  color: var(--cinza-medio);
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-buttons a {
+  background-color: #E4B34A;
+  color: #0A1A2F;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+  background-color: #2CCCD3;
+  color: #0A1A2F;
 }
