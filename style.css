@@ -104,11 +104,12 @@ body{
 }
 
 .hero{
-  background:var(--dark);
+  background: linear-gradient(135deg, #0A1A2F 0%, #07101F 100%);
   color:white;
   min-height:100vh;
   display:flex;
   align-items:center;
+  padding:140px 40px;
 }
 
 .hero-grid{
