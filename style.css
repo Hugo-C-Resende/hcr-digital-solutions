@@ -1,3 +1,7 @@
+/* ========================= */
+/*        ROOT + RESET       */
+/* ========================= */
+
 :root{
   --dark:#0A1A2F;
   --gold:#E4B34A;
@@ -24,6 +28,10 @@ body{
   max-width:1200px;
   margin:auto;
 }
+
+/* ========================= */
+/*          HEADER           */
+/* ========================= */
 
 .header{
   position:sticky;
@@ -103,6 +111,10 @@ body{
   text-decoration:none;
 }
 
+/* ========================= */
+/*            HERO           */
+/* ========================= */
+
 .hero{
   background: linear-gradient(135deg, #0A1A2F 0%, #07101F 100%);
   color:white;
@@ -127,8 +139,6 @@ body{
   margin-bottom:20px;
 }
 
-}
-
 .hero p{
   font-size:20px;
   margin-bottom:30px;
@@ -150,6 +160,10 @@ body{
   color:var(--turquoise);
   font-size:28px;
 }
+
+/* ========================= */
+/*        ABOUT / SERVICES   */
+/* ========================= */
 
 .about,
 .services,
@@ -209,6 +223,10 @@ body{
   color:var(--gold);
 }
 
+/* ========================= */
+/*          CONTACT          */
+/* ========================= */
+
 .contact-form{
   display:flex;
   flex-direction:column;
@@ -226,6 +244,10 @@ select{
 textarea{
   min-height:140px;
 }
+
+/* ========================= */
+/*           FOOTER          */
+/* ========================= */
 
 .footer{
   background:var(--dark);
@@ -251,6 +273,10 @@ textarea{
   font-size:14px;
 }
 
+/* ========================= */
+/*         RESPONSIVE        */
+/* ========================= */
+
 @media(max-width:900px){
 
   .hero-grid,
@@ -266,57 +292,4 @@ textarea{
   .menu{
     display:none;
   }
-
-}
-/* HERO SECTION */
-#home {
-  #home {
-  background: linear-gradient(135deg, #0A1A2F 0%, #07101F 100%) !important;
-  color: #FFFFFF;
-  padding: 140px 40px;
-  text-align: left;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* HERO TITLE */
-#home h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #E4B34A;
-  margin-bottom: 20px;
-}
-
-/* HERO SUBTITLE */
-#home p {
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  color: #F2F2F2;
-  max-width: 600px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-/* BUTTONS */
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.hero-buttons a {
-  background-color: #E4B34A;
-  color: #0A1A2F;
-  padding: 14px 28px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.hero-buttons a:hover {
-  background-color: #2CCCD3;
-  color: #0A1A2F;
 }
