@@ -3,138 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCR Digital Solutions</title>
+    <title>HCR Digital Solutions — Consultoria Digital e Automação</title>
+
+    <!-- SEO -->
+    <meta name="description" content="HCR Digital Solutions — Consultoria digital, automação, desenvolvimento e soluções tecnológicas para empresas.">
+    <meta name="keywords" content="consultoria digital, automação, desenvolvimento web, soluções digitais, tecnologia, HCR Digital Solutions">
+    <meta name="author" content="HCR Digital Solutions">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HCR Digital Solutions — Consultoria Digital e Automação">
+    <meta property="og:description" content="Soluções digitais profissionais para empresas. Automação, desenvolvimento e consultoria.">
+    <meta property="og:image" content="HCR_DS_Logo.png">
+    <meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ============================
-         HEADER FIXO
-    ============================ -->
-    <header class="header">
-        <div class="container nav-container">
-            <h2 class="logo">HCR Digital Solutions</h2>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contact">Contactos</a></li>
-                </ul>
-            </nav>
+    <!-- HEADER FIXO -->
+    <header id="header">
+        <div class="logo-container">
+            <img src="HCR_DS_Logo.png" alt="HCR Digital Solutions Logo" class="logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- ============================
-         HOME — HERO FULLSCREEN
-    ============================ -->
-    <section id="home" class="hero-section">
+    <!-- HERO -->
+    <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Transformamos Ideias em Soluções Digitais</h1>
-            <p>Desenvolvimento, automação e design para elevar o teu negócio ao próximo nível.</p>
-            <a href="#servicos" class="btn-gold">Ver Serviços</a>
+            <h1>HCR Digital Solutions</h1>
+            <p>Consultoria Digital • Automação • Desenvolvimento</p>
+            <a href="#contactos" class="btn">Entrar em Contacto</a>
         </div>
     </section>
 
-    <!-- ============================
-         SOBRE — TEXTO + IMAGEM
-    ============================ -->
-    <section id="sobre" class="sobre-section">
-        <div class="container sobre-grid">
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <h2>Sobre Nós</h2>
+        <p>A HCR Digital Solutions oferece soluções digitais modernas, automação, consultoria e desenvolvimento tecnológico para empresas que procuram evoluir.</p>
+    </section>
 
-            <div class="sobre-texto">
-                <h2>Sobre Nós</h2>
-                <p>
-                    A HCR Digital Solutions é especializada em soluções digitais modernas,
-                    automações inteligentes e desenvolvimento de ferramentas que simplificam
-                    processos e aumentam a produtividade.
-                </p>
-                <p>
-                    Trabalhamos com foco em eficiência, design premium e resultados reais.
-                </p>
-            </div>
-
-            <div class="sobre-imagem">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Equipa de trabalho">
-            </div>
-
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section">
+        <h2>Serviços</h2>
+        <div class="cards">
+            <div class="card">Consultoria Digital</div>
+            <div class="card">Automação de Processos</div>
+            <div class="card">Desenvolvimento Web</div>
         </div>
     </section>
 
-    <!-- ============================
-         SERVIÇOS — CARDS
-    ============================ -->
-    <section id="servicos" class="servicos-section">
-        <div class="container">
-            <h2 class="sec-title">Serviços</h2>
+    <!-- CONTACTOS -->
+    <section id="contactos" class="section">
+        <h2>Contactos</h2>
 
-            <div class="servicos-grid">
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" required>
 
-                <div class="serv-card">
-                    <h3>Automação</h3>
-                    <p>Criação de sistemas automáticos que reduzem trabalho manual e aumentam eficiência.</p>
-                </div>
+            <label>Email</label>
+            <input type="email" name="email" required>
 
-                <div class="serv-card">
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites modernos, rápidos e otimizados para conversão.</p>
-                </div>
+            <label>Contacto</label>
+            <input type="text" name="contacto" required>
 
-                <div class="serv-card">
-                    <h3>Dashboards & Templates</h3>
-                    <p>Ferramentas profissionais em Excel/Sheets com automações avançadas.</p>
-                </div>
+            <label>Mensagem</label>
+            <textarea name="mensagem" required></textarea>
 
-            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy"></iframe>
         </div>
     </section>
 
-    <!-- ============================
-         CONTACTOS — FINAL
-    ============================ -->
-    <section id="contact" class="contactos-section">
-        <div class="container contactos-grid">
+    <!-- FOOTER DESKTOP -->
+    <footer id="footer-desktop">
+        <p>Horário: 09h00 – 18h00 (Seg–Sex)</p>
+        <p><a href="politica-privacidade.html">Política de Privacidade</a> | <a href="termos-utilizacao.html">Termos de Utilização</a></p>
+        <p>© 2026 HCR Digital Solutions — Copyrighted</p>
+    </footer>
 
-            <!-- BLOCO DE INFORMAÇÃO -->
-            <div class="contact-info">
-                <h1>Contactos</h1>
-
-                <p><strong>Nome:</strong> Hugo Cresende</p>
-                <p><strong>Telefone:</strong> +351 920 263 674</p>
-                <p><strong>Email:</strong> hugocresende@hotmail.com</p>
-
-                <div class="map-wrapper">
-                    <iframe 
-                        src="https://www.google.com/maps?q=Soluções%20de%20Escritório%20para%20a%20Indústria&output=embed"
-                        width="100%" height="260" style="border:0;" allowfullscreen loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- FORMULÁRIO -->
-            <div class="contact-form">
-                <form action="https://formsubmit.co/hugocresende@hotmail.com" method="POST">
-
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-
-                    <label>Nome</label>
-                    <input type="text" name="nome" required>
-
-                    <label>Email</label>
-                    <input type="email" name="email" required>
-
-                    <label>Mensagem</label>
-                    <textarea name="mensagem" required></textarea>
-
-                    <button type="submit" class="btn-gold">Enviar</button>
-                </form>
-            </div>
-
+    <!-- FOOTER MOBILE -->
+    <footer id="footer-mobile">
+        <span>© HCR Digital Solutions</span>
+        <button id="footer-toggle">☰</button>
+        <div id="footer-menu">
+            <a href="politica-privacidade.html">Privacidade</a>
+            <a href="termos-utilizacao.html">Termos</a>
+            <span>Horário: 09h00 – 18h00</span>
         </div>
-    </section>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
