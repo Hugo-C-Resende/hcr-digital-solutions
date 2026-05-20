@@ -1,6 +1,6 @@
 // MENU ATIVO
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll(".main-nav a");
 
 window.addEventListener("scroll", () => {
     let current = "";
@@ -21,7 +21,11 @@ window.addEventListener("scroll", () => {
 });
 
 // FOOTER MOBILE
-document.getElementById("footer-toggle").addEventListener("click", () => {
-    const menu = document.getElementById("footer-menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-});
+const footerToggle = document.getElementById("footer-toggle");
+const footerMenu = document.getElementById("footer-menu");
+
+if (footerToggle && footerMenu) {
+    footerToggle.addEventListener("click", () => {
+        footerMenu.style.display = footerMenu.style.display === "flex" ? "none" : "flex";
+    });
+}
