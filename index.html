@@ -1,254 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<section id="contact" class="contactos-section">
+    <div class="container contactos-grid">
 
-  <title>HCR DIGITAL SOLUTIONS | Tecnologia e Automação</title>
+        <!-- BLOCO DE INFORMAÇÃO -->
+        <div class="contact-info">
+            <h1>Contactos</h1>
 
-  <meta name="description"
-        content="Consultoria digital, automação, tecnologia e soluções digitais centradas no utilizador.">
+            <p><strong>Nome:</strong> Hugo Cresende</p>
+            <p><strong>Telefone:</strong> +351 920 263 674</p>
+            <p><strong>Email:</strong> hugocresende@hotmail.com</p>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps?q=Soluções%20de%20Escritório%20para%20a%20Indústria&output=embed"
+                    width="100%" height="260" style="border:0;" allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+        </div>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+        <!-- FORMULÁRIO -->
+        <div class="contact-form">
+            <form action="https://formsubmit.co/hugocresende@hotmail.com" method="POST">
 
-<body>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
 
-<header class="header">
-  <div class="container nav">
+                <label>Nome</label>
+                <input type="text" name="nome" required>
 
-    <div class="logo">
-      <div class="logo-placeholder">
-        LOGO
-      </div>
-      <span>HCR DIGITAL SOLUTIONS</span>
-    </div>
+                <label>Email</label>
+                <input type="email" name="email" required>
 
-    <nav>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#contact">Contactos</a></li>
-      </ul>
-    </nav>
+                <label>Mensagem</label>
+                <textarea name="mensagem" required></textarea>
 
-    <div class="actions">
-      <select id="languageSwitcher">
-        <option value="pt">PT</option>
-        <option value="en">EN</option>
-        <option value="fr">FR</option>
-        <option value="de">DE</option>
-      </select>
-
-      <a href="#contact" class="btn-primary">Contactar</a>
-    </div>
-
-  </div>
-</header>
-
-<section class="hero" id="home">
-
-  <div class="container hero-grid">
-
-    <div class="hero-content">
-
-      <h1 data-key="heroTitle">
-        Soluções Digitais Inteligentes para Empresas Modernas
-      </h1>
-
-      <p data-key="heroSubtitle">
-        Tecnologia centrada no humano, automação e consultoria digital.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#services" class="btn-primary" data-key="exploreBtn">
-          Explorar Serviços
-        </a>
-
-        <a href="#contact" class="btn-secondary" data-key="contactBtn">
-          Contactar
-        </a>
-      </div>
+                <button type="submit" class="btn-gold">Enviar</button>
+            </form>
+        </div>
 
     </div>
-
-    <div class="hero-logo">
-      <div class="big-logo-placeholder">
-        LOGÓTIPO<br>
-        HEXÁGONO + AI + CIRCUITOS
-      </div>
-    </div>
-
-  </div>
-
 </section>
-
-<section class="about" id="about">
-
-  <div class="container">
-
-    <h2 data-key="aboutTitle">Sobre a Empresa</h2>
-
-    <p data-key="aboutText">
-      A HCR Digital Solutions é especializada em consultoria digital,
-      automação e desenvolvimento de soluções tecnológicas centradas no utilizador.
-      Trabalhamos com foco em eficiência, inovação e transformação digital sustentável.
-    </p>
-
-    <div class="values-grid">
-
-      <div class="value-card">
-        <h3 data-key="missionTitle">Missão</h3>
-        <p data-key="missionText">
-          Criar soluções digitais modernas que simplificam processos e aumentam a eficiência empresarial.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <h3 data-key="valuesTitle">Valores</h3>
-        <p data-key="valuesText">
-          Precisão, ética, simplicidade, inovação e foco total no cliente.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="services" id="services">
-
-  <div class="container">
-
-    <h2 data-key="servicesTitle">Serviços</h2>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="icon-placeholder">⌘</div>
-        <h3 data-key="service1">Consultoria Digital</h3>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-placeholder">⚙</div>
-        <h3 data-key="service2">Automação de Processos</h3>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-placeholder">◈</div>
-        <h3 data-key="service3">Desenvolvimento de Sistemas</h3>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-placeholder">◉</div>
-        <h3 data-key="service4">Dashboards e Análise de Dados</h3>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-placeholder">⬢</div>
-        <h3 data-key="service5">Transformação Digital</h3>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-placeholder">✦</div>
-        <h3 data-key="service6">Suporte Técnico Especializado</h3>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="contact" id="contact">
-
-  <div class="container">
-
-    <h2 data-key="contactTitle">Contactos</h2>
-
-    <div class="contact-grid">
-
-      <div class="contact-info">
-
-        <p><strong>Nome:</strong> Hugo Cresende</p>
-        <p><strong>Telefone:</strong> +351 920 263 674</p>
-        <p><strong>Email:</strong> hugocresende@hotmail.com</p>
-
-      </div>
-
-      <form class="contact-form">
-
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Mensagem"></textarea>
-
-        <button type="submit" class="btn-primary">
-          Enviar
-        </button>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
-
-<footer class="footer">
-
-  <div class="container footer-grid">
-
-    <div>
-      <h3>HCR DIGITAL SOLUTIONS</h3>
-      <p>Digital Innovation & Smart Solutions</p>
-    </div>
-
-    <div>
-      <h4>Links</h4>
-      <ul>
-        <li><a href="#">Política de Privacidade</a></li>
-        <li><a href="#">Termos de Uso</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>Social</h4>
-      <p>LinkedIn</p>
-      <p>Instagram</p>
-      <p>Facebook</p>
-    </div>
-
-  </div>
-
-  <div class="environmental">
-
-    <p>
-      🇵🇹 A HCR Digital Solutions reforça o compromisso ambiental de comunicar eletronicamente.
-    </p>
-
-    <p>
-      🇬🇧 HCR Digital Solutions reinforces its environmental commitment to communicate electronically.
-    </p>
-
-    <p>
-      🇫🇷 HCR Digital Solutions renforce son engagement environnemental à communiquer par voie électronique.
-    </p>
-
-    <p>
-      🇩🇪 HCR Digital Solutions bekräftigt das Umweltengagement, elektronisch zu kommunizieren.
-    </p>
-
-  </div>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
