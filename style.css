@@ -325,3 +325,66 @@ textarea{
     display:none;
   }
 }
+/* CONTACTOS PAGE */
+.contact-page {
+  padding: 100px 0;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form-box h2 {
+  font-size: 32px;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.contact-form-box p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form-box label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.contact-form-box textarea {
+  min-height: 140px;
+}
+
+.contact-map-box {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+@media(max-width:900px){
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
