@@ -82,3 +82,79 @@
         gap: 40px;
     }
 }
+/* CONTACTOS PAGE */
+.contactos-section {
+    padding: 120px 0;
+    background: #0A1A2F;
+}
+
+.contactos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-info h1 {
+    font-size: 48px;
+    color: var(--gold);
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.map-wrapper {
+    margin-top: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #0f1a2b;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #0A1A2F;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-gold:hover {
+    opacity: 0.85;
+}
+
+@media(max-width: 900px) {
+    .contactos-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
