@@ -1,41 +1,140 @@
-<section id="contact" class="contactos-section">
-    <div class="container contactos-grid">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCR Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- BLOCO DE INFORMAÇÃO -->
-        <div class="contact-info">
-            <h1>Contactos</h1>
+<body>
 
-            <p><strong>Nome:</strong> Hugo Cresende</p>
-            <p><strong>Telefone:</strong> +351 920 263 674</p>
-            <p><strong>Email:</strong> hugocresende@hotmail.com</p>
+    <!-- ============================
+         HEADER FIXO
+    ============================ -->
+    <header class="header">
+        <div class="container nav-container">
+            <h2 class="logo">HCR Digital Solutions</h2>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <div class="map-wrapper">
-                <iframe 
-                    src="https://www.google.com/maps?q=Soluções%20de%20Escritório%20para%20a%20Indústria&output=embed"
-                    width="100%" height="260" style="border:0;" allowfullscreen loading="lazy">
-                </iframe>
+    <!-- ============================
+         HOME — HERO FULLSCREEN
+    ============================ -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Transformamos Ideias em Soluções Digitais</h1>
+            <p>Desenvolvimento, automação e design para elevar o teu negócio ao próximo nível.</p>
+            <a href="#servicos" class="btn-gold">Ver Serviços</a>
+        </div>
+    </section>
+
+    <!-- ============================
+         SOBRE — TEXTO + IMAGEM
+    ============================ -->
+    <section id="sobre" class="sobre-section">
+        <div class="container sobre-grid">
+
+            <div class="sobre-texto">
+                <h2>Sobre Nós</h2>
+                <p>
+                    A HCR Digital Solutions é especializada em soluções digitais modernas,
+                    automações inteligentes e desenvolvimento de ferramentas que simplificam
+                    processos e aumentam a produtividade.
+                </p>
+                <p>
+                    Trabalhamos com foco em eficiência, design premium e resultados reais.
+                </p>
+            </div>
+
+            <div class="sobre-imagem">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Equipa de trabalho">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================
+         SERVIÇOS — CARDS
+    ============================ -->
+    <section id="servicos" class="servicos-section">
+        <div class="container">
+            <h2 class="sec-title">Serviços</h2>
+
+            <div class="servicos-grid">
+
+                <div class="serv-card">
+                    <h3>Automação</h3>
+                    <p>Criação de sistemas automáticos que reduzem trabalho manual e aumentam eficiência.</p>
+                </div>
+
+                <div class="serv-card">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites modernos, rápidos e otimizados para conversão.</p>
+                </div>
+
+                <div class="serv-card">
+                    <h3>Dashboards & Templates</h3>
+                    <p>Ferramentas profissionais em Excel/Sheets com automações avançadas.</p>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        <!-- FORMULÁRIO -->
-        <div class="contact-form">
-            <form action="https://formsubmit.co/hugocresende@hotmail.com" method="POST">
+    <!-- ============================
+         CONTACTOS — FINAL
+    ============================ -->
+    <section id="contact" class="contactos-section">
+        <div class="container contactos-grid">
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
+            <!-- BLOCO DE INFORMAÇÃO -->
+            <div class="contact-info">
+                <h1>Contactos</h1>
 
-                <label>Nome</label>
-                <input type="text" name="nome" required>
+                <p><strong>Nome:</strong> Hugo Cresende</p>
+                <p><strong>Telefone:</strong> +351 920 263 674</p>
+                <p><strong>Email:</strong> hugocresende@hotmail.com</p>
 
-                <label>Email</label>
-                <input type="email" name="email" required>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Soluções%20de%20Escritório%20para%20a%20Indústria&output=embed"
+                        width="100%" height="260" style="border:0;" allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+            </div>
 
-                <label>Mensagem</label>
-                <textarea name="mensagem" required></textarea>
+            <!-- FORMULÁRIO -->
+            <div class="contact-form">
+                <form action="https://formsubmit.co/hugocresende@hotmail.com" method="POST">
 
-                <button type="submit" class="btn-gold">Enviar</button>
-            </form>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <label>Nome</label>
+                    <input type="text" name="nome" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+
+                    <label>Mensagem</label>
+                    <textarea name="mensagem" required></textarea>
+
+                    <button type="submit" class="btn-gold">Enviar</button>
+                </form>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
+</body>
+</html>
