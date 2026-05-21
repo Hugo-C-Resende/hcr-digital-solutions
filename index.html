@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HCR Digital Solutions</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class="topbar">
-
-        <div class="nav-left">
-            <button class="nav-btn active" onclick="scrollToSection('home')">
-                Home
-            </button>
-
-            <button class="nav-btn" onclick="scrollToSection('about')">
-                Sobre
-            </button>
-        </div>
+    <header class="header">
 
         <!-- LOGO -->
-        <div class="logo-container">
-            <img src="images/logo.png" alt="HCR Digital Solutions Logo" class="logo">
-        </div>
+        <div class="logo-area">
 
-        <div class="nav-right">
-            <button class="nav-btn" onclick="scrollToSection('services')">
-                Serviços
-            </button>
+            <img src="images/logo.png" alt="Logo HCR" class="logo">
 
-            <button class="nav-btn" onclick="scrollToSection('contact')">
-                Contactos
-            </button>
+            <div class="logo-text">
+
+                <h1>HCR DIGITAL SOLUTIONS</h1>
+
+                <p>
+                    Soluções Digitais para Empresas
+                </p>
+
+            </div>
+
         </div>
 
     </header>
 
 
-    <!-- HOME -->
-    <section id="home" class="hero-section">
+    <!-- NAVBAR -->
+    <nav class="navbar">
 
-        <div class="hero-content">
+        <button class="nav-btn active" onclick="scrollToSection('home')">
+            Início
+        </button>
 
-            <h1>
-                HCR DIGITAL SOLUTIONS
-            </h1>
+        <button class="nav-btn" onclick="scrollToSection('about')">
+            Sobre Nós
+        </button>
 
-            <p>
-                Soluções Digitais Modernas, Inteligentes e Profissionais.
-            </p>
+        <button class="nav-btn" onclick="scrollToSection('services')">
+            Serviços
+        </button>
 
-            <button class="cta-button">
-                Saber Mais
-            </button>
+        <button class="nav-btn" onclick="scrollToSection('testimonials')">
+            Testemunhos
+        </button>
+
+        <button class="nav-btn" onclick="scrollToSection('faq')">
+            FAQ
+        </button>
+
+        <button class="nav-btn" onclick="scrollToSection('contact')">
+            Contactos
+        </button>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content">
+
+                <h2>
+                    Soluções Digitais Modernas
+                </h2>
+
+                <h3>
+                    Websites, Automação e Qualidade
+                </h3>
+
+                <p>
+                    Criamos ferramentas digitais profissionais
+                    para otimizar processos e aumentar resultados.
+                </p>
+
+                <button class="hero-button">
+                    Saber Mais
+                </button>
+
+            </div>
 
         </div>
 
@@ -64,39 +98,54 @@
 
 
     <!-- SOBRE -->
-    <section id="about" class="content-section">
+    <section id="about" class="section">
 
-        <h2>Sobre</h2>
+        <h2>Sobre Nós</h2>
 
         <p>
-            A HCR Digital Solutions desenvolve soluções digitais modernas,
-            websites profissionais, automações e experiências digitais
-            focadas no futuro.
+            A HCR Digital Solutions desenvolve soluções digitais
+            modernas e ferramentas inteligentes para empresas,
+            qualidade, produção e gestão.
         </p>
 
     </section>
 
 
     <!-- SERVIÇOS -->
-    <section id="services" class="content-section dark-section">
+    <section id="services" class="section dark">
 
         <h2>Serviços</h2>
 
-        <div class="services-grid">
+        <div class="cards">
 
-            <div class="service-card">
+            <div class="card">
+
                 <h3>Web Design</h3>
-                <p>Websites modernos e responsivos.</p>
+
+                <p>
+                    Websites profissionais modernos e responsivos.
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <div class="card">
+
                 <h3>Automação</h3>
-                <p>Processos inteligentes e automatizados.</p>
+
+                <p>
+                    Automatização de processos empresariais.
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <h3>Branding</h3>
-                <p>Identidade visual profissional.</p>
+            <div class="card">
+
+                <h3>Consultoria</h3>
+
+                <p>
+                    Soluções digitais adaptadas ao teu negócio.
+                </p>
+
             </div>
 
         </div>
@@ -104,8 +153,32 @@
     </section>
 
 
+    <!-- TESTEMUNHOS -->
+    <section id="testimonials" class="section">
+
+        <h2>Testemunhos</h2>
+
+        <p>
+            Empresas satisfeitas com as nossas soluções digitais.
+        </p>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="section dark">
+
+        <h2>FAQ</h2>
+
+        <p>
+            Perguntas frequentes sobre os nossos serviços.
+        </p>
+
+    </section>
+
+
     <!-- CONTACTOS -->
-    <section id="contact" class="content-section">
+    <section id="contact" class="section">
 
         <h2>Contactos</h2>
 
