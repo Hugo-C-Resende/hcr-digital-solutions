@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HCR Digital Solutions</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<section id="home" class="hero hero-with-menu">
-    <div class="hero-overlay"></div>
+    <!-- HEADER -->
+    <header class="topbar">
 
-    <div class="hero-logo">
-        <img src="hcr-logo.svg" alt="HCR Digital Solutions Logo">
-    </div>
+        <div class="nav-left">
+            <button class="nav-btn active" onclick="scrollToSection('home')">
+                Home
+            </button>
 
-    <nav class="hero-nav">
-        <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-    </nav>
+            <button class="nav-btn" onclick="scrollToSection('about')">
+                Sobre
+            </button>
+        </div>
 
-    <div class="hero-content">
-        <h1>HCR Digital Solutions</h1>
-        <p>Consultoria Digital • Automação • Desenvolvimento</p>
-        <a href="contactos.html" class="btn">Entrar em Contacto</a>
-    </div>
-</section>
+        <!-- LOGO -->
+        <div class="logo-container">
+            <img src="images/logo.png" alt="HCR Digital Solutions Logo" class="logo">
+        </div>
 
-<section id="sobre" class="section">
-    <div class="container">
+        <div class="nav-right">
+            <button class="nav-btn" onclick="scrollToSection('services')">
+                Serviços
+            </button>
+
+            <button class="nav-btn" onclick="scrollToSection('contact')">
+                Contactos
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero-section">
+
+        <div class="hero-content">
+
+            <h1>
+                HCR DIGITAL SOLUTIONS
+            </h1>
+
+            <p>
+                Soluções Digitais Modernas, Inteligentes e Profissionais.
+            </p>
+
+            <button class="cta-button">
+                Saber Mais
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="about" class="content-section">
+
         <h2>Sobre</h2>
+
         <p>
-            A HCR Digital Solutions é focada em consultoria digital, automação e desenvolvimento,
-            ajudando negócios a otimizar processos, ganhar eficiência e criar experiências digitais
-            profissionais e consistentes.
+            A HCR Digital Solutions desenvolve soluções digitais modernas,
+            websites profissionais, automações e experiências digitais
+            focadas no futuro.
         </p>
-    </div>
-</section>
 
-<section id="servicos" class="section">
-    <div class="container">
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section id="services" class="content-section dark-section">
+
         <h2>Serviços</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Consultoria Digital</h3>
-                <p>Diagnóstico, estratégia e roadmap digital alinhado aos objetivos do negócio.</p>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>Websites modernos e responsivos.</p>
             </div>
-            <div class="card">
+
+            <div class="service-card">
                 <h3>Automação</h3>
-                <p>Automação de tarefas repetitivas, integração de ferramentas e fluxos inteligentes.</p>
+                <p>Processos inteligentes e automatizados.</p>
             </div>
-            <div class="card">
-                <h3>Desenvolvimento Web</h3>
-                <p>Websites, landing pages e soluções à medida com foco em performance e UX.</p>
+
+            <div class="service-card">
+                <h3>Branding</h3>
+                <p>Identidade visual profissional.</p>
             </div>
-        </div>
-    </div>
-</section>
 
-<footer class="footer">
-    <div class="container footer-grid">
-        <div>
-            <h4>HCR Digital Solutions</h4>
-            <p>Consultoria Digital • Automação • Desenvolvimento</p>
         </div>
-        <div>
-            <h4>Links</h4>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Legal</h4>
-            <ul>
-                <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
-                <li><a href="termos-utilizacao.html">Termos de Utilização</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        © <span id="year"></span> HCR Digital Solutions. Todos os direitos reservados.
-    </div>
-</footer>
 
-<script src="script.js"></script>
+    </section>
+
+
+    <!-- CONTACTOS -->
+    <section id="contact" class="content-section">
+
+        <h2>Contactos</h2>
+
+        <p>Email: contacto@hcrdigitalsolutions.com</p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
