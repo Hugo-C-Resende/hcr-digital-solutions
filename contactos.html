@@ -2,82 +2,87 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Contactos | HCR Digital Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos • HCR Digital Solutions</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body class="page-interna">
 
-<body>
-
-<header class="header">
-    <div class="container nav">
-        <div class="logo">
-            <img src="logo-hcr.png" alt="HCR Digital Solutions" height="40">
-            <span>HCR Digital Solutions</span>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="servicos.html">Serviços</a>
-            <a class="active" href="contactos.html">Contactos</a>
+<header class="top-bar">
+    <div class="container top-bar-inner">
+        <a href="index.html" class="logo-inline">
+            <img src="hcr-logo.svg" alt="HCR Digital Solutions Logo">
+        </a>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="contactos.html" class="active">Contactos</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
-<section class="contactos-section">
-    <div class="container contactos-grid">
+<main class="section">
+    <div class="container narrow">
+        <h1>Contactos</h1>
+        <p>Preenche o formulário ou utiliza os contactos abaixo para falar comigo.</p>
 
-        <!-- BLOCO DE INFORMAÇÃO -->
-        <div class="contact-info">
-            <h1>Contactos</h1>
-
-            <p><strong>Nome:</strong> Hugo Cresende</p>
-            <p><strong>Telefone:</strong> +351 920 263 674</p>
-            <p><strong>Email:</strong> hugocresende@hotmail.com</p>
-
-            <div class="map-wrapper">
-                <iframe 
-                    src="https://www.google.com/maps?q=Soluções%20de%20Escritório%20para%20a%20Indústria&output=embed"
-                    width="100%" height="260" style="border:0;" allowfullscreen loading="lazy">
-                </iframe>
+        <div class="contact-grid">
+            <div>
+                <h2>Detalhes de Contacto</h2>
+                <p><strong>Email:</strong> <a href="mailto:hugo@hcrdigitalsolutions.com">hugo@hcrdigitalsolutions.com</a></p>
+                <p><strong>Localização:</strong> Aveiro, Portugal</p>
+            </div>
+            <div>
+                <h2>Formulário</h2>
+                <form class="contact-form">
+                    <label>Nome
+                        <input type="text" name="nome" placeholder="O teu nome">
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" placeholder="O teu email">
+                    </label>
+                    <label>Mensagem
+                        <textarea name="mensagem" rows="5" placeholder="Escreve a tua mensagem"></textarea>
+                    </label>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+                <p class="form-note">* Neste momento o formulário é ilustrativo. Usa o email para contacto direto.</p>
             </div>
         </div>
-
-        <!-- FORMULÁRIO -->
-        <div class="contact-form">
-            <form action="https://formsubmit.co/hugocresende@hotmail.com" method="POST">
-
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-
-                <label>Nome</label>
-                <input type="text" name="nome" required>
-
-                <label>Email</label>
-                <input type="email" name="email" required>
-
-                <label>Mensagem</label>
-                <textarea name="mensagem" required></textarea>
-
-                <button type="submit" class="btn-gold">Enviar</button>
-            </form>
-        </div>
-
     </div>
-</section>
+</main>
 
 <footer class="footer">
     <div class="container footer-grid">
         <div>
-            <p>© HCR Digital Solutions</p>
-            <p>Seg–Sex: 09h00–12h30 | 14h00–18h00</p>
+            <h4>HCR Digital Solutions</h4>
+            <p>Consultoria Digital • Automação • Desenvolvimento</p>
         </div>
         <div>
-            <p><a href="politica-privacidade.html">Política de Privacidade</a></p>
-            <p><a href="termos-utilizacao.html">Termos de Utilização</a></p>
+            <h4>Links</h4>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
         </div>
+        <div>
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termos-utilizacao.html">Termos de Utilização</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © <span id="year"></span> HCR Digital Solutions. Todos os direitos reservados.
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
