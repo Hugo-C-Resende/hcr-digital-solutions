@@ -1,13 +1,13 @@
-function scrollToSection(sectionId){
+function scrollToSection(id){
 
-    document.getElementById(sectionId).scrollIntoView({
-        behavior: "smooth"
+    document.getElementById(id).scrollIntoView({
+        behavior:"smooth"
     });
 
 }
 
 
-/* ACTIVE BUTTON */
+/* BOTÃO ATIVO */
 
 const buttons = document.querySelectorAll(".nav-btn");
 
@@ -15,7 +15,9 @@ buttons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        buttons.forEach(btn => btn.classList.remove("active"));
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
 
         button.classList.add("active");
 
