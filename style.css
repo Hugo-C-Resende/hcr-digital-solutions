@@ -12,7 +12,7 @@ body{
 }
 
 /* ===========================
-   HEADER FIXO (NOVA VERSÃO)
+   HEADER FIXO
    =========================== */
 
 .header-fixed {
@@ -70,7 +70,7 @@ body{
 }
 
 /* Espaço para o conteúdo não ficar escondido atrás do header */
-main, section {
+section {
     margin-top: 160px;
 }
 
@@ -178,4 +178,42 @@ main, section {
 
 .card{
     background:#1c1c1c;
-    padding
+    padding:35px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#f7c600;
+}
+
+.card h3{
+    color:#f7c600;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#ccc;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media(max-width:900px){
+
+    .hero-content h2{
+        font-size:42px;
+    }
+
+    .hero-content h3{
+        font-size:28px;
+    }
+
+    .nav-menu{
+        flex-direction:column;
+        gap:15px;
+    }
+}
