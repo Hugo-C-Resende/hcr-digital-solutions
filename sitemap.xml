@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Página principal -->
   <url>
     <loc>https://hugo-c-resende.github.io/hcr-digital-solutions/</loc>
     <priority>1.0</priority>
   </url>
 
+  <!-- Páginas legais -->
   <url>
     <loc>https://hugo-c-resende.github.io/hcr-digital-solutions/politica-privacidade.html</loc>
     <priority>0.6</priority>
@@ -14,6 +16,18 @@
   <url>
     <loc>https://hugo-c-resende.github.io/hcr-digital-solutions/termos-utilizacao.html</loc>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Página de contactos -->
+  <url>
+    <loc>https://hugo-c-resende.github.io/hcr-digital-solutions/contactos.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Página 404 (opcional, mas incluída para consistência) -->
+  <url>
+    <loc>https://hugo-c-resende.github.io/hcr-digital-solutions/404.html</loc>
+    <priority>0.1</priority>
   </url>
 
 </urlset>
