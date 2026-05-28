@@ -1,5 +1,8 @@
-// SCROLL SUAVE
-document.querySelectorAll('.nav-menu a').forEach(link => {
+// SCROLL SUAVE ENTRE SECÇÕES
+const navLinks = document.querySelectorAll('.nav-menu a');
+const sections = document.querySelectorAll('section');
+
+navLinks.forEach(link => {
     link.addEventListener('click', e => {
         e.preventDefault();
 
@@ -14,24 +17,21 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
         const top = target.getBoundingClientRect().top + window.scrollY - offset;
 
         window.scrollTo({
-            top: top,
+            top,
             behavior: 'smooth'
         });
 
-        document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+        navLinks.forEach(a => a.classList.remove('active'));
         link.classList.add('active');
     });
 });
 
 // ATUALIZAR LINK ATIVO NO SCROLL
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-menu a');
-
 window.addEventListener('scroll', () => {
     let current = '';
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 220;
+        const sectionTop = section.offsetTop - 240;
         if (window.scrollY >= sectionTop) {
             current = section.getAttribute('id');
         }
@@ -96,7 +96,30 @@ const translations = {
         'footer.copyright':
             '© 2026 HCR Digital Solutions — Todos os direitos reservados',
         'footer.copyrightLabel':
-            'Copyright'
+            'Copyright',
+
+        // Páginas legais
+        'privacy.title': 'Política de Privacidade',
+        'privacy.intro': 'Esta Política de Privacidade descreve como a HCR Digital Solutions recolhe, utiliza e protege os dados pessoais dos utilizadores.',
+        'privacy.section1Title': '1. Recolha de Dados',
+        'privacy.section1Text': 'Recolhemos apenas os dados necessários para comunicação, prestação de serviços e melhoria contínua.',
+        'privacy.section2Title': '2. Utilização dos Dados',
+        'privacy.section2Text': 'Os dados são utilizados exclusivamente para fins operacionais, comerciais e legais associados aos serviços prestados.',
+        'privacy.section3Title': '3. Direitos do Utilizador',
+        'privacy.section3Text': 'O utilizador pode solicitar acesso, correção ou eliminação dos seus dados pessoais a qualquer momento.',
+        'privacy.section4Title': '4. Contacto',
+        'privacy.section4Text': 'Para questões relacionadas com privacidade, contacte-nos através de: contacto@hcrdigitalsolutions.com',
+
+        'terms.title': 'Termos de Utilização',
+        'terms.intro': 'Estes Termos de Utilização regulam o acesso e utilização do website da HCR Digital Solutions.',
+        'terms.section1Title': '1. Aceitação dos Termos',
+        'terms.section1Text': 'Ao utilizar este website, o utilizador concorda com os presentes termos e condições.',
+        'terms.section2Title': '2. Responsabilidades',
+        'terms.section2Text': 'O utilizador compromete-se a utilizar o website de forma responsável e a não comprometer a sua segurança.',
+        'terms.section3Title': '3. Propriedade Intelectual',
+        'terms.section3Text': 'Todo o conteúdo apresentado neste website é propriedade exclusiva da HCR Digital Solutions.',
+        'terms.section4Title': '4. Alterações',
+        'terms.section4Text': 'A HCR Digital Solutions reserva-se o direito de atualizar estes termos a qualquer momento.'
     },
 
     en: {
@@ -148,7 +171,29 @@ const translations = {
         'footer.copyright':
             '© 2026 HCR Digital Solutions — All rights reserved',
         'footer.copyrightLabel':
-            'Copyright'
+            'Copyright',
+
+        'privacy.title': 'Privacy Policy',
+        'privacy.intro': 'This Privacy Policy describes how HCR Digital Solutions collects, uses and protects users’ personal data.',
+        'privacy.section1Title': '1. Data Collection',
+        'privacy.section1Text': 'We only collect the data necessary for communication, service delivery and continuous improvement.',
+        'privacy.section2Title': '2. Use of Data',
+        'privacy.section2Text': 'Data is used exclusively for operational, commercial and legal purposes related to the services provided.',
+        'privacy.section3Title': '3. User Rights',
+        'privacy.section3Text': 'Users may request access, correction or deletion of their personal data at any time.',
+        'privacy.section4Title': '4. Contact',
+        'privacy.section4Text': 'For privacy-related questions, contact us at: contact@hcrdigitalsolutions.com',
+
+        'terms.title': 'Terms of Use',
+        'terms.intro': 'These Terms of Use govern access to and use of the HCR Digital Solutions website.',
+        'terms.section1Title': '1. Acceptance of Terms',
+        'terms.section1Text': 'By using this website, you agree to these terms and conditions.',
+        'terms.section2Title': '2. Responsibilities',
+        'terms.section2Text': 'You agree to use the website responsibly and not compromise its security.',
+        'terms.section3Title': '3. Intellectual Property',
+        'terms.section3Text': 'All content displayed on this website is the exclusive property of HCR Digital Solutions.',
+        'terms.section4Title': '4. Changes',
+        'terms.section4Text': 'HCR Digital Solutions reserves the right to update these terms at any time.'
     },
 
     fr: {
@@ -200,7 +245,29 @@ const translations = {
         'footer.copyright':
             '© 2026 HCR Digital Solutions — Tous droits réservés',
         'footer.copyrightLabel':
-            'Copyright'
+            'Copyright',
+
+        'privacy.title': 'Politique de confidentialité',
+        'privacy.intro': 'Cette politique de confidentialité décrit comment HCR Digital Solutions collecte, utilise et protège les données personnelles des utilisateurs.',
+        'privacy.section1Title': '1. Collecte des données',
+        'privacy.section1Text': 'Nous collectons uniquement les données nécessaires à la communication, à la prestation de services et à l’amélioration continue.',
+        'privacy.section2Title': '2. Utilisation des données',
+        'privacy.section2Text': 'Les données sont utilisées exclusivement à des fins opérationnelles, commerciales et légales liées aux services fournis.',
+        'privacy.section3Title': '3. Droits de l’utilisateur',
+        'privacy.section3Text': 'L’utilisateur peut demander l’accès, la correction ou la suppression de ses données personnelles à tout moment.',
+        'privacy.section4Title': '4. Contact',
+        'privacy.section4Text': 'Pour toute question relative à la confidentialité, contactez‑nous à : contact@hcrdigitalsolutions.com',
+
+        'terms.title': "Conditions d'utilisation",
+        'terms.intro': "Ces conditions d'utilisation régissent l'accès et l'utilisation du site web de HCR Digital Solutions.",
+        'terms.section1Title': '1. Acceptation des conditions',
+        'terms.section1Text': "En utilisant ce site web, l’utilisateur accepte les présentes conditions générales.",
+        'terms.section2Title': '2. Responsabilités',
+        'terms.section2Text': "L’utilisateur s’engage à utiliser le site de manière responsable et à ne pas compromettre sa sécurité.",
+        'terms.section3Title': '3. Propriété intellectuelle',
+        'terms.section3Text': 'Tout le contenu présenté sur ce site est la propriété exclusive de HCR Digital Solutions.',
+        'terms.section4Title': '4. Modifications',
+        'terms.section4Text': 'HCR Digital Solutions se réserve le droit de mettre à jour ces conditions à tout moment.'
     }
 };
 
