@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade — HCR Digital Solutions</title>
+    <title data-i18n="privacy.title">Política de Privacidade</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,59 +12,74 @@
 </head>
 <body>
 
-<header class="header-fixed">
-    <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
-</header>
+    <!-- HEADER FIXO -->
+    <header class="header-fixed">
+        <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
+    </header>
 
-<nav class="navbar-fixed">
-    <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="pt">🇵🇹</button>
-        <button class="lang-btn" data-lang="en">🇬🇧</button>
-        <button class="lang-btn" data-lang="fr">🇫🇷</button>
-    </div>
-</nav>
+    <!-- NAVBAR FIXA -->
+    <nav class="navbar-fixed">
+        <ul class="nav-menu">
+            <li><a href="index.html#home" data-i18n="nav.home">Início</a></li>
+            <li><a href="index.html#about" data-i18n="nav.about">Sobre Nós</a></li>
+            <li><a href="index.html#services" data-i18n="nav.services">Serviços</a></li>
+            <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testemunhos</a></li>
+            <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contactos</a></li>
+        </ul>
 
-<section class="legal-section">
-    <div class="legal-inner">
-        <h1 data-i18n="privacy.title">Política de Privacidade</h1>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt">🇵🇹</button>
+            <button class="lang-btn" data-lang="en">🇬🇧</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷</button>
+        </div>
+    </nav>
 
-        <p data-i18n="privacy.intro">
-            Esta Política de Privacidade descreve como a HCR Digital Solutions recolhe, utiliza e protege os dados pessoais dos utilizadores.
+    <!-- CONTEÚDO -->
+    <section class="section">
+        <div class="section-inner">
+
+            <h2 data-i18n="privacy.title">Política de Privacidade</h2>
+            <p data-i18n="privacy.intro">
+                Esta Política de Privacidade descreve como a HCR Digital Solutions recolhe, utiliza e protege os dados pessoais dos utilizadores.
+            </p>
+
+            <h3 data-i18n="privacy.section1Title">1. Recolha de Dados</h3>
+            <p data-i18n="privacy.section1Text">
+                Recolhemos apenas os dados necessários para comunicação, prestação de serviços e melhoria contínua.
+            </p>
+
+            <h3 data-i18n="privacy.section2Title">2. Utilização dos Dados</h3>
+            <p data-i18n="privacy.section2Text">
+                Os dados são utilizados exclusivamente para fins operacionais, comerciais e legais associados aos serviços prestados.
+            </p>
+
+            <h3 data-i18n="privacy.section3Title">3. Direitos do Utilizador</h3>
+            <p data-i18n="privacy.section3Text">
+                O utilizador pode solicitar acesso, correção ou eliminação dos seus dados pessoais a qualquer momento.
+            </p>
+
+            <h3 data-i18n="privacy.section4Title">4. Contacto</h3>
+            <p data-i18n="privacy.section4Text">
+                Para questões relacionadas com privacidade, contacte-nos através de: contacto@hcrdigitalsolutions.com
+            </p>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ FIXO -->
+    <footer class="footer">
+        <p class="footer-links">
+            <a href="politica-privacidade.html" data-i18n="footer.privacy">Política de Privacidade</a> |
+            <a href="termos-utilizacao.html" data-i18n="footer.terms">Termos de Utilização</a> |
+            <span data-i18n="footer.copyrightLabel">Copyright</span>
         </p>
 
-        <h2 data-i18n="privacy.section1Title">1. Recolha de Dados</h2>
-        <p data-i18n="privacy.section1Text">
-            Recolhemos apenas os dados necessários para comunicação, prestação de serviços e melhoria contínua.
+        <p class="footer-copy" data-i18n="footer.copyright">
+            © 2026 HCR Digital Solutions — Todos os direitos reservados
         </p>
+    </footer>
 
-        <h2 data-i18n="privacy.section2Title">2. Utilização dos Dados</h2>
-        <p data-i18n="privacy.section2Text">
-            Os dados são utilizados exclusivamente para fins operacionais, comerciais e legais associados aos serviços prestados.
-        </p>
-
-        <h2 data-i18n="privacy.section3Title">3. Direitos do Utilizador</h2>
-        <p data-i18n="privacy.section3Text">
-            O utilizador pode solicitar acesso, correção ou eliminação dos seus dados pessoais a qualquer momento.
-        </p>
-
-        <h2 data-i18n="privacy.section4Title">4. Contacto</h2>
-        <p data-i18n="privacy.section4Text">
-            Para questões relacionadas com privacidade, contacte-nos através de: contacto@hcrdigitalsolutions.com
-        </p>
-    </div>
-</section>
-
-<footer class="footer">
-    <p class="footer-links">
-        <a href="politica-privacidade.html" target="_blank" rel="noopener" data-i18n="footer.privacy">Política de Privacidade</a> |
-        <a href="termos-utilizacao.html" target="_blank" rel="noopener" data-i18n="footer.terms">Termos de Utilização</a> |
-        <span data-i18n="footer.copyrightLabel">Copyright</span>
-    </p>
-    <p class="footer-copy" data-i18n="footer.copyright">
-        © 2026 HCR Digital Solutions — Todos os direitos reservados
-    </p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
