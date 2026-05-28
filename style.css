@@ -18,7 +18,7 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 140px;
     background: #050816;
     display: flex;
     justify-content: center;
@@ -29,14 +29,14 @@ html, body {
 }
 
 .header-logo {
-    height: 130px;
+    height: 110px;
     width: auto;
 }
 
 /* NAVBAR FIXA */
 .navbar-fixed {
     position: fixed;
-    top: 80px;
+    top: 140px;
     left: 0;
     width: 100%;
     height: 55px;
@@ -46,12 +46,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    padding: 0 8%;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 28px;
+    gap: 24px;
 }
 
 .nav-menu a {
@@ -70,14 +72,38 @@ html, body {
     color: #050816;
 }
 
-/* COMPENSAÇÃO DO HEADER + NAVBAR */
+/* LANG SWITCHER */
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 999px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+    background: #f7c600;
+    color: #050816;
+    border-color: #f7c600;
+}
+
+/* COMPENSAÇÃO HEADER + NAVBAR */
 section {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 195px;
 }
 
 /* HERO */
 .hero {
-    padding: 180px 8% 120px;
+    min-height: calc(100vh - 195px);
+    padding: 60px 8% 80px;
     background:
         radial-gradient(circle at top left, rgba(247,198,0,0.18), transparent 55%),
         radial-gradient(circle at bottom right, rgba(0,255,255,0.12), transparent 55%),
@@ -117,6 +143,7 @@ section {
 .hero-actions {
     display: flex;
     gap: 14px;
+    flex-wrap: wrap;
 }
 
 .btn-primary,
@@ -216,6 +243,10 @@ section {
     background: #0b1020;
 }
 
+.section-lead {
+    margin-bottom: 30px;
+}
+
 /* GRID */
 .grid-3 {
     display: grid;
@@ -271,6 +302,12 @@ section {
     border-color: rgba(247,198,0,0.9);
 }
 
+.contact-hours {
+    margin-top: 10px;
+    color: #d0d0d0;
+    font-size: 15px;
+}
+
 /* RODAPÉ */
 .footer {
     background: #050816;
@@ -279,9 +316,9 @@ section {
     border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-.footer-hours {
+.footer-links {
     color: #d0d0d0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .footer-links a {
@@ -295,12 +332,23 @@ section {
 }
 
 .footer-copy {
-    margin-top: 12px;
     color: #d0d0d0;
 }
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
+
+    .navbar-fixed {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 16px;
+        gap: 8px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .hero-inner {
         grid-template-columns: 1fr;
@@ -313,10 +361,5 @@ section {
 
     .section {
         padding: 80px 16px;
-    }
-
-    .nav-menu {
-        gap: 12px;
-        flex-wrap: wrap;
     }
 }
