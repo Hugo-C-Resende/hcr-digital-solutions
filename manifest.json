@@ -2,9 +2,11 @@
   "name": "HCR Digital Solutions",
   "short_name": "HCR Digital",
   "start_url": "/hcr-digital-solutions/",
+  "scope": "/hcr-digital-solutions/",
   "display": "standalone",
   "background_color": "#050816",
   "theme_color": "#050816",
+  "description": "Consultoria digital, automação e desenvolvimento web premium.",
   "icons": [
     {
       "src": "favicon-192.png",
