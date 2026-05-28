@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hugo-c-resende.github.io/hcr-digital-solutions/sitemap.xml
