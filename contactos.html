@@ -3,86 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos • HCR Digital Solutions</title>
+    <title data-i18n="contact.title">Contactos</title>
+
+    <!-- SEO -->
+    <meta property="og:title" content="Contactos — HCR Digital Solutions">
+    <meta property="og:description" content="Contacta a HCR Digital Solutions para consultoria, automação e soluções digitais.">
+    <meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Manifest + Favicon -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-interna">
+<body>
 
-<header class="top-bar">
-    <div class="container top-bar-inner">
-        <a href="index.html" class="logo-inline">
-            <img src="hcr-logo.svg" alt="HCR Digital Solutions Logo">
-        </a>
-        <nav class="top-nav">
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#sobre">Sobre</a></li>
-                <li><a href="index.html#servicos">Serviços</a></li>
-                <li><a href="contactos.html" class="active">Contactos</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <!-- HEADER FIXO -->
+    <header class="header-fixed">
+        <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
+    </header>
 
-<main class="section">
-    <div class="container narrow">
-        <h1>Contactos</h1>
-        <p>Preenche o formulário ou utiliza os contactos abaixo para falar comigo.</p>
+    <!-- NAVBAR FIXA -->
+    <nav class="navbar-fixed">
+        <ul class="nav-menu">
+            <li><a href="index.html#home" data-i18n="nav.home">Início</a></li>
+            <li><a href="index.html#about" data-i18n="nav.about">Sobre Nós</a></li>
+            <li><a href="index.html#services" data-i18n="nav.services">Serviços</a></li>
+            <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testemunhos</a></li>
+            <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contactos</a></li>
+        </ul>
 
-        <div class="contact-grid">
-            <div>
-                <h2>Detalhes de Contacto</h2>
-                <p><strong>Email:</strong> <a href="mailto:hugo@hcrdigitalsolutions.com">hugo@hcrdigitalsolutions.com</a></p>
-                <p><strong>Localização:</strong> Aveiro, Portugal</p>
-            </div>
-            <div>
-                <h2>Formulário</h2>
-                <form class="contact-form">
-                    <label>Nome
-                        <input type="text" name="nome" placeholder="O teu nome">
-                    </label>
-                    <label>Email
-                        <input type="email" name="email" placeholder="O teu email">
-                    </label>
-                    <label>Mensagem
-                        <textarea name="mensagem" rows="5" placeholder="Escreve a tua mensagem"></textarea>
-                    </label>
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
-                <p class="form-note">* Neste momento o formulário é ilustrativo. Usa o email para contacto direto.</p>
-            </div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt">🇵🇹</button>
+            <button class="lang-btn" data-lang="en">🇬🇧</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷</button>
         </div>
-    </div>
-</main>
+    </nav>
 
-<footer class="footer">
-    <div class="container footer-grid">
-        <div>
-            <h4>HCR Digital Solutions</h4>
-            <p>Consultoria Digital • Automação • Desenvolvimento</p>
-        </div>
-        <div>
-            <h4>Links</h4>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#sobre">Sobre</a></li>
-                <li><a href="index.html#servicos">Serviços</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Legal</h4>
-            <ul>
-                <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
-                <li><a href="termos-utilizacao.html">Termos de Utilização</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        © <span id="year"></span> HCR Digital Solutions. Todos os direitos reservados.
-    </div>
-</footer>
+    <!-- CONTEÚDO -->
+    <section class="section">
+        <div class="section-inner">
 
-<script src="script.js"></script>
+            <h2 data-i18n="contact.title">Contactos</h2>
+
+            <p data-i18n="contact.text">
+                Envia-nos um email com o contexto do teu projeto:
+            </p>
+
+            <p class="contact-email">
+                <a href="mailto:contacto@hcrdigitalsolutions.com" data-i18n="contact.emailLabel">
+                    contacto@hcrdigitalsolutions.com
+                </a>
+            </p>
+
+            <p class="contact-hours" data-i18n="contact.hours">
+                Horário: 09h00 – 18h00 (Seg–Sex)
+            </p>
+
+            <br><br>
+
+            <h3>Localização</h3>
+            <p>Santa Maria da Feira, Aveiro — Portugal</p>
+
+            <br>
+
+            <h3>Website</h3>
+            <p><a href="https://hugo-c-resende.github.io/hcr-digital-solutions/" target="_blank">hcrdigitalsolutions.com</a></p>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ FIXO -->
+    <footer class="footer">
+        <p class="footer-links">
+            <a href="politica-privacidade.html" data-i18n="footer.privacy">Política de Privacidade</a> |
+            <a href="termos-utilizacao.html" data-i18n="footer.terms">Termos de Utilização</a> |
+            <span data-i18n="footer.copyrightLabel">Copyright</span>
+        </p>
+
+        <p class="footer-copy" data-i18n="footer.copyright">
+            © 2026 HCR Digital Solutions — Todos os direitos reservados
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
