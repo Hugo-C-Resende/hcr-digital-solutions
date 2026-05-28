@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔥 SEO COMPLETO -->
+    <!-- OpenGraph -->
+    <meta property="og:title" content="HCR Digital Solutions — Consultoria, Automação e Web Premium">
+    <meta property="og:description" content="Soluções digitais inteligentes para empresas modernas. Automação, consultoria e desenvolvimento web premium.">
+    <meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png">
+    <meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HCR Digital Solutions — Soluções Digitais Premium">
+    <meta name="twitter:description" content="Consultoria digital, automação e desenvolvimento web com foco em resultados.">
+    <meta name="twitter:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "HCR Digital Solutions",
+      "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/",
+      "logo": "https://hugo-c-resende.github.io/hcr-digital-solutions/logo-hcr.png",
+      "description": "Consultoria digital, automação e desenvolvimento web premium.",
+      "email": "contacto@hcrdigitalsolutions.com"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "HCR Digital Solutions",
+      "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://hugo-c-resende.github.io/hcr-digital-solutions/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <!-- 🔥 FIM SEO -->
+
     <title>HCR Digital Solutions</title>
 
+    <!-- Manifest + Favicon -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -39,12 +88,8 @@
     <section id="home" class="section">
         <div class="section-inner hero-inner">
             <div class="hero-content">
-                <h2 data-i18n="hero.title">
-                    Soluções Digitais Inteligentes para Empresas Modernas
-                </h2>
-                <h3 data-i18n="hero.subtitle">
-                    Tecnologia, automação e consultoria com foco em resultados.
-                </h3>
+                <h2 data-i18n="hero.title">Soluções Digitais Inteligentes para Empresas Modernas</h2>
+                <h3 data-i18n="hero.subtitle">Tecnologia, automação e consultoria com foco em resultados.</h3>
                 <p data-i18n="hero.text">
                     Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.
                 </p>
@@ -171,9 +216,11 @@
     <!-- RODAPÉ FIXO -->
     <footer class="footer">
         <p class="footer-links">
-            <a href="politica-privacidade.html" target="_blank" rel="noopener" data-i18n="footer.privacy">Política de Privacidade</a> |
-            <a href="termos-utilizacao.html" target="_blank" rel="noopener" data-i18n="footer.terms">Termos de Utilização</a> |
-            <span data-i18n="footer.copyrightLabel">Copyright</span>
+            <a href="politica-privacidade.html" target="_blank" data-i18n="footer.privacy">Política de Privacidade</a> |
+            <a href="termos-utilizacao.html" target="_blank" data-i18n="footer.terms">Termos de Utilização</a> |
+            <span data-i18n="footer.copyrightLabel">
+                Copyright
+            </span>
         </p>
 
         <p class="footer-copy" data-i18n="footer.copyright">
@@ -181,6 +228,7 @@
         </p>
     </footer>
 
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
