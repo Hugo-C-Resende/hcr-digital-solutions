@@ -5,36 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página não encontrada</title>
 
+    <!-- SEO -->
+    <meta property="og:title" content="Página não encontrada — HCR Digital Solutions">
+    <meta property="og:description" content="A página que procuras não existe ou foi movida.">
+    <meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Manifest + Favicon -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- HEADER FIXO -->
     <header class="header-fixed">
-        <img src="logo-hcr.png" class="header-logo">
+        <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
     </header>
 
+    <!-- NAVBAR FIXA -->
     <nav class="navbar-fixed">
         <ul class="nav-menu">
             <li><a href="index.html#home">Início</a></li>
             <li><a href="index.html#about">Sobre Nós</a></li>
             <li><a href="index.html#services">Serviços</a></li>
+            <li><a href="index.html#testimonials">Testemunhos</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
             <li><a href="index.html#contact">Contactos</a></li>
         </ul>
+
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt">🇵🇹</button>
+            <button class="lang-btn" data-lang="en">🇬🇧</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷</button>
+        </div>
     </nav>
 
+    <!-- CONTEÚDO -->
     <section class="section">
         <div class="section-inner" style="text-align:center; padding-top:80px;">
-            <h2 style="font-size:48px; margin-bottom:20px;">404</h2>
-            <p style="font-size:20px; margin-bottom:30px;">
-                A página que procuras não existe.
+
+            <h2 style="font-size:64px; margin-bottom:20px; color:#f7c600;">404</h2>
+
+            <p style="font-size:20px; margin-bottom:30px; color:#d0d0d0;">
+                A página que procuras não existe ou foi movida.
             </p>
-            <a href="index.html" class="btn-primary">Voltar ao início</a>
+
+            <a href="index.html" class="btn-primary" style="margin-top:20px;">
+                Voltar ao início
+            </a>
+
         </div>
     </section>
 
+    <!-- RODAPÉ FIXO -->
     <footer class="footer">
-        <p class="footer-copy">© 2026 HCR Digital Solutions</p>
+        <p class="footer-links">
+            <a href="politica-privacidade.html">Política de Privacidade</a> |
+            <a href="termos-utilizacao.html">Termos de Utilização</a> |
+            <span>Copyright</span>
+        </p>
+
+        <p class="footer-copy">
+            © 2026 HCR Digital Solutions — Todos os direitos reservados
+        </p>
     </footer>
 
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
