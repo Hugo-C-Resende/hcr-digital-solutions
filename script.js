@@ -1,12 +1,19 @@
-// SCROLL SUAVE ENTRE SECÇÕES
+/* ============================================================
+   SCROLL SUAVE ENTRE SECÇÕES
+   ============================================================ */
 const navLinks = document.querySelectorAll('.nav-menu a');
 const sections = document.querySelectorAll('section');
 
 navLinks.forEach(link => {
     link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+
+        // Links externos (páginas legais)
+        if (href.includes('.html')) return;
+
         e.preventDefault();
 
-        const id = link.getAttribute('href').substring(1);
+        const id = href.substring(1);
         const target = document.getElementById(id);
         if (!target) return;
 
@@ -26,7 +33,9 @@ navLinks.forEach(link => {
     });
 });
 
-// ATUALIZAR LINK ATIVO NO SCROLL
+/* ============================================================
+   ATUALIZAR LINK ATIVO NO SCROLL
+   ============================================================ */
 window.addEventListener('scroll', () => {
     let current = '';
 
@@ -45,8 +54,13 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// I18N
+/* ============================================================
+   SISTEMA DE TRADUÇÃO (PT / EN / FR)
+   ============================================================ */
 const translations = {
+    /* =======================
+       PORTUGUÊS
+       ======================= */
     pt: {
         'nav.home': 'Início',
         'nav.about': 'Sobre Nós',
@@ -98,7 +112,7 @@ const translations = {
         'footer.copyrightLabel':
             'Copyright',
 
-        // Páginas legais
+        /* Páginas legais */
         'privacy.title': 'Política de Privacidade',
         'privacy.intro': 'Esta Política de Privacidade descreve como a HCR Digital Solutions recolhe, utiliza e protege os dados pessoais dos utilizadores.',
         'privacy.section1Title': '1. Recolha de Dados',
@@ -122,6 +136,9 @@ const translations = {
         'terms.section4Text': 'A HCR Digital Solutions reserva-se o direito de atualizar estes termos a qualquer momento.'
     },
 
+    /* =======================
+       INGLÊS
+       ======================= */
     en: {
         'nav.home': 'Home',
         'nav.about': 'About',
@@ -173,6 +190,7 @@ const translations = {
         'footer.copyrightLabel':
             'Copyright',
 
+        /* Legal pages */
         'privacy.title': 'Privacy Policy',
         'privacy.intro': 'This Privacy Policy describes how HCR Digital Solutions collects, uses and protects users’ personal data.',
         'privacy.section1Title': '1. Data Collection',
@@ -196,6 +214,9 @@ const translations = {
         'terms.section4Text': 'HCR Digital Solutions reserves the right to update these terms at any time.'
     },
 
+    /* =======================
+       FRANCÊS
+       ======================= */
     fr: {
         'nav.home': 'Accueil',
         'nav.about': 'À propos',
@@ -247,6 +268,7 @@ const translations = {
         'footer.copyrightLabel':
             'Copyright',
 
+        /* Legal pages */
         'privacy.title': 'Politique de confidentialité',
         'privacy.intro': 'Cette politique de confidentialité décrit comment HCR Digital Solutions collecte, utilise et protège les données personnelles des utilisateurs.',
         'privacy.section1Title': '1. Collecte des données',
@@ -271,6 +293,9 @@ const translations = {
     }
 };
 
+/* ============================================================
+   APLICAR TRADUÇÃO
+   ============================================================ */
 let currentLang = 'pt';
 
 function applyTranslations(lang) {
@@ -287,7 +312,9 @@ function applyTranslations(lang) {
     });
 }
 
-// LANG SWITCHER
+/* ============================================================
+   BOTÕES DE LÍNGUA
+   ============================================================ */
 const langButtons = document.querySelectorAll('.lang-btn');
 
 langButtons.forEach(btn => {
@@ -302,5 +329,5 @@ langButtons.forEach(btn => {
     });
 });
 
-// Aplicar PT por defeito
+/* Aplicar PT por defeito */
 applyTranslations('pt');
