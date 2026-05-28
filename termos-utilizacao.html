@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Utilização — HCR Digital Solutions</title>
+    <title data-i18n="terms.title">Termos de Utilização</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,59 +12,74 @@
 </head>
 <body>
 
-<header class="header-fixed">
-    <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
-</header>
+    <!-- HEADER FIXO -->
+    <header class="header-fixed">
+        <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
+    </header>
 
-<nav class="navbar-fixed">
-    <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="pt">🇵🇹</button>
-        <button class="lang-btn" data-lang="en">🇬🇧</button>
-        <button class="lang-btn" data-lang="fr">🇫🇷</button>
-    </div>
-</nav>
+    <!-- NAVBAR FIXA -->
+    <nav class="navbar-fixed">
+        <ul class="nav-menu">
+            <li><a href="index.html#home" data-i18n="nav.home">Início</a></li>
+            <li><a href="index.html#about" data-i18n="nav.about">Sobre Nós</a></li>
+            <li><a href="index.html#services" data-i18n="nav.services">Serviços</a></li>
+            <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testemunhos</a></li>
+            <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contactos</a></li>
+        </ul>
 
-<section class="legal-section">
-    <div class="legal-inner">
-        <h1 data-i18n="terms.title">Termos de Utilização</h1>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt">🇵🇹</button>
+            <button class="lang-btn" data-lang="en">🇬🇧</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷</button>
+        </div>
+    </nav>
 
-        <p data-i18n="terms.intro">
-            Estes Termos de Utilização regulam o acesso e utilização do website da HCR Digital Solutions.
+    <!-- CONTEÚDO -->
+    <section class="section">
+        <div class="section-inner">
+
+            <h2 data-i18n="terms.title">Termos de Utilização</h2>
+            <p data-i18n="terms.intro">
+                Estes Termos de Utilização regulam o acesso e utilização do website da HCR Digital Solutions.
+            </p>
+
+            <h3 data-i18n="terms.section1Title">1. Aceitação dos Termos</h3>
+            <p data-i18n="terms.section1Text">
+                Ao utilizar este website, o utilizador concorda com os presentes termos e condições.
+            </p>
+
+            <h3 data-i18n="terms.section2Title">2. Responsabilidades</h3>
+            <p data-i18n="terms.section2Text">
+                O utilizador compromete-se a utilizar o website de forma responsável e a não comprometer a sua segurança.
+            </p>
+
+            <h3 data-i18n="terms.section3Title">3. Propriedade Intelectual</h3>
+            <p data-i18n="terms.section3Text">
+                Todo o conteúdo apresentado neste website é propriedade exclusiva da HCR Digital Solutions.
+            </p>
+
+            <h3 data-i18n="terms.section4Title">4. Alterações</h3>
+            <p data-i18n="terms.section4Text">
+                A HCR Digital Solutions reserva-se o direito de atualizar estes termos a qualquer momento.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ FIXO -->
+    <footer class="footer">
+        <p class="footer-links">
+            <a href="politica-privacidade.html" data-i18n="footer.privacy">Política de Privacidade</a> |
+            <a href="termos-utilizacao.html" data-i18n="footer.terms">Termos de Utilização</a> |
+            <span data-i18n="footer.copyrightLabel">Copyright</span>
         </p>
 
-        <h2 data-i18n="terms.section1Title">1. Aceitação dos Termos</h2>
-        <p data-i18n="terms.section1Text">
-            Ao utilizar este website, o utilizador concorda com os presentes termos e condições.
+        <p class="footer-copy" data-i18n="footer.copyright">
+            © 2026 HCR Digital Solutions — Todos os direitos reservados
         </p>
+    </footer>
 
-        <h2 data-i18n="terms.section2Title">2. Responsabilidades</h2>
-        <p data-i18n="terms.section2Text">
-            O utilizador compromete-se a utilizar o website de forma responsável e a não comprometer a sua segurança.
-        </p>
-
-        <h2 data-i18n="terms.section3Title">3. Propriedade Intelectual</h2>
-        <p data-i18n="terms.section3Text">
-            Todo o conteúdo apresentado neste website é propriedade exclusiva da HCR Digital Solutions.
-        </p>
-
-        <h2 data-i18n="terms.section4Title">4. Alterações</h2>
-        <p data-i18n="terms.section4Text">
-            A HCR Digital Solutions reserva-se o direito de atualizar estes termos a qualquer momento.
-        </p>
-    </div>
-</section>
-
-<footer class="footer">
-    <p class="footer-links">
-        <a href="politica-privacidade.html" target="_blank" rel="noopener" data-i18n="footer.privacy">Política de Privacidade</a> |
-        <a href="termos-utilizacao.html" target="_blank" rel="noopener" data-i18n="footer.terms">Termos de Utilização</a> |
-        <span data-i18n="footer.copyrightLabel">Copyright</span>
-    </p>
-    <p class="footer-copy" data-i18n="footer.copyright">
-        © 2026 HCR Digital Solutions — Todos os direitos reservados
-    </p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
