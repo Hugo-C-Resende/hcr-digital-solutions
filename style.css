@@ -362,4 +362,33 @@ section {
     .section {
         padding: 80px 16px;
     }
+.legal-section {
+    padding: 200px 8% 80px;
+    background: #050816;
 }
+
+.legal-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-inner h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f7c600;
+}
+
+.legal-inner h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #f7c600;
+}
+
+.legal-inner p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d0d0d0;
+    margin-bottom: 14px;
+}
+
