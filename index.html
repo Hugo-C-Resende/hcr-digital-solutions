@@ -227,29 +227,61 @@
     </section>
 
     <!-- CONTACTOS -->
-   <section id="contact" class="section">
-    <div class="section-inner">
-        <h2 data-i18n="contact.title">Contactos</h2>
-        <p data-i18n="contact.text">Envia-nos uma mensagem com o contexto do teu projeto:</p>
+    <section id="contact" class="section">
+        <div class="section-inner">
+            <h2 data-i18n="contact.title">Contactos</h2>
+            <p data-i18n="contact.text">
+                Envia-nos uma mensagem com o contexto do teu projeto:
+            </p>
 
-        <div class="contact-box">
-            <form action="mailto:hugocresende@hotmail.com" method="POST" enctype="text/plain">
+            <div class="contact-layout">
+                <div class="contact-box">
+                    <form action="mailto:hugocresende@hotmail.com" method="POST" enctype="text/plain">
 
-                <label data-i18n="contact.form.name">Nome</label>
-                <input type="text" name="Nome" required>
+                        <div class="form-row">
+                            <label data-i18n="contact.form.name">Nome *</label>
+                            <input type="text" name="Nome" required>
+                        </div>
 
-                <label data-i18n="contact.form.email">Email</label>
-                <input type="email" name="Email" required>
+                        <div class="form-row">
+                            <label data-i18n="contact.form.surname">Sobrenome *</label>
+                            <input type="text" name="Sobrenome" required>
+                        </div>
 
-                <label data-i18n="contact.form.message">Mensagem</label>
-                <textarea name="Mensagem" rows="5" required></textarea>
+                        <div class="form-row">
+                            <label data-i18n="contact.form.email">Email *</label>
+                            <input type="email" name="Email" required>
+                        </div>
 
-                <button type="submit" class="btn-primary" data-i18n="contact.form.send">Enviar</button>
-            </form>
+                        <div class="form-row">
+                            <label data-i18n="contact.form.phone">Telefone *</label>
+                            <input type="tel" name="Telefone" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label data-i18n="contact.form.message">Escreve a tua mensagem</label>
+                            <textarea name="Mensagem" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary" data-i18n="contact.form.send">
+                                Submeter
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps?q=Santa%20Maria%20da%20Feira&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa Santa Maria da Feira">
+                    </iframe>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- RODAPÉ FIXO -->
     <footer class="footer">
