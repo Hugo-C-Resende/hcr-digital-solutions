@@ -1,5 +1,8 @@
 let currentLang = "pt";
 
+/* ============================================================
+   TRADUÇÕES
+   ============================================================ */
 const translations = {
     pt: {
         "nav.home": "Início",
@@ -61,6 +64,9 @@ const translations = {
         "footer.copyright": "© 2026 HCR Digital Solutions — Todos os direitos reservados"
     },
 
+    /* ============================================================
+       ENGLISH
+       ============================================================ */
     en: {
         "nav.home": "Home",
         "nav.about": "About",
@@ -77,16 +83,16 @@ const translations = {
         "hero.boxTagline": "Digital · Automation · Quality",
 
         "about.title": "About Us",
-        "about.text": "HCR Digital Solutions develops modern digital solutions focused on automation, efficiency and simplicity. We work with companies that value precision, clarity and tangible results.",
+        "about.text": "HCR Digital Solutions develops modern digital solutions focused on automation, efficiency and simplicity.",
         "about.missionTitle": "Mission",
-        "about.missionText": "Create digital solutions that simplify processes, reduce repetitive tasks and increase operational efficiency.",
+        "about.missionText": "Create digital solutions that simplify processes and increase efficiency.",
         "about.visionTitle": "Vision",
-        "about.visionText": "Be a strategic partner for companies that want to evolve with technology, automation and premium digital experience.",
+        "about.visionText": "Be a strategic partner for companies evolving with technology.",
         "about.valuesTitle": "Values",
-        "about.valuesText": "Precision, transparency, innovation, simplicity and full commitment to results.",
+        "about.valuesText": "Precision, transparency, innovation and commitment to results.",
 
         "services.title": "Services",
-        "services.lead": "We design tailored solutions aligned with your operational and strategic reality.",
+        "services.lead": "We design tailored solutions aligned with your operational reality.",
         "services.1.title": "Digital Consulting",
         "services.1.text": "Process analysis, digital diagnosis and transformation roadmap.",
         "services.2.title": "Automation & Tools",
@@ -95,19 +101,19 @@ const translations = {
         "services.3.text": "Websites, internal portals and professional digital experiences.",
 
         "projects.title": "Projects",
-        "projects.text": "Some of the projects developed with focus on efficiency, automation and digital experience.",
+        "projects.text": "Some of the projects developed with focus on efficiency and automation.",
         "projects.1.title": "Internal Management Portal",
-        "projects.1.text": "Custom platform for operational management, dashboards and internal automations.",
+        "projects.1.text": "Custom platform for operational management.",
         "projects.2.title": "Sales Automation System",
-        "projects.2.text": "Automation of sales processes, CRM integration and smart reporting.",
+        "projects.2.text": "Automation of sales processes and smart reporting.",
         "projects.3.title": "Premium Corporate Website",
-        "projects.3.text": "Corporate website with premium design, multilingual and full SEO optimization.",
+        "projects.3.text": "Corporate website with premium design and full SEO.",
 
         "faq.title": "FAQ",
-        "faq.text": "We work per project or on an ongoing basis, always with clear objectives and transparent communication.",
+        "faq.text": "We work per project or continuously, always with clear communication.",
 
         "contact.title": "Contact",
-        "contact.text": "Send us a message with the context of your project:",
+        "contact.text": "Send us a message with your project context:",
         "contact.form.name": "First name *",
         "contact.form.surname": "Last name *",
         "contact.form.email": "Email *",
@@ -121,6 +127,9 @@ const translations = {
         "footer.copyright": "© 2026 HCR Digital Solutions — All rights reserved"
     },
 
+    /* ============================================================
+       FRENCH
+       ============================================================ */
     fr: {
         "nav.home": "Accueil",
         "nav.about": "À propos",
@@ -131,40 +140,40 @@ const translations = {
 
         "hero.title": "Solutions numériques intelligentes pour entreprises modernes",
         "hero.subtitle": "Technologie, automatisation et conseil orientés résultats.",
-        "hero.text": "Nous concevons et mettons en œuvre des solutions numériques qui relient processus, données et équipes — avec rigueur, simplicité et focus utilisateur.",
+        "hero.text": "Nous concevons des solutions numériques qui relient processus, données et équipes.",
         "hero.btnServices": "Découvrir les services",
         "hero.btnContact": "Nous contacter",
         "hero.boxTagline": "Digital · Automatisation · Qualité",
 
         "about.title": "À propos de nous",
-        "about.text": "HCR Digital Solutions développe des solutions numériques modernes, axées sur l’automatisation, l’efficacité et la simplicité. Nous travaillons avec des entreprises qui valorisent la précision, la clarté et des résultats concrets.",
+        "about.text": "HCR Digital Solutions développe des solutions numériques modernes axées sur l’efficacité.",
         "about.missionTitle": "Mission",
-        "about.missionText": "Créer des solutions numériques qui simplifient les processus, réduisent les tâches répétitives et augmentent l’efficacité opérationnelle.",
+        "about.missionText": "Créer des solutions numériques qui simplifient les processus.",
         "about.visionTitle": "Vision",
-        "about.visionText": "Être le partenaire stratégique des entreprises qui souhaitent évoluer avec la technologie, l’automatisation et une expérience digitale premium.",
+        "about.visionText": "Être un partenaire stratégique pour les entreprises innovantes.",
         "about.valuesTitle": "Valeurs",
-        "about.valuesText": "Précision, transparence, innovation, simplicité et engagement total envers les résultats.",
+        "about.valuesText": "Précision, transparence, innovation et engagement.",
 
         "services.title": "Services",
-        "services.lead": "Nous concevons des solutions sur mesure, alignées sur la réalité opérationnelle et stratégique de votre entreprise.",
+        "services.lead": "Nous concevons des solutions sur mesure adaptées à votre réalité.",
         "services.1.title": "Conseil Digital",
-        "services.1.text": "Analyse des processus, diagnostic digital et feuille de route de transformation.",
+        "services.1.text": "Analyse des processus et feuille de route digitale.",
         "services.2.title": "Automatisation & Outils",
-        "services.2.text": "Tableaux de bord, automatisations, intégrations et outils internes.",
+        "services.2.text": "Dashboards, automatisations et intégrations.",
         "services.3.title": "Web & Expérience Digitale",
-        "services.3.text": "Sites web, portails internes et expériences digitales professionnelles.",
+        "services.3.text": "Sites web et expériences digitales professionnelles.",
 
         "projects.title": "Projets",
-        "projects.text": "Quelques projets développés avec un focus sur l’efficacité, l’automatisation et l’expérience digitale.",
+        "projects.text": "Quelques projets développés avec un focus sur l’efficacité.",
         "projects.1.title": "Portail Interne de Gestion",
-        "projects.1.text": "Plateforme personnalisée pour la gestion opérationnelle, tableaux de bord et automatisations internes.",
+        "projects.1.text": "Plateforme personnalisée pour la gestion opérationnelle.",
         "projects.2.title": "Système d’Automatisation Commerciale",
-        "projects.2.text": "Automatisation des processus commerciaux, intégration CRM et rapports intelligents.",
+        "projects.2.text": "Automatisation des processus commerciaux.",
         "projects.3.title": "Site Corporate Premium",
-        "projects.3.text": "Site institutionnel avec design premium, multilingue et optimisation SEO complète.",
+        "projects.3.text": "Site institutionnel premium avec SEO complet.",
 
         "faq.title": "FAQ",
-        "faq.text": "Nous travaillons par projet ou en continu, toujours avec des objectifs clairs et une communication transparente.",
+        "faq.text": "Nous travaillons par projet ou en continu, avec communication claire.",
 
         "contact.title": "Contacts",
         "contact.text": "Envoyez-nous un message avec le contexte de votre projet :",
@@ -182,9 +191,12 @@ const translations = {
     }
 };
 
+/* ============================================================
+   FUNÇÕES DE TRADUÇÃO
+   ============================================================ */
 const t = (key) => {
-    return (translations[currentLang] && translations[currentLang][key]) ||
-           (translations["pt"] && translations["pt"][key]) ||
+    return translations[currentLang]?.[key] ||
+           translations["pt"]?.[key] ||
            key;
 };
 
@@ -192,7 +204,8 @@ function applyTranslations() {
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         const value = t(key);
-        if (el.tagName.toLowerCase() === "input" || el.tagName.toLowerCase() === "textarea") {
+
+        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
             el.placeholder = value;
         } else {
             el.textContent = value;
@@ -201,57 +214,56 @@ function applyTranslations() {
 }
 
 function setLanguage(lang) {
-    if (!translations[lang]) lang = "pt";
-    currentLang = lang;
+    currentLang = translations[lang] ? lang : "pt";
     applyTranslations();
 
     document.querySelectorAll(".lang-btn").forEach(btn => {
-        btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+        btn.classList.toggle("active", btn.dataset.lang === lang);
     });
 }
 
+/* ============================================================
+   SCROLL SUAVE + NAV ACTIVE
+   ============================================================ */
 document.addEventListener("DOMContentLoaded", () => {
     applyTranslations();
 
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            const lang = btn.getAttribute("data-lang");
-            setLanguage(lang);
-        });
-    });
+    const OFFSET = 206; // 150 header + 56 navbar
 
-    const navLinks = document.querySelectorAll(".nav-menu a");
-    navLinks.forEach(link => {
+    /* Scroll suave */
+    document.querySelectorAll(".nav-menu a").forEach(link => {
         link.addEventListener("click", (e) => {
             const href = link.getAttribute("href");
-            if (href && href.startsWith("#")) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const offset = 206; // header + navbar
-                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-                    window.scrollTo({ top, behavior: "smooth" });
-                }
-            }
+            if (!href.startsWith("#")) return;
+
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (!target) return;
+
+            const top = target.offsetTop - OFFSET;
+            window.scrollTo({ top, behavior: "smooth" });
         });
     });
 
+    /* Secção ativa */
     const sections = document.querySelectorAll("section[id]");
     window.addEventListener("scroll", () => {
         let current = "";
+
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 216; // 206 + margem de segurança
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute("id");
+            const sectionTop = section.offsetTop - (OFFSET + 10);
+            if (window.scrollY >= sectionTop) {
+                current = section.id;
             }
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove("active");
-            const href = link.getAttribute("href");
-            if (href === `#${current}`) {
-                link.classList.add("active");
-            }
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
         });
+    });
+
+    /* Botões de idioma */
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
     });
 });
