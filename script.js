@@ -1,333 +1,246 @@
-/* ============================================================
-   SCROLL SUAVE ENTRE SECÇÕES
-   ============================================================ */
-const navLinks = document.querySelectorAll('.nav-menu a');
-const sections = document.querySelectorAll('section');
+let currentLang = "pt";
 
-navLinks.forEach(link => {
-    link.addEventListener('click', e => {
-        const href = link.getAttribute('href');
-
-        // Links externos (páginas legais)
-        if (href.includes('.html')) return;
-
-        e.preventDefault();
-
-        const id = href.substring(1);
-        const target = document.getElementById(id);
-        if (!target) return;
-
-        const headerHeight = document.querySelector('.header-fixed').offsetHeight;
-        const navbarHeight = document.querySelector('.navbar-fixed').offsetHeight;
-        const offset = headerHeight + navbarHeight;
-
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-
-        window.scrollTo({
-            top,
-            behavior: 'smooth'
-        });
-
-        navLinks.forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-    });
-});
-
-/* ============================================================
-   ATUALIZAR LINK ATIVO NO SCROLL
-   ============================================================ */
-window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 240;
-        if (window.scrollY >= sectionTop) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href').substring(1) === current) {
-            a.classList.add('active');
-        }
-    });
-});
-
-/* ============================================================
-   SISTEMA DE TRADUÇÃO (PT / EN / FR)
-   ============================================================ */
 const translations = {
-    /* =======================
-       PORTUGUÊS
-       ======================= */
     pt: {
-        'nav.home': 'Início',
-        'nav.about': 'Sobre Nós',
-        'nav.services': 'Serviços',
-        'nav.testimonials': 'Testemunhos',
-        'nav.faq': 'FAQ',
-        'nav.contact': 'Contactos',
+        "nav.home": "Início",
+        "nav.about": "Sobre Nós",
+        "nav.services": "Serviços",
+        "nav.projects": "Projetos",
+        "nav.faq": "FAQ",
+        "nav.contact": "Contactos",
 
-        'hero.title': 'Soluções Digitais Inteligentes para Empresas Modernas',
-        'hero.subtitle': 'Tecnologia, automação e consultoria com foco em resultados.',
-        'hero.text': 'Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.',
-        'hero.btnServices': 'Explorar Serviços',
-        'hero.btnContact': 'Contactar',
-        'hero.boxTagline': 'Digital · Automação · Qualidade',
+        "hero.title": "Soluções Digitais Inteligentes para Empresas Modernas",
+        "hero.subtitle": "Tecnologia, automação e consultoria com foco em resultados.",
+        "hero.text": "Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.",
+        "hero.btnServices": "Explorar Serviços",
+        "hero.btnContact": "Contactar",
+        "hero.boxTagline": "Digital · Automação · Qualidade",
 
-        'about.title': 'Sobre Nós',
-        'about.text': 'A HCR Digital Solutions é especializada em consultoria digital, automação e desenvolvimento de soluções tecnológicas centradas no utilizador.',
-        'about.missionTitle': 'Missão',
-        'about.missionText': 'Criar soluções digitais modernas que simplificam processos e aumentam a eficiência empresarial.',
-        'about.visionTitle': 'Visão',
-        'about.visionText': 'Ser parceiro estratégico de empresas que querem crescer com tecnologia e automação inteligente.',
-        'about.valuesTitle': 'Valores',
-        'about.valuesText': 'Precisão, transparência, simplicidade, inovação e compromisso com resultados concretos.',
+        "about.title": "Sobre Nós",
+        "about.text": "A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.",
+        "about.missionTitle": "Missão",
+        "about.missionText": "Criar soluções digitais que simplificam processos, reduzem tarefas repetitivas e aumentam a eficiência operacional.",
+        "about.visionTitle": "Visão",
+        "about.visionText": "Ser parceiro estratégico de empresas que procuram evoluir com tecnologia, automação e experiência digital premium.",
+        "about.valuesTitle": "Valores",
+        "about.valuesText": "Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.",
 
-        'services.title': 'Serviços',
-        'services.lead': 'Desenhamos soluções à medida, alinhadas com a realidade operacional e estratégica da tua empresa.',
-        'services.1.title': 'Consultoria Digital',
-        'services.1.text': 'Análise de processos, diagnóstico digital e roadmap de transformação.',
-        'services.2.title': 'Automação & Ferramentas',
-        'services.2.text': 'Dashboards, automações, integrações e ferramentas internas.',
-        'services.3.title': 'Web & Experiência Digital',
-        'services.3.text': 'Websites, portais internos e experiências digitais profissionais.',
+        "services.title": "Serviços",
+        "services.lead": "Desenhamos soluções à medida, alinhadas com a realidade operacional e estratégica da tua empresa.",
+        "services.1.title": "Consultoria Digital",
+        "services.1.text": "Análise de processos, diagnóstico digital e roadmap de transformação.",
+        "services.2.title": "Automação & Ferramentas",
+        "services.2.text": "Dashboards, automações, integrações e ferramentas internas.",
+        "services.3.title": "Web & Experiência Digital",
+        "services.3.text": "Websites, portais internos e experiências digitais profissionais.",
 
-        'testimonials.title': 'Testemunhos',
-        'testimonials.text': 'Empresas que já trabalham com a HCR destacam a clareza, o rigor e a capacidade de transformar necessidades complexas em soluções simples.',
+        "projects.title": "Projetos",
+        "projects.text": "Alguns dos projetos desenvolvidos com foco em eficiência, automação e experiência digital.",
+        "projects.1.title": "Portal Interno de Gestão",
+        "projects.1.text": "Plataforma personalizada para gestão operacional, dashboards e automações internas.",
+        "projects.2.title": "Sistema de Automação Comercial",
+        "projects.2.text": "Automação de processos comerciais, integração com CRM e relatórios inteligentes.",
+        "projects.3.title": "Website Corporativo Premium",
+        "projects.3.text": "Website institucional com design premium, multilingue e otimização SEO completa.",
 
-        'faq.title': 'FAQ',
-        'faq.text': 'Trabalhamos por projeto ou em regime contínuo, sempre com objetivos claros e comunicação transparente.',
+        "faq.title": "FAQ",
+        "faq.text": "Trabalhamos por projeto ou em regime contínuo, sempre com objetivos claros e comunicação transparente.",
 
-        'contact.title': 'Contactos',
-        'contact.text': 'Envia-nos um email com o contexto do teu projeto:',
-        'contact.emailLabel': 'contacto@hcrdigitalsolutions.com',
-        'contact.hours': 'Horário: 09h00 – 18h00 (Seg–Sex)',
+        "contact.title": "Contactos",
+        "contact.text": "Envia-nos um email com o contexto do teu projeto:",
+        "contact.emailLabel": "contacto@hcrdigitalsolutions.com",
+        "contact.hours": "Horário: 09h00 – 18h00 (Seg–Sex)",
 
-        'footer.privacy': 'Política de Privacidade',
-        'footer.terms': 'Termos de Utilização',
-        'footer.copyright':
-            '© 2026 HCR Digital Solutions — Todos os direitos reservados',
-        'footer.copyrightLabel':
-            'Copyright',
-
-        /* Páginas legais */
-        'privacy.title': 'Política de Privacidade',
-        'privacy.intro': 'Esta Política de Privacidade descreve como a HCR Digital Solutions recolhe, utiliza e protege os dados pessoais dos utilizadores.',
-        'privacy.section1Title': '1. Recolha de Dados',
-        'privacy.section1Text': 'Recolhemos apenas os dados necessários para comunicação, prestação de serviços e melhoria contínua.',
-        'privacy.section2Title': '2. Utilização dos Dados',
-        'privacy.section2Text': 'Os dados são utilizados exclusivamente para fins operacionais, comerciais e legais associados aos serviços prestados.',
-        'privacy.section3Title': '3. Direitos do Utilizador',
-        'privacy.section3Text': 'O utilizador pode solicitar acesso, correção ou eliminação dos seus dados pessoais a qualquer momento.',
-        'privacy.section4Title': '4. Contacto',
-        'privacy.section4Text': 'Para questões relacionadas com privacidade, contacte-nos através de: contacto@hcrdigitalsolutions.com',
-
-        'terms.title': 'Termos de Utilização',
-        'terms.intro': 'Estes Termos de Utilização regulam o acesso e utilização do website da HCR Digital Solutions.',
-        'terms.section1Title': '1. Aceitação dos Termos',
-        'terms.section1Text': 'Ao utilizar este website, o utilizador concorda com os presentes termos e condições.',
-        'terms.section2Title': '2. Responsabilidades',
-        'terms.section2Text': 'O utilizador compromete-se a utilizar o website de forma responsável e a não comprometer a sua segurança.',
-        'terms.section3Title': '3. Propriedade Intelectual',
-        'terms.section3Text': 'Todo o conteúdo apresentado neste website é propriedade exclusiva da HCR Digital Solutions.',
-        'terms.section4Title': '4. Alterações',
-        'terms.section4Text': 'A HCR Digital Solutions reserva-se o direito de atualizar estes termos a qualquer momento.'
+        "footer.privacy": "Política de Privacidade",
+        "footer.terms": "Termos de Utilização",
+        "footer.copyrightLabel": "Copyright",
+        "footer.copyright": "© 2026 HCR Digital Solutions — Todos os direitos reservados"
     },
 
-    /* =======================
-       INGLÊS
-       ======================= */
     en: {
-        'nav.home': 'Home',
-        'nav.about': 'About',
-        'nav.services': 'Services',
-        'nav.testimonials': 'Testimonials',
-        'nav.faq': 'FAQ',
-        'nav.contact': 'Contact',
+        "nav.home": "Home",
+        "nav.about": "About",
+        "nav.services": "Services",
+        "nav.projects": "Projects",
+        "nav.faq": "FAQ",
+        "nav.contact": "Contact",
 
-        'hero.title': 'Intelligent Digital Solutions for Modern Businesses',
-        'hero.subtitle': 'Technology, automation and consulting focused on results.',
-        'hero.text': 'We design and implement digital solutions that connect processes, data and teams — with rigour, simplicity and user focus.',
-        'hero.btnServices': 'Explore Services',
-        'hero.btnContact': 'Get in Touch',
-        'hero.boxTagline': 'Digital · Automation · Quality',
+        "hero.title": "Smart Digital Solutions for Modern Businesses",
+        "hero.subtitle": "Technology, automation and consulting focused on results.",
+        "hero.text": "We design and implement digital solutions that connect processes, data and teams — with rigor, simplicity and user focus.",
+        "hero.btnServices": "Explore Services",
+        "hero.btnContact": "Get in Touch",
+        "hero.boxTagline": "Digital · Automation · Quality",
 
-        'about.title': 'About Us',
-        'about.text': 'HCR Digital Solutions specialises in digital consulting, automation and user‑centric technology solutions.',
-        'about.missionTitle': 'Mission',
-        'about.missionText': 'Create modern digital solutions that simplify processes and increase business efficiency.',
-        'about.visionTitle': 'Vision',
-        'about.visionText': 'Be a strategic partner for companies that want to grow with technology and intelligent automation.',
-        'about.valuesTitle': 'Values',
-        'about.valuesText': 'Precision, transparency, simplicity, innovation and commitment to tangible results.',
+        "about.title": "About Us",
+        "about.text": "HCR Digital Solutions develops modern digital solutions focused on automation, efficiency and simplicity. We work with companies that value precision, clarity and tangible results.",
+        "about.missionTitle": "Mission",
+        "about.missionText": "Create digital solutions that simplify processes, reduce repetitive tasks and increase operational efficiency.",
+        "about.visionTitle": "Vision",
+        "about.visionText": "Be a strategic partner for companies that want to evolve with technology, automation and premium digital experience.",
+        "about.valuesTitle": "Values",
+        "about.valuesText": "Precision, transparency, innovation, simplicity and full commitment to results.",
 
-        'services.title': 'Services',
-        'services.lead': 'We design tailored solutions aligned with your operational and strategic reality.',
-        'services.1.title': 'Digital Consulting',
-        'services.1.text': 'Process analysis, digital diagnosis and transformation roadmap.',
-        'services.2.title': 'Automation & Tools',
-        'services.2.text': 'Dashboards, automations, integrations and internal tools.',
-        'services.3.title': 'Web & Digital Experience',
-        'services.3.text': 'Websites, internal portals and professional digital experiences.',
+        "services.title": "Services",
+        "services.lead": "We design tailored solutions aligned with your operational and strategic reality.",
+        "services.1.title": "Digital Consulting",
+        "services.1.text": "Process analysis, digital diagnosis and transformation roadmap.",
+        "services.2.title": "Automation & Tools",
+        "services.2.text": "Dashboards, automations, integrations and internal tools.",
+        "services.3.title": "Web & Digital Experience",
+        "services.3.text": "Websites, internal portals and professional digital experiences.",
 
-        'testimonials.title': 'Testimonials',
-        'testimonials.text': 'Companies working with HCR highlight clarity, rigour and the ability to turn complex needs into simple solutions.',
+        "projects.title": "Projects",
+        "projects.text": "Some of the projects developed with focus on efficiency, automation and digital experience.",
+        "projects.1.title": "Internal Management Portal",
+        "projects.1.text": "Custom platform for operational management, dashboards and internal automations.",
+        "projects.2.title": "Sales Automation System",
+        "projects.2.text": "Automation of sales processes, CRM integration and smart reporting.",
+        "projects.3.title": "Premium Corporate Website",
+        "projects.3.text": "Corporate website with premium design, multilingual and full SEO optimization.",
 
-        'faq.title': 'FAQ',
-        'faq.text': 'We work on a project basis or ongoing, always with clear objectives and transparent communication.',
+        "faq.title": "FAQ",
+        "faq.text": "We work per project or on an ongoing basis, always with clear objectives and transparent communication.",
 
-        'contact.title': 'Contact',
-        'contact.text': 'Send us an email with the context of your project:',
-        'contact.emailLabel': 'contact@hcrdigitalsolutions.com',
-        'contact.hours': 'Opening hours: 09:00 – 18:00 (Mon–Fri)',
+        "contact.title": "Contact",
+        "contact.text": "Send us an email with the context of your project:",
+        "contact.emailLabel": "contacto@hcrdigitalsolutions.com",
+        "contact.hours": "Schedule: 09:00 – 18:00 (Mon–Fri)",
 
-        'footer.privacy': 'Privacy Policy',
-        'footer.terms': 'Terms of Use',
-        'footer.copyright':
-            '© 2026 HCR Digital Solutions — All rights reserved',
-        'footer.copyrightLabel':
-            'Copyright',
-
-        /* Legal pages */
-        'privacy.title': 'Privacy Policy',
-        'privacy.intro': 'This Privacy Policy describes how HCR Digital Solutions collects, uses and protects users’ personal data.',
-        'privacy.section1Title': '1. Data Collection',
-        'privacy.section1Text': 'We only collect the data necessary for communication, service delivery and continuous improvement.',
-        'privacy.section2Title': '2. Use of Data',
-        'privacy.section2Text': 'Data is used exclusively for operational, commercial and legal purposes related to the services provided.',
-        'privacy.section3Title': '3. User Rights',
-        'privacy.section3Text': 'Users may request access, correction or deletion of their personal data at any time.',
-        'privacy.section4Title': '4. Contact',
-        'privacy.section4Text': 'For privacy-related questions, contact us at: contact@hcrdigitalsolutions.com',
-
-        'terms.title': 'Terms of Use',
-        'terms.intro': 'These Terms of Use govern access to and use of the HCR Digital Solutions website.',
-        'terms.section1Title': '1. Acceptance of Terms',
-        'terms.section1Text': 'By using this website, you agree to these terms and conditions.',
-        'terms.section2Title': '2. Responsibilities',
-        'terms.section2Text': 'You agree to use the website responsibly and not compromise its security.',
-        'terms.section3Title': '3. Intellectual Property',
-        'terms.section3Text': 'All content displayed on this website is the exclusive property of HCR Digital Solutions.',
-        'terms.section4Title': '4. Changes',
-        'terms.section4Text': 'HCR Digital Solutions reserves the right to update these terms at any time.'
+        "footer.privacy": "Privacy Policy",
+        "footer.terms": "Terms of Use",
+        "footer.copyrightLabel": "Copyright",
+        "footer.copyright": "© 2026 HCR Digital Solutions — All rights reserved"
     },
 
-    /* =======================
-       FRANCÊS
-       ======================= */
     fr: {
-        'nav.home': 'Accueil',
-        'nav.about': 'À propos',
-        'nav.services': 'Services',
-        'nav.testimonials': 'Témoignages',
-        'nav.faq': 'FAQ',
-        'nav.contact': 'Contacts',
+        "nav.home": "Accueil",
+        "nav.about": "À propos",
+        "nav.services": "Services",
+        "nav.projects": "Projets",
+        "nav.faq": "FAQ",
+        "nav.contact": "Contacts",
 
-        'hero.title': 'Solutions numériques intelligentes pour entreprises modernes',
-        'hero.subtitle': 'Technologie, automatisation et conseil orientés résultats.',
-        'hero.text': 'Nous concevons et mettons en œuvre des solutions numériques qui relient processus, données et équipes — avec rigueur, simplicité et focus utilisateur.',
-        'hero.btnServices': 'Découvrir les services',
-        'hero.btnContact': 'Nous contacter',
-        'hero.boxTagline': 'Digital · Automatisation · Qualité',
+        "hero.title": "Solutions numériques intelligentes pour entreprises modernes",
+        "hero.subtitle": "Technologie, automatisation et conseil orientés résultats.",
+        "hero.text": "Nous concevons et mettons en œuvre des solutions numériques qui relient processus, données et équipes — avec rigueur, simplicité et focus utilisateur.",
+        "hero.btnServices": "Découvrir les services",
+        "hero.btnContact": "Nous contacter",
+        "hero.boxTagline": "Digital · Automatisation · Qualité",
 
-        'about.title': 'À propos de nous',
-        'about.text': 'HCR Digital Solutions est spécialisée dans le conseil digital, l’automatisation et les solutions technologiques centrées sur l’utilisateur.',
-        'about.missionTitle': 'Mission',
-        'about.missionText': 'Créer des solutions numériques modernes qui simplifient les processus et augmentent l’efficacité des entreprises.',
-        'about.visionTitle': 'Vision',
-        'about.visionText': 'Être un partenaire stratégique pour les entreprises qui souhaitent croître grâce à la technologie et à l’automatisation intelligente.',
-        'about.valuesTitle': 'Valeurs',
-        'about.valuesText': 'Précision, transparence, simplicité, innovation et engagement envers des résultats concrets.',
+        "about.title": "À propos de nous",
+        "about.text": "HCR Digital Solutions développe des solutions numériques modernes, axées sur l’automatisation, l’efficacité et la simplicité. Nous travaillons avec des entreprises qui valorisent la précision, la clarté et des résultats concrets.",
+        "about.missionTitle": "Mission",
+        "about.missionText": "Créer des solutions numériques qui simplifient les processus, réduisent les tâches répétitives et augmentent l’efficacité opérationnelle.",
+        "about.visionTitle": "Vision",
+        "about.visionText": "Être le partenaire stratégique des entreprises qui souhaitent évoluer avec la technologie, l’automatisation et une expérience digitale premium.",
+        "about.valuesTitle": "Valeurs",
+        "about.valuesText": "Précision, transparence, innovation, simplicité et engagement total envers les résultats.",
 
-        'services.title': 'Services',
-        'services.lead': 'Nous concevons des solutions sur mesure, alignées sur la réalité opérationnelle et stratégique de votre entreprise.',
-        'services.1.title': 'Conseil digital',
-        'services.1.text': 'Analyse des processus, diagnostic digital et feuille de route de transformation.',
-        'services.2.title': 'Automatisation & Outils',
-        'services.2.text': 'Tableaux de bord, automatisations, intégrations et outils internes.',
-        'services.3.title': 'Web & Expérience digitale',
-        'services.3.text': 'Sites web, portails internes et expériences digitales professionnelles.',
+        "services.title": "Services",
+        "services.lead": "Nous concevons des solutions sur mesure, alignées sur la réalité opérationnelle et stratégique de votre entreprise.",
+        "services.1.title": "Conseil Digital",
+        "services.1.text": "Analyse des processus, diagnostic digital et feuille de route de transformation.",
+        "services.2.title": "Automatisation & Outils",
+        "services.2.text": "Tableaux de bord, automatisations, intégrations et outils internes.",
+        "services.3.title": "Web & Expérience Digitale",
+        "services.3.text": "Sites web, portails internes et expériences digitales professionnelles.",
 
-        'testimonials.title': 'Témoignages',
-        'testimonials.text': 'Les entreprises qui travaillent avec HCR soulignent la clarté, la rigueur et la capacité à transformer des besoins complexes en solutions simples.',
+        "projects.title": "Projets",
+        "projects.text": "Quelques projets développés avec un focus sur l’efficacité, l’automatisation et l’expérience digitale.",
+        "projects.1.title": "Portail Interne de Gestion",
+        "projects.1.text": "Plateforme personnalisée pour la gestion opérationnelle, tableaux de bord et automatisations internes.",
+        "projects.2.title": "Système d’Automatisation Commerciale",
+        "projects.2.text": "Automatisation des processus commerciaux, intégration CRM et rapports intelligents.",
+        "projects.3.title": "Site Corporate Premium",
+        "projects.3.text": "Site institutionnel avec design premium, multilingue et optimisation SEO complète.",
 
-        'faq.title': 'FAQ',
-        'faq.text': 'Nous travaillons au projet ou en continu, toujours avec des objectifs clairs et une communication transparente.',
+        "faq.title": "FAQ",
+        "faq.text": "Nous travaillons par projet ou en continu, toujours avec des objectifs clairs et une communication transparente.",
 
-        'contact.title': 'Contacts',
-        'contact.text': 'Envoyez‑nous un email avec le contexte de votre projet :',
-        'contact.emailLabel': 'contact@hcrdigitalsolutions.com',
-        'contact.hours': 'Horaires : 09h00 – 18h00 (Lun–Ven)',
+        "contact.title": "Contacts",
+        "contact.text": "Envoyez-nous un email avec le contexte de votre projet :",
+        "contact.emailLabel": "contacto@hcrdigitalsolutions.com",
+        "contact.hours": "Horaires : 09h00 – 18h00 (Lun–Ven)",
 
-        'footer.privacy': 'Politique de confidentialité',
-        'footer.terms': "Conditions d'utilisation",
-        'footer.copyright':
-            '© 2026 HCR Digital Solutions — Tous droits réservés',
-        'footer.copyrightLabel':
-            'Copyright',
-
-        /* Legal pages */
-        'privacy.title': 'Politique de confidentialité',
-        'privacy.intro': 'Cette politique de confidentialité décrit comment HCR Digital Solutions collecte, utilise et protège les données personnelles des utilisateurs.',
-        'privacy.section1Title': '1. Collecte des données',
-        'privacy.section1Text': 'Nous collectons uniquement les données nécessaires à la communication, à la prestation de services et à l’amélioration continue.',
-        'privacy.section2Title': '2. Utilisation des données',
-        'privacy.section2Text': 'Les données sont utilisées exclusivement à des fins opérationnelles, commerciales et légales liées aux services fournis.',
-        'privacy.section3Title': '3. Droits de l’utilisateur',
-        'privacy.section3Text': 'L’utilisateur peut demander l’accès, la correction ou la suppression de ses données personnelles à tout moment.',
-        'privacy.section4Title': '4. Contact',
-        'privacy.section4Text': 'Pour toute question relative à la confidentialité, contactez‑nous à : contact@hcrdigitalsolutions.com',
-
-        'terms.title': "Conditions d'utilisation",
-        'terms.intro': "Ces conditions d'utilisation régissent l'accès et l'utilisation du site web de HCR Digital Solutions.",
-        'terms.section1Title': '1. Acceptation des conditions',
-        'terms.section1Text': "En utilisant ce site web, l’utilisateur accepte les présentes conditions générales.",
-        'terms.section2Title': '2. Responsabilités',
-        'terms.section2Text': "L’utilisateur s’engage à utiliser le site de manière responsable et à ne pas compromettre sa sécurité.",
-        'terms.section3Title': '3. Propriété intellectuelle',
-        'terms.section3Text': 'Tout le contenu présenté sur ce site est la propriété exclusive de HCR Digital Solutions.',
-        'terms.section4Title': '4. Modifications',
-        'terms.section4Text': 'HCR Digital Solutions se réserve le droit de mettre à jour ces conditions à tout moment.'
+        "footer.privacy": "Politique de Confidentialité",
+        "footer.terms": "Conditions d’Utilisation",
+        "footer.copyrightLabel": "Copyright",
+        "footer.copyright": "© 2026 HCR Digital Solutions — Tous droits réservés"
     }
 };
 
-/* ============================================================
-   APLICAR TRADUÇÃO
-   ============================================================ */
-let currentLang = 'pt';
+const t = (key) => {
+    return (translations[currentLang] && translations[currentLang][key]) ||
+           (translations["pt"] && translations["pt"][key]) ||
+           key;
+};
 
-function applyTranslations(lang) {
-    const dict = translations[lang];
-    if (!dict) return;
-
-    document.documentElement.lang = lang;
-
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (dict[key]) {
-            el.textContent = dict[key];
+function applyTranslations() {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const value = t(key);
+        if (el.tagName.toLowerCase() === "input" || el.tagName.toLowerCase() === "textarea") {
+            el.placeholder = value;
+        } else {
+            el.textContent = value;
         }
     });
 }
 
-/* ============================================================
-   BOTÕES DE LÍNGUA
-   ============================================================ */
-const langButtons = document.querySelectorAll('.lang-btn');
+function setLanguage(lang) {
+    if (!translations[lang]) lang = "pt";
+    currentLang = lang;
+    applyTranslations();
 
-langButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const lang = btn.getAttribute('data-lang');
-        if (lang === currentLang) return;
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+    });
+}
 
-        currentLang = lang;
-        langButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        applyTranslations(lang);
+document.addEventListener("DOMContentLoaded", () => {
+    applyTranslations();
+
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const lang = btn.getAttribute("data-lang");
+            setLanguage(lang);
+        });
+    });
+
+    // Scroll suave + active nav
+    const navLinks = document.querySelectorAll(".nav-menu a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("#")) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offset = 170; // header + navbar
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: "smooth" });
+                }
+            }
+        });
+    });
+
+    const sections = document.querySelectorAll("section[id]");
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 190;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            const href = link.getAttribute("href");
+            if (href === `#${current}`) {
+                link.classList.add("active");
+            }
+        });
     });
 });
-
-/* Aplicar PT por defeito */
-applyTranslations('pt');
