@@ -363,3 +363,40 @@ body {
         transform: translateY(4px);
     }
 }
+.contact-box {
+    background: rgba(5, 8, 22, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 500px;
+    margin-top: 20px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-box label {
+    font-size: 14px;
+    color: #f7c600;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+    outline: none;
+    border-color: #f7c600;
+}
