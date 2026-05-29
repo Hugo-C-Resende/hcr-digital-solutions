@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    const offset = 150 + 56; // header + navbar
+                    const offset = 206; // header + navbar
                     const top = target.getBoundingClientRect().top + window.scrollY - offset;
                     window.scrollTo({ top, behavior: "smooth" });
                 }
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         let current = "";
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - (150 + 56 + 10);
+            const sectionTop = section.offsetTop - 216; // 206 + margem de segurança
             if (pageYOffset >= sectionTop) {
                 current = section.getAttribute("id");
             }
