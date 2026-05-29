@@ -47,9 +47,13 @@ const translations = {
         "faq.text": "Trabalhamos por projeto ou em regime contínuo, sempre com objetivos claros e comunicação transparente.",
 
         "contact.title": "Contactos",
-        "contact.text": "Envia-nos um email com o contexto do teu projeto:",
-        "contact.emailLabel": "contacto@hcrdigitalsolutions.com",
-        "contact.hours": "Horário: 09h00 – 18h00 (Seg–Sex)",
+        "contact.text": "Envia-nos uma mensagem com o contexto do teu projeto:",
+        "contact.form.name": "Nome *",
+        "contact.form.surname": "Sobrenome *",
+        "contact.form.email": "Email *",
+        "contact.form.phone": "Telefone *",
+        "contact.form.message": "Escreve a tua mensagem",
+        "contact.form.send": "Submeter",
 
         "footer.privacy": "Política de Privacidade",
         "footer.terms": "Termos de Utilização",
@@ -103,9 +107,13 @@ const translations = {
         "faq.text": "We work per project or on an ongoing basis, always with clear objectives and transparent communication.",
 
         "contact.title": "Contact",
-        "contact.text": "Send us an email with the context of your project:",
-        "contact.emailLabel": "contacto@hcrdigitalsolutions.com",
-        "contact.hours": "Schedule: 09:00 – 18:00 (Mon–Fri)",
+        "contact.text": "Send us a message with the context of your project:",
+        "contact.form.name": "First name *",
+        "contact.form.surname": "Last name *",
+        "contact.form.email": "Email *",
+        "contact.form.phone": "Phone *",
+        "contact.form.message": "Write your message",
+        "contact.form.send": "Submit",
 
         "footer.privacy": "Privacy Policy",
         "footer.terms": "Terms of Use",
@@ -159,9 +167,13 @@ const translations = {
         "faq.text": "Nous travaillons par projet ou en continu, toujours avec des objectifs clairs et une communication transparente.",
 
         "contact.title": "Contacts",
-        "contact.text": "Envoyez-nous un email avec le contexte de votre projet :",
-        "contact.emailLabel": "contacto@hcrdigitalsolutions.com",
-        "contact.hours": "Horaires : 09h00 – 18h00 (Lun–Ven)",
+        "contact.text": "Envoyez-nous un message avec le contexte de votre projet :",
+        "contact.form.name": "Prénom *",
+        "contact.form.surname": "Nom *",
+        "contact.form.email": "Email *",
+        "contact.form.phone": "Téléphone *",
+        "contact.form.message": "Écrivez votre message",
+        "contact.form.send": "Envoyer",
 
         "footer.privacy": "Politique de Confidentialité",
         "footer.terms": "Conditions d’Utilisation",
@@ -208,7 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Scroll suave + active nav
     const navLinks = document.querySelectorAll(".nav-menu a");
     navLinks.forEach(link => {
         link.addEventListener("click", (e) => {
@@ -217,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    const offset = 170; // header + navbar
+                    const offset = 150 + 56; // header + navbar
                     const top = target.getBoundingClientRect().top + window.scrollY - offset;
                     window.scrollTo({ top, behavior: "smooth" });
                 }
@@ -229,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         let current = "";
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 190;
+            const sectionTop = section.offsetTop - (150 + 56 + 10);
             if (pageYOffset >= sectionTop) {
                 current = section.getAttribute("id");
             }
