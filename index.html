@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HCR Digital Solutions</title>
 
-    <!-- SEO COMPLETO -->
+    <!-- Meta essenciais -->
     <meta name="description" content="HCR Digital Solutions — Consultoria digital, automação e desenvolvimento web premium.">
     <meta name="author" content="HCR Digital Solutions">
     <meta name="theme-color" content="#050816">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/">
 
+    <!-- OpenGraph -->
     <meta property="og:title" content="HCR Digital Solutions — Consultoria, Automação e Web Premium">
     <meta property="og:description" content="Soluções digitais inteligentes para empresas modernas. Automação, consultoria e desenvolvimento web premium.">
     <meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png">
@@ -17,12 +20,13 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="HCR Digital Solutions">
 
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HCR Digital Solutions — Soluções Digitais Premium">
     <meta name="twitter:description" content="Consultoria digital, automação e desenvolvimento web com foco em resultados.">
     <meta name="twitter:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png">
 
-    <!-- Schema.org -->
+    <!-- Schema.org — Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -35,6 +39,7 @@
     }
     </script>
 
+    <!-- Schema.org — Website -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -64,7 +69,7 @@
 
     <!-- HEADER FIXO -->
     <header class="header-fixed">
-        <img src="logo-hcr.png" alt="HCR Logo" class="header-logo">
+        <img src="logo-hcr.png" alt="HCR Digital Solutions" class="header-logo">
     </header>
 
     <!-- NAVBAR FIXA -->
@@ -79,14 +84,14 @@
         </ul>
 
         <div class="lang-switcher">
-            <button class="lang-btn active" data-lang="pt">🇵🇹</button>
-            <button class="lang-btn" data-lang="en">🇬🇧</button>
-            <button class="lang-btn" data-lang="fr">🇫🇷</button>
+            <button class="lang-btn active" data-lang="pt" aria-label="Português">🇵🇹</button>
+            <button class="lang-btn" data-lang="en" aria-label="Inglês">🇬🇧</button>
+            <button class="lang-btn" data-lang="fr" aria-label="Francês">🇫🇷</button>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section id="home" class="section">
+    <section id="home" class="section hero-section">
         <div class="section-inner hero-inner">
 
             <div class="hero-content">
@@ -112,42 +117,42 @@
         </div>
     </section>
 
-    <!-- SOBRE -->
-   <section id="about" class="section">
-    <div class="section-inner">
-        <h2 data-i18n="about.title">Sobre Nós</h2>
+    <!-- SOBRE NÓS -->
+    <section id="about" class="section">
+        <div class="section-inner">
+            <h2 data-i18n="about.title">Sobre Nós</h2>
 
-        <p data-i18n="about.text">
-            A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. 
-            Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.
-        </p>
+            <p data-i18n="about.text">
+                A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade.
+                Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.
+            </p>
 
-        <div class="grid-3">
+            <div class="grid-3">
 
-            <div class="info-card">
-                <h3 data-i18n="about.missionTitle">Missão</h3>
-                <p data-i18n="about.missionText">
-                    Criar soluções digitais que simplificam processos, reduzem tarefas repetitivas e aumentam a eficiência operacional.
-                </p>
+                <div class="info-card">
+                    <h3 data-i18n="about.missionTitle">Missão</h3>
+                    <p data-i18n="about.missionText">
+                        Criar soluções digitais que simplificam processos, reduzem tarefas repetitivas e aumentam a eficiência operacional.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 data-i18n="about.visionTitle">Visão</h3>
+                    <p data-i18n="about.visionText">
+                        Ser parceiro estratégico de empresas que procuram evoluir com tecnologia, automação e experiência digital premium.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 data-i18n="about.valuesTitle">Valores</h3>
+                    <p data-i18n="about.valuesText">
+                        Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.
+                    </p>
+                </div>
+
             </div>
-
-            <div class="info-card">
-                <h3 data-i18n="about.visionTitle">Visão</h3>
-                <p data-i18n="about.visionText">
-                    Ser parceiro estratégico de empresas que procuram evoluir com tecnologia, automação e experiência digital premium.
-                </p>
-            </div>
-
-            <div class="info-card">
-                <h3 data-i18n="about.valuesTitle">Valores</h3>
-                <p data-i18n="about.valuesText">
-                    Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.
-                </p>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- SERVIÇOS -->
     <section id="services" class="section">
@@ -176,7 +181,7 @@
         </div>
     </section>
 
-    <!-- PROJETOS (NOVO) -->
+    <!-- PROJETOS -->
     <section id="projects" class="section">
         <div class="section-inner">
             <h2 data-i18n="projects.title">Projetos</h2>
