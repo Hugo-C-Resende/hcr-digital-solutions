@@ -19,6 +19,9 @@ body {
 
 /* Layout global */
 .section {
+    section {
+    scroll-margin-top: 220px;
+}
     padding: 80px 20px;
 }
 
@@ -125,7 +128,7 @@ body {
 
 /* HERO */
 .hero-section {
-    padding-top: 206px; /* 150 (header) + 56 (navbar) */
+    padding-top: 230px; /* 206 + 24px de respiro visual */
 }
 
 .hero-inner {
