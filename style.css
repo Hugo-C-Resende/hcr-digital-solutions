@@ -11,8 +11,10 @@ body {
 }
 
 /* Sections */
-.section { padding: 216px; }
-.section { padding-bottom: 80px; }
+.section { 
+    padding: 216px;
+    padding-bottom: 80px; 
+}
 .section-inner { max-width: 1100px; margin: 0 auto; }
 .section h2 { font-size: 28px; margin-bottom: 16px; }
 
@@ -84,7 +86,8 @@ body {
 }
 
 /* HERO */
-.hero-section { padding-top: 230px; }
+.hero-section { 
+    padding-top: 260px; }
 .hero-inner {
     display: flex;
     justify-content: space-between;
