@@ -347,7 +347,8 @@ function setLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
     applyTranslations();
 
-    const OFFSET = 216; // header + navbar
+   const OFFSET = 216;
+   const sectionTop = section.offsetTop - OFFSET;
 
     /* Scroll suave */
     document.querySelectorAll(".nav-menu a").forEach(link => {
