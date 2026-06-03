@@ -114,7 +114,10 @@ h3 {
   margin-top: 16px;
   margin-bottom: 8px;
 }
-
+/* Corrige o salto e impede que a secção seguinte apareça antes do tempo */
+section {
+  scroll-margin-top: 216px;
+}
 /* ===================== HERO ===================== */
 .hero-inner {
   display: flex;
