@@ -1,10 +1,15 @@
 let currentLang = "pt";
 
 /* ============================================================
-   TRADUÇÕES
+   TRADUÇÕES COMPLETAS (PT, EN, FR)
    ============================================================ */
 const translations = {
+
+    /* ============================================================
+       PORTUGUÊS
+       ============================================================ */
     pt: {
+        /* NAV */
         "nav.home": "Início",
         "nav.about": "Sobre Nós",
         "nav.services": "Serviços",
@@ -12,6 +17,7 @@ const translations = {
         "nav.faq": "FAQ",
         "nav.contact": "Contactos",
 
+        /* HERO */
         "hero.title": "Soluções Digitais Inteligentes para Empresas Modernas",
         "hero.subtitle": "Tecnologia, automação e consultoria com foco em resultados.",
         "hero.text": "Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.",
@@ -19,6 +25,7 @@ const translations = {
         "hero.btnContact": "Contactar",
         "hero.boxTagline": "Digital · Automação · Qualidade",
 
+        /* ABOUT */
         "about.title": "Sobre Nós",
         "about.text": "A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.",
         "about.missionTitle": "Missão",
@@ -28,6 +35,7 @@ const translations = {
         "about.valuesTitle": "Valores",
         "about.valuesText": "Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.",
 
+        /* SERVICES */
         "services.title": "Serviços",
         "services.lead": "Desenhamos soluções à medida, alinhadas com a realidade operacional e estratégica da tua empresa.",
         "services.1.title": "Consultoria Digital",
@@ -37,6 +45,7 @@ const translations = {
         "services.3.title": "Web & Experiência Digital",
         "services.3.text": "Websites, portais internos e experiências digitais profissionais.",
 
+        /* PROJECTS */
         "projects.title": "Projetos",
         "projects.text": "Alguns dos projetos desenvolvidos com foco em eficiência, automação e experiência digital.",
         "projects.1.title": "Portal Interno de Gestão",
@@ -46,9 +55,11 @@ const translations = {
         "projects.3.title": "Website Corporativo Premium",
         "projects.3.text": "Website institucional com design premium, multilingue e otimização SEO completa.",
 
+        /* FAQ */
         "faq.title": "FAQ",
         "faq.text": "Trabalhamos por projeto ou em regime contínuo, sempre com objetivos claros e comunicação transparente.",
 
+        /* CONTACT */
         "contact.title": "Contactos",
         "contact.text": "Envia-nos uma mensagem com o contexto do teu projeto:",
         "contact.form.name": "Nome *",
@@ -58,10 +69,41 @@ const translations = {
         "contact.form.message": "Escreve a tua mensagem",
         "contact.form.send": "Submeter",
 
+        /* PRIVACY POLICY */
+        "privacy.title": "Política de Privacidade",
+        "privacy.intro": "A HCR Digital Solutions respeita a privacidade dos seus utilizadores e garante que os seus dados pessoais são tratados de forma segura, transparente e em conformidade com o RGPD.",
+        "privacy.1.title": "1. Dados que Recolhemos",
+        "privacy.1.text": "Recolhemos apenas os dados necessários para comunicação e prestação de serviços, incluindo nome, email, telefone e informações fornecidas voluntariamente.",
+        "privacy.2.title": "2. Finalidade do Tratamento",
+        "privacy.2.text": "Os dados recolhidos são utilizados exclusivamente para responder a pedidos de contacto, elaborar propostas, prestar serviços contratados e melhorar a experiência do utilizador.",
+        "privacy.3.title": "3. Partilha de Dados",
+        "privacy.3.text": "A HCR Digital Solutions não vende, partilha ou transfere dados pessoais a terceiros, exceto quando exigido por lei.",
+        "privacy.4.title": "4. Direitos do Utilizador",
+        "privacy.4.text": "O utilizador pode solicitar acesso, retificação, eliminação ou portabilidade dos seus dados pessoais.",
+        "privacy.5.title": "5. Segurança",
+        "privacy.5.text": "Implementamos medidas técnicas e organizativas para garantir a proteção dos dados.",
+        "privacy.6.title": "6. Contacto",
+        "privacy.6.text": "Para questões relacionadas com privacidade, contacte-nos: hugocresende@hotmail.com",
+
+        /* TERMS */
+        "terms.title": "Termos de Utilização",
+        "terms.intro": "Ao utilizar este website, o utilizador concorda com os presentes Termos de Utilização.",
+        "terms.1.title": "1. Propriedade Intelectual",
+        "terms.1.text": "Todo o conteúdo deste website é propriedade da HCR Digital Solutions.",
+        "terms.2.title": "2. Utilização Permitida",
+        "terms.2.text": "O utilizador compromete-se a utilizar o website apenas para fins legais.",
+        "terms.3.title": "3. Limitação de Responsabilidade",
+        "terms.3.text": "A HCR Digital Solutions não se responsabiliza por danos resultantes da utilização do website.",
+        "terms.4.title": "4. Ligações Externas",
+        "terms.4.text": "Não somos responsáveis por websites externos ligados a este.",
+        "terms.5.title": "5. Alterações",
+        "terms.5.text": "Podemos atualizar estes Termos a qualquer momento.",
+
+        /* FOOTER */
         "footer.privacy": "Política de Privacidade",
         "footer.terms": "Termos de Utilização",
-        "footer.copyrightLabel": "Copyright",
-        "footer.copyright": "© 2026 HCR Digital Solutions — Todos os direitos reservados"
+        "footer.copyright":
+            "© 2026 HCR Digital Solutions — Todos os direitos reservados"
     },
 
     /* ============================================================
@@ -121,10 +163,40 @@ const translations = {
         "contact.form.message": "Write your message",
         "contact.form.send": "Submit",
 
+        /* PRIVACY */
+        "privacy.title": "Privacy Policy",
+        "privacy.intro": "HCR Digital Solutions respects your privacy and ensures secure and transparent data processing.",
+        "privacy.1.title": "1. Data We Collect",
+        "privacy.1.text": "We collect only necessary data: name, email, phone and voluntarily provided information.",
+        "privacy.2.title": "2. Purpose of Processing",
+        "privacy.2.text": "Your data is used to respond to requests, prepare proposals and deliver services.",
+        "privacy.3.title": "3. Data Sharing",
+        "privacy.3.text": "We do not sell or share your data, except when legally required.",
+        "privacy.4.title": "4. User Rights",
+        "privacy.4.text": "You may request access, correction or deletion of your data.",
+        "privacy.5.title": "5. Security",
+        "privacy.5.text": "We apply technical and organizational measures to protect your data.",
+        "privacy.6.title": "6. Contact",
+        "privacy.6.text": "For privacy questions: hugocresende@hotmail.com",
+
+        /* TERMS */
+        "terms.title": "Terms of Use",
+        "terms.intro": "By using this website, you agree to these Terms of Use.",
+        "terms.1.title": "1. Intellectual Property",
+        "terms.1.text": "All content on this website belongs to HCR Digital Solutions.",
+        "terms.2.title": "2. Permitted Use",
+        "terms.2.text": "You agree to use the website legally and responsibly.",
+        "terms.3.title": "3. Limitation of Liability",
+        "terms.3.text": "We are not responsible for damages resulting from website use.",
+        "terms.4.title": "4. External Links",
+        "terms.4.text": "We are not responsible for external websites linked from this platform.",
+        "terms.5.title": "5. Changes",
+        "terms.5.text": "We may update these Terms at any time.",
+
         "footer.privacy": "Privacy Policy",
         "footer.terms": "Terms of Use",
-        "footer.copyrightLabel": "Copyright",
-        "footer.copyright": "© 2026 HCR Digital Solutions — All rights reserved"
+        "footer.copyright":
+            "© 2026 HCR Digital Solutions — All rights reserved"
     },
 
     /* ============================================================
@@ -184,10 +256,40 @@ const translations = {
         "contact.form.message": "Écrivez votre message",
         "contact.form.send": "Envoyer",
 
+        /* PRIVACY */
+        "privacy.title": "Politique de Confidentialité",
+        "privacy.intro": "HCR Digital Solutions respecte votre vie privée et garantit un traitement sécurisé.",
+        "privacy.1.title": "1. Données Collectées",
+        "privacy.1.text": "Nous collectons uniquement les données nécessaires : nom, email, téléphone.",
+        "privacy.2.title": "2. Finalité du Traitement",
+        "privacy.2.text": "Vos données sont utilisées pour répondre aux demandes et fournir des services.",
+        "privacy.3.title": "3. Partage des Données",
+        "privacy.3.text": "Nous ne vendons ni ne partageons vos données, sauf obligation légale.",
+        "privacy.4.title": "4. Droits de l’Utilisateur",
+        "privacy.4.text": "Vous pouvez demander l’accès, la rectification ou la suppression de vos données.",
+        "privacy.5.title": "5. Sécurité",
+        "privacy.5.text": "Nous appliquons des mesures techniques et organisationnelles pour protéger vos données.",
+        "privacy.6.title": "6. Contact",
+        "privacy.6.text": "Pour toute question liée à la confidentialité : hugocresende@hotmail.com",
+
+        /* TERMS */
+        "terms.title": "Conditions d’Utilisation",
+        "terms.intro": "En utilisant ce site, vous acceptez les présentes conditions.",
+        "terms.1.title": "1. Propriété Intellectuelle",
+        "terms.1.text": "Tout le contenu du site appartient à HCR Digital Solutions.",
+        "terms.2.title": "2. Utilisation Autorisée",
+        "terms.2.text": "Vous vous engagez à utiliser le site de manière légale et responsable.",
+        "terms.3.title": "3. Limitation de Responsabilité",
+        "terms.3.text": "Nous ne sommes pas responsables des dommages liés à l’utilisation du site.",
+        "terms.4.title": "4. Liens Externes",
+        "terms.4.text": "Nous ne sommes pas responsables des sites externes liés.",
+        "terms.5.title": "5. Modifications",
+        "terms.5.text": "Nous pouvons modifier ces conditions à tout moment.",
+
         "footer.privacy": "Politique de Confidentialité",
         "footer.terms": "Conditions d’Utilisation",
-        "footer.copyrightLabel": "Copyright",
-        "footer.copyright": "© 2026 HCR Digital Solutions — Tous droits réservés"
+        "footer.copyright":
+            "© 2026 HCR Digital Solutions — Tous droits réservés"
     }
 };
 
@@ -228,42 +330,8 @@ function setLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
     applyTranslations();
 
-    const OFFSET = 216; // 150 header + 56 navbar
+    const OFFSET = 216; // header + navbar
 
     /* Scroll suave */
     document.querySelectorAll(".nav-menu a").forEach(link => {
-        link.addEventListener("click", (e) => {
-            const href = link.getAttribute("href");
-            if (!href.startsWith("#")) return;
-
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (!target) return;
-
-            const top = target.offsetTop - OFFSET;
-            window.scrollTo({ top, behavior: "smooth" });
-        });
-    });
-
-    /* Secção ativa */
-    const sections = document.querySelectorAll("section[id]");
-    window.addEventListener("scroll", () => {
-        let current = "";
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - OFFSET;
-            if (window.scrollY >= sectionTop) {
-                current = section.id;
-            }
-        });
-
-        document.querySelectorAll(".nav-menu a").forEach(link => {
-            link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
-        });
-    });
-
-    /* Botões de idioma */
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-        btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
-    });
-});
+        link.add
