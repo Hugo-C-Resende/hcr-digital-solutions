@@ -181,15 +181,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const sections = document.querySelectorAll("section[id]");
+    const sections = document.querySelectorAll("section[id]");
   window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY + OFFSET + 1;
     let current = "";
 
     sections.forEach((section) => {
-      if (window.scrollY >= section.offsetTop - OFFSET) {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
         current = section.id;
       }
     });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === `#${current}`
+      );
+    });
+  });
 
     document.querySelectorAll(".nav-menu a").forEach((link) => {
       link.classList.toggle(
