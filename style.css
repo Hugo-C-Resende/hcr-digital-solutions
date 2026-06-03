@@ -102,3 +102,26 @@
 <script src="script.js"></script>
 </body>
 </html>
+/* navtab ativo amarelo */
+.nav-menu a.active {
+  color: #f7c600;
+  border-bottom: 2px solid #f7c600;
+}
+
+/* footer fixo em todas as secções */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(5, 8, 22, 0.96);
+  padding: 10px 0 14px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 1000;
+}
+
+/* para o footer não tapar o conteúdo */
+body {
+  padding-bottom: 70px; /* ajusta se precisares */
+}
+
