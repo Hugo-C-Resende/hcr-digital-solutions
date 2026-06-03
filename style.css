@@ -192,3 +192,29 @@ h3 {
   font-size: 11px;
   opacity: 0.8;
 }
+.footer-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(5, 8, 22, 0.96);
+  padding: 6px 0 8px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 1000;
+}
+
+.footer-links a {
+  color: #f7c600;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-copy {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+body {
+  padding-bottom: 80px;
+}
