@@ -170,6 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const OFFSET = 216;
 
+  /* Scroll suave ao clicar nos navtabs */
   document.querySelectorAll(".nav-menu a").forEach((link) => {
     link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
@@ -177,19 +178,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
       e.preventDefault();
       const target = document.querySelector(href);
-      window.scrollTo({ top: target.offsetTop - OFFSET, behavior: "smooth" });
+      if (!target) return;
+
+      window.scrollTo({
+        top: target.offsetTop - OFFSET,
+        behavior: "smooth"
+      });
     });
   });
 
-    const sections = document.querySelectorAll("section[id]");
+  /* Secção ativa no scroll */
+  const sections = document.querySelectorAll("section[id]");
+
   window.addEventListener("scroll", () => {
     const scrollPos = window.scrollY + OFFSET + 1;
-    let current = "";
+    let current = sections[0].id;
 
     sections.forEach((section) => {
       const top = section.offsetTop;
-      const height = section.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
+      const bottom = top + section.offsetHeight;
+
+      if (scrollPos >= top && scrollPos < bottom) {
         current = section.id;
       }
     });
@@ -202,15 +211,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-    document.querySelectorAll(".nav-menu a").forEach((link) => {
-      link.classList.toggle(
-        "active",
-        link.getAttribute("href") === `#${current}`
-      );
-    });
-  });
-
+  /* Botões de língua */
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 });
+
