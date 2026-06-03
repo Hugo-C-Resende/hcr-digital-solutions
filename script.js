@@ -322,6 +322,23 @@ function setLanguage(lang) {
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.lang === lang);
     });
+
+    // Atualizar links do footer conforme a língua
+    const privacyLink = document.getElementById("footer-privacy");
+    const termsLink = document.getElementById("footer-terms");
+
+    if (lang === "pt") {
+        privacyLink.href = "politica-privacidade.html";
+        termsLink.href = "termos-utilizacao.html";
+    }
+    else if (lang === "en") {
+        privacyLink.href = "privacy-policy.html";
+        termsLink.href = "terms-of-use.html";
+    }
+    else if (lang === "fr") {
+        privacyLink.href = "politique-confidentialite.html";
+        termsLink.href = "conditions-utilisation.html";
+    }
 }
 
 /* ============================================================
