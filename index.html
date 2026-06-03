@@ -1,105 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCR Digital Solutions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCR Digital Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="header-fixed">
+    <img src="logo-hcr.png" alt="HCR Digital Solutions" class="header-logo" />
+  </header>
 
-<header class="header-fixed">
-    <img src="logo-hcr.png" alt="HCR Digital Solutions" class="header-logo">
-</header>
-
-<nav class="navbar-fixed">
+  <nav class="navbar-fixed">
     <ul class="nav-menu">
-        <li><a href="#home" data-i18n="nav.home" class="active">Início</a></li>
-        <li><a href="#about" data-i18n="nav.about">Sobre Nós</a></li>
-        <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
-        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contactos</a></li>
+      <li><a href="#home" data-i18n="nav.home" class="active">Início</a></li>
+      <li><a href="#about" data-i18n="nav.about">Sobre Nós</a></li>
+      <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contactos</a></li>
     </ul>
 
     <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="pt">🇵🇹</button>
-        <button class="lang-btn" data-lang="en">🇬🇧</button>
-        <button class="lang-btn" data-lang="fr">🇫🇷</button>
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="en">GB</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
     </div>
-</nav>
+  </nav>
 
-<section id="home" class="section hero-section">
+  <section id="home" class="section hero-section">
     <div class="section-inner hero-inner">
+      <div class="hero-content">
+        <h2 data-i18n="hero.title">
+          Soluções Digitais Inteligentes para Empresas Modernas
+        </h2>
+        <h3 data-i18n="hero.subtitle">
+          Tecnologia, automação e consultoria com foco em resultados.
+        </h3>
+        <p data-i18n="hero.text">
+          Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.
+        </p>
 
-        <div class="hero-content">
-            <h2 data-i18n="hero.title">Soluções Digitais Inteligentes para Empresas Modernas</h2>
-            <h3 data-i18n="hero.subtitle">Tecnologia, automação e consultoria com foco em resultados.</h3>
-            <p data-i18n="hero.text">
-                Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#services" class="btn-primary" data-i18n="hero.btnServices">Explorar Serviços</a>
-                <a href="#contact" class="btn-secondary" data-i18n="hero.btnContact">Contactar</a>
-            </div>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary" data-i18n="hero.btnServices">
+            Explorar Serviços
+          </a>
+          <a href="#contact" class="btn-secondary" data-i18n="hero.btnContact">
+            Contactar
+          </a>
         </div>
+      </div>
 
-        <div class="hero-visual">
-            <div class="hero-logo-block">
-                <div class="hero-logo-mark">HCR</div>
-                <p data-i18n="hero.boxTagline">Digital · Automação · Qualidade</p>
-            </div>
+      <div class="hero-visual">
+        <div class="hero-logo-block">
+          <div class="hero-logo-mark">HCR</div>
+          <p data-i18n="hero.boxTagline">Digital · Automação · Qualidade</p>
         </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="about" class="section">
+  <section id="about" class="section">
     <div class="section-inner">
-        <h2 data-i18n="about.title">Sobre Nós</h2>
-        <p data-i18n="about.text">A HCR Digital Solutions desenvolve soluções digitais modernas...</p>
-    </div>
-</section>
+      <h2 data-i18n="about.title">Sobre Nós</h2>
+      <p data-i18n="about.text">
+        A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.
+      </p>
 
-<section id="services" class="section">
+      <h3 data-i18n="about.missionTitle">Missão</h3>
+      <p data-i18n="about.missionText">
+        Criar soluções digitais que simplificam processos, reduzem tarefas repetitivas e aumentam a eficiência operacional.
+      </p>
+
+      <h3 data-i18n="about.visionTitle">Visão</h3>
+      <p data-i18n="about.visionText">
+        Ser parceiro estratégico de empresas que procuram evoluir com tecnologia, automação e experiência digital premium.
+      </p>
+
+      <h3 data-i18n="about.valuesTitle">Valores</h3>
+      <p data-i18n="about.valuesText">
+        Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
     <div class="section-inner">
-        <h2 data-i18n="services.title">Serviços</h2>
-        <p class="section-lead" data-i18n="services.lead">Desenhamos soluções à medida...</p>
-    </div>
-</section>
+      <h2 data-i18n="services.title">Serviços</h2>
+      <p class="section-lead" data-i18n="services.lead">
+        Desenhamos soluções à medida, alinhadas com a realidade operacional e estratégica da tua empresa.
+      </p>
 
-<section id="projects" class="section">
+      <h3 data-i18n="services.1.title">Consultoria Digital</h3>
+      <p data-i18n="services.1.text">
+        Análise de processos, diagnóstico digital e roadmap de transformação.
+      </p>
+
+      <h3 data-i18n="services.2.title">Automação & Ferramentas</h3>
+      <p data-i18n="services.2.text">
+        Dashboards, automações, integrações e ferramentas internas.
+      </p>
+
+      <h3 data-i18n="services.3.title">Web & Experiência Digital</h3>
+      <p data-i18n="services.3.text">
+        Websites, portais internos e experiências digitais profissionais.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
     <div class="section-inner">
-        <h2 data-i18n="projects.title">Projetos</h2>
-        <p data-i18n="projects.text">Alguns dos projetos desenvolvidos...</p>
-    </div>
-</section>
+      <h2 data-i18n="projects.title">Projetos</h2>
+      <p data-i18n="projects.text">
+        Alguns dos projetos desenvolvidos com foco em eficiência, automação e experiência digital.
+      </p>
 
-<section id="faq" class="section">
+      <h3 data-i18n="projects.1.title">Portal Interno de Gestão</h3>
+      <p data-i18n="projects.1.text">
+        Plataforma personalizada para gestão operacional, dashboards e automações internas.
+      </p>
+
+      <h3 data-i18n="projects.2.title">Sistema de Automação Comercial</h3>
+      <p data-i18n="projects.2.text">
+        Automação de processos comerciais, integração com CRM e relatórios inteligentes.
+      </p>
+
+      <h3 data-i18n="projects.3.title">Website Corporativo Premium</h3>
+      <p data-i18n="projects.3.text">
+        Website institucional com design premium, multilingue e otimização SEO completa.
+      </p>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
     <div class="section-inner">
-        <h2 data-i18n="faq.title">FAQ</h2>
-        <p data-i18n="faq.text">Trabalhamos por projeto...</p>
+      <h2 data-i18n="faq.title">FAQ</h2>
+      <p data-i18n="faq.text">
+        Trabalhamos por projeto ou em regime contínuo, sempre com objetivos claros e comunicação transparente.
+      </p>
     </div>
-</section>
+  </section>
 
-<section id="contact" class="section">
+  <section id="contact" class="section">
     <div class="section-inner">
-        <h2 data-i18n="contact.title">Contactos</h2>
-        <p data-i18n="contact.text">Envia-nos uma mensagem...</p>
+      <h2 data-i18n="contact.title">Contactos</h2>
+      <p data-i18n="contact.text">
+        Envia-nos uma mensagem com o contexto do teu projeto:
+      </p>
+      <!-- aqui podes colocar o formulário quando quiseres -->
     </div>
-</section>
+  </section>
 
-<footer class="footer">
+  <footer class="footer">
     <p class="footer-links">
-        <a id="footer-privacy" data-i18n="footer.privacy" target="_blank" rel="noopener"></a> |
-        <a id="footer-terms" data-i18n="footer.terms" target="_blank" rel="noopener"></a>
+      <a
+        id="footer-privacy"
+        href="politica-privacidade.html"
+        data-i18n="footer.privacy"
+        target="_blank"
+        rel="noopener"
+      >
+        Política de Privacidade
+      </a>
+      |
+      <a
+        id="footer-terms"
+        href="termos-utilizacao.html"
+        data-i18n="footer.terms"
+        target="_blank"
+        rel="noopener"
+      >
+        Termos de Utilização
+      </a>
     </p>
     <p class="footer-copy" data-i18n="footer.copy">
-        © 2026 HCR Digital Solutions — Todos os direitos reservados
+      © 2026 HCR Digital Solutions — Todos os direitos reservados
     </p>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
