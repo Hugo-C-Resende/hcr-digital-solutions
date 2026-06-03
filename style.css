@@ -11,7 +11,8 @@ body {
 }
 
 /* Sections */
-.section { padding: 80px 20px; scroll-margin-top: 220px; }
+.section { padding: 216px; }
+.section { padding-bottom: 80px; }
 .section-inner { max-width: 1100px; margin: 0 auto; }
 .section h2 { font-size: 28px; margin-bottom: 16px; }
 
@@ -206,5 +207,5 @@ body {
 
 @media (max-width: 600px) {
     .section { padding: 70px 16px; }
-    .hero-section { padding-top: 230px; }
+    .hero-section { padding-top: 260px; }
 }
