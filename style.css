@@ -1,96 +1,104 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCR Digital Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-html { scroll-behavior: smooth; }
+<body>
 
-body {
-  font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
-  color: #fff;
-}
+<header class="header-fixed">
+  <img src="logo-hcr.png" alt="HCR Digital Solutions" class="header-logo" />
+</header>
 
-/* HEADER */
-.header-fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 160px;
-  background: #050816;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+<nav class="navbar-fixed">
+  <ul class="nav-menu">
+    <li><a href="#home" data-i18n="nav.home" class="active">Início</a></li>
+    <li><a href="#about" data-i18n="nav.about">Sobre Nós</a></li>
+    <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+    <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+    <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Contactos</a></li>
+  </ul>
 
-.header-logo { height: 170px; }
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+</nav>
 
-/* NAVBAR */
-.navbar-fixed {
-  position: fixed;
-  top: 160px;
-  width: 100%;
-  height: 56px;
-  background: #050816;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  z-index: 999;
-}
+<section id="home" class="section hero-section">
+  <div class="section-inner hero-inner">
+    <div class="hero-content">
+      <h2 data-i18n="hero.title">Soluções Digitais Inteligentes para Empresas Modernas</h2>
+      <h3 data-i18n="hero.subtitle">Tecnologia, automação e consultoria com foco em resultados.</h3>
+      <p data-i18n="hero.text">
+        Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.
+      </p>
 
-.nav-menu { display: flex; gap: 20px; list-style: none; }
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary" data-i18n="hero.btnServices">Explorar Serviços</a>
+        <a href="#contact" class="btn-secondary" data-i18n="hero.btnContact">Contactar</a>
+      </div>
+    </div>
 
-.nav-menu a {
-  color: #e5e5e5;
-  text-decoration: none;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-}
+    <div class="hero-visual">
+      <div class="hero-logo-block">
+        <div class="hero-logo-mark">HCR</div>
+        <p data-i18n="hero.boxTagline">Digital · Automação · Qualidade</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-.nav-menu a.active {
-  color: #f7c600;
-  border-color: #f7c600;
-}
+<section id="about" class="section">
+  <div class="section-inner">
+    <h2 data-i18n="about.title">Sobre Nós</h2>
+    <p data-i18n="about.text">A HCR Digital Solutions desenvolve soluções digitais modernas...</p>
+  </div>
+</section>
 
-/* LANG */
-.lang-switcher { display: flex; gap: 6px; }
-.lang-btn {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.25);
-  padding: 4px 10px;
-  border-radius: 999px;
-  color: #fff;
-}
-.lang-btn.active {
-  background: #f7c600;
-  color: #050816;
-}
+<section id="services" class="section">
+  <div class="section-inner">
+    <h2 data-i18n="services.title">Serviços</h2>
+    <p data-i18n="services.lead">Desenhamos soluções à medida...</p>
+  </div>
+</section>
 
-/* SECTIONS */
-.section {
-  padding-top: 216px;
-  padding-bottom: 80px;
-}
+<section id="projects" class="section">
+  <div class="section-inner">
+    <h2 data-i18n="projects.title">Projetos</h2>
+    <p data-i18n="projects.text">Alguns dos projetos desenvolvidos...</p>
+  </div>
+</section>
 
-.hero-section { padding-top: 260px; }
+<section id="faq" class="section">
+  <div class="section-inner">
+    <h2 data-i18n="faq.title">FAQ</h2>
+    <p data-i18n="faq.text">Trabalhamos por projeto...</p>
+  </div>
+</section>
 
-/* FOOTER FIXO */
-.footer-fixed {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: rgba(5,8,22,0.96);
-  padding: 10px 0;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  z-index: 1000;
-}
+<section id="contact" class="section">
+  <div class="section-inner">
+    <h2 data-i18n="contact.title">Contactos</h2>
+    <p data-i18n="contact.text">Envia-nos uma mensagem...</p>
+  </div>
+</section>
 
-.footer-links a {
-  color: #f7c600;
-  text-decoration: none;
-}
+<footer class="footer-fixed">
+  <p class="footer-links">
+    <a id="footer-privacy" data-i18n="footer.privacy" href="politica-privacidade.html" target="_blank">Política de Privacidade</a> |
+    <a id="footer-terms" data-i18n="footer.terms" href="termos-utilizacao.html" target="_blank">Termos de Utilização</a>
+  </p>
+  <p class="footer-copy" data-i18n="footer.copy">
+    © 2026 HCR Digital Solutions — Todos os direitos reservados
+  </p>
+</footer>
 
-.footer-copy {
-  font-size: 12px;
-  opacity: 0.8;
-}
+<script src="script.js"></script>
+</body>
+</html>
