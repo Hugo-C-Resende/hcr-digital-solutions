@@ -228,7 +228,7 @@ function setLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
     applyTranslations();
 
-    const OFFSET = 206; // 150 header + 56 navbar
+    const OFFSET = 216; // 150 header + 56 navbar
 
     /* Scroll suave */
     document.querySelectorAll(".nav-menu a").forEach(link => {
@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let current = "";
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - (OFFSET + 10);
+            const sectionTop = section.offsetTop - OFFSET;
             if (window.scrollY >= sectionTop) {
                 current = section.id;
             }
