@@ -174,36 +174,87 @@ section {
   color: #f7c600;
 }
 /* ===================== CONTACTOS ===================== */
+
 .contact-wrapper {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
+/* MAPA */
+.contact-map {
+  width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* FORMULÁRIO */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+  background: rgba(5, 8, 22, 0.65);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
+/* Linhas com 2 colunas */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+/* Campo Telefone com bandeira */
+.phone-field {
+  position: relative;
+  flex: 1;
+}
+
+.phone-field .flag {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.phone-field input {
+  padding-left: 42px !important;
+}
+
+/* Inputs e textarea */
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
+  padding: 14px;
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.2);
   background: rgba(255,255,255,0.05);
   color: #fff;
+  font-size: 14px;
 }
 
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Botão */
 .contact-form button {
   background: #f7c600;
   color: #050816;
-  padding: 12px;
+  padding: 14px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-size: 15px;
 }
 
 /* ===================== FOOTER ===================== */
