@@ -173,6 +173,38 @@ section {
   border: 1px solid #f7c600;
   color: #f7c600;
 }
+/* ===================== CONTACTOS ===================== */
+.contact-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.contact-form button {
+  background: #f7c600;
+  color: #050816;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
 
 /* ===================== FOOTER ===================== */
 .footer-fixed {
