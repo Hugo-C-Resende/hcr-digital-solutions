@@ -94,7 +94,7 @@ body {
 .section {
   padding-top: 220px;
   padding-bottom: 80px;
-  min-height: calc(100vh - 276px); /* garante fundo até ao rodapé */
+  min-height: calc(100vh - 216px); /* 100vh - (header + navbar) */
 }
 
 .section-inner {
