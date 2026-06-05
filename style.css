@@ -92,16 +92,16 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  /* A secção começa logo abaixo do header + navbar */
+  /* começa exatamente abaixo do header + navbar */
   margin-top: 216px;
 
-  /* Espaço interno normal */
+  /* espaço interno normal */
   padding: 40px 0 80px;
 
-  /* Altura mínima garantida até ao rodapé */
+  /* ocupa sempre o espaço até ao rodapé */
   min-height: calc(100vh - 216px);
 
-  /* Fundo contínuo da secção */
+  /* fundo contínuo da secção */
   background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
 }
 
