@@ -97,13 +97,17 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  padding: 40px 0 80px;
+  padding-top: 220px;
+  padding-bottom: 80px;
 }
 
 .section-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px 80px;
+  background: rgba(5, 8, 22, 0.9);      /* painel escuro */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Sistema de tabs */
