@@ -13,7 +13,7 @@ body {
   font-family: "Inter", sans-serif;
   background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
   color: #ffffff;
-  padding-bottom: 90px; /* evita que o footer tape conteúdo */
+  padding-bottom: 90px;
 }
 
 /* ===================== HEADER ===================== */
@@ -104,6 +104,10 @@ body {
   padding: 0 20px;
 }
 
+section {
+  scroll-margin-top: 216px;
+}
+
 h2 {
   font-size: 28px;
   margin-bottom: 16px;
@@ -114,10 +118,7 @@ h3 {
   margin-top: 16px;
   margin-bottom: 8px;
 }
-/* Corrige o salto e impede que a secção seguinte apareça antes do tempo */
-section {
-  scroll-margin-top: 216px;
-}
+
 /* ===================== HERO ===================== */
 .hero-inner {
   display: flex;
@@ -173,8 +174,8 @@ section {
   border: 1px solid #f7c600;
   color: #f7c600;
 }
-/* ===================== CONTACTOS ===================== */
 
+/* ===================== CONTACTOS ===================== */
 .contact-wrapper {
   margin-top: 40px;
   display: flex;
@@ -182,7 +183,6 @@ section {
   gap: 40px;
 }
 
-/* MAPA */
 .contact-map {
   width: 100%;
   height: 300px;
@@ -190,7 +190,6 @@ section {
   border: 1px solid rgba(255,255,255,0.15);
 }
 
-/* FORMULÁRIO */
 .contact-form {
   max-width: 700px;
   margin: 0 auto;
@@ -203,7 +202,6 @@ section {
   border: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Linhas com 2 colunas */
 .form-row {
   display: flex;
   gap: 20px;
@@ -213,7 +211,6 @@ section {
   flex: 1;
 }
 
-/* Campo Telefone com bandeira */
 .phone-field {
   position: relative;
   flex: 1;
@@ -232,7 +229,6 @@ section {
   padding-left: 46px !important;
 }
 
-/* Inputs e textarea */
 .contact-form input,
 .contact-form textarea {
   padding: 14px;
@@ -248,7 +244,6 @@ section {
   resize: vertical;
 }
 
-/* Botão */
 .contact-form button {
   background: #f7c600;
   color: #050816;
@@ -263,26 +258,6 @@ section {
 }
 
 /* ===================== FOOTER ===================== */
-.footer-fixed {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: rgba(5, 8, 22, 0.96);
-  padding: 10px 0 14px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  z-index: 1000;
-}
-
-.footer-links a {
-  color: #f7c600;
-  text-decoration: none;
-}
-
-.footer-copy {
-  font-size: 11px;
-  opacity: 0.8;
-}
 .footer-fixed {
   position: fixed;
   left: 0;
@@ -304,8 +279,4 @@ section {
 .footer-copy {
   font-size: 11px;
   opacity: 0.8;
-}
-
-body {
-  padding-bottom: 80px;
 }
