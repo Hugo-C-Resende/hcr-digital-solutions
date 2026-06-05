@@ -17,66 +17,181 @@
   <!-- NAVBAR -->
   <nav class="navbar-fixed">
     <ul class="nav-menu">
-      <li><button data-tab="home" class="active">Início</button></li>
-      <li><button data-tab="about">Sobre Nós</button></li>
-      <li><button data-tab="services">Serviços</button></li>
-      <li><button data-tab="projects">Projetos</button></li>
-      <li><button data-tab="faq">FAQ</button></li>
-      <li><button data-tab="contact">Contactos</button></li>
+      <li><button data-tab="home" class="active" data-i18n="nav.home">Início</button></li>
+      <li><button data-tab="about" data-i18n="nav.about">Sobre Nós</button></li>
+      <li><button data-tab="services" data-i18n="nav.services">Serviços</button></li>
+      <li><button data-tab="projects" data-i18n="nav.projects">Projetos</button></li>
+      <li><button data-tab="faq" data-i18n="nav.faq">FAQ</button></li>
+      <li><button data-tab="contact" data-i18n="nav.contact">Contactos</button></li>
     </ul>
+
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="en">GB</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </nav>
 
   <!-- HOME -->
-  <section id="home" class="section tab-section active-section">
-    <div class="section-inner">
-      <h2>Início</h2>
-      <p>Conteúdo da secção Início.</p>
+  <section id="home" class="section tab-section active-section hero-section">
+    <div class="section-inner hero-inner">
+      <div class="hero-content">
+        <h2 data-i18n="hero.title">Soluções Digitais Inteligentes para Empresas Modernas</h2>
+        <h3 data-i18n="hero.subtitle">Tecnologia, automação e consultoria com foco em resultados.</h3>
+        <p data-i18n="hero.text">
+          Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary" data-tab="services" data-i18n="hero.btnServices">Explorar Serviços</button>
+          <button class="btn-secondary" data-tab="contact" data-i18n="hero.btnContact">Contactar</button>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-block">
+          <div class="hero-logo-mark">HCR</div>
+          <p data-i18n="hero.boxTagline">Digital · Automação · Qualidade</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section tab-section">
     <div class="section-inner">
-      <h2>Sobre Nós</h2>
-      <p>Conteúdo da secção Sobre Nós.</p>
+      <h2 data-i18n="about.title">Sobre Nós</h2>
+      <p data-i18n="about.text">
+        A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.
+      </p>
+
+      <h3 data-i18n="about.missionTitle">Missão</h3>
+      <p data-i18n="about.missionText">Criar soluções digitais que simplificam processos, reduzem tarefas repetitivas e aumentam a eficiência operacional.</p>
+
+      <h3 data-i18n="about.visionTitle">Visão</h3>
+      <p data-i18n="about.visionText">Ser parceiro estratégico de empresas que procuram evoluir com tecnologia, automação e experiência digital premium.</p>
+
+      <h3 data-i18n="about.valuesTitle">Valores</h3>
+      <p data-i18n="about.valuesText">Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.</p>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="section tab-section">
     <div class="section-inner">
-      <h2>Serviços</h2>
-      <p>Conteúdo da secção Serviços.</p>
+      <h2 data-i18n="services.title">Serviços</h2>
+      <p class="section-lead" data-i18n="services.lead">
+        Desenhamos soluções à medida, alinhadas com a realidade operacional e estratégica da tua empresa.
+      </p>
+
+      <h3 data-i18n="services.1.title">Consultoria Digital</h3>
+      <p data-i18n="services.1.text">Análise de processos, diagnóstico digital e roadmap de transformação.</p>
+
+      <h3 data-i18n="services.2.title">Automação & Ferramentas</h3>
+      <p data-i18n="services.2.text">Dashboards, automações, integrações e ferramentas internas.</p>
+
+      <h3 data-i18n="services.3.title">Web & Experiência Digital</h3>
+      <p data-i18n="services.3.text">Websites, portais internos e experiências digitais profissionais.</p>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section tab-section">
     <div class="section-inner">
-      <h2>Projetos</h2>
-      <p>Conteúdo da secção Projetos.</p>
+      <h2 data-i18n="projects.title">Projetos</h2>
+      <p data-i18n="projects.text">
+        Alguns dos projetos desenvolvidos com foco em eficiência, automação e experiência digital.
+      </p>
+
+      <h3 data-i18n="projects.1.title">Portal Interno de Gestão</h3>
+      <p data-i18n="projects.1.text">Plataforma personalizada para gestão operacional, dashboards e automações internas.</p>
+
+      <h3 data-i18n="projects.2.title">Sistema de Automação Comercial</h3>
+      <p data-i18n="projects.2.text">Automação de processos comerciais, integração com CRM e relatórios inteligentes.</p>
+
+      <h3 data-i18n="projects.3.title">Website Corporativo Premium</h3>
+      <p data-i18n="projects.3.text">Website institucional com design premium, multilingue e otimização SEO completa.</p>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="section tab-section">
     <div class="section-inner">
-      <h2>FAQ</h2>
-      <p>Conteúdo da secção FAQ.</p>
+      <h2 data-i18n="faq.title">FAQ</h2>
+      <p data-i18n="faq.text">
+        Trabalhamos por projeto ou em regime contínuo, sempre com objetivos claros e comunicação transparente.
+      </p>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section tab-section">
     <div class="section-inner">
-      <h2>Contactos</h2>
-      <p>Conteúdo da secção Contactos.</p>
+
+      <h2 data-i18n="contact.title">Contactos</h2>
+      <p data-i18n="contact.text">Envia-nos uma mensagem com o contexto do teu projeto:</p>
+
+      <div class="contact-wrapper">
+
+        <!-- FORMULÁRIO -->
+        <form class="contact-form">
+
+          <div class="form-row">
+            <input id="contact-firstname" type="text" placeholder="Nome *" required />
+            <input id="contact-lastname" type="text" placeholder="Sobrenome *" required />
+          </div>
+
+          <input id="contact-email" type="email" placeholder="Email *" required />
+
+          <div class="phone-field">
+            <select id="phone-country" class="phone-select">
+              <option value="+351">🇵🇹 +351 Portugal</option>
+              <option value="+44">🇬🇧 +44 United Kingdom</option>
+              <option value="+33">🇫🇷 +33 France</option>
+              <option value="+49">🇩🇪 +49 Germany</option>
+              <option value="+34">🇪🇸 +34 Spain</option>
+              <option value="+39">🇮🇹 +39 Italy</option>
+              <option value="+1">🇺🇸 +1 United States</option>
+              <option value="+55">🇧🇷 +55 Brazil</option>
+              <option value="+81">🇯🇵 +81 Japan</option>
+              <option value="+86">🇨🇳 +86 China</option>
+              <option value="+91">🇮🇳 +91 India</option>
+              <option value="+7">🇷🇺 +7 Russia</option>
+              <option value="+61">🇦🇺 +61 Australia</option>
+              <option value="+27">🇿🇦 +27 South Africa</option>
+              <option value="+1">🇨🇦 +1 Canada</option>
+            </select>
+            <input id="contact-phone" class="phone-input" type="tel" placeholder="Telefone *" required />
+          </div>
+
+          <textarea id="contact-message" placeholder="Escreva a sua mensagem" required></textarea>
+
+          <button id="contact-submit" type="submit">Submeter</button>
+
+        </form>
+
+        <!-- MAPA -->
+        <iframe
+          class="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.682932969392!2d-8.542021!3d40.926037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24f1a3c9c9c9c9%3A0x0000000000000000!2sSanta%20Maria%20da%20Feira!5e0!3m2!1spt-PT!2sPT!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+      </div>
+
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer-fixed">
-    <p class="footer-copy">
+    <p class="footer-links">
+      <a id="footer-privacy" href="politica-privacidade.html" target="_blank" rel="noopener" data-i18n="footer.privacy">Política de Privacidade</a>
+      |
+      <a id="footer-terms" href="termos-utilizacao.html" target="_blank" rel="noopener" data-i18n="footer.terms">Termos de Utilização</a>
+    </p>
+    <p class="footer-copy" data-i18n="footer.copy">
       © 2026 HCR Digital Solutions — Todos os direitos reservados
     </p>
   </footer>
