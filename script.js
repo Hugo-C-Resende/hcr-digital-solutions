@@ -2,9 +2,9 @@ let currentLang = "pt";
 
 /* ===================== TRADUÇÕES ===================== */
 const translations = {
-  pt: { ... },
-  en: { ... },
-  fr: { ... }
+  pt: { /* mantém tudo como já tens */ },
+  en: { /* mantém tudo como já tens */ },
+  fr: { /* mantém tudo como já tens */ }
 };
 
 /* ===================== APLICAR TRADUÇÕES ===================== */
