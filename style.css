@@ -90,7 +90,7 @@ body {
 
 /* ===================== SECTIONS ===================== */
 .section {
-  padding-top: 180px;
+  padding-top: 200px;
   padding-bottom: 80px;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .section-inner {
-  max-width: 960px;
+  max-width: 1200px; /* aumenta o espaço para o layout lado a lado */
   margin: 0 auto;
   padding: 0 20px;
 }
