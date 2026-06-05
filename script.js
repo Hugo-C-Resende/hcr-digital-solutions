@@ -164,51 +164,29 @@ function setLanguage(lang) {
   }
 }
 
-/* ===================== SCROLL + NAV ATIVO ===================== */
+/* ===================== SISTEMA DE TABS ===================== */
+function activateTab(tabId) {
+  document.querySelectorAll(".tab-section").forEach((sec) => {
+    sec.classList.toggle("active-section", sec.id === tabId);
+  });
+
+  document.querySelectorAll(".nav-menu button").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tabId);
+  });
+}
+
+/* ===================== EVENTOS ===================== */
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations();
 
-  const OFFSET = 216;
-
-  /* Scroll suave ao clicar nos navtabs */
-  document.querySelectorAll(".nav-menu a").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      const href = link.getAttribute("href");
-      if (!href.startsWith("#")) return;
-
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (!target) return;
-
-      window.scrollTo({
-        top: target.offsetTop - OFFSET,
-        behavior: "smooth"
-      });
-    });
+  /* Botões da navbar */
+  document.querySelectorAll(".nav-menu button").forEach((btn) => {
+    btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
-  /* Secção ativa no scroll */
-  const sections = document.querySelectorAll("section[id]");
-
-  window.addEventListener("scroll", () => {
-    const scrollPos = window.scrollY + OFFSET + 1;
-    let current = sections[0].id;
-
-    sections.forEach((section) => {
-      const top = section.offsetTop;
-      const bottom = top + section.offsetHeight;
-
-      if (scrollPos >= top && scrollPos < bottom) {
-        current = section.id;
-      }
-    });
-
-    document.querySelectorAll(".nav-menu a").forEach((link) => {
-      link.classList.toggle(
-        "active",
-        link.getAttribute("href") === `#${current}`
-      );
-    });
+  /* Botões internos (ex: Explorar Serviços, Contactar) */
+  document.querySelectorAll("[data-tab]").forEach((btn) => {
+    btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
   /* Botões de língua */
@@ -216,4 +194,3 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 });
-
