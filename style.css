@@ -13,7 +13,12 @@ body {
   font-family: "Inter", sans-serif;
   background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
   color: #ffffff;
+
+  /* reserva espaço para header+navbar em cima e footer em baixo */
+  padding-top: 216px;  /* 160 + 56 */
   padding-bottom: 90px;
+
+  min-height: 100vh;
 }
 
 /* ===================== HEADER ===================== */
@@ -92,17 +97,7 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  /* começa exatamente abaixo do header + navbar */
-  margin-top: 216px;
-
-  /* espaço interno normal */
   padding: 40px 0 80px;
-
-  /* ocupa sempre o espaço até ao rodapé */
-  min-height: calc(100vh - 216px);
-
-  /* fundo contínuo da secção */
-  background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
 }
 
 .section-inner {
