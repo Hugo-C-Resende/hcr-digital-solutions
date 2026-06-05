@@ -90,16 +90,16 @@ body {
 
 /* ===================== SECTIONS ===================== */
 .section {
-  padding-top: 200px; /* valor ideal para remover o espaço gigante */
+  padding-top: 160px; /* sobe todas as secções */
   padding-bottom: 80px;
 }
 
 .hero-section {
-  padding-top: 220px;
+  padding-top: 200px; /* apenas o Início fica mais abaixo */
 }
 
 .section-inner {
-  max-width: 1200px; /* permite mapa + formulário lado a lado */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -225,7 +225,9 @@ h3 {
 
 /* Campo Telefone */
 .phone-field {
+  width: 100%;
   position: relative;
+  display: block;
 }
 
 .phone-field .flag {
@@ -238,6 +240,7 @@ h3 {
 }
 
 .phone-field input {
+  width: 100%;
   padding-left: 46px !important;
 }
 
@@ -269,7 +272,8 @@ h3 {
   font-weight: 600;
   font-size: 15px;
   width: 160px;
-  align-self: center;
+  margin: 0 auto;
+  display: block;
 }
 
 /* ===================== FOOTER ===================== */
