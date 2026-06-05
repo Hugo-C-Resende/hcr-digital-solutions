@@ -1,7 +1,11 @@
 let currentLang = "pt";
 
 /* ===================== TRADUÇÕES ===================== */
-const translations = { ... (mantém exatamente o teu bloco completo) ... };
+const translations = {
+  pt: { ... },
+  en: { ... },
+  fr: { ... }
+};
 
 /* ===================== APLICAR TRADUÇÕES ===================== */
 function applyTranslations() {
@@ -47,5 +51,15 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Botões de língua */
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+  });
+
+  /* Navtabs normais (anchors) */
+  document.querySelectorAll(".nav-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.querySelectorAll(".nav-menu a").forEach((l) =>
+        l.classList.remove("active")
+      );
+      link.classList.add("active");
+    });
   });
 });
