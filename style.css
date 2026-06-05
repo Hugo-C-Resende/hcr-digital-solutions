@@ -93,20 +93,13 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  /* afastar conteúdo da navbar fixa */
-  padding-top: 220px;
-  padding-bottom: 80px;
-
-  /* altura mínima: viewport - header - navbar - footer */
-  min-height: calc(100vh - 160px - 56px - 90px);
+  padding-top: 220px;   /* para não colar ao nav */
+  padding-bottom: 80px; /* espaço antes do footer */
+  min-height: calc(100vh - 220px - 80px);
 }
 
 .section-inner {
-  background: rgba(5, 8, 22, 0.85);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 40px 30px 60px;
-  min-height: calc(100vh - 350px); /* painel visual consistente */
 }
 
 /* Sistema de tabs */
