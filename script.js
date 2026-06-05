@@ -166,12 +166,10 @@ function setLanguage(lang) {
 
 /* ===================== SISTEMA DE TABS ===================== */
 function activateTab(tabId) {
-  // secções
   document.querySelectorAll(".tab-section").forEach((sec) => {
     sec.classList.toggle("active-section", sec.id === tabId);
   });
 
-  // nav buttons
   document.querySelectorAll(".nav-menu button").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.tab === tabId);
   });
@@ -181,17 +179,14 @@ function activateTab(tabId) {
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations();
 
-  /* Botões da navbar */
   document.querySelectorAll(".nav-menu button").forEach((btn) => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
-  /* Botões internos (Explorar Serviços, Contactar) */
   document.querySelectorAll("button[data-tab]").forEach((btn) => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
-  /* Botões de língua */
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
