@@ -19,6 +19,23 @@ function applyTranslations() {
   });
 }
 
+/* ===================== ATIVAR TABS ===================== */
+function activateTab(tabId) {
+  // remover active-section de todas
+  document.querySelectorAll(".tab-section").forEach((sec) => {
+    sec.classList.remove("active-section");
+  });
+
+  // ativar a secção correta
+  const target = document.getElementById(tabId);
+  if (target) target.classList.add("active-section");
+
+  // atualizar navbar
+  document.querySelectorAll(".nav-menu button").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tabId);
+  });
+}
+
 /* ===================== LÍNGUA ===================== */
 function setLanguage(lang) {
   if (!translations[lang]) lang = "pt";
@@ -48,33 +65,18 @@ function setLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations();
 
+  /* Botões da navbar */
+  document.querySelectorAll(".nav-menu button").forEach((btn) => {
+    btn.addEventListener("click", () => activateTab(btn.dataset.tab));
+  });
+
+  /* Botões internos (ex: Explorar Serviços, Contactar) */
+  document.querySelectorAll("[data-tab]").forEach((btn) => {
+    btn.addEventListener("click", () => activateTab(btn.dataset.tab));
+  });
+
   /* Botões de língua */
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
-  });
-
-  /* NAVTABS FUNCIONAIS */
-  document.querySelectorAll(".nav-menu a").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      // impedir comportamento estranho do browser
-      e.preventDefault();
-
-      // remover active de todos
-      document.querySelectorAll(".nav-menu a").forEach((l) =>
-        l.classList.remove("active")
-      );
-
-      // ativar o clicado
-      link.classList.add("active");
-
-      // scroll suave corrigido para header + navbar
-      const target = document.querySelector(link.getAttribute("href"));
-      const offset = 216; // 160 + 56
-
-      window.scrollTo({
-        top: target.offsetTop - offset,
-        behavior: "smooth"
-      });
-    });
   });
 });
