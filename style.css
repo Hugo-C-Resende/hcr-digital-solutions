@@ -98,7 +98,9 @@ body {
 }
 
 .section-inner {
-  padding: 20px 30px 60px;
+  max-width: 1200px;      /* largura máxima do conteúdo */
+  margin: 0 auto;         /* centra o conteúdo */
+  padding: 20px 30px 60px; /* margens internas */
 }
 
 /* Sistema de tabs */
