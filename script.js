@@ -1,4 +1,3 @@
-/* ===================== TABS ===================== */
 function activateTab(tabId) {
   // mostrar/esconder secções
   document.querySelectorAll(".tab-section").forEach((sec) => {
@@ -11,18 +10,12 @@ function activateTab(tabId) {
   });
 }
 
-/* ===================== EVENTOS ===================== */
 document.addEventListener("DOMContentLoaded", () => {
-  // navbar
+  // listeners nos botões da navbar
   document.querySelectorAll(".nav-menu button").forEach((btn) => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
-  // botões internos (Explorar Serviços, Contactar)
-  document.querySelectorAll("button[data-tab]").forEach((btn) => {
-    btn.addEventListener("click", () => activateTab(btn.dataset.tab));
-  });
-
-  // garantir que começa em home
+  // garantir que começamos em home
   activateTab("home");
 });
