@@ -13,6 +13,7 @@ body {
   font-family: "Inter", sans-serif;
   background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
   color: #ffffff;
+  padding-top: 216px; /* header 160 + navbar 56 */
   padding-bottom: 90px;   /* espaço para o footer fixo */
   min-height: 100vh;
 }
@@ -93,11 +94,11 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  padding-top: 0;
   padding-bottom: 80px;
 }
 
 .section-inner {
+  padding-top: 20px;
   padding: 40px 30px 60px;
 }
 
