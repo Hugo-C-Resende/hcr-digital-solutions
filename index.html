@@ -137,29 +137,35 @@
         <form class="contact-form">
 
           <div class="form-row">
-            <input type="text" placeholder="Nome *" required />
-            <input type="text" placeholder="Sobrenome *" required />
+            <input id="contact-firstname" type="text" placeholder="Nome *" required />
+            <input id="contact-lastname" type="text" placeholder="Sobrenome *" required />
           </div>
 
-          <input type="email" placeholder="Email *" required />
+          <input id="contact-email" type="email" placeholder="Email *" required />
 
           <div class="phone-field">
-            <span class="flag">🇵🇹</span>
-            <input type="tel" placeholder="Telefone *" required />
+            <span class="flag" id="phone-flag">🇵🇹</span>
+            <select id="phone-prefix">
+              <option value="+351">+351</option>
+              <option value="+44">+44</option>
+              <option value="+33">+33</option>
+            </select>
+            <input id="contact-phone" type="tel" placeholder="Telefone *" required />
           </div>
 
-          <textarea placeholder="Escreva a sua mensagem" required></textarea>
+          <textarea id="contact-message" placeholder="Escreva a sua mensagem" required></textarea>
 
-          <button type="submit">Submeter</button>
+          <button id="contact-submit" type="submit">Submeter</button>
 
         </form>
 
         <!-- MAPA -->
         <iframe
           class="contact-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.123456789!2d-8.542!3d40.926"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.682932969392!2d-8.542021!3d40.926037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24f1a3c9c9c9c9%3A0x0000000000000000!2sSanta%20Maria%20da%20Feira!5e0!3m2!1spt-PT!2sPT!4v1700000000000"
           allowfullscreen=""
           loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
 
       </div>
