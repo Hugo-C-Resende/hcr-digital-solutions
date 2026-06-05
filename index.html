@@ -161,12 +161,27 @@
     loading="lazy"
   ></iframe>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Nome" required />
-    <input type="email" placeholder="Email" required />
-    <textarea placeholder="Mensagem" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+ <form class="contact-form">
+
+  <div class="form-row">
+    <input type="text" placeholder="Nome *" required />
+    <input type="text" placeholder="Sobrenome *" required />
+  </div>
+
+  <div class="form-row">
+    <input type="email" placeholder="Email *" required />
+
+    <div class="phone-field">
+      <span class="flag">🇵🇹</span>
+      <input type="tel" placeholder="Telefone *" required />
+    </div>
+  </div>
+
+  <textarea placeholder="Escreva a sua mensagem" required></textarea>
+
+  <button type="submit">Submeter</button>
+
+</form>
 
 </div>
 
