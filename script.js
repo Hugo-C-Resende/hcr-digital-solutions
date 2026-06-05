@@ -139,11 +139,55 @@ function applyTranslations() {
   });
 }
 
+/* ===================== PLACEHOLDERS & TELEFONE ===================== */
+function applyContactLanguage(lang) {
+  const first = document.getElementById("contact-firstname");
+  const last = document.getElementById("contact-lastname");
+  const email = document.getElementById("contact-email");
+  const phone = document.getElementById("contact-phone");
+  const message = document.getElementById("contact-message");
+  const submit = document.getElementById("contact-submit");
+  const flag = document.getElementById("phone-flag");
+  const prefix = document.getElementById("phone-prefix");
+
+  if (!first) return; // se não existir, não faz nada
+
+  if (lang === "pt") {
+    first.placeholder = "Nome *";
+    last.placeholder = "Sobrenome *";
+    email.placeholder = "Email *";
+    phone.placeholder = "Telefone *";
+    message.placeholder = "Escreva a sua mensagem";
+    submit.textContent = "Submeter";
+    flag.textContent = "🇵🇹";
+    prefix.value = "+351";
+  } else if (lang === "en") {
+    first.placeholder = "First name *";
+    last.placeholder = "Last name *";
+    email.placeholder = "Email *";
+    phone.placeholder = "Phone *";
+    message.placeholder = "Write your message";
+    submit.textContent = "Submit";
+    flag.textContent = "🇬🇧";
+    prefix.value = "+44";
+  } else {
+    first.placeholder = "Prénom *";
+    last.placeholder = "Nom *";
+    email.placeholder = "Email *";
+    phone.placeholder = "Téléphone *";
+    message.placeholder = "Écrivez votre message";
+    submit.textContent = "Envoyer";
+    flag.textContent = "🇫🇷";
+    prefix.value = "+33";
+  }
+}
+
 /* ===================== LÍNGUA ===================== */
 function setLanguage(lang) {
   if (!translations[lang]) lang = "pt";
   currentLang = lang;
   applyTranslations();
+  applyContactLanguage(lang);
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
@@ -178,6 +222,7 @@ function activateTab(tabId) {
 /* ===================== EVENTOS ===================== */
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations();
+  applyContactLanguage(currentLang);
 
   document.querySelectorAll(".nav-menu button").forEach((btn) => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
