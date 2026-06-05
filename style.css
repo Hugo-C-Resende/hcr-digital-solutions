@@ -299,13 +299,3 @@ body {
   font-size: 11px;
   opacity: 0.8;
 }
-
-/* ===================== FORÇAR MARGENS LATERAIS ===================== */
-.section-inner {
-  max-width: 1200px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
