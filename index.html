@@ -144,14 +144,25 @@
           <input id="contact-email" type="email" placeholder="Email *" required />
 
           <div class="phone-field">
-            <span class="flag" id="phone-flag">🇵🇹</span>
-            <select id="phone-prefix">
-              <option value="+351">+351</option>
-              <option value="+44">+44</option>
-              <option value="+33">+33</option>
-            </select>
-            <input id="contact-phone" type="tel" placeholder="Telefone *" required />
-          </div>
+  <select id="phone-country" class="phone-select">
+    <option value="+351">🇵🇹 +351 Portugal</option>
+    <option value="+44">🇬🇧 +44 United Kingdom</option>
+    <option value="+33">🇫🇷 +33 France</option>
+    <option value="+49">🇩🇪 +49 Germany</option>
+    <option value="+34">🇪🇸 +34 Spain</option>
+    <option value="+39">🇮🇹 +39 Italy</option>
+    <option value="+1">🇺🇸 +1 United States</option>
+    <option value="+55">🇧🇷 +55 Brazil</option>
+    <option value="+81">🇯🇵 +81 Japan</option>
+    <option value="+86">🇨🇳 +86 China</option>
+    <option value="+91">🇮🇳 +91 India</option>
+    <option value="+7">🇷🇺 +7 Russia</option>
+    <option value="+61">🇦🇺 +61 Australia</option>
+    <option value="+27">🇿🇦 +27 South Africa</option>
+    <option value="+1">🇨🇦 +1 Canada</option>
+  </select>
+  <input id="contact-phone" class="phone-input" type="tel" placeholder="Telefone *" required />
+</div>
 
           <textarea id="contact-message" placeholder="Escreva a sua mensagem" required></textarea>
 
