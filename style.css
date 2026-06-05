@@ -94,7 +94,8 @@ body {
 .section {
   padding-top: 220px;
   padding-bottom: 80px;
-  min-height: calc(100vh - 216px); /* 100vh - (header + navbar) */
+  min-height: calc(100vh - 216px);
+  background: radial-gradient(circle at top left, #1b1f3b 0, #050816 45%, #02010a 100%);
 }
 
 .section-inner {
