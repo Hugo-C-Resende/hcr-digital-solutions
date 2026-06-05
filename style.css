@@ -95,7 +95,7 @@ body {
 }
 
 .hero-section {
-  padding-top: 200px; /* apenas o Início fica mais abaixo */
+  padding-top: 180px; /* apenas o Início fica mais abaixo */
 }
 
 .section-inner {
@@ -241,7 +241,7 @@ h3 {
 
 .phone-field input {
   width: 100%;
-  padding-left: 46px !important;
+  box-sizing: border-box;
 }
 
 /* Inputs gerais */
