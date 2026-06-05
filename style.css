@@ -93,9 +93,9 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  padding-top: 220px;   /* para não colar ao nav */
+  padding-top: 216px;   /* 160 header + 56 navbar */
   padding-bottom: 80px; /* espaço antes do footer */
-  min-height: calc(100vh - 220px - 80px);
+  /* sem min-height */
 }
 
 .section-inner {
