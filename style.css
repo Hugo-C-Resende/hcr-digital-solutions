@@ -93,7 +93,7 @@ body {
 
 /* ===================== SECTIONS / TABS ===================== */
 .section {
-  padding-top: 40px;     /* antes 220px — agora correto */
+  padding-top: 0;
   padding-bottom: 80px;
 }
 
