@@ -90,7 +90,7 @@ body {
 
 /* ===================== SECTIONS ===================== */
 .section {
-  padding-top: 216px;
+  padding-top: 200px; /* valor ideal para remover o espaço gigante */
   padding-bottom: 80px;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .section-inner {
-  max-width: 1200px; /* aumenta o espaço para o layout lado a lado */
+  max-width: 1200px; /* permite mapa + formulário lado a lado */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -179,19 +179,21 @@ h3 {
 .contact-wrapper {
   margin-top: 40px;
   display: flex;
-  flex-direction: row;      /* <-- AGORA É HORIZONTAL */
-  justify-content: center;  /* centra os dois blocos */
-  align-items: flex-start;  /* alinha pelo topo */
-  gap: 40px;                /* espaço entre formulário e mapa */
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
 }
 
+/* MAPA À DIREITA */
 .contact-map {
-  width: 55%;               /* metade do espaço */
-  height: 420px;            /* altura igual à da imagem */
+  width: 55%;
+  height: 420px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.15);
 }
 
+/* FORMULÁRIO À ESQUERDA */
 .contact-form {
   width: 45%;
   max-width: 480px;
@@ -204,23 +206,26 @@ h3 {
   border: 1px solid rgba(255,255,255,0.08);
 }
 
+/* Nome + Sobrenome lado a lado */
 .form-row {
   display: flex;
   gap: 20px;
-}
-
-.contact-form input[type="email"],
-.contact-form .phone-field {
-  width: 100%;
 }
 
 .form-row input {
   flex: 1;
 }
 
+/* Email e Telefone em LINHAS SEPARADAS */
+.contact-form > input[type="email"],
+.contact-form > .phone-field {
+  width: 100%;
+  display: block;
+}
+
+/* Campo Telefone */
 .phone-field {
   position: relative;
-  flex: 1;
 }
 
 .phone-field .flag {
@@ -236,6 +241,7 @@ h3 {
   padding-left: 46px !important;
 }
 
+/* Inputs gerais */
 .contact-form input,
 .contact-form textarea {
   padding: 14px;
@@ -246,11 +252,13 @@ h3 {
   font-size: 14px;
 }
 
+/* Mensagem */
 .contact-form textarea {
   min-height: 160px;
   resize: vertical;
 }
 
+/* Botão centrado */
 .contact-form button {
   background: #f7c600;
   color: #050816;
@@ -261,7 +269,7 @@ h3 {
   font-weight: 600;
   font-size: 15px;
   width: 160px;
-  align-self: flex-start;
+  align-self: center;
 }
 
 /* ===================== FOOTER ===================== */
