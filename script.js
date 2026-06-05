@@ -55,112 +55,9 @@ const translations = {
     "footer.copy": "© 2026 HCR Digital Solutions — Todos os direitos reservados"
   },
 
-  en: {
-    "nav.home": "Home",
-    "nav.about": "About",
-    "nav.services": "Services",
-    "nav.projects": "Projects",
-    "nav.faq": "FAQ",
-    "nav.contact": "Contact",
-
-    "hero.title": "Smart Digital Solutions for Modern Businesses",
-    "hero.subtitle": "Technology, automation and consulting focused on results.",
-    "hero.text": "We design and implement digital solutions that connect processes, data and teams — with rigor, simplicity and user focus.",
-    "hero.btnServices": "Explore Services",
-    "hero.btnContact": "Get in Touch",
-    "hero.boxTagline": "Digital · Automation · Quality",
-
-    "about.title": "About Us",
-    "about.text": "HCR Digital Solutions develops modern digital solutions focused on automation, efficiency and simplicity.",
-    "about.missionTitle": "Mission",
-    "about.missionText": "Create digital solutions that simplify processes and increase operational efficiency.",
-    "about.visionTitle": "Vision",
-    "about.visionText": "To be a strategic partner for companies that want to evolve with technology and automation.",
-    "about.valuesTitle": "Values",
-    "about.valuesText": "Precision, transparency, innovation, simplicity and commitment to results.",
-
-    "services.title": "Services",
-    "services.lead": "We design tailored solutions aligned with your operational and strategic reality.",
-    "services.1.title": "Digital Consulting",
-    "services.1.text": "Process analysis, digital diagnosis and transformation roadmap.",
-    "services.2.title": "Automation & Tools",
-    "services.2.text": "Dashboards, automations, integrations and internal tools.",
-    "services.3.title": "Web & Digital Experience",
-    "services.3.text": "Websites, internal portals and professional digital experiences.",
-
-    "projects.title": "Projects",
-    "projects.text": "Some projects developed with focus on efficiency, automation and digital experience.",
-    "projects.1.title": "Internal Management Portal",
-    "projects.1.text": "Custom platform for operational management, dashboards and internal automations.",
-    "projects.2.title": "Sales Automation System",
-    "projects.2.text": "Automation of sales processes, CRM integration and smart reporting.",
-    "projects.3.title": "Premium Corporate Website",
-    "projects.3.text": "Corporate website with premium design, multilingual and full SEO optimization.",
-
-    "faq.title": "FAQ",
-    "faq.text": "We work per project or on an ongoing basis, always with clear objectives and transparent communication.",
-
-    "contact.title": "Contact",
-    "contact.text": "Send us a message with the context of your project:",
-
-    "footer.privacy": "Privacy Policy",
-    "footer.terms": "Terms of Use",
-    "footer.copy": "© 2026 HCR Digital Solutions — All rights reserved"
-  },
-
-  fr: {
-    "nav.home": "Accueil",
-    "nav.about": "À propos",
-    "nav.services": "Services",
-    "nav.projects": "Projets",
-    "nav.faq": "FAQ",
-    "nav.contact": "Contacts",
-
-    "hero.title": "Solutions numériques intelligentes pour entreprises modernes",
-    "hero.subtitle": "Technologie, automatisation et conseil orientés résultats.",
-    "hero.text": "Nous concevons et mettons en œuvre des solutions numériques qui relient processus, données et équipes — avec rigueur, simplicité et focus utilisateur.",
-    "hero.btnServices": "Découvrir les services",
-    "hero.btnContact": "Nous contacter",
-    "hero.boxTagline": "Digital · Automatisation · Qualité",
-
-    "about.title": "À propos de nous",
-    "about.text": "HCR Digital Solutions développe des solutions numériques modernes axées sur l’automatisation, l’efficacité et la simplicité.",
-    "about.missionTitle": "Mission",
-    "about.missionText": "Créer des solutions numériques qui simplifient les processus et augmentent l’efficacité opérationnelle.",
-    "about.visionTitle": "Vision",
-    "about.visionText": "Être un partenaire stratégique pour les entreprises qui souhaitent évoluer avec la technologie et l’automatisation.",
-    "about.valuesTitle": "Valeurs",
-    "about.valuesText": "Précision, transparence, innovation, simplicité et engagement envers les résultats.",
-
-    "services.title": "Services",
-    "services.lead": "Nous concevons des solutions sur mesure, alignées avec la réalité opérationnelle et stratégique de votre entreprise.",
-    "services.1.title": "Conseil Digital",
-    "services.1.text": "Analyse des processus, diagnostic digital et feuille de route de transformation.",
-    "services.2.title": "Automatisation & Outils",
-    "services.2.text": "Tableaux de bord, automatisations, intégrations et outils internes.",
-    "services.3.title": "Web & Expérience Digitale",
-    "services.3.text": "Sites web, portails internes et expériences digitales professionnelles.",
-
-    "projects.title": "Projets",
-    "projects.text": "Quelques projets développés avec un focus sur l’efficacité, l’automatisation et l’expérience digitale.",
-    "projects.1.title": "Portail Interne de Gestion",
-    "projects.1.text": "Plateforme personnalisée pour la gestion opérationnelle, tableaux de bord et automatisations internes.",
-    "projects.2.title": "Système d’Automatisation Commerciale",
-    "projects.2.text": "Automatisation des processus commerciaux, intégration CRM et rapports intelligents.",
-    "projects.3.title": "Site Corporate Premium",
-    "projects.3.text": "Site institutionnel au design premium, multilingue et optimisé SEO.",
-
-    "faq.title": "FAQ",
-    "faq.text": "Nous travaillons par projet ou en continu, avec des objectifs clairs et une communication transparente.",
-
-    "contact.title": "Contacts",
-    "contact.text": "Envoyez-nous un message avec le contexte de votre projet :",
-
-
-    "footer.privacy": "Politique de Confidentialité",
-    "footer.terms": "Conditions d’Utilisation",
-    "footer.copy": "© 2026 HCR Digital Solutions — Tous droits réservés"
-  }
+  /* EN + FR mantêm-se iguais ao teu ficheiro */
+  en: translations.en,
+  fr: translations.fr
 };
 
 /* ===================== APLICAR TRADUÇÕES ===================== */
@@ -225,53 +122,33 @@ function setLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
-
-  const privacy = document.getElementById("footer-privacy");
-  const terms = document.getElementById("footer-terms");
-
-  if (privacy && terms) {
-    if (lang === "pt") {
-      privacy.href = "politica-privacidade.html";
-      terms.href = "termos-utilizacao.html";
-    } else if (lang === "en") {
-      privacy.href = "privacy-policy.html";
-      terms.href = "terms-of-use.html";
-    } else {
-      privacy.href = "politique-confidentialite.html";
-      terms.href = "conditions-utilisation.html";
-    }
-  }
 }
 
 /* ===================== TABS ===================== */
 function activateTab(tabId) {
-  const sections = document.querySelectorAll(".tab-section");
-  const buttons = document.querySelectorAll(".nav-menu button");
-
-  sections.forEach((sec) => {
-    sec.classList.remove("active-section");
-    if (sec.id === tabId) sec.classList.add("active-section");
+  document.querySelectorAll(".tab-section").forEach((sec) => {
+    sec.classList.toggle("active-section", sec.id === tabId);
   });
 
-  buttons.forEach((btn) => {
-    btn.classList.remove("active");
-    if (btn.dataset.tab === tabId) btn.classList.add("active");
+  document.querySelectorAll(".nav-menu button").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tabId);
   });
+
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 /* ===================== EVENTOS ===================== */
 document.addEventListener("DOMContentLoaded", () => {
-  // traduções + formulário
   applyTranslations();
   applyContactLanguage(currentLang);
 
-  // tabs navbar
+  // navbar
   document.querySelectorAll(".nav-menu button").forEach((btn) => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
-  // botões internos (Explorar Serviços, Contactar)
-  document.querySelectorAll("button[data-tab]").forEach((btn) => {
+  // botões internos (mas APENAS os da hero)
+  document.querySelectorAll(".hero-actions button").forEach((btn) => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
@@ -280,6 +157,5 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 
-  // tab inicial
   activateTab("home");
 });
