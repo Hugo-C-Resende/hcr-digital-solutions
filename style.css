@@ -429,3 +429,19 @@ body {
           text-align: center;
     }
 }
+
+
+/* ===================== NAV LINKS (contactos.html) ===================== */
+.nav-menu a {
+  color: #e5e5e5;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+}
+
+
+.nav-menu a:hover {
+  color: #f7c600;
+
+}
