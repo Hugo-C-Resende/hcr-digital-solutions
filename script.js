@@ -50,6 +50,7 @@ const translations = {
     "contact.title": "Contactos",
     "contact.text": "Envia-nos uma mensagem com o contexto do teu projeto:",
     "contact.success": "Obrigado! O seu cliente de email vai abrir para enviar a mensagem.",
+    "contact.hours": "Horário: 09h00 - 18h00 (Seg-Sex)",
 
     "footer.privacy": "Política de Privacidade",
     "footer.terms": "Termos de Utilização",
@@ -104,6 +105,7 @@ const translations = {
     "contact.title": "Contact",
     "contact.text": "Send us a message with some context about your project:",
     "contact.success": "Thank you! Your email client will open to send the message.",
+    "contact.hours": "Hours: 9:00 AM - 6:00 PM (Mon-Fri)",
 
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Use",
@@ -158,6 +160,7 @@ const translations = {
     "contact.title": "Contact",
     "contact.text": "Envoyez-nous un message avec le contexte de votre projet :",
     "contact.success": "Merci ! Votre client de messagerie va s'ouvrir pour envoyer le message.",
+    "contact.hours": "Horaires : 9h00 - 18h00 (Lun-Ven)",
 
     "footer.privacy": "Politique de Confidentialité",
     "footer.terms": "Conditions d'Utilisation",
