@@ -49,15 +49,120 @@ const translations = {
 
     "contact.title": "Contactos",
     "contact.text": "Envia-nos uma mensagem com o contexto do teu projeto:",
+    "contact.success": "Obrigado! O seu cliente de email vai abrir para enviar a mensagem.",
 
     "footer.privacy": "Política de Privacidade",
     "footer.terms": "Termos de Utilização",
     "footer.copy": "© 2026 HCR Digital Solutions — Todos os direitos reservados"
   },
 
-  /* EN + FR mantêm-se iguais ao teu ficheiro */
-  en: translations.en,
-  fr: translations.fr
+  en: {
+    "nav.home": "Home",
+    "nav.about": "About Us",
+    "nav.services": "Services",
+    "nav.projects": "Projects",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contact",
+
+    "hero.title": "Smart Digital Solutions for Modern Businesses",
+    "hero.subtitle": "Technology, automation and consulting focused on results.",
+    "hero.text": "We design and implement digital solutions that connect processes, data and teams — with rigour, simplicity and a focus on the user.",
+    "hero.btnServices": "Explore Services",
+    "hero.btnContact": "Get in Touch",
+    "hero.boxTagline": "Digital · Automation · Quality",
+
+    "about.title": "About Us",
+    "about.text": "HCR Digital Solutions develops modern digital solutions, focused on automation, efficiency and simplicity. We work with companies that value precision, clarity and concrete results.",
+    "about.missionTitle": "Mission",
+    "about.missionText": "Create digital solutions that simplify processes, reduce repetitive tasks and increase operational efficiency.",
+    "about.visionTitle": "Vision",
+    "about.visionText": "To be a strategic partner for companies looking to evolve through technology, automation and a premium digital experience.",
+    "about.valuesTitle": "Values",
+    "about.valuesText": "Precision, transparency, innovation, simplicity and absolute commitment to results.",
+
+    "services.title": "Services",
+    "services.lead": "We design tailor-made solutions, aligned with your company's operational and strategic reality.",
+    "services.1.title": "Digital Consulting",
+    "services.1.text": "Process analysis, digital diagnosis and transformation roadmap.",
+    "services.2.title": "Automation & Tools",
+    "services.2.text": "Dashboards, automations, integrations and internal tools.",
+    "services.3.title": "Web & Digital Experience",
+    "services.3.text": "Websites, internal portals and professional digital experiences.",
+
+    "projects.title": "Projects",
+    "projects.text": "Some of the projects developed with a focus on efficiency, automation and digital experience.",
+    "projects.1.title": "Internal Management Portal",
+    "projects.1.text": "Custom platform for operational management, dashboards and internal automations.",
+    "projects.2.title": "Sales Automation System",
+    "projects.2.text": "Sales process automation, CRM integration and smart reporting.",
+    "projects.3.title": "Premium Corporate Website",
+    "projects.3.text": "Institutional website with premium design, multilingual and full SEO optimisation.",
+
+    "faq.title": "FAQ",
+    "faq.text": "We work per project or on an ongoing basis, always with clear goals and transparent communication.",
+
+    "contact.title": "Contact",
+    "contact.text": "Send us a message with some context about your project:",
+    "contact.success": "Thank you! Your email client will open to send the message.",
+
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Use",
+    "footer.copy": "© 2026 HCR Digital Solutions — All rights reserved"
+  },
+
+  fr: {
+    "nav.home": "Accueil",
+    "nav.about": "À Propos",
+    "nav.services": "Services",
+    "nav.projects": "Projets",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contact",
+
+    "hero.title": "Solutions Digitales Intelligentes pour Entreprises Modernes",
+    "hero.subtitle": "Technologie, automatisation et conseil axés sur les résultats.",
+    "hero.text": "Nous concevons et mettons en œuvre des solutions digitales qui relient processus, données et équipes — avec rigueur, simplicité et un focus sur l’utilisateur.",
+    "hero.btnServices": "Découvrir les Services",
+    "hero.btnContact": "Nous Contacter",
+    "hero.boxTagline": "Digital · Automatisation · Qualité",
+
+    "about.title": "À Propos",
+    "about.text": "HCR Digital Solutions développe des solutions digitales modernes, axées sur l’automatisation, l’efficacité et la simplicité. Nous travaillons avec des entreprises qui valorisent la précision, la clarté et des résultats concrets.",
+    "about.missionTitle": "Mission",
+    "about.missionText": "Créer des solutions digitales qui simplifient les processus, réduisent les tâches répétitives et augmentent l’efficacité opérationnelle.",
+    "about.visionTitle": "Vision",
+    "about.visionText": "Être le partenaire stratégique des entreprises qui souhaitent évoluer grâce à la technologie, l’automatisation et une expérience digitale premium.",
+    "about.valuesTitle": "Valeurs",
+    "about.valuesText": "Précision, transparence, innovation, simplicité et engagement absolu envers les résultats.",
+
+    "services.title": "Services",
+    "services.lead": "Nous concevons des solutions sur mesure, alignées avec la réalité opérationnelle et stratégique de votre entreprise.",
+    "services.1.title": "Conseil Digital",
+    "services.1.text": "Analyse des processus, diagnostic digital et feuille de route de transformation.",
+    "services.2.title": "Automatisation & Outils",
+    "services.2.text": "Tableaux de bord, automatisations, intégrations et outils internes.",
+    "services.3.title": "Web & Expérience Digitale",
+    "services.3.text": "Sites web, portails internes et expériences digitales professionnelles.",
+
+    "projects.title": "Projets",
+    "projects.text": "Quelques projets développés avec un focus sur l’efficacité, l’automatisation et l’expérience digitale.",
+    "projects.1.title": "Portail Interne de Gestion",
+    "projects.1.text": "Plateforme personnalisée pour la gestion opérationnelle, tableaux de bord et automatisations internes.",
+    "projects.2.title": "Système d’Automatisation Commerciale",
+    "projects.2.text": "Automatisation des processus commerciaux, intégration CRM et rapports intelligents.",
+    "projects.3.title": "Site Web Corporate Premium",
+    "projects.3.text": "Site institutionnel avec design premium, multilingue et optimisation SEO complète.",
+
+    "faq.title": "FAQ",
+    "faq.text": "Nous travaillons par projet ou en continu, toujours avec des objectifs clairs et une communication transparente.",
+
+    "contact.title": "Contact",
+    "contact.text": "Envoyez-nous un message avec le contexte de votre projet :",
+    "contact.success": "Merci ! Votre client de messagerie va s'ouvrir pour envoyer le message.",
+
+    "footer.privacy": "Politique de Confidentialité",
+    "footer.terms": "Conditions d'Utilisation",
+    "footer.copy": "© 2026 HCR Digital Solutions — Tous droits réservés"
+  }
 };
 
 /* ===================== APLICAR TRADUÇÕES ===================== */
@@ -134,13 +239,59 @@ function activateTab(tabId) {
     btn.classList.toggle("active", btn.dataset.tab === tabId);
   });
 
+  if (history.replaceState) {
+    history.replaceState(null, "", "#" + tabId);
+  }
+
   window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+/* ===================== FORMULÁRIO DE CONTACTO ===================== */
+function initContactForm() {
+  const form = document.querySelector(".contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const firstName = document.getElementById("contact-firstname").value.trim();
+    const lastName = document.getElementById("contact-lastname").value.trim();
+    const email = document.getElementById("contact-email").value.trim();
+    const countryCode = document.getElementById("phone-country").value;
+    const phone = document.getElementById("contact-phone").value.trim();
+    const message = document.getElementById("contact-message").value.trim();
+
+    const subject = "Novo contacto de " + firstName + " " + lastName;
+    const body =
+      "Nome: " + firstName + " " + lastName + "\n" +
+      "Email: " + email + "\n" +
+      "Telefone: " + countryCode + " " + phone + "\n\n" +
+      "Mensagem:\n" + message;
+
+    const mailtoLink =
+      "mailto:contacto@hcrdigitalsolutions.com?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+
+    const status = document.getElementById("contact-status");
+    if (status) {
+      const msg =
+        (translations[currentLang] && translations[currentLang]["contact.success"]) ||
+        translations.pt["contact.success"];
+      status.textContent = msg;
+      status.classList.add("visible");
+    }
+  });
 }
 
 /* ===================== EVENTOS ===================== */
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations();
   applyContactLanguage(currentLang);
+  initContactForm();
 
   // navbar
   document.querySelectorAll(".nav-menu button").forEach((btn) => {
@@ -157,5 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 
-  activateTab("home");
+  const validTabs = ["home", "about", "services", "projects", "faq", "contact"];
+  const hash = window.location.hash.replace("#", "");
+  activateTab(validTabs.includes(hash) ? hash : "home");
 });
