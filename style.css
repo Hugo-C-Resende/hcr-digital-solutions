@@ -94,6 +94,15 @@ body {
   border-color: #f7c600;
 }
 
+.flag-icon {
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+  display: block;
+  object-fit: cover;
+}
+
+
 /* ===================== SECTIONS / TABS ===================== */
 .section {
   padding-bottom: 80px;
