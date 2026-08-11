@@ -315,7 +315,7 @@ body {
 
 /* ===================== FORÇAR MARGENS LATERAIS ===================== */
 .section-inner {
-  max-width: 1200px !important;
+  max-width: 1000px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 30px;
