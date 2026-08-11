@@ -7,6 +7,7 @@ const translations = {
     "nav.about": "Sobre Nós",
     "nav.services": "Serviços",
     "nav.projects": "Projetos",
+    "nav.apps": "Apps",
     "nav.faq": "FAQ",
     "nav.contact": "Contactos",
 
@@ -15,7 +16,15 @@ const translations = {
     "hero.text": "Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.",
     "hero.btnServices": "Explorar Serviços",
     "hero.btnContact": "Contactar",
+    "hero.btnApps": "🚀 Pré-Lançamento",
     "hero.boxTagline": "Digital · Automação · Qualidade",
+
+        "apps.title": "Apps & Pré-Lançamentos",
+        "apps.lead": "A HCR Digital Solutions também desenvolve aplicações próprias. Esta secção reúne os nossos apps, incluindo os que estão em fase de pré-lançamento.",
+        "apps.card1.badge": "Em Breve",
+        "apps.card1.title": "Nova App HCR",
+        "apps.card1.text": "Estamos a preparar uma nova aplicação focada em produtividade e automação. Em breve teremos mais detalhes e a data de lançamento.",
+        "apps.card1.cta": "Saber Mais",
 
     "about.title": "Sobre Nós",
     "about.text": "A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.",
@@ -62,6 +71,7 @@ const translations = {
     "nav.about": "About Us",
     "nav.services": "Services",
     "nav.projects": "Projects",
+    "nav.apps": "Apps",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
 
@@ -70,7 +80,15 @@ const translations = {
     "hero.text": "We design and implement digital solutions that connect processes, data and teams — with rigour, simplicity and a focus on the user.",
     "hero.btnServices": "Explore Services",
     "hero.btnContact": "Get in Touch",
+    "hero.btnApps": "🚀 Pre-Launch",
     "hero.boxTagline": "Digital · Automation · Quality",
+
+        "apps.title": "Apps & Pre-Launches",
+        "apps.lead": "HCR Digital Solutions also develops its own apps. This section brings together our apps, including those currently in pre-launch.",
+        "apps.card1.badge": "Coming Soon",
+        "apps.card1.title": "New HCR App",
+        "apps.card1.text": "We're preparing a new app focused on productivity and automation. More details and the launch date will be shared soon.",
+        "apps.card1.cta": "Learn More",
 
     "about.title": "About Us",
     "about.text": "HCR Digital Solutions develops modern digital solutions, focused on automation, efficiency and simplicity. We work with companies that value precision, clarity and concrete results.",
@@ -117,6 +135,7 @@ const translations = {
     "nav.about": "À Propos",
     "nav.services": "Services",
     "nav.projects": "Projets",
+    "nav.apps": "Apps",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
 
@@ -125,7 +144,15 @@ const translations = {
     "hero.text": "Nous concevons et mettons en œuvre des solutions digitales qui relient processus, données et équipes — avec rigueur, simplicité et un focus sur l’utilisateur.",
     "hero.btnServices": "Découvrir les Services",
     "hero.btnContact": "Nous Contacter",
+    "hero.btnApps": "🚀 Pré-Lancement",
     "hero.boxTagline": "Digital · Automatisation · Qualité",
+
+        "apps.title": "Apps & Pré-Lancements",
+        "apps.lead": "HCR Digital Solutions développe également ses propres applications. Cette section réunit nos apps, y compris celles en phase de pré-lancement.",
+        "apps.card1.badge": "Bientôt Disponible",
+        "apps.card1.title": "Nouvelle App HCR",
+        "apps.card1.text": "Nous préparons une nouvelle application axée sur la productivité et l'automatisation. Plus de détails et la date de lancement seront bientôt annoncés.",
+        "apps.card1.cta": "En Savoir Plus",
 
     "about.title": "À Propos",
     "about.text": "HCR Digital Solutions développe des solutions digitales modernes, axées sur l’automatisation, l’efficacité et la simplicité. Nous travaillons avec des entreprises qui valorisent la précision, la clarté et des résultats concrets.",
@@ -306,12 +333,17 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => activateTab(btn.dataset.tab));
   });
 
+  // apps CTA
+    document.querySelectorAll(".app-card-cta").forEach((btn) => {
+          btn.addEventListener("click", () => activateTab(btn.dataset.tab));
+    });
+
   // línguas
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 
-  const validTabs = ["home", "about", "services", "projects", "faq", "contact"];
+  const validTabs = ["home", "about", "services", "projects", "apps", "faq", "contact"];
   const hash = window.location.hash.replace("#", "");
   activateTab(validTabs.includes(hash) ? hash : "home");
 });
