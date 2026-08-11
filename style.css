@@ -113,7 +113,7 @@ body {
 }
 
 .section-inner {
-  max-width: 1000;      /* largura máxima do conteúdo */
+  max-width: 1000px;      /* largura máxima do conteúdo */
   margin: 0 auto;         /* centra o conteúdo */
   padding: 20px 30px 60px; /* margens internas */
 }
