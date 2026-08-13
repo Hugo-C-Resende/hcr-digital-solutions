@@ -386,7 +386,7 @@ function initContactForm() {
       "Mensagem:\n" + message;
 
     const mailtoLink =
-      "mailto:contacto@hcrdigitalsolutions.com?subject=" +
+      "mailto:hugocresende@hotmail.com?subject=" +
       encodeURIComponent(subject) +
       "&body=" +
       encodeURIComponent(body);
