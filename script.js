@@ -40,6 +40,10 @@ pt: {
 "apps.card4.title": "AQL",
 "apps.card4.text": "Plataforma SaaS de inspeções de qualidade baseada na tabela AQL, com apoio à norma ISO 9001 e alertas automáticos sempre que surgem problemas a resolver. Disponível em Windows, Mac, iOS, Android e iPad, com integração com PHC, Primavera e Sage.",
 "apps.card4.cta": "Pedir Acesso Antecipado",
+"apps.otherTitle": "Outras Apps em Pré-Lançamento",
+"aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
+"aql.tag.erp": "Integração PHC · Primavera · Sage",
+"aql.tag.iso": "Alinhado com ISO 9001",
 
 "about.title": "Sobre Nós",
 "about.text": "A HCR Digital Solutions é uma empresa especializada no desenvolvimento de aplicações empresariais e soluções de automação. Criamos tecnologia que melhora processos, reduz custos e aumenta a eficiência operacional.",
@@ -133,6 +137,10 @@ en: {
 "apps.card4.title": "AQL",
 "apps.card4.text": "SaaS platform for quality inspections based on the AQL table, aligned with ISO 9001 and with automatic alerts whenever issues need resolving. Available on Windows, Mac, iOS, Android and iPad, with integration with PHC, Primavera and Sage.",
 "apps.card4.cta": "Request Early Access",
+"apps.otherTitle": "Other Apps in Pre-Launch",
+"aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
+"aql.tag.erp": "Integration with PHC · Primavera · Sage",
+"aql.tag.iso": "Aligned with ISO 9001",
 
 "about.title": "About Us",
 "about.text": "HCR Digital Solutions specializes in enterprise application development and automation solutions. We create technology that improves processes, reduces costs and increases operational efficiency.",
@@ -226,6 +234,10 @@ fr: {
 "apps.card4.title": "AQL",
 "apps.card4.text": "Plateforme SaaS d'inspections qualité basée sur la table AQL, alignée avec la norme ISO 9001 et avec des alertes automatiques dès qu'un problème survient. Disponible sur Windows, Mac, iOS, Android et iPad, avec intégration à PHC, Primavera et Sage.",
 "apps.card4.cta": "Demander un Accès Anticipé",
+"apps.otherTitle": "Autres Apps en Pré-Lancement",
+"aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
+"aql.tag.erp": "Intégration PHC · Primavera · Sage",
+"aql.tag.iso": "Aligné avec la norme ISO 9001",
 
 "about.title": "À Propos",
 "about.text": "HCR Digital Solutions est spécialisée dans le développement d’applications professionnelles et de solutions d’automatisation. Nous créons des technologies qui améliorent les processus, réduisent les coûts et augmentent l’efficacité opérationnelle.",
