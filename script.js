@@ -88,6 +88,8 @@ pt: {
 "faq.4.text": "Sim. Acompanhamos o ciclo completo da aplicação.",
 "faq.5.title": "Integram com sistemas existentes?",
 "faq.5.text": "Sim. Criamos integrações com plataformas, bases de dados e serviços externos.",
+"faq.6.title": "Quanto custa?",
+"faq.6.text": "Depende do número de utilizadores e módulos ativos — contacta-nos para um orçamento personalizado ao teu caso.",
 
 "contact.title": "Contactos",
 "contact.text": "Entre em contacto para desenvolver a sua aplicação empresarial ou automatizar processos internos. Respondemos rapidamente e analisamos cada projeto com rigor técnico.",
@@ -185,6 +187,8 @@ en: {
 "faq.4.text": "Yes. We support the full lifecycle of the application.",
 "faq.5.title": "Do you integrate with existing systems?",
 "faq.5.text": "Yes. We integrate with platforms, databases and external services.",
+"faq.6.title": "How much does it cost?",
+"faq.6.text": "It depends on the number of users and active modules — contact us for a quote tailored to your case.",
 
 "contact.title": "Contact",
 "contact.text": "Get in touch to develop your enterprise application or automate internal processes. We respond quickly and evaluate each project with technical precision.",
@@ -282,6 +286,8 @@ fr: {
 "faq.4.text": "Oui. Nous accompagnons tout le cycle de vie de l’application.",
 "faq.5.title": "Intégrez‑vous des systèmes existants?",
 "faq.5.text": "Oui. Nous réalisons des intégrations avec plateformes, bases de données et services externes.",
+"faq.6.title": "Combien ça coûte ?",
+"faq.6.text": "Cela dépend du nombre d'utilisateurs et des modules actifs — contactez-nous pour un devis personnalisé à votre cas.",
 
 "contact.title": "Contact",
 "contact.text": "Contactez‑nous pour développer votre application professionnelle ou automatiser vos processus internes. Nous répondons rapidement et analysons chaque projet avec rigueur technique.",
