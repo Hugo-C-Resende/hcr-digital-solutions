@@ -19,8 +19,12 @@ pt: {
 "hero.btnApps": "🚀 Pré-Lançamento",
 "hero.boxTagline": "Digital · Automação · Qualidade",
 
+"aql.eyebrow": "Produto em Desenvolvimento Real",
+"aql.sectionTitle": "AQL — Plataforma de Inspeção de Qualidade",
+"aql.lead": "Ao contrário dos conceitos abaixo, a AQL já tem meses de engenharia real: conformidade RGPD, isolamento multi-tenant (RLS), sincronização offline-first e testes automatizados.",
+
 "apps.title": "Apps & Pré-Lançamentos",
-"apps.lead": "A HCR Digital Solutions também desenvolve aplicações próprias. Esta secção reúne os nossos apps, incluindo os que estão em fase de pré-lançamento.",
+"apps.lead": "Estamos também a validar novas ideias de produto. As apps abaixo são conceitos em fase de exploração, ainda sem desenvolvimento iniciado.",
 "apps.card1.badge": "Em Breve",
 "apps.card1.title": "Canal Horeca",
 "apps.card1.text": "Plataforma dedicada ao setor Horeca (hotelaria e restauração), pensada para simplificar encomendas, comunicação e gestão entre fornecedores e estabelecimentos.",
@@ -37,10 +41,8 @@ pt: {
 "apps.card3.cta": "Saber Mais",
 
 "apps.card4.badge": "Em Breve",
-"apps.card4.title": "AQL",
 "apps.card4.text": "Plataforma SaaS de inspeções de qualidade baseada na tabela AQL, com apoio à norma ISO 9001 e alertas automáticos sempre que surgem problemas a resolver. Disponível em Windows, Mac, iOS, Android e iPad, com integração com PHC, Primavera e Sage.",
 "apps.card4.cta": "Pedir Acesso Antecipado",
-"apps.otherTitle": "Outras Apps em Pré-Lançamento",
 "aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
 "aql.tag.erp": "Integração PHC · Primavera · Sage",
 "aql.tag.iso": "Alinhado com ISO 9001",
@@ -118,8 +120,12 @@ en: {
 "hero.btnApps": "🚀 Pre-Launch",
 "hero.boxTagline": "Digital · Automation · Quality",
 
+"aql.eyebrow": "Real Product in Development",
+"aql.sectionTitle": "AQL — Quality Inspection Platform",
+"aql.lead": "Unlike the concepts below, AQL already has months of real engineering behind it: GDPR compliance, multi-tenant isolation (RLS), offline-first sync and automated testing.",
+
 "apps.title": "Apps & Pre-Launches",
-"apps.lead": "HCR Digital Solutions also develops its own apps. This section brings together our apps, including those currently in pre-launch.",
+"apps.lead": "We're also validating new product ideas. The apps below are concepts still in the exploration phase, with no development started yet.",
 "apps.card1.badge": "Coming Soon",
 "apps.card1.title": "Canal Horeca",
 "apps.card1.text": "A platform dedicated to the Horeca sector (hospitality and food service), designed to simplify ordering, communication and management between suppliers and businesses.",
@@ -136,10 +142,8 @@ en: {
 "apps.card3.cta": "Learn More",
 
 "apps.card4.badge": "Coming Soon",
-"apps.card4.title": "AQL",
 "apps.card4.text": "SaaS platform for quality inspections based on the AQL table, aligned with ISO 9001 and with automatic alerts whenever issues need resolving. Available on Windows, Mac, iOS, Android and iPad, with integration with PHC, Primavera and Sage.",
 "apps.card4.cta": "Request Early Access",
-"apps.otherTitle": "Other Apps in Pre-Launch",
 "aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
 "aql.tag.erp": "Integration with PHC · Primavera · Sage",
 "aql.tag.iso": "Aligned with ISO 9001",
@@ -217,8 +221,12 @@ fr: {
 "hero.btnApps": "🚀 Pré-Lancement",
 "hero.boxTagline": "Digital · Automatisation · Qualité",
 
+"aql.eyebrow": "Produit en Développement Réel",
+"aql.sectionTitle": "AQL — Plateforme d'Inspection Qualité",
+"aql.lead": "Contrairement aux concepts ci-dessous, AQL bénéficie déjà de mois d'ingénierie réelle : conformité RGPD, isolation multi-tenant (RLS), synchronisation offline-first et tests automatisés.",
+
 "apps.title": "Apps & Pré-Lancements",
-"apps.lead": "HCR Digital Solutions développe également ses propres applications. Cette section réunit nos apps, y compris celles en phase de pré-lancement.",
+"apps.lead": "Nous validons également de nouvelles idées de produits. Les applications ci-dessous sont des concepts encore en phase d'exploration, sans développement encore entamé.",
 "apps.card1.badge": "Bientôt Disponible",
 "apps.card1.title": "Canal Horeca",
 "apps.card1.text": "Plateforme dédiée au secteur Horeca (hôtellerie et restauration), conçue pour simplifier les commandes, la communication et la gestion entre fournisseurs et établissements.",
@@ -235,10 +243,8 @@ fr: {
 "apps.card3.cta": "En Savoir Plus",
 
 "apps.card4.badge": "Bientôt Disponible",
-"apps.card4.title": "AQL",
 "apps.card4.text": "Plateforme SaaS d'inspections qualité basée sur la table AQL, alignée avec la norme ISO 9001 et avec des alertes automatiques dès qu'un problème survient. Disponible sur Windows, Mac, iOS, Android et iPad, avec intégration à PHC, Primavera et Sage.",
 "apps.card4.cta": "Demander un Accès Anticipé",
-"apps.otherTitle": "Autres Apps en Pré-Lancement",
 "aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
 "aql.tag.erp": "Intégration PHC · Primavera · Sage",
 "aql.tag.iso": "Aligné avec la norme ISO 9001",
