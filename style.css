@@ -263,7 +263,7 @@ body {
 
 .phone-select {
   flex: 0 0 160px;
-  padding: 10px 12px;
+  padding: 14px 12px;
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.25);
   background: rgba(255,255,255,0.06);
