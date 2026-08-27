@@ -142,7 +142,7 @@ en: {
 "apps.card3.cta": "Learn More",
 
 "apps.card4.badge": "Coming Soon",
-"apps.card4.text": "SaaS platform for quality inspections based on the AQL table, aligned with ISO 9001 and with automatic alerts whenever issues need resolving. Available on Windows, Mac, iOS, Android and iPad, with integration with PHC, Primavera and Sage.",
+"apps.card4.text": "SaaS platform for quality inspections based on the AQL table, aligned with ISO 9001. It covers the full closed-loop quality cycle — inspection → audit (internal or external) → corrective action → verification → closure — with automatic alerts at every stage whenever an issue needs resolving. Available on Windows, Mac, iOS, Android and iPad, with integration with PHC, Primavera and Sage.",
 "apps.card4.cta": "Request Early Access",
 "aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
 "aql.tag.erp": "Integration with PHC · Primavera · Sage",
@@ -243,7 +243,7 @@ fr: {
 "apps.card3.cta": "En Savoir Plus",
 
 "apps.card4.badge": "Bientôt Disponible",
-"apps.card4.text": "Plateforme SaaS d'inspections qualité basée sur la table AQL, alignée avec la norme ISO 9001 et avec des alertes automatiques dès qu'un problème survient. Disponible sur Windows, Mac, iOS, Android et iPad, avec intégration à PHC, Primavera et Sage.",
+"apps.card4.text": "Plateforme SaaS d'inspections qualité basée sur la table AQL, alignée avec la norme ISO 9001. Elle couvre tout le cycle fermé de la qualité — inspection → audit (interne ou externe) → action corrective → vérification → clôture — avec des alertes automatiques à chaque étape dès qu'un problème survient. Disponible sur Windows, Mac, iOS, Android et iPad, avec intégration à PHC, Primavera et Sage.",
 "apps.card4.cta": "Demander un Accès Anticipé",
 "aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
 "aql.tag.erp": "Intégration PHC · Primavera · Sage",
