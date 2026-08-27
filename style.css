@@ -658,12 +658,25 @@ body {
   padding: 5px 12px;
 }
 
-.apps-subheading {
-  margin-top: 48px;
-  margin-bottom: 4px;
+/* ===================== AQL — SECÇÃO PRÓPRIA ===================== */
+.aql-standalone {
   text-align: center;
-  font-size: 1em;
-  opacity: 0.75;
+}
+
+.section-eyebrow {
+  display: block;
+  color: #f7c600;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.aql-divider {
+  border: none;
+  height: 1px;
+  margin: 56px auto;
+  max-width: 640px;
+  background: linear-gradient(90deg, transparent, rgba(247, 198, 0, 0.4), transparent);
 }
