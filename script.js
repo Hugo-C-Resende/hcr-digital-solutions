@@ -329,6 +329,8 @@ const submit = document.getElementById("contact-submit");
 const countrySelect = document.getElementById("phone-country");
 
 if (!first) return;
+// Indicativo fixo: empresa sediada em Portugal, sem leads confirmados noutros mercados
+if (countrySelect) countrySelect.value = "+351";
 
 if (lang === "pt") {
 first.placeholder = "Nome *";
@@ -337,7 +339,6 @@ email.placeholder = "Email *";
 phone.placeholder = "Telefone *";
 message.placeholder = "Escreva a sua mensagem";
 submit.textContent = "Submeter";
-if (countrySelect) countrySelect.value = "+351";
 } else if (lang === "en") {
 first.placeholder = "First name *";
 last.placeholder = "Last name *";
@@ -345,7 +346,6 @@ email.placeholder = "Email *";
 phone.placeholder = "Phone *";
 message.placeholder = "Write your message";
 submit.textContent = "Submit";
-if (countrySelect) countrySelect.value = "+44";
 } else {
 first.placeholder = "Prénom *";
 last.placeholder = "Nom *";
@@ -353,7 +353,6 @@ email.placeholder = "Email *";
 phone.placeholder = "Téléphone *";
 message.placeholder = "Écrivez votre message";
 submit.textContent = "Envoyer";
-if (countrySelect) countrySelect.value = "+33";
 }
 }
 
