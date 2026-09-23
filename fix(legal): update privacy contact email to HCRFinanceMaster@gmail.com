@@ -60,7 +60,7 @@
 
         <h3 data-i18n="privacy.7.title">7. Contact</h3>
         <p data-i18n="privacy.7.text">
-            For privacy questions, contact us: privacidade@hcrfinance.app
+            For privacy questions, contact us: HCRFinanceMaster@gmail.com
         </p>
 
         <h3 data-i18n="privacy.8.title">8. Changes to This Policy</h3>
