@@ -30,10 +30,10 @@ pt: {
 "apps.card1.text": "Plataforma dedicada ao setor Horeca (hotelaria e restauração), pensada para simplificar encomendas, comunicação e gestão entre fornecedores e estabelecimentos.",
 "apps.card1.cta": "Saber Mais",
 
-"apps.card2.badge": "Em Breve",
+"apps.card2.badge": "Disponível",
 "apps.card2.title": "Wallet",
 "apps.card2.text": "Carteira digital para gerir pagamentos, saldos e transações de forma simples, rápida e segura.",
-"apps.card2.cta": "Saber Mais",
+"apps.card2.cta": "Abrir App",
 
 "apps.card3.badge": "Em Breve",
 "apps.card3.title": "Orçamentos",
@@ -131,10 +131,10 @@ en: {
 "apps.card1.text": "A platform dedicated to the Horeca sector (hospitality and food service), designed to simplify ordering, communication and management between suppliers and businesses.",
 "apps.card1.cta": "Learn More",
 
-"apps.card2.badge": "Coming Soon",
+"apps.card2.badge": "Available",
 "apps.card2.title": "Wallet",
 "apps.card2.text": "A digital wallet to manage payments, balances and transactions simply, quickly and securely.",
-"apps.card2.cta": "Learn More",
+"apps.card2.cta": "Open App",
 
 "apps.card3.badge": "Coming Soon",
 "apps.card3.title": "Orçamentos",
@@ -232,10 +232,10 @@ fr: {
 "apps.card1.text": "Plateforme dédiée au secteur Horeca (hôtellerie et restauration), conçue pour simplifier les commandes, la communication et la gestion entre fournisseurs et établissements.",
 "apps.card1.cta": "En Savoir Plus",
 
-"apps.card2.badge": "Bientôt Disponible",
+"apps.card2.badge": "Disponible",
 "apps.card2.title": "Wallet",
 "apps.card2.text": "Portefeuille numérique pour gérer paiements, soldes et transactions simplement, rapidement et en toute sécurité.",
-"apps.card2.cta": "En Savoir Plus",
+"apps.card2.cta": "Ouvrir l'App",
 
 "apps.card3.badge": "Bientôt Disponible",
 "apps.card3.title": "Orçamentos",
