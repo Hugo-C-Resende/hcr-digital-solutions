@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — HCR Finance Master</title>
+    <meta name="description" content="Como o HCR Finance Master recolhe, usa e protege os teus dados pessoais, e quais os teus direitos ao abrigo do RGPD." />
+    <link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/privacidade-finance-master.html" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section">
+    <div class="section-inner">
+
+        <h1>Política de Privacidade — HCR Finance Master</h1>
+        <p class="legal-updated"><strong>Última atualização:</strong> 15 de outubro de 2026</p>
+        <p>Ver também os <a href="termos-finance-master.html">Termos de Serviço</a> do HCR Finance Master.</p>
+
+        <ul class="legal-index">
+            <li><a href="#secao-1">1. Quem trata os teus dados</a></li>
+            <li><a href="#secao-2">2. Que dados recolhemos</a></li>
+            <li><a href="#secao-3">3. Base legal do tratamento (RGPD, Art. 6º)</a></li>
+            <li><a href="#secao-4">4. Com quem partilhamos dados</a></li>
+            <li><a href="#secao-5">5. Onde os teus dados são guardados</a></li>
+            <li><a href="#secao-6">6. Processamento de pagamentos (Stripe)</a></li>
+            <li><a href="#secao-7">7. Quanto tempo guardamos os teus dados</a></li>
+            <li><a href="#secao-8">8. Os teus direitos</a></li>
+            <li><a href="#secao-9">9. Segurança</a></li>
+            <li><a href="#secao-10">10. Cookies e armazenamento local</a></li>
+            <li><a href="#secao-11">11. Candidatura ao beta</a></li>
+            <li><a href="#secao-12">12. Alterações a esta política</a></li>
+        </ul>
+
+        <h2 id="secao-1">1. Quem trata os teus dados</h2>
+
+        <p>O HCR Finance Master é um produto de <strong>Hugo Cardoso Resende</strong>, Empresário em Nome Individual (ENI), com o NIF <strong>216 347 246</strong> e domicílio fiscal em <strong>Rua Estrada Nacional 327, nº 549, 4520-706 Souto, Portugal</strong>, doravante "HCR Digital Solutions" (denominação comercial não registada como sociedade), doravante "nós" ou "o responsável pelo tratamento".</p>
+
+        <p>Para qualquer questão relacionada com esta Política de Privacidade ou com os teus dados pessoais, contacta-nos através de <strong><a href="mailto:HCRFinanceMaster@gmail.com">HCRFinanceMaster@gmail.com</a></strong>.</p>
+
+        <h2 id="secao-2">2. Que dados recolhemos</h2>
+
+        <div class="table-wrap">
+        <table>
+            <thead>
+                <tr><th>Categoria</th><th>Dados</th><th>Finalidade</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Conta</td><td>Email, palavra-passe (guardada só como hash Argon2id — nunca a palavra-passe em si), idioma preferido</td><td>Autenticação e personalização</td></tr>
+                <tr><td>Household</td><td>Nome do agregado, membros, papéis (owner/editor/viewer)</td><td>Gestão partilhada de finanças</td></tr>
+                <tr><td>Dados financeiros</td><td>Transações, categorias, orçamentos, contas, investimentos, passivos — introduzidos manualmente por ti</td><td>O propósito central do serviço: gestão financeira pessoal</td></tr>
+                <tr><td>Dispositivos</td><td>Plataforma, idioma do dispositivo, data do último sync</td><td>Sincronização multi-dispositivo e suporte técnico</td></tr>
+                <tr><td>Registo de auditoria (audit log)</td><td>Ações realizadas na tua conta ou household — inclui o email de quem convidas para um household</td><td>Segurança e rastreabilidade; nunca é apagado.</td></tr>
+                <tr><td>Faturação (só se e quando subscreveres um plano pago)</td><td>Processada pelo Stripe (ver secção 6) — partilhamos só o teu email, nunca o teu nome (não o recolhemos) nem dados de cartão</td><td>Cobrança da subscrição</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <p><strong>Não recolhemos:</strong> o teu nome, credenciais bancárias, dados de acesso a contas bancárias reais, nem fazemos ligação automática a bancos (open banking) — toda a introdução de dados financeiros é manual, por decisão de arquitetura, não só de conformidade.</p>
+
+        <p><strong>Não aceitamos conscientemente menores de 18 anos</strong> — o serviço não lhes é dirigido.</p>
+
+        <h2 id="secao-3">3. Base legal do tratamento (RGPD, Art. 6º)</h2>
+
+        <ul>
+            <li><strong>Execução de contrato:</strong> dados de conta e financeiros, para prestar o serviço que contrataste.</li>
+            <li><strong>Consentimento:</strong> comunicações opcionais de marketing (se e quando existirem — opt-in explícito, nunca por omissão).</li>
+            <li><strong>Interesse legítimo:</strong> dados técnicos, para manter o serviço estável e seguro.</li>
+            <li><strong>Obrigação legal:</strong> dados de faturação, para cumprimento de obrigações fiscais.</li>
+        </ul>
+
+        <h2 id="secao-4">4. Com quem partilhamos dados</h2>
+
+        <div class="table-wrap">
+        <table>
+            <thead>
+                <tr><th>Destinatário</th><th>Dados partilhados</th><th>Motivo</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Render</td><td>Todos os dados da app (infraestrutura onde a API corre)</td><td>Alojamento da aplicação — servidores em Frankfurt, Alemanha</td></tr>
+                <tr><td>Neon</td><td>Todos os dados da app (base de dados)</td><td>Armazenamento da base de dados — Frankfurt, Alemanha</td></tr>
+                <tr><td>Cloudflare</td><td>O teu endereço IP e o tráfego HTTP de acesso à versão Web</td><td>Alojamento e entrega da versão Web da aplicação</td></tr>
+                <tr><td>Google</td><td>O email do destinatário e o conteúdo da mensagem, para enviar emails transacionais por SMTP (recuperação de password e convites de household)</td><td>Envio de emails transacionais</td></tr>
+                <tr><td>Google Forms</td><td>Nome, email e respostas do formulário — só de quem se candidata ao beta</td><td>Gestão de candidaturas ao beta (ver secção 11)</td></tr>
+                <tr><td>Stripe, Inc.</td><td>Email e identificador do household (nunca o teu nome — não o recolhemos)</td><td>Processamento de pagamentos — só se e quando subscreveres um plano pago. <strong>Durante o beta fechado, o checkout está desativado e ninguém é cobrado (ver Termos de Serviço, secção "Versão beta").</strong></td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <p>A Render e a Cloudflare podem registar endereços IP nos seus próprios registos técnicos de infraestrutura.</p>
+
+        <p>Não vendemos nem partilhamos os teus dados com terceiros para fins de publicidade. Não exibimos anúncios. Não usamos nenhuma ferramenta de análise de uso (analytics) nem de monitorização de erros de terceiros.</p>
+
+        <h2 id="secao-5">5. Onde os teus dados são guardados</h2>
+
+        <p>Os servidores da API e da base de dados estão em <strong>Frankfurt, Alemanha</strong>. Alguns fornecedores (Cloudflare, Stripe, Google) podem tratar dados fora do Espaço Económico Europeu, ao abrigo das garantias previstas no RGPD, como cláusulas contratuais-tipo.</p>
+
+        <h2 id="secao-6">6. Processamento de pagamentos (Stripe)</h2>
+
+        <p>As subscrições pagas são processadas pelo Stripe. Ao subscrever, os teus dados de pagamento são geridos diretamente pelo Stripe segundo a <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Stripe</a> — nunca vemos nem armazenamos o número do teu cartão.</p>
+
+        <h2 id="secao-7">7. Quanto tempo guardamos os teus dados</h2>
+
+        <p>Os teus dados são guardados enquanto a tua conta e/ou o teu household estiverem ativos. O que acontece exatamente depende do que apagares:</p>
+
+        <ul>
+            <li><strong>Apagares a tua conta pessoal</strong> (quando és o único membro do teu household): a eliminação é <strong>imediata e definitiva</strong>, sem período de recuperação. O teu email e palavra-passe são anonimizados de forma a deixarem de te identificar.</li>
+            <li><strong>Apagares explicitamente um household</strong> (não a tua conta): esse household entra num período de graça de <strong>30 dias</strong>, durante o qual o pedido pode ser cancelado e o household recuperado; passados os 30 dias, é eliminado definitivamente, em cascata (transações, contas, categorias e tudo o resto associado).</li>
+            <li><strong>Saíres de um household partilhado de que não és owner:</strong> só a tua participação nesse household termina — o household e os dados dos restantes membros continuam a existir normalmente.</li>
+        </ul>
+
+        <h2 id="secao-8">8. Os teus direitos</h2>
+
+        <p>Ao abrigo do RGPD, tens direito a:</p>
+
+        <ul>
+            <li><strong>Aceder</strong> aos teus dados — disponível a qualquer momento em Definições → Privacidade e Dados → Exportar os meus dados.</li>
+            <li><strong>Retificar</strong> dados incorretos — diretamente na app.</li>
+            <li><strong>Apagar</strong> a tua conta — imediato e definitivo, sem período de recuperação (ver secção 7); apagar um household específico, em vez da conta, tem um período de graça de 30 dias.</li>
+            <li><strong>Portabilidade</strong> — exporta os teus dados em formato estruturado (JSON) a qualquer momento.</li>
+            <li><strong>Limitar</strong> ou <strong>opor-te</strong> ao tratamento — contacta-nos.</li>
+            <li><strong>Retirar o consentimento</strong> a qualquer momento, quando o tratamento se basear em consentimento (ex. candidatura ao beta, comunicações de marketing) — contacta-nos; a retirada não afeta a legalidade do tratamento já feito antes dela.</li>
+            <li><strong>Reclamar</strong> junto da Comissão Nacional de Proteção de Dados (CNPD), em <a href="https://www.cnpd.pt" target="_blank" rel="noopener">www.cnpd.pt</a>, se considerares que os teus direitos não foram respeitados.</li>
+        </ul>
+
+        <h2 id="secao-9">9. Segurança</h2>
+
+        <p>Usamos encriptação em trânsito (TLS) e isolamos o acesso aos teus dados por household ao nível da base de dados (Row-Level Security do Postgres), não só na aplicação. Nos dispositivos (Android, iOS, Windows, macOS), a base de dados local é encriptada em repouso com SQLCipher; na versão Web, por limitação técnica do próprio browser, a base de dados local <strong>não</strong> é encriptada (ver aviso específico sobre isto dentro da app).</p>
+
+        <h2 id="secao-10">10. Cookies e armazenamento local</h2>
+
+        <p>Na versão Web, usamos um único cookie <strong>estritamente necessário</strong> — não é um cookie de rastreio nem de publicidade — que guarda, de forma protegida (<code>httpOnly</code>, só enviado em ligação segura), o token usado para manter a tua sessão de autenticação. Não usamos cookies de analytics nem de publicidade.</p>
+
+        <p>Em todas as plataformas, a app guarda uma cópia local dos teus dados para funcionamento offline: nos dispositivos nativos (Android, iOS, Windows, macOS) essa cópia local está encriptada (SQLCipher, ver secção 9); na versão Web fica no armazenamento local do próprio browser (IndexedDB/OPFS), sem encriptação adicional da nossa parte — ver aviso específico mostrado dentro da app.</p>
+
+        <h2 id="secao-11">11. Candidatura ao beta</h2>
+
+        <p>Se te candidataste a participar no beta através do nosso formulário (Google Forms), recolhemos o teu nome, email e as respostas que deste no formulário. A finalidade é gerir a tua participação no programa de beta. A base legal é o teu <strong>consentimento</strong>, dado ao submeteres o formulário. Guardamos estes dados até <strong>30 dias depois do fim do beta</strong>. Podes retirar o consentimento e pedir a eliminação destes dados a qualquer momento, em <strong><a href="mailto:HCRFinanceMaster@gmail.com">HCRFinanceMaster@gmail.com</a></strong>.</p>
+
+        <h2 id="secao-12">12. Alterações a esta política</h2>
+
+        <p>Podemos atualizar esta política. Alterações materiais serão comunicadas na app antes de entrarem em vigor.</p>
+
+    </div>
+</section>
+
+<footer class="footer-fixed">
+    <p class="footer-links">
+        <a href="privacidade-finance-master.html" target="_blank" rel="noopener">Política de Privacidade</a> |
+        <a href="termos-finance-master.html" target="_blank" rel="noopener">Termos de Serviço</a> |
+        <a href="mailto:HCRFinanceMaster@gmail.com">Contacto</a>
+    </p>
+    <p class="footer-copy">
+        © 2026 HCR Digital Solutions — Todos os direitos reservados
+    </p>
+</footer>
+
+</body>
+</html>
