@@ -779,3 +779,17 @@ body {
     padding: 14px 16px;
   }
 }
+
+/* ===================== CONTRASTE DOS LINKS NAS PÁGINAS LEGAIS =====================
+   Links de texto dentro de .section-inner (ex. Stripe, CNPD, ODR, "política
+   própria do produto") herdavam a cor branca do body, quase ilegível sobre o
+   fundo azul-marinho. :not(.legal-index a) exclui o índice de secções, que já
+   tem a sua própria cor dourada (ver .legal-index a acima). */
+.section-inner a:not(.legal-index a) {
+  color: #f7c600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.section-inner a:not(.legal-index a):hover {
+  color: #ffd84d;
+}
