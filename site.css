@@ -56,9 +56,9 @@ h1 em{font-style:normal;color:var(--gold)}
 .hero-note{margin-top:14px;font-size:13px;color:var(--muted)}
 
 /* mock */
-.mock{background:linear-gradient(160deg,var(--petrol2),var(--petrol));border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 60px rgba(247,198,0,.06)}
-.mock svg{width:100%;height:auto}
-.mock-cap{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:12px 6px 2px;font-size:13px;color:var(--muted)}
+.mock{background:linear-gradient(160deg,var(--petrol2),var(--petrol));border:1px solid var(--line);border-radius:20px;padding:0;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 60px rgba(247,198,0,.06)}
+.mock svg,.mock img{width:100%;height:auto}
+.mock-cap{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:12px 18px 14px;font-size:13px;color:var(--muted)}
 .mock-cap b{color:var(--text)}
 
 /* trust */
