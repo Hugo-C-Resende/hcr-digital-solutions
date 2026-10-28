@@ -14,7 +14,7 @@
     <div class="section-inner">
 
         <h1>Política de Privacidade — HCR Finance Master</h1>
-        <p class="legal-updated"><strong>Última atualização:</strong> 15 de outubro de 2026</p>
+        <p class="legal-updated"><strong>Última atualização:</strong> 28 de outubro de 2026</p>
         <p>Ver também os <a href="termos-finance-master.html">Termos de Serviço</a> do HCR Finance Master.</p>
 
         <ul class="legal-index">
@@ -50,7 +50,7 @@
                 <tr><td>Household</td><td>Nome do agregado, membros, papéis (owner/editor/viewer)</td><td>Gestão partilhada de finanças</td></tr>
                 <tr><td>Dados financeiros</td><td>Transações, categorias, orçamentos, contas, investimentos, passivos — introduzidos manualmente por ti</td><td>O propósito central do serviço: gestão financeira pessoal</td></tr>
                 <tr><td>Dispositivos</td><td>Plataforma, idioma do dispositivo, data do último sync</td><td>Sincronização multi-dispositivo e suporte técnico</td></tr>
-                <tr><td>Registo de auditoria (audit log)</td><td>Ações realizadas na tua conta ou household — inclui o email de quem convidas para um household</td><td>Segurança e rastreabilidade; nunca é apagado.</td></tr>
+                <tr><td>Registo de auditoria (audit log)</td><td>Ações realizadas na tua conta ou household — inclui o email de quem convidas para um household</td><td>Segurança e rastreabilidade. Os registos não são apagados, mas são anonimizados quando apagas a tua conta ou o household (ver secção 7).</td></tr>
                 <tr><td>Faturação (só se e quando subscreveres um plano pago)</td><td>Processada pelo Stripe (ver secção 6) — partilhamos só o teu email, nunca o teu nome (não o recolhemos) nem dados de cartão</td><td>Cobrança da subscrição</td></tr>
             </tbody>
         </table>
@@ -92,7 +92,7 @@
 
         <h2 id="secao-5">5. Onde os teus dados são guardados</h2>
 
-        <p>Os servidores da API e da base de dados estão em <strong>Frankfurt, Alemanha</strong>. Alguns fornecedores (Cloudflare, Stripe, Google) podem tratar dados fora do Espaço Económico Europeu, ao abrigo das garantias previstas no RGPD, como cláusulas contratuais-tipo.</p>
+        <p>Os servidores da API e da base de dados estão em <strong>Frankfurt, Alemanha</strong>. Alguns fornecedores (Cloudflare, Stripe, Google) podem tratar dados fora do Espaço Económico Europeu, ao abrigo das garantias previstas no RGPD, como cláusulas contratuais-tipo. As cópias de segurança semanais que fazemos ficam em equipamento do responsável pelo tratamento, em Portugal (ver secção 7).</p>
 
         <h2 id="secao-6">6. Processamento de pagamentos (Stripe)</h2>
 
@@ -103,20 +103,25 @@
         <p>Os teus dados são guardados enquanto a tua conta e/ou o teu household estiverem ativos. O que acontece exatamente depende do que apagares:</p>
 
         <ul>
-            <li><strong>Apagares a tua conta pessoal</strong> (quando és o único membro do teu household): a eliminação é <strong>imediata e definitiva</strong>, sem período de recuperação. O teu email e palavra-passe são anonimizados de forma a deixarem de te identificar.</li>
+            <li><strong>Apagares a tua conta pessoal</strong> (quando és o único membro do teu household; em Definições → Privacidade e Dados → Apagar a minha conta, com confirmação pela tua palavra-passe): a eliminação é <strong>imediata e definitiva</strong>, sem período de recuperação. O teu registo de utilizador (email, palavra-passe, dispositivos e sessões) é <strong>apagado</strong>, tal como os convites que recebeste por email. O teu household pessoal e todos os dados financeiros nele (transações, contas, categorias, orçamentos, investimentos e passivos) são apagados em cascata; se tinhas uma subscrição paga, é cancelada e pedimos ao Stripe a eliminação do respetivo cliente.</li>
             <li><strong>Apagares explicitamente um household</strong> (não a tua conta): esse household entra num período de graça de <strong>30 dias</strong>, durante o qual o pedido pode ser cancelado e o household recuperado; passados os 30 dias, é eliminado definitivamente, em cascata (transações, contas, categorias e tudo o resto associado).</li>
-            <li><strong>Saíres de um household partilhado de que não és owner:</strong> só a tua participação nesse household termina — o household e os dados dos restantes membros continuam a existir normalmente.</li>
+            <li><strong>Saíres de um household partilhado de que não és owner</strong> (ou apagares a conta estando num): só a tua participação nesse household termina — o household e os dados dos restantes membros continuam a existir normalmente. O que criaste nesse household (por exemplo, transações) fica com o household, mas deixa de estar associado a ti.</li>
+            <li><strong>Seres o único owner de um household partilhado com outros membros:</strong> não podes apagar a conta enquanto não transferires a titularidade a outro membro ou removeres os outros membros; a app avisa-te.</li>
         </ul>
+
+        <p><strong>Registo de auditoria.</strong> Quando apagas a conta ou o household, retiramos dos registos de auditoria o teu nome e email e substituímos o teu identificador por um identificador neutro. Os registos em si mantêm-se, já sem te identificar, para preservar a integridade dos registos de segurança (RGPD, Art. 17.º, n.º 3).</p>
+
+        <p><strong>Cópias de segurança.</strong> Para recuperarmos de falhas, existem cópias de segurança da base de dados: (a) o histórico de recuperação mantido pelo fornecedor da base de dados (Neon, Frankfurt), de duração limitada pelo plano contratado; e (b) uma cópia semanal feita por nós, guardada em equipamento do responsável pelo tratamento, em Portugal, em disco encriptado e com acesso restrito, da qual conservamos as últimas 8 (cerca de dois meses) e eliminamos as mais antigas por rotação. Os dados que apagares deixam de existir de imediato na base de dados em produção, mas podem subsistir nestas cópias até ao fim do respetivo ciclo (no máximo, cerca de 8 semanas nas cópias semanais). Se alguma vez restaurarmos uma cópia, voltamos a aplicar os apagamentos pedidos entretanto. Estas cópias não são usadas para nenhuma outra finalidade.</p>
 
         <h2 id="secao-8">8. Os teus direitos</h2>
 
         <p>Ao abrigo do RGPD, tens direito a:</p>
 
         <ul>
-            <li><strong>Aceder</strong> aos teus dados — disponível a qualquer momento em Definições → Privacidade e Dados → Exportar os meus dados.</li>
+            <li><strong>Aceder</strong> aos teus dados — disponível a qualquer momento em Definições → Privacidade e Dados → Exportar os meus dados (JSON completo, ou CSV só com as transações).</li>
             <li><strong>Retificar</strong> dados incorretos — diretamente na app.</li>
-            <li><strong>Apagar</strong> a tua conta — imediato e definitivo, sem período de recuperação (ver secção 7); apagar um household específico, em vez da conta, tem um período de graça de 30 dias.</li>
-            <li><strong>Portabilidade</strong> — exporta os teus dados em formato estruturado (JSON) a qualquer momento.</li>
+            <li><strong>Apagar</strong> a tua conta — imediato e definitivo, sem período de recuperação e com confirmação pela palavra-passe (ver secção 7, incluindo o prazo de rotação das cópias de segurança); apagar um household específico, em vez da conta, tem um período de graça de 30 dias.</li>
+            <li><strong>Portabilidade</strong> — exporta os teus dados em formato estruturado (JSON) ou as tuas transações em CSV a qualquer momento.</li>
             <li><strong>Limitar</strong> ou <strong>opor-te</strong> ao tratamento — contacta-nos.</li>
             <li><strong>Retirar o consentimento</strong> a qualquer momento, quando o tratamento se basear em consentimento (ex. candidatura ao beta, comunicações de marketing) — contacta-nos; a retirada não afeta a legalidade do tratamento já feito antes dela.</li>
             <li><strong>Reclamar</strong> junto da Comissão Nacional de Proteção de Dados (CNPD), em <a href="https://www.cnpd.pt" target="_blank" rel="noopener">www.cnpd.pt</a>, se considerares que os teus direitos não foram respeitados.</li>
@@ -124,7 +129,7 @@
 
         <h2 id="secao-9">9. Segurança</h2>
 
-        <p>Usamos encriptação em trânsito (TLS) e isolamos o acesso aos teus dados por household ao nível da base de dados (Row-Level Security do Postgres), não só na aplicação. Nos dispositivos (Android, iOS, Windows, macOS), a base de dados local é encriptada em repouso com SQLCipher; na versão Web, por limitação técnica do próprio browser, a base de dados local <strong>não</strong> é encriptada (ver aviso específico sobre isto dentro da app).</p>
+        <p>Usamos encriptação em trânsito (TLS) e isolamos o acesso aos teus dados por household ao nível da base de dados (Row-Level Security do Postgres), não só na aplicação. Nos dispositivos (Android, iOS, Windows, macOS), a base de dados local é encriptada em repouso com SQLCipher; na versão Web, por limitação técnica do próprio browser, a base de dados local <strong>não</strong> é encriptada (ver aviso específico sobre isto dentro da app). As cópias de segurança da base de dados são guardadas em disco encriptado, com acesso restrito ao responsável pelo tratamento.</p>
 
         <h2 id="secao-10">10. Cookies e armazenamento local</h2>
 
