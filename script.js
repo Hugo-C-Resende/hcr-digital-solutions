@@ -413,7 +413,7 @@ const body =
 "Mensagem:\n" + message;
 
 const mailtoLink =
-"mailto:hugocresende@hotmail.com?subject=" +
+"mailto:HCRFinanceMaster@gmail.com?subject=" +
 encodeURIComponent(subject) +
 "&body=" +
 encodeURIComponent(body);
