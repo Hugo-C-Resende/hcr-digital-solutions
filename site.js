@@ -257,7 +257,7 @@
       if (!ok) { st.textContent = (DICT[current]["ct.err"]) || "Preenche o nome, um email válido e a mensagem."; return; }
       var subject = "Novo contacto de " + n;
       var body = "Nome: " + n + "\nEmail: " + em + "\n\nMensagem:\n" + msg;
-      window.location.href = "mailto:hugocresende@hotmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = "mailto:HCRFinanceMaster@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       st.textContent = (DICT[current]["ct.ok"]) || "Obrigado! A tua aplicação de email vai abrir para enviar a mensagem.";
     });
   }
