@@ -1,60 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<!-- Página principal -->
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/</loc>
-<priority>1.0</priority>
-</url>
-
-<!-- Página de contactos -->
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/contactos.html</loc>
-<priority>0.7</priority>
-</url>
-
-<!-- Páginas legais - Português -->
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/politica-privacidade.html</loc>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/termos-utilizacao.html</loc>
-<priority>0.4</priority>
-</url>
-
-<!-- Páginas legais - English -->
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/privacy-policy.html</loc>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/terms-of-use.html</loc>
-<priority>0.4</priority>
-</url>
-
-<!-- Páginas legais - Français -->
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/politique-confidentialite.html</loc>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/conditions-utilisation.html</loc>
-<priority>0.4</priority>
-</url>
-
-<!-- Páginas legais - HCR Finance Master -->
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/privacidade-finance-master.html</loc>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://hugo-c-resende.github.io/hcr-digital-solutions/termos-finance-master.html</loc>
-<priority>0.4</priority>
-</url>
-
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/</loc><lastmod>2026-10-28</lastmod><priority>1.0</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/finance-master.html</loc><lastmod>2026-10-28</lastmod><priority>0.9</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/contactos.html</loc><priority>0.5</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/politica-privacidade.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/termos-utilizacao.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/privacy-policy.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/terms-of-use.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/politique-confidentialite.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/conditions-utilisation.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/privacidade-finance-master.html</loc><priority>0.4</priority></url>
+<url><loc>https://hugo-c-resende.github.io/hcr-digital-solutions/termos-finance-master.html</loc><priority>0.4</priority></url>
 </urlset>
