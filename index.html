@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>HCR Digital Solutions | Consultoria Digital e Automação de Processos</title>
-<meta name="description" content="Consultoria digital, automação de processos e desenvolvimento web premium para empresas que procuram eficiência, tecnologia e resultados concretos." />
-<meta name="keywords" content="consultoria digital, automação de processos, desenvolvimento web, dashboards, transformação digital, Portugal" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HCR Digital Solutions | Software à medida e automação de processos — Portugal</title>
+<meta name="description" content="Software à medida, automação de processos e dashboards para empresas. Criadores do HCR Finance Master (finanças pessoais e familiares, Windows e web). Santa Maria da Feira, Portugal." />
 <meta name="author" content="HCR Digital Solutions" />
-<meta name="theme-color" content="#050816" />
+<meta name="theme-color" content="#05080f" />
 <link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/" />
-<meta property="og:title" content="HCR Digital Solutions | Consultoria Digital e Automação" />
-<meta property="og:description" content="Soluções digitais, automação de processos e consultoria com foco em resultados para empresas modernas." />
+<meta property="og:title" content="HCR Digital Solutions | Software à medida e automação" />
+<meta property="og:description" content="Aplicações à medida, automação de processos e produtos próprios como o HCR Finance Master." />
 <meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -20,270 +19,259 @@
 <meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="HCR Digital Solutions | Consultoria Digital e Automação" />
-<meta name="twitter:description" content="Soluções digitais, automação de processos e consultoria com foco em resultados para empresas modernas." />
+<meta name="twitter:title" content="HCR Digital Solutions | Software à medida e automação" />
+<meta name="twitter:description" content="Aplicações à medida, automação de processos e produtos próprios como o HCR Finance Master." />
 <meta name="twitter:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
 <link rel="manifest" href="manifest.json" />
 <link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon-192x192.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://hugo-c-resende.github.io/hcr-digital-solutions/#org","name":"HCR Digital Solutions","url":"https://hugo-c-resende.github.io/hcr-digital-solutions/","logo":"https://hugo-c-resende.github.io/hcr-digital-solutions/logo-hcr.png","description":"Software à medida, automação de processos e produtos digitais próprios.","founder":{"@type":"Person","name":"Hugo Resende"},"address":{"@type":"PostalAddress","addressLocality":"Santa Maria da Feira","addressRegion":"Aveiro","addressCountry":"PT"},"areaServed":"PT","sameAs":["https://www.linkedin.com/in/hugo-resende-a0425870"]},
+{"@type":"WebSite","@id":"https://hugo-c-resende.github.io/hcr-digital-solutions/#site","url":"https://hugo-c-resende.github.io/hcr-digital-solutions/","name":"HCR Digital Solutions","publisher":{"@id":"https://hugo-c-resende.github.io/hcr-digital-solutions/#org"},"inLanguage":["pt-PT","en","fr"]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Que tipo de aplicações desenvolvem?","acceptedAnswer":{"@type":"Answer","text":"Apps internas, apps de gestão, apps de automação e soluções personalizadas."}},
+{"@type":"Question","name":"Quanto tempo demora um projeto?","acceptedAnswer":{"@type":"Answer","text":"Depende da complexidade, mas garantimos prazos realistas e comunicação contínua."}},
+{"@type":"Question","name":"As apps são escaláveis?","acceptedAnswer":{"@type":"Answer","text":"Sim. Todas as soluções são desenhadas para crescer com o negócio."}},
+{"@type":"Question","name":"Fazem manutenção?","acceptedAnswer":{"@type":"Answer","text":"Sim — ciclo completo: atualizações regulares, suporte técnico direto (email/telefone) e correção prioritária de falhas críticas. Os termos de SLA são definidos em contrato, conforme a criticidade da aplicação."}},
+{"@type":"Question","name":"Integram com sistemas existentes?","acceptedAnswer":{"@type":"Answer","text":"Sim. Criamos integrações com plataformas, bases de dados e serviços externos."}},
+{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Depende do número de utilizadores e módulos ativos — contacta-nos para um orçamento personalizado ao teu caso."}}
+]}]}
+</script>
 </head>
-
 <body>
+<a class="skip" href="#main" data-i18n="skip">Saltar para o conteúdo</a>
 
-<!-- HEADER -->
-<header class="header-fixed">
-<img src="logo-hcr.png" alt="HCR Digital Solutions" class="header-logo" />
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="HCR Digital Solutions"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="90" height="56" /></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#apps" data-i18n="nav.apps">Produtos</a>
+      <a href="#services" data-i18n="nav.services">Serviços</a>
+      <a href="#process" data-i18n="nav.process">Como trabalhamos</a>
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <a class="btn btn-gold btn-sm hdr-cta" href="#contact" data-i18n="cta.quote">Pedir proposta</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu móvel">
+    <a href="#apps" data-i18n="nav.apps">Produtos</a>
+    <a href="#services" data-i18n="nav.services">Serviços</a>
+    <a href="#process" data-i18n="nav.process">Como trabalhamos</a>
+    <a href="#about" data-i18n="nav.about">Sobre</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <a class="cta" href="#contact" data-i18n="cta.quote">Pedir proposta</a>
+  </nav>
 </header>
 
-<!-- NAVBAR -->
-<nav class="navbar-fixed">
-<ul class="nav-menu">
-<li><button data-tab="home" class="active" data-i18n="nav.home">Início</button></li>
-<li><button data-tab="about" data-i18n="nav.about">Sobre Nós</button></li>
-<li><button data-tab="services" data-i18n="nav.services">Serviços</button></li>
-<li><button data-tab="projects" data-i18n="nav.projects">Projetos</button></li>
-<li><button data-tab="apps" data-i18n="nav.apps">Apps</button></li>
-<li><button data-tab="faq" data-i18n="nav.faq">FAQ</button></li>
-<li><button data-tab="contact" data-i18n="nav.contact">Contactos</button></li>
-</ul>
-
-<div class="lang-switcher">
-<button class="lang-btn active" data-lang="pt"><img src="https://flagcdn.com/24x18/pt.png" alt="PT" class="flag-icon" /></button>
-<button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/24x18/gb.png" alt="EN" class="flag-icon" /></button>
-<button class="lang-btn" data-lang="fr"><img src="https://flagcdn.com/24x18/fr.png" alt="FR" class="flag-icon" /></button>
-</div>
-</nav>
-
-<main>
-
-<!-- HOME -->
-<section id="home" class="section tab-section active-section hero-section">
-<div class="section-inner hero-inner">
-<div class="hero-content">
-<h1 data-i18n="hero.title">Soluções Digitais Inteligentes para Empresas Modernas</h1>
-<h2 data-i18n="hero.subtitle">Tecnologia, automação e consultoria com foco em resultados.</h2>
-<p data-i18n="hero.text">
-Desenhamos e implementamos soluções digitais que ligam processos, dados e equipas — com rigor, simplicidade e foco no utilizador.
-</p>
-
-<div class="hero-actions">
-<button class="btn-primary" data-tab="services" data-i18n="hero.btnServices">Explorar Serviços</button>
-<button class="btn-secondary" data-tab="contact" data-i18n="hero.btnContact">Contactar</button>
-<button class="btn-secondary" data-tab="apps" data-i18n="hero.btnApps">🚀 Pré-Lançamento</button>
-</div>
-</div>
-
-<div class="hero-visual">
-<div class="hero-logo-block">
-<img src="logo-hcr.png" alt="HCR Digital Solutions" class="hero-logo-mark" />
-<p data-i18n="hero.boxTagline">Digital · Automação · Qualidade</p>
-</div>
-</div>
-</div>
+<main id="main">
+<div id="top"></div>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow" data-i18n="hero.eyebrow">Software à medida · Santa Maria da Feira, Portugal</span>
+      <h1 data-i18n="hero.h1">Software à medida e <em>automação de processos</em> para empresas modernas</h1>
+      <p class="lead" data-i18n="hero.lead">Desenhamos e construímos aplicações, dashboards e integrações com rigor técnico, foco no utilizador e resultados mensuráveis.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#contact" data-i18n="cta.quote">Pedir proposta</a>
+        <a class="btn btn-line" href="#apps" data-i18n="hero.cta2">Ver produtos</a>
+      </div>
+      <p class="hero-note" data-i18n="hero.note">Respondemos rapidamente. Horário: 09h00–18h00 (seg–sex).</p>
+    </div>
+    <div class="mock" role="img" aria-label="Ilustração da interface do HCR Finance Master" data-i18n-aria="mock.aria">
+      <svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7c600" stop-opacity=".55"/><stop offset="1" stop-color="#f7c600" stop-opacity="0"/></linearGradient>
+        </defs>
+        <rect x="0" y="0" width="520" height="330" rx="14" fill="#07131b"/>
+        <rect x="0" y="0" width="520" height="34" rx="14" fill="#0a1d27"/>
+        <circle cx="20" cy="17" r="5" fill="#f7c600"/><circle cx="38" cy="17" r="5" fill="#2a6573"/><circle cx="56" cy="17" r="5" fill="#2a6573"/>
+        <rect x="0" y="34" width="112" height="296" fill="#0a1d27"/>
+        <rect x="16" y="56" width="70" height="10" rx="5" fill="#f7c600"/>
+        <rect x="16" y="86" width="80" height="8" rx="4" fill="#2a6573"/><rect x="16" y="108" width="62" height="8" rx="4" fill="#1b4553"/>
+        <rect x="16" y="130" width="74" height="8" rx="4" fill="#1b4553"/><rect x="16" y="152" width="56" height="8" rx="4" fill="#1b4553"/>
+        <rect x="130" y="52" width="118" height="64" rx="10" fill="#0d2a35" stroke="#f7c600" stroke-opacity=".35"/>
+        <rect x="142" y="64" width="44" height="7" rx="3.5" fill="#2a6573"/><rect x="142" y="84" width="78" height="14" rx="5" fill="#f7c600"/>
+        <rect x="262" y="52" width="118" height="64" rx="10" fill="#0d2a35" stroke="#2a6573" stroke-opacity=".6"/>
+        <rect x="274" y="64" width="44" height="7" rx="3.5" fill="#2a6573"/><rect x="274" y="84" width="64" height="14" rx="5" fill="#eef3f6" fill-opacity=".85"/>
+        <rect x="394" y="52" width="118" height="64" rx="10" fill="#0d2a35" stroke="#2a6573" stroke-opacity=".6"/>
+        <rect x="406" y="64" width="44" height="7" rx="3.5" fill="#2a6573"/><rect x="406" y="84" width="70" height="14" rx="5" fill="#eef3f6" fill-opacity=".85"/>
+        <rect x="130" y="128" width="252" height="124" rx="10" fill="#0d2a35" stroke="#2a6573" stroke-opacity=".6"/>
+        <path d="M144 230 C 180 214, 196 226, 228 196 S 290 190, 316 170 S 360 150, 370 142 L370 240 L144 240 Z" fill="url(#g1)"/>
+        <path d="M144 230 C 180 214, 196 226, 228 196 S 290 190, 316 170 S 360 150, 370 142" fill="none" stroke="#f7c600" stroke-width="3" stroke-linecap="round"/>
+        <rect x="394" y="128" width="118" height="124" rx="10" fill="#0d2a35" stroke="#2a6573" stroke-opacity=".6"/>
+        <circle cx="453" cy="190" r="34" fill="none" stroke="#1b4553" stroke-width="12"/>
+        <circle cx="453" cy="190" r="34" fill="none" stroke="#f7c600" stroke-width="12" stroke-dasharray="120 214" transform="rotate(-90 453 190)"/>
+        <rect x="130" y="264" width="382" height="10" rx="5" fill="#0d2a35"/><rect x="130" y="284" width="300" height="10" rx="5" fill="#0d2a35"/><rect x="130" y="304" width="340" height="10" rx="5" fill="#0d2a35"/>
+      </svg>
+      <div class="mock-cap"><b>HCR Finance Master</b><span data-i18n="mock.cap">Windows · Web · Beta gratuito</span></div>
+    </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section tab-section">
-<div class="section-inner">
-<h2 data-i18n="about.title">Sobre Nós</h2>
-<p data-i18n="about.text">
-A HCR Digital Solutions desenvolve soluções digitais modernas, com foco em automação, eficiência e simplicidade. Trabalhamos com empresas que valorizam precisão, clareza e resultados concretos.
-</p>
-
-<h3 data-i18n="about.missionTitle">Missão</h3>
-<p data-i18n="about.missionText">Criar soluções digitais que simplificam processos, reduzem tarefas repetitivas e aumentam a eficiência operacional.</p>
-
-<h3 data-i18n="about.visionTitle">Visão</h3>
-<p data-i18n="about.visionText">Ser parceiro estratégico de empresas que procuram evoluir com tecnologia, automação e experiência digital premium.</p>
-
-<h3 data-i18n="about.valuesTitle">Valores</h3>
-<p data-i18n="about.valuesText">Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.</p>
-</div>
+<section class="trust" aria-label="Garantias">
+  <div class="wrap">
+    <ul>
+      <li data-i18n="t1">RGPD e servidores na UE</li>
+      <li data-i18n="t2">Windows e web</li>
+      <li data-i18n="t3">Offline-first com sincronização</li>
+      <li data-i18n="t4">Dados exportáveis e apagáveis</li>
+    </ul>
+  </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section tab-section">
-<div class="section-inner">
-<h2 data-i18n="services.title">Serviços</h2>
-<p class="section-lead" data-i18n="services.lead">
-Desenhamos soluções à medida, alinhadas com a realidade operacional e estratégica da tua empresa.
-</p>
-
-<h3 data-i18n="services.1.title">Desenvolvimento de Aplicações Empresariais</h3>
-<p data-i18n="services.1.text">Criamos apps internas, apps de gestão e apps personalizadas que ligam equipas, processos e dados.</p>
-
-<h3 data-i18n="services.2.title">Automação de Processos</h3>
-<p data-i18n="services.2.text">Eliminamos tarefas manuais através de fluxos inteligentes e integrações automáticas.</p>
-
-<h3 data-i18n="services.3.title">Integração de Sistemas</h3>
-<p data-i18n="services.3.text">Ligamos plataformas, bases de dados e serviços externos para garantir operações fluidas.</p>
-
-<h3 data-i18n="services.4.title">Dashboards e Gestão de Dados</h3>
-<p data-i18n="services.4.text">Criamos interfaces inteligentes para análise, monitorização e tomada de decisão.</p>
-
-<h3 data-i18n="services.5.title">Consultoria Digital</h3>
-<p data-i18n="services.5.text">Ajudamos empresas a identificar oportunidades de digitalização e a implementar soluções eficientes.</p>
-</div>
+<section class="s" id="apps">
+  <div class="wrap">
+    <div class="s-head">
+      <span class="eyebrow" data-i18n="apps.eyebrow">Produtos próprios</span>
+      <h2 data-i18n="apps.title">Produtos construídos com a mesma exigência dos projetos de clientes</h2>
+      <p data-i18n="apps.lead">O que fazemos para nós, fazemos para ti: engenharia a sério, privacidade por defeito e testes automatizados.</p>
+    </div>
+    <div class="prod">
+      <article class="pcard">
+        <span class="badge" data-i18n="fm.badge">Disponível · Beta gratuito</span>
+        <h3>HCR Finance Master</h3>
+        <p data-i18n="fm.text">Finanças pessoais e familiares num só lugar: acompanha movimentos e património, importa extratos CSV (o ficheiro fica no teu dispositivo) e exporta ou apaga os teus dados quando quiseres.</p>
+        <ul class="checks">
+          <li data-i18n="fm.c1">Experimenta a demo sem registo</li>
+          <li data-i18n="fm.c2">Funciona em Windows e no browser</li>
+          <li data-i18n="fm.c3">Importação CSV local e exportação RGPD</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="finance-master.html" data-i18n="fm.b1">Ver detalhes</a>
+          <a class="btn btn-line" href="https://hcr-finance-web.hugocresende.workers.dev/demo" target="_blank" rel="noopener" data-i18n="fm.b2">Experimentar a demo</a>
+          <a class="btn btn-line" href="https://apps.microsoft.com/detail/9PLTVV6BQPVH" target="_blank" rel="noopener">Microsoft Store</a>
+        </div>
+      </article>
+      <article class="pcard alt">
+        <span class="badge dim" data-i18n="aql.badge">Em desenvolvimento</span>
+        <h3 data-i18n="aql.name">AQL — Inspeção de Qualidade</h3>
+        <p data-i18n="aql.text">Plataforma SaaS de inspeções de qualidade baseada na tabela AQL e alinhada com a ISO 9001: inspeção → auditoria → ação corretiva → verificação → fecho, com alertas automáticos. Integração prevista com PHC, Primavera e Sage.</p>
+        <div class="btn-row" style="margin-top:18px">
+          <a class="btn btn-line" href="#contact" data-i18n="aql.cta">Pedir acesso antecipado</a>
+        </div>
+      </article>
+    </div>
+    <p class="roadmap" data-i18n="apps.roadmap">Em exploração: Canal Horeca (encomendas e gestão entre fornecedores e estabelecimentos) · Orçamentos (propostas profissionais).</p>
+  </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section tab-section">
-<div class="section-inner">
-<h2 data-i18n="projects.title">Projetos</h2>
-<p data-i18n="projects.text">
-Alguns dos projetos desenvolvidos com foco em eficiência, automação e experiência digital.
-</p>
-
-<h3 data-i18n="projects.1.title">Portal Interno de Gestão</h3>
-<p data-i18n="projects.1.text">Plataforma personalizada para gestão operacional, dashboards e automações internas.</p>
-
-<h3 data-i18n="projects.2.title">Sistema de Automação Comercial</h3>
-<p data-i18n="projects.2.text">Automação de processos comerciais, integração com CRM e relatórios inteligentes.</p>
-
-<h3 data-i18n="projects.3.title">Website Corporativo Premium</h3>
-<p data-i18n="projects.3.text">Website institucional com design premium, multilingue e otimização SEO completa.</p>
-</div>
+<section class="s" id="services">
+  <div class="wrap">
+    <div class="s-head">
+      <span class="eyebrow" data-i18n="svc.eyebrow">Serviços</span>
+      <h2 data-i18n="svc.title">Soluções à medida para a realidade da tua empresa</h2>
+      <p data-i18n="svc.lead">Desenhamos soluções alinhadas com a realidade operacional e estratégica da tua empresa.</p>
+    </div>
+    <div class="cards c3">
+      <article class="card"><h3 data-i18n="svc.1.t">Desenvolvimento de aplicações empresariais</h3><p data-i18n="svc.1.d">Criamos apps internas, apps de gestão e apps personalizadas que ligam equipas, processos e dados.</p></article>
+      <article class="card"><h3 data-i18n="svc.2.t">Automação de processos</h3><p data-i18n="svc.2.d">Eliminamos tarefas manuais através de fluxos inteligentes e integrações automáticas.</p></article>
+      <article class="card"><h3 data-i18n="svc.3.t">Integração de sistemas</h3><p data-i18n="svc.3.d">Ligamos plataformas, bases de dados e serviços externos para garantir operações fluidas.</p></article>
+      <article class="card"><h3 data-i18n="svc.4.t">Dashboards e gestão de dados</h3><p data-i18n="svc.4.d">Criamos interfaces inteligentes para análise, monitorização e tomada de decisão.</p></article>
+      <article class="card"><h3 data-i18n="svc.5.t">Consultoria digital</h3><p data-i18n="svc.5.d">Ajudamos empresas a identificar oportunidades de digitalização e a implementar soluções eficientes.</p></article>
+      <article class="card"><h3 data-i18n="svc.6.t">Tens um desafio concreto?</h3><p data-i18n="svc.6.d">Conta-nos o que queres resolver e propomos o caminho mais curto.</p><p style="margin-top:14px"><a class="btn btn-gold btn-sm" href="#contact" data-i18n="cta.quote">Pedir proposta</a></p></article>
+    </div>
+  </div>
 </section>
 
-<!-- APPS -->
-<section id="apps" class="section tab-section">
-<div class="section-inner">
-<!-- AQL — secção própria, produto flagship com engenharia real (RGPD, RLS multi-tenant, sync offline-first, testes automatizados) -->
-<div class="aql-standalone">
-<span class="section-eyebrow" data-i18n="aql.eyebrow">Produto em Desenvolvimento Real</span>
-<h2 data-i18n="aql.sectionTitle">AQL — Plataforma de Inspeção de Qualidade</h2>
-<p class="section-lead" data-i18n="aql.lead">Ao contrário dos conceitos abaixo, a AQL já tem meses de engenharia real: conformidade RGPD, isolamento multi-tenant (RLS), sincronização offline-first e testes automatizados.</p>
-
-<div class="aql-feature">
-<span class="app-badge aql-badge" data-i18n="apps.card4.badge">Em Breve</span>
-<p data-i18n="apps.card4.text">Plataforma SaaS de inspeções de qualidade baseada na tabela AQL, com apoio à norma ISO 9001. Cobre o ciclo fechado de qualidade completo — inspeção → auditoria (interna ou externa) → ação corretiva → verificação → fecho — com alertas automáticos em cada etapa sempre que surgem problemas a resolver. Disponível em Windows, Mac, iOS, Android e iPad, com integração com PHC, Primavera e Sage.</p>
-<div class="aql-tags">
-<span class="aql-tag" data-i18n="aql.tag.platforms">Windows · Mac · iOS · Android · iPad</span>
-<span class="aql-tag" data-i18n="aql.tag.erp">Integração PHC · Primavera · Sage</span>
-<span class="aql-tag" data-i18n="aql.tag.iso">Alinhado com ISO 9001</span>
-</div>
-<button class="btn-primary app-card-cta" data-tab="contact" data-i18n="apps.card4.cta">Pedir Acesso Antecipado</button>
-</div>
-</div>
-
-<hr class="aql-divider" />
-
-<h2 data-i18n="apps.title">Apps & Pré-Lançamentos</h2>
-<p class="section-lead" data-i18n="apps.lead">Estamos também a validar novas ideias de produto. As apps abaixo são conceitos em fase de exploração, ainda sem desenvolvimento iniciado.</p>
-
-<div class="apps-grid">
-<!-- Cartão de app: duplica este bloco para cada nova app -->
-<div class="app-card">
-<span class="app-badge" data-i18n="apps.card1.badge">Em Breve</span>
-<h3 data-i18n="apps.card1.title">Canal Horeca</h3>
-<p data-i18n="apps.card1.text">Plataforma dedicada ao setor Horeca (hotelaria e restauração), pensada para simplificar encomendas, comunicação e gestão entre fornecedores e estabelecimentos.</p>
-<button class="btn-primary app-card-cta" data-tab="contact" data-i18n="apps.card1.cta">Saber Mais</button>
-</div>
-<div class="app-card">
-<span class="app-badge" data-i18n="apps.card2.badge">Disponível</span>
-<h3 data-i18n="apps.card2.title">HCR Finance Master</h3>
-<p data-i18n="apps.card2.text">Finanças pessoais e familiares num só lugar: acompanha movimentos e património, importa CSV e exporta os teus dados. Beta gratuita para Windows e web.</p>
-<a class="btn-primary" href="https://hcr-finance-web.hugocresende.workers.dev/demo" target="_blank" rel="noopener" data-i18n="apps.card2.cta">Experimentar a Demo</a>
-<a class="btn-secondary" href="https://apps.microsoft.com/detail/9PLTVV6BQPVH" target="_blank" rel="noopener" data-i18n="apps.card2.cta2">Microsoft Store</a>
-</div>
-<div class="app-card">
-<span class="app-badge" data-i18n="apps.card3.badge">Em Breve</span>
-<h3 data-i18n="apps.card3.title">Orçamentos</h3>
-<p data-i18n="apps.card3.text">Aplicação para criar, enviar e gerir orçamentos profissionais de forma rápida e organizada.</p>
-<button class="btn-primary app-card-cta" data-tab="contact" data-i18n="apps.card3.cta">Saber Mais</button>
-</div>
-</div>
-</div>
+<section class="s" id="process">
+  <div class="wrap">
+    <div class="s-head">
+      <span class="eyebrow" data-i18n="proc.eyebrow">Processo</span>
+      <h2 data-i18n="proc.title">Como trabalhamos</h2>
+      <p data-i18n="proc.lead">Um processo simples, com comunicação contínua e prazos realistas.</p>
+    </div>
+    <ol class="steps">
+      <li><b data-i18n="proc.1.t">Diagnóstico</b><span data-i18n="proc.1.d">Percebemos processos, dados e objetivos para definir o que realmente vale a pena automatizar.</span></li>
+      <li><b data-i18n="proc.2.t">Protótipo</b><span data-i18n="proc.2.d">Validamos cedo com um protótipo funcional, antes de investir no desenvolvimento completo.</span></li>
+      <li><b data-i18n="proc.3.t">Entrega e evolução</b><span data-i18n="proc.3.d">Implementamos e mantemos, com atualizações regulares e suporte técnico direto.</span></li>
+    </ol>
+  </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq" class="section tab-section">
-<div class="section-inner">
-<h2 data-i18n="faq.title">FAQ</h2>
-<h3 data-i18n="faq.1.title">Que tipo de aplicações desenvolvem?</h3>
-<p data-i18n="faq.1.text">Apps internas, apps de gestão, apps de automação e soluções personalizadas.</p>
-<h3 data-i18n="faq.2.title">Quanto tempo demora um projeto?</h3>
-<p data-i18n="faq.2.text">Depende da complexidade, mas garantimos prazos realistas e comunicação contínua.</p>
-<h3 data-i18n="faq.3.title">As apps são escaláveis?</h3>
-<p data-i18n="faq.3.text">Sim. Todas as soluções são desenhadas para crescer com o negócio.</p>
-<h3 data-i18n="faq.4.title">Fazem manutenção?</h3>
-<p data-i18n="faq.4.text">Sim — ciclo completo: atualizações regulares, suporte técnico direto (email/telefone) e correção prioritária de falhas críticas. Os termos de SLA são definidos em contrato, conforme a criticidade da aplicação.</p>
-<h3 data-i18n="faq.5.title">Integram com sistemas existentes?</h3>
-<p data-i18n="faq.5.text">Sim. Criamos integrações com plataformas, bases de dados e serviços externos.</p>
-<h3 data-i18n="faq.6.title">Quanto custa?</h3>
-<p data-i18n="faq.6.text">Depende do número de utilizadores e módulos ativos — contacta-nos para um orçamento personalizado ao teu caso.</p>
-</div>
+<section class="s" id="about">
+  <div class="wrap">
+    <div class="s-head">
+      <span class="eyebrow" data-i18n="about.eyebrow">Sobre nós</span>
+      <h2 data-i18n="about.title">Tecnologia que melhora processos e reduz custos</h2>
+      <p data-i18n="about.text">A HCR Digital Solutions é especializada no desenvolvimento de aplicações empresariais e soluções de automação. Criamos tecnologia que melhora processos, reduz custos e aumenta a eficiência operacional.</p>
+    </div>
+    <div class="cards c3">
+      <article class="card"><h3 data-i18n="about.m.t">Missão</h3><p data-i18n="about.m.d">Rigor técnico, simplicidade e foco total no utilizador. Cada aplicação é desenhada à medida, com performance, segurança e escalabilidade.</p></article>
+      <article class="card"><h3 data-i18n="about.v.t">Visão</h3><p data-i18n="about.v.d">Ser parceiro de empresas que querem transformar processos internos em soluções digitais inteligentes.</p></article>
+      <article class="card"><h3 data-i18n="about.val.t">Valores</h3><p data-i18n="about.val.d">Precisão, transparência, inovação, simplicidade e compromisso absoluto com resultados.</p></article>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section tab-section">
-<div class="section-inner">
-
-<h2 data-i18n="contact.title">Contactos</h2>
-<p data-i18n="contact.text">Envia-nos uma mensagem com o contexto do teu projeto:</p>
-
-<div class="contact-wrapper">
-
-<!-- FORMULÁRIO -->
-<form class="contact-form">
-
-<div class="form-row">
-<input id="contact-firstname" type="text" placeholder="Nome *" required />
-<input id="contact-lastname" type="text" placeholder="Sobrenome *" required />
-</div>
-
-<input id="contact-email" type="email" placeholder="Email *" required />
-
-<div class="phone-field">
-<select id="phone-country" class="phone-select">
-<option value="+351">🇵🇹 +351 Portugal</option>
-<option value="+34">🇪🇸 +34 Spain</option>
-<option value="+33">🇫🇷 +33 France</option>
-<option value="+44">🇬🇧 +44 United Kingdom</option>
-</select>
-<input id="contact-phone" class="phone-input" type="tel" placeholder="Telefone *" required />
-</div>
-
-<textarea id="contact-message" placeholder="Escreva a sua mensagem" required></textarea>
-
-<button id="contact-submit" type="submit">Submeter</button>
-<p id="contact-status" class="form-status"></p>
-
-</form>
-
-<!-- MAPA -->
-<iframe
-class="contact-map"
-src="https://maps.google.com/maps?q=Santa%20Maria%20da%20Feira%2C%20Aveiro%2C%20Portugal&t=&z=13&ie=UTF8&iwloc=&output=embed"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade"
-></iframe>
-
-</div>
-
-</div>
+<section class="s faq" id="faq">
+  <div class="wrap">
+    <div class="s-head"><h2 data-i18n="faq.title">Perguntas frequentes</h2></div>
+    <details><summary data-i18n="faq.1.q">Que tipo de aplicações desenvolvem?</summary><p data-i18n="faq.1.a">Apps internas, apps de gestão, apps de automação e soluções personalizadas.</p></details>
+    <details><summary data-i18n="faq.2.q">Quanto tempo demora um projeto?</summary><p data-i18n="faq.2.a">Depende da complexidade, mas garantimos prazos realistas e comunicação contínua.</p></details>
+    <details><summary data-i18n="faq.3.q">As apps são escaláveis?</summary><p data-i18n="faq.3.a">Sim. Todas as soluções são desenhadas para crescer com o negócio.</p></details>
+    <details><summary data-i18n="faq.4.q">Fazem manutenção?</summary><p data-i18n="faq.4.a">Sim — ciclo completo: atualizações regulares, suporte técnico direto (email/telefone) e correção prioritária de falhas críticas. Os termos de SLA são definidos em contrato, conforme a criticidade da aplicação.</p></details>
+    <details><summary data-i18n="faq.5.q">Integram com sistemas existentes?</summary><p data-i18n="faq.5.a">Sim. Criamos integrações com plataformas, bases de dados e serviços externos.</p></details>
+    <details><summary data-i18n="faq.6.q">Quanto custa?</summary><p data-i18n="faq.6.a">Depende do número de utilizadores e módulos ativos — contacta-nos para um orçamento personalizado ao teu caso.</p></details>
+  </div>
 </section>
 
+<section class="s" id="contact">
+  <div class="wrap">
+    <div class="s-head">
+      <span class="eyebrow" data-i18n="ct.eyebrow">Contacto</span>
+      <h2 data-i18n="ct.title">Vamos falar do teu projeto</h2>
+      <p data-i18n="ct.lead">Conta-nos o contexto e respondemos rapidamente. Horário: 09h00–18h00 (seg–sex).</p>
+    </div>
+    <div class="contact-grid">
+      <form class="form" id="contactForm" novalidate>
+        <label><span data-i18n="ct.name">Nome</span><input id="cName" type="text" autocomplete="name" required /></label>
+        <label><span data-i18n="ct.email">Email</span><input id="cEmail" type="email" autocomplete="email" inputmode="email" required /></label>
+        <label><span data-i18n="ct.msg">Mensagem</span><textarea id="cMsg" required></textarea></label>
+        <button class="btn btn-gold" type="submit" data-i18n="ct.send">Enviar</button>
+        <p class="form-status" id="cStatus" role="status" aria-live="polite"></p>
+      </form>
+      <div class="side">
+        <div class="card"><h3 data-i18n="ct.mail">Email</h3><p><a href="mailto:hugocresende@hotmail.com">hugocresende@hotmail.com</a></p></div>
+        <div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/hugo-resende-a0425870" target="_blank" rel="noopener">Hugo Resende</a></p></div>
+        <div class="card"><h3 data-i18n="ct.loc">Localização</h3><p>Santa Maria da Feira, Aveiro, Portugal</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<!-- FOOTER -->
-<footer class="footer-fixed">
-<p class="footer-links">
-<a id="footer-privacy" href="politica-privacidade.html" target="_blank" rel="noopener" data-i18n="footer.privacy">Política de Privacidade</a>
-|
-<a id="footer-terms" href="termos-utilizacao.html" target="_blank" rel="noopener" data-i18n="footer.terms">Termos de Utilização</a>
-|
-<a id="footer-linkedin" href="https://www.linkedin.com/in/hugo-resende-a0425870" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14" height="14" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 11107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>LinkedIn</a>
-</p>
-<p class="footer-copy" data-i18n="footer.copy">
-© 2026 HCR Digital Solutions — Todos os direitos reservados
-</p>
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <img src="logo-hcr.png" alt="HCR Digital Solutions" width="96" height="60" style="height:48px;width:auto;margin-bottom:10px" />
+      <p data-i18n="ftr.tag">Soluções digitais inteligentes para empresas modernas.</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="politica-privacidade.html" data-i18n="ftr.priv">Política de Privacidade</a></li>
+        <li><a href="termos-utilizacao.html" data-i18n="ftr.terms">Termos de Utilização</a></li>
+        <li><a href="finance-master.html">HCR Finance Master</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>© 2026 HCR Digital Solutions<br /><span data-i18n="ftr.rights">Todos os direitos reservados</span></p>
+    </div>
+  </div>
 </footer>
 
-<script src="script.js"></script>
-
+<script src="site.js" defer></script>
 </body>
 </html>
