@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-own-meta="1">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HCR Finance Master — app de finanças pessoais e familiares para Windows e web</title>
+<meta name="description" content="HCR Finance Master: app gratuita (beta) de finanças pessoais e familiares para Windows e web. Demo sem registo, importação CSV local, dados exportáveis e apagáveis (RGPD)." />
+<meta name="author" content="HCR Digital Solutions" />
+<meta name="theme-color" content="#05080f" />
+<link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/finance-master.html" />
+<meta property="og:title" content="HCR Finance Master — finanças pessoais e familiares" />
+<meta property="og:description" content="App gratuita (beta) para Windows e web. Demo sem registo, importação CSV local e dados sempre teus." />
+<meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
+<meta property="og:site_name" content="HCR Digital Solutions" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/finance-master.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon-192x192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"SoftwareApplication","name":"HCR Finance Master","applicationCategory":"FinanceApplication","operatingSystem":"Windows, Web","description":"App de finanças pessoais e familiares com demo sem registo, importação CSV local e exportação e eliminação de dados (RGPD).","url":"https://hugo-c-resende.github.io/hcr-digital-solutions/finance-master.html","downloadUrl":"https://apps.microsoft.com/detail/9PLTVV6BQPVH","inLanguage":["pt-PT","en","fr"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"HCR Digital Solutions","url":"https://hugo-c-resende.github.io/hcr-digital-solutions/"}},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"HCR Digital Solutions","item":"https://hugo-c-resende.github.io/hcr-digital-solutions/"},{"@type":"ListItem","position":2,"name":"HCR Finance Master","item":"https://hugo-c-resende.github.io/hcr-digital-solutions/finance-master.html"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"A HCR Finance Master é gratuita?","acceptedAnswer":{"@type":"Answer","text":"Sim, durante o beta. Não é pedido cartão."}},
+{"@type":"Question","name":"Os meus ficheiros CSV são enviados para a internet?","acceptedAnswer":{"@type":"Answer","text":"Não. O ficheiro é lido no teu dispositivo e só as transações importadas são sincronizadas com a tua conta."}},
+{"@type":"Question","name":"Posso apagar a minha conta e os meus dados?","acceptedAnswer":{"@type":"Answer","text":"Sim. Em Definições → Privacidade podes exportar as tuas transações em CSV e apagar a conta com a tua password."}},
+{"@type":"Question","name":"Em que dispositivos funciona?","acceptedAnswer":{"@type":"Answer","text":"Em Windows (Microsoft Store) e em qualquer browser moderno, incluindo telemóvel."}}
+]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Saltar para o conteúdo</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="HCR Digital Solutions"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="90" height="56" /></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#apps" data-i18n="nav.apps">Produtos</a>
+      <a href="index.html#services" data-i18n="nav.services">Serviços</a>
+      <a href="index.html#about" data-i18n="nav.about">Sobre</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <a class="btn btn-gold btn-sm hdr-cta" href="https://apps.microsoft.com/detail/9PLTVV6BQPVH" target="_blank" rel="noopener">Microsoft Store</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu móvel">
+    <a href="index.html#apps" data-i18n="nav.apps">Produtos</a>
+    <a href="index.html#services" data-i18n="nav.services">Serviços</a>
+    <a href="index.html#about" data-i18n="nav.about">Sobre</a>
+    <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
+    <a class="cta" href="https://apps.microsoft.com/detail/9PLTVV6BQPVH" target="_blank" rel="noopener">Microsoft Store</a>
+  </nav>
+</header>
+
+<main id="main">
+<div class="wrap crumbs"><a href="index.html">HCR Digital Solutions</a> › <span>HCR Finance Master</span></div>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow" data-i18n="fmp.eyebrow">Beta gratuito · Windows e web</span>
+      <h1 data-i18n="fmp.h1">HCR Finance Master: <em>finanças pessoais e familiares</em> num só lugar</h1>
+      <p class="lead" data-i18n="fmp.lead">Acompanha movimentos e património, importa extratos CSV sem enviar o ficheiro para a internet e mantém os teus dados sempre teus: exporta ou apaga quando quiseres.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="https://hcr-finance-web.hugocresende.workers.dev/demo" target="_blank" rel="noopener" data-i18n="fm.b2">Experimentar a demo</a>
+        <a class="btn btn-line" href="https://apps.microsoft.com/detail/9PLTVV6BQPVH" target="_blank" rel="noopener">Microsoft Store</a>
+      </div>
+      <p class="hero-note" data-i18n="fmp.note">Demo sem registo. A conta é gratuita durante o beta, sem cartão.</p>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b data-i18n="k1.b">Demo sem registo</b><span data-i18n="k1.s">Vê a app com dados de exemplo</span></div>
+      <div class="kpi"><b data-i18n="k2.b">CSV local</b><span data-i18n="k2.s">O ficheiro fica no teu dispositivo</span></div>
+      <div class="kpi"><b data-i18n="k3.b">Offline-first</b><span data-i18n="k3.s">Sincroniza ao reconectar</span></div>
+      <div class="kpi"><b data-i18n="k4.b">RGPD</b><span data-i18n="k4.s">Exporta e apaga os teus dados</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="features">
+  <div class="wrap">
+    <div class="s-head">
+      <h2 data-i18n="fmp.ft">O que podes fazer</h2>
+    </div>
+    <div class="cards c3">
+      <article class="card"><h3 data-i18n="f1.t">Acompanhar movimentos e património</h3><p data-i18n="f1.d">Regista receitas e despesas, vê a evolução e percebe para onde vai o dinheiro da tua casa.</p></article>
+      <article class="card"><h3 data-i18n="f2.t">Importar extratos CSV</h3><p data-i18n="f2.d">Lê o ficheiro no teu dispositivo; só as transações importadas entram na tua conta.</p></article>
+      <article class="card"><h3 data-i18n="f3.t">Funciona sem ligação</h3><p data-i18n="f3.d">Continua a usar a app offline; as alterações sincronizam quando a ligação volta.</p></article>
+      <article class="card"><h3 data-i18n="f4.t">Agregados familiares</h3><p data-i18n="f4.d">Gere as finanças da casa e convida outras pessoas para o mesmo agregado.</p></article>
+      <article class="card"><h3 data-i18n="f5.t">Privacidade por defeito</h3><p data-i18n="f5.d">Servidores na UE, isolamento de dados por utilizador e exportação das tuas transações em CSV.</p></article>
+      <article class="card"><h3 data-i18n="f6.t">Apagar quando quiseres</h3><p data-i18n="f6.d">Em Definições → Privacidade apagas a conta com a tua password.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="start">
+  <div class="wrap">
+    <div class="s-head"><h2 data-i18n="st.title">Começar em 3 passos</h2></div>
+    <ol class="steps">
+      <li><b data-i18n="st.1.t">Experimenta a demo</b><span data-i18n="st.1.d">Abre a demo no browser, sem registo, e explora com dados de exemplo.</span></li>
+      <li><b data-i18n="st.2.t">Cria a tua conta</b><span data-i18n="st.2.d">Instala na Microsoft Store ou usa no browser. Gratuito durante o beta.</span></li>
+      <li><b data-i18n="st.3.t">Importa os teus movimentos</b><span data-i18n="st.3.d">Escolhe um ficheiro CSV do teu banco e revê antes de importar.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap">
+    <div class="pcard">
+      <span class="badge" data-i18n="beta.badge">Beta</span>
+      <h3 data-i18n="beta.title">Procuramos até 15 testers durante 4 semanas</h3>
+      <p data-i18n="beta.text">Cerca de 10 minutos por semana de uso real e dois questionários curtos. Sem custos, sem cartão.</p>
+      <div class="btn-row" style="margin-top:18px">
+        <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSdM8YlKTdpindyph5f2wPcA3DhMVTlIIKnzeq6ngemmEgT3TQ/viewform" target="_blank" rel="noopener" data-i18n="beta.cta">Candidatar-me ao beta</a>
+        <a class="btn btn-line" href="https://docs.google.com/forms/d/e/1FAIpQLSeHgTP4na5Y3A6oC-wag7DPoc4AIy8JGdPuat7KZITdNYBO8w/viewform" target="_blank" rel="noopener" data-i18n="beta.bug">Reportar um problema</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s faq" id="faq">
+  <div class="wrap">
+    <div class="s-head"><h2 data-i18n="faq.title">Perguntas frequentes</h2></div>
+    <details><summary data-i18n="p1.q">A HCR Finance Master é gratuita?</summary><p data-i18n="p1.a">Sim, durante o beta. Não é pedido cartão.</p></details>
+    <details><summary data-i18n="p2.q">Os meus ficheiros CSV são enviados para a internet?</summary><p data-i18n="p2.a">Não. O ficheiro é lido no teu dispositivo e só as transações importadas são sincronizadas com a tua conta.</p></details>
+    <details><summary data-i18n="p3.q">Posso apagar a minha conta e os meus dados?</summary><p data-i18n="p3.a">Sim. Em Definições → Privacidade podes exportar as tuas transações em CSV e apagar a conta com a tua password.</p></details>
+    <details><summary data-i18n="p4.q">Em que dispositivos funciona?</summary><p data-i18n="p4.a">Em Windows (Microsoft Store) e em qualquer browser moderno, incluindo telemóvel.</p></details>
+    <p class="roadmap"><a href="privacidade-finance-master.html" data-i18n="fmp.priv">Política de Privacidade</a> · <a href="termos-finance-master.html" data-i18n="fmp.terms">Termos de Serviço</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <img src="logo-hcr.png" alt="HCR Digital Solutions" width="96" height="60" style="height:48px;width:auto;margin-bottom:10px" />
+      <p data-i18n="ftr.tag">Soluções digitais inteligentes para empresas modernas.</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="politica-privacidade.html" data-i18n="ftr.priv">Política de Privacidade</a></li>
+        <li><a href="termos-utilizacao.html" data-i18n="ftr.terms">Termos de Utilização</a></li>
+        <li><a href="index.html">HCR Digital Solutions</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>© 2026 HCR Digital Solutions<br /><span data-i18n="ftr.rights">Todos os direitos reservados</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
