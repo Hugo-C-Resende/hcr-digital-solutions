@@ -3,6 +3,13 @@
 (function () {
   "use strict";
 
+  /* HCR Inspection Suite — Microsoft Store listing URL.
+     Empty while the listing isn't live: the CTA shows "Pedir acesso
+     antecipado" and points at #contact. Fill in once published (Store ID
+     9PP3BQ017GNN) and the CTA switches itself to "Obter na Microsoft
+     Store", opening STORE_URL in a new tab — no other code change needed. */
+  var STORE_URL = "";
+
   var EN = {
     "skip": "Skip to content",
     "nav.apps": "Products", "nav.services": "Services", "nav.process": "How we work", "nav.about": "About", "nav.faq": "FAQ", "nav.contact": "Contact",
@@ -27,7 +34,7 @@
     "is.badge": "Coming soon to the Microsoft Store",
     "is.text": "The whole quality-inspection cycle in one place: inspections with AQL sampling, defects with photos, PDF reports, non-conformities and corrective actions (CAPA), calendar and statistics. A Windows app that works offline and syncs when you are connected.",
     "is.c1": "AQL inspection wizard, with defects and photos", "is.c2": "Professional PDF reports for the client or the factory", "is.c3": "In Portuguese, English and French · HCR account required",
-    "is.cta": "Request early access", "is.priv": "Privacy policy",
+    "is.cta": "Request early access", "is.ctaLive": "Get it on Microsoft Store", "is.priv": "Privacy policy",
     "apps.roadmap": "Being explored: Canal Horeca (ordering and management between suppliers and venues) · Quotes (professional proposals).",
     "svc.eyebrow": "Services",
     "svc.title": "Tailor-made solutions for your company's reality",
@@ -114,7 +121,7 @@
     "is.badge": "Bientôt sur le Microsoft Store",
     "is.text": "Tout le cycle d'une inspection qualité au même endroit : inspections avec échantillonnage AQL, défauts avec photos, rapports PDF, non-conformités et actions correctives (CAPA), calendrier et statistiques. Une application Windows qui fonctionne hors ligne et se synchronise dès que la connexion revient.",
     "is.c1": "Assistant d'inspection AQL, avec défauts et photos", "is.c2": "Rapports PDF professionnels pour le client ou l'usine", "is.c3": "En portugais, anglais et français · compte HCR requis",
-    "is.cta": "Demander un accès anticipé", "is.priv": "Politique de confidentialité",
+    "is.cta": "Demander un accès anticipé", "is.ctaLive": "Obtenir sur le Microsoft Store", "is.priv": "Politique de confidentialité",
     "apps.roadmap": "En exploration : Canal Horeca (commandes et gestion entre fournisseurs et établissements) · Devis (propositions professionnelles).",
     "svc.eyebrow": "Services",
     "svc.title": "Des solutions sur mesure pour la réalité de votre entreprise",
@@ -188,6 +195,10 @@
   ariaNodes.forEach(function (el) { DICT.pt[el.getAttribute("data-i18n-aria")] = el.getAttribute("aria-label"); });
   DICT.pt["meta.title"] = document.title;
   if (metaDesc) DICT.pt["meta.desc"] = metaDesc.getAttribute("content");
+  /* não vêm de nenhum nó data-i18n (o botão da Store é controlado por
+     applyStoreCta, não pelo tradutor genérico) */
+  DICT.pt["is.cta"] = "Pedir acesso antecipado";
+  DICT.pt["is.ctaLive"] = "Obter na Microsoft Store";
   /* títulos EN/FR por página só quando a página não define o seu (ex.: finance-master) */
   var pageOwnMeta = document.documentElement.getAttribute("data-own-meta") === "1";
 
@@ -221,12 +232,34 @@
     });
     current = lang;
     store(false, lang);
+    applyStoreCta(lang);
+  }
+
+  /* botão da Inspection Suite: alterna consoante STORE_URL esteja ou não
+     preenchido, sem depender do tradutor genérico (precisa de trocar
+     href/target, não só texto). */
+  function applyStoreCta(lang) {
+    var cta = document.getElementById("isStoreCta");
+    if (!cta) return;
+    var dict = DICT[lang] || DICT.pt;
+    if (STORE_URL) {
+      cta.textContent = dict["is.ctaLive"] || DICT.pt["is.ctaLive"];
+      cta.setAttribute("href", STORE_URL);
+      cta.setAttribute("target", "_blank");
+      cta.setAttribute("rel", "noopener");
+    } else {
+      cta.textContent = dict["is.cta"] || DICT.pt["is.cta"];
+      cta.setAttribute("href", "#contact");
+      cta.removeAttribute("target");
+      cta.removeAttribute("rel");
+    }
   }
 
   var current = "pt";
   var qs = /[?&]lang=(pt|en|fr)/.exec(location.search);
   var start = (qs && qs[1]) || store(true) || "pt";
   if (start !== "pt") setLang(start);
+  else applyStoreCta("pt");
 
   Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
