@@ -233,6 +233,21 @@
     current = lang;
     store(false, lang);
     applyStoreCta(lang);
+    applyPrivLink(lang);
+  }
+
+  /* link "Política de privacidade" do cartão da Inspection Suite: aponta
+     para a página da língua ativa (o texto fica a cargo do tradutor
+     genérico, via data-i18n="is.priv"; aqui só muda o href). */
+  var IS_PRIV_PAGES = {
+    pt: "privacidade-inspection-suite.html",
+    en: "privacy-inspection-suite.html",
+    fr: "politique-confidentialite-inspection-suite.html"
+  };
+  function applyPrivLink(lang) {
+    var link = document.getElementById("isPrivLink");
+    if (!link) return;
+    link.setAttribute("href", IS_PRIV_PAGES[lang] || IS_PRIV_PAGES.pt);
   }
 
   /* botão da Inspection Suite: alterna consoante STORE_URL esteja ou não
@@ -259,7 +274,7 @@
   var qs = /[?&]lang=(pt|en|fr)/.exec(location.search);
   var start = (qs && qs[1]) || store(true) || "pt";
   if (start !== "pt") setLang(start);
-  else applyStoreCta("pt");
+  else { applyStoreCta("pt"); applyPrivLink("pt"); }
 
   Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
