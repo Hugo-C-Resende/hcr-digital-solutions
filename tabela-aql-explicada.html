@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tabela AQL explicada: letras-código, amostra e Ac/Re | HCR</title>
+<meta name="description" content="Como ler uma tabela AQL passo a passo: nível II, letras-código, tamanho da amostra e números de aceitação e rejeição, com exemplo." />
+<meta name="author" content="HCR Digital Solutions" />
+<meta name="theme-color" content="#05080f" />
+<link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/tabela-aql-explicada.html" />
+<meta property="og:title" content="Tabela AQL explicada: letras-código, amostra e Ac/Re | HCR" />
+<meta property="og:description" content="Como ler uma tabela AQL passo a passo: nível II, letras-código, tamanho da amostra e números de aceitação e rejeição, com exemplo." />
+<meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="HCR Digital Solutions" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/tabela-aql-explicada.html" />
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tabela AQL explicada: letras-código, amostra e Ac/Re | HCR" />
+<meta name="twitter:description" content="Como ler uma tabela AQL passo a passo: nível II, letras-código, tamanho da amostra e números de aceitação e rejeição, com exemplo." />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon-192x192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=20261103" />
+<style>
+.lang a{display:inline-flex;align-items:center;background:transparent;border:1px solid rgba(255,255,255,.22);color:var(--text);font:600 12px/1 inherit;border-radius:999px;padding:0 10px;min-height:36px;text-decoration:none}
+.lang a[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#05080f}
+.who2{margin-top:6px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://hugo-c-resende.github.io/hcr-digital-solutions/tabela-aql-explicada.html#article",
+   "headline": "Tabela AQL explicada: como ler letras-código, amostra e aceitação",
+   "description": "Como ler uma tabela AQL passo a passo: nível II, letras-código, tamanho da amostra e números de aceitação e rejeição, com exemplo.",
+   "inLanguage": "pt-PT",
+   "datePublished": "2026-11-05",
+   "dateModified": "2026-11-05",
+   "mainEntityOfPage": "https://hugo-c-resende.github.io/hcr-digital-solutions/tabela-aql-explicada.html",
+   "author": {
+    "@type": "Person",
+    "name": "Hugo Resende",
+    "jobTitle": "Quality Manager"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "HCR Digital Solutions",
+    "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/logo-hcr.png"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "HCR Digital Solutions",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "HCR Inspection Suite",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/inspection-suite.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Tabela AQL explicada",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/tabela-aql-explicada.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "O que é uma tabela AQL?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "É a tabela das normas de amostragem (como a ISO 2859-1 e a ANSI/ASQ Z1.4) que, a partir do tamanho do lote e do AQL escolhido, indica quantas peças inspecionar e quantos defeitos aceitar."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Qual é o AQL mais usado?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Em inspeções de produtos de consumo é comum usar 2,5 para defeitos maiores e 4,0 para defeitos menores, com zero defeitos críticos. Depende do acordo com o cliente."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O que significa AQL 2,5?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Que o plano de amostragem foi calibrado para um nível de qualidade aceitável de 2,5 %. Não quer dizer que o lote tenha exatamente 2,5 % de defeitos."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="HCR Digital Solutions"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="64" height="64" /></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#apps">Produtos</a><a href="sobre.html">Sobre</a><a href="index.html#contact">Contacto</a></nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Language"><a href="tabela-aql-explicada.html" aria-pressed="true">PT</a></div>
+      <a class="btn btn-gold btn-sm hdr-cta" href="mailto:HCRFinanceMaster@gmail.com?subject=Acesso%20antecipado%20HCR%20Inspection%20Suite">Pedir acesso</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu"><a href="index.html#apps">Produtos</a><a href="sobre.html">Sobre</a><a href="index.html#contact">Contacto</a><a class="cta" href="mailto:HCRFinanceMaster@gmail.com?subject=Acesso%20antecipado%20HCR%20Inspection%20Suite">Pedir acesso</a></nav>
+</header>
+
+<style>.art{max-width:46em}.art p,.art li{color:var(--muted);margin-bottom:12px}.art h2{margin-top:34px}.art table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}.art th,.art td{border:1px solid rgba(255,255,255,.12);padding:10px 12px;text-align:left}.art th{color:var(--gold);background:rgba(12,47,56,.4)}.art .note{font-size:13px}.art ol,.art ul{padding-left:22px}</style>
+<main id="main">
+<div class="wrap crumbs"><a href="index.html">HCR Digital Solutions</a> › <a href="inspection-suite.html">HCR Inspection Suite</a> › <span>Tabela AQL explicada</span></div>
+<section class="hero"><div class="wrap art">
+  <span class="eyebrow">Guia · Qualidade</span>
+  <h1>Tabela AQL explicada: como ler letras-código, amostra e aceitação</h1>
+  <p class="lead">Guia prático para ler uma tabela AQL: do tamanho do lote à decisão de aceitar ou rejeitar, com um exemplo calculado.</p>
+  <p class="hero-note">Por Hugo Resende, Quality Manager · atualizado a 5 de novembro de 2026</p>
+</div></section>
+<section class="s"><div class="wrap art">
+<h2>O que é o AQL</h2>
+<p>AQL (Acceptable Quality Limit, ou Limite de Qualidade Aceitável) é o nível de defeitos que o comprador está disposto a aceitar, em média, num fornecimento contínuo. Na prática serve para decidir quantas peças inspecionar de um lote e quantos defeitos são aceitáveis nessa amostra, sem verificar todas as unidades.</p>
+<h2>Como se lê uma tabela AQL, passo a passo</h2>
+<ol><li>Conta as unidades do <b>lote</b>.</li><li>Escolhe o <b>nível de inspeção</b> (o geral II é o mais usado).</li><li>Com o tamanho do lote e o nível, vai à tabela das <b>letras-código</b> e obtém a letra.</li><li>Na tabela de amostragem, a letra dá o <b>tamanho da amostra</b>.</li><li>Cruza o tamanho da amostra com o <b>AQL</b> escolhido para obter o número de aceitação (Ac) e de rejeição (Re).</li></ol>
+<h2>Letras-código e tamanho da amostra (nível geral II)</h2>
+<table><thead><tr><th>Tamanho do lote</th><th>Letra-código</th><th>Amostra</th></tr></thead><tbody><tr><td>2 – 8</td><td>A</td><td>2</td></tr><tr><td>9 – 15</td><td>B</td><td>3</td></tr><tr><td>16 – 25</td><td>C</td><td>5</td></tr><tr><td>26 – 50</td><td>D</td><td>8</td></tr><tr><td>51 – 90</td><td>E</td><td>13</td></tr><tr><td>91 – 150</td><td>F</td><td>20</td></tr><tr><td>151 – 280</td><td>G</td><td>32</td></tr><tr><td>281 – 500</td><td>H</td><td>50</td></tr><tr><td>501 – 1 200</td><td>J</td><td>80</td></tr><tr><td>1 201 – 3 200</td><td>K</td><td>125</td></tr><tr><td>3 201 – 10 000</td><td>L</td><td>200</td></tr><tr><td>10 001 – 35 000</td><td>M</td><td>315</td></tr><tr><td>35 001 – 150 000</td><td>N</td><td>500</td></tr><tr><td>150 001 – 500 000</td><td>P</td><td>800</td></tr><tr><td>500 001 ou mais</td><td>Q</td><td>1 250</td></tr></tbody></table>
+<h2>Aceitar ou rejeitar: Ac / Re para AQL 2,5 e 4,0</h2>
+<table><thead><tr><th>Letra</th><th>Amostra</th><th>AQL 2,5 (Ac / Re)</th><th>AQL 4,0 (Ac / Re)</th></tr></thead><tbody><tr><td>F</td><td>20</td><td>1 / 2</td><td>2 / 3</td></tr><tr><td>G</td><td>32</td><td>2 / 3</td><td>3 / 4</td></tr><tr><td>H</td><td>50</td><td>3 / 4</td><td>5 / 6</td></tr><tr><td>J</td><td>80</td><td>5 / 6</td><td>7 / 8</td></tr><tr><td>K</td><td>125</td><td>7 / 8</td><td>10 / 11</td></tr><tr><td>L</td><td>200</td><td>10 / 11</td><td>14 / 15</td></tr><tr><td>M</td><td>315</td><td>14 / 15</td><td>21 / 22</td></tr></tbody></table>
+<p class="note">Valores para inspeção normal, amostragem simples e nível geral de inspeção II, como nas tabelas das normas ISO 2859-1 e ANSI/ASQ Z1.4. Confirma sempre na norma ou no teu caderno de encargos antes de decidir.</p>
+<h2>Exemplo prático</h2>
+<p>Lote de 2 000 peças, nível geral II: o lote cai no intervalo 1 201 – 3 200, letra <b>K</b>, amostra de <b>125</b> peças. Com AQL 2,5 para defeitos maiores, aceitas o lote se encontrares até <b>7</b> peças com defeito e rejeitas se encontrares <b>8</b> ou mais. Com AQL 4,0 para defeitos menores, o limite é 10 (aceitar) e 11 (rejeitar).</p>
+<h2>Erros comuns</h2>
+<ul><li><b>AQL 2,5 não significa 2,5 % de defeitos no lote.</b> É um critério de aceitação do plano de amostragem, não uma promessa sobre o lote inteiro.</li><li>Usar o mesmo AQL para tudo. É prática comum separar defeitos críticos, maiores e menores, cada um com o seu AQL.</li><li>Não registar os defeitos com fotografias, o que dificulta a discussão com o fornecedor.</li></ul>
+<div class="pcard who2"><h3>Faz isto sem tabelas</h3><p>A HCR Inspection Suite conduz a inspeção AQL com um assistente, regista defeitos com fotografias e gera o relatório PDF. Funciona offline, em Windows, e o acesso é por convite durante o lançamento.</p>
+<div class="btn-row" style="margin-top:18px"><a class="btn btn-gold" href="inspection-suite.html">Conhecer a HCR Inspection Suite</a></div></div>
+</div></section>
+<section class="s faq"><div class="wrap art"><div class="s-head"><h2>Perguntas frequentes</h2></div><details><summary>O que é uma tabela AQL?</summary><p>É a tabela das normas de amostragem (como a ISO 2859-1 e a ANSI/ASQ Z1.4) que, a partir do tamanho do lote e do AQL escolhido, indica quantas peças inspecionar e quantos defeitos aceitar.</p></details><details><summary>Qual é o AQL mais usado?</summary><p>Em inspeções de produtos de consumo é comum usar 2,5 para defeitos maiores e 4,0 para defeitos menores, com zero defeitos críticos. Depende do acordo com o cliente.</p></details><details><summary>O que significa AQL 2,5?</summary><p>Que o plano de amostragem foi calibrado para um nível de qualidade aceitável de 2,5 %. Não quer dizer que o lote tenha exatamente 2,5 % de defeitos.</p></details></div></section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <span class="logo-crop" style="--s:80px;margin-bottom:10px"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="80" height="80" /></span>
+      <p>Startup portuguesa de software · Santa Maria da Feira</p>
+    </div>
+    <div><ul><li><a href="index.html">HCR Digital Solutions</a></li><li><a href="inspection-suite.html">HCR Inspection Suite</a></li><li><a href="tabela-aql-explicada.html">Tabela AQL explicada</a></li><li><a href="como-calcular-amostra-aql.html">Como calcular a amostra AQL</a></li></ul></div>
+    <div><p>© 2026 HCR Digital Solutions<br />Todos os direitos reservados</p></div>
+  </div>
+</footer>
+<script>
+(function(){var b=document.getElementById("menuBtn"),m=document.getElementById("mnav");if(!b||!m)return;
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});})();
+</script>
+</body>
+</html>

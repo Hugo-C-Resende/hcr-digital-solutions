@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Como calcular a amostra AQL: exemplos e passos | HCR</title>
+<meta name="description" content="Como calcular o tamanho da amostra AQL em 4 passos, com dois exemplos (lote de 500 e de 5 000 peças) e o que fazer quando o lote falha." />
+<meta name="author" content="HCR Digital Solutions" />
+<meta name="theme-color" content="#05080f" />
+<link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/como-calcular-amostra-aql.html" />
+<meta property="og:title" content="Como calcular a amostra AQL: exemplos e passos | HCR" />
+<meta property="og:description" content="Como calcular o tamanho da amostra AQL em 4 passos, com dois exemplos (lote de 500 e de 5 000 peças) e o que fazer quando o lote falha." />
+<meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="HCR Digital Solutions" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/como-calcular-amostra-aql.html" />
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Como calcular a amostra AQL: exemplos e passos | HCR" />
+<meta name="twitter:description" content="Como calcular o tamanho da amostra AQL em 4 passos, com dois exemplos (lote de 500 e de 5 000 peças) e o que fazer quando o lote falha." />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon-192x192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=20261103" />
+<style>
+.lang a{display:inline-flex;align-items:center;background:transparent;border:1px solid rgba(255,255,255,.22);color:var(--text);font:600 12px/1 inherit;border-radius:999px;padding:0 10px;min-height:36px;text-decoration:none}
+.lang a[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#05080f}
+.who2{margin-top:6px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://hugo-c-resende.github.io/hcr-digital-solutions/como-calcular-amostra-aql.html#article",
+   "headline": "Como calcular a amostra AQL: 4 passos e dois exemplos",
+   "description": "Como calcular o tamanho da amostra AQL em 4 passos, com dois exemplos (lote de 500 e de 5 000 peças) e o que fazer quando o lote falha.",
+   "inLanguage": "pt-PT",
+   "datePublished": "2026-11-05",
+   "dateModified": "2026-11-05",
+   "mainEntityOfPage": "https://hugo-c-resende.github.io/hcr-digital-solutions/como-calcular-amostra-aql.html",
+   "author": {
+    "@type": "Person",
+    "name": "Hugo Resende",
+    "jobTitle": "Quality Manager"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "HCR Digital Solutions",
+    "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/logo-hcr.png"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "HCR Digital Solutions",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "HCR Inspection Suite",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/inspection-suite.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Como calcular a amostra AQL",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/como-calcular-amostra-aql.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Como se calcula o tamanho da amostra AQL?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pelo tamanho do lote e pelo nível de inspeção obténs a letra-código; a letra dá o tamanho da amostra. Para um lote de 500 peças no nível II, são 50 peças."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Posso usar uma folha Excel?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim, desde que use a tabela correta da norma. O mais comum é perder tempo a refazer relatórios e a juntar fotografias, e é aí que uma aplicação dedicada ajuda."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O que faço se o lote falhar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Regista a não conformidade, define uma ação corretiva com o fornecedor e, se acordado, inspeciona de novo depois da correção."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="HCR Digital Solutions"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="64" height="64" /></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#apps">Produtos</a><a href="sobre.html">Sobre</a><a href="index.html#contact">Contacto</a></nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Language"><a href="como-calcular-amostra-aql.html" aria-pressed="true">PT</a></div>
+      <a class="btn btn-gold btn-sm hdr-cta" href="mailto:HCRFinanceMaster@gmail.com?subject=Acesso%20antecipado%20HCR%20Inspection%20Suite">Pedir acesso</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu"><a href="index.html#apps">Produtos</a><a href="sobre.html">Sobre</a><a href="index.html#contact">Contacto</a><a class="cta" href="mailto:HCRFinanceMaster@gmail.com?subject=Acesso%20antecipado%20HCR%20Inspection%20Suite">Pedir acesso</a></nav>
+</header>
+
+<style>.art{max-width:46em}.art p,.art li{color:var(--muted);margin-bottom:12px}.art h2{margin-top:34px}.art table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}.art th,.art td{border:1px solid rgba(255,255,255,.12);padding:10px 12px;text-align:left}.art th{color:var(--gold);background:rgba(12,47,56,.4)}.art .note{font-size:13px}.art ol,.art ul{padding-left:22px}</style>
+<main id="main">
+<div class="wrap crumbs"><a href="index.html">HCR Digital Solutions</a> › <a href="inspection-suite.html">HCR Inspection Suite</a> › <span>Como calcular a amostra AQL</span></div>
+<section class="hero"><div class="wrap art">
+  <span class="eyebrow">Guia · Qualidade</span>
+  <h1>Como calcular a amostra AQL: 4 passos e dois exemplos</h1>
+  <p class="lead">Do tamanho do lote ao número de defeitos aceitáveis: o método em 4 passos, com dois exemplos reais de cálculo.</p>
+  <p class="hero-note">Por Hugo Resende, Quality Manager · atualizado a 5 de novembro de 2026</p>
+</div></section>
+<section class="s"><div class="wrap art">
+<h2>A fórmula, em 4 passos</h2>
+<ol><li><b>Tamanho do lote</b>: o número total de unidades a inspecionar (por referência).</li><li><b>Nível de inspeção</b>: geral II, salvo acordo diferente.</li><li><b>Letra-código</b> e <b>tamanho da amostra</b>, pela tabela do nível II.</li><li><b>AQL</b> e números Ac/Re para essa amostra.</li></ol>
+<h2>Exemplo 1: lote de 500 peças</h2>
+<p>500 está no intervalo 281 – 500: letra <b>H</b>, amostra de <b>50</b> peças. Com AQL 2,5: aceitas até <b>3</b> defeitos, rejeitas a partir de <b>4</b>. Com AQL 4,0: aceitas até 5, rejeitas a partir de 6.</p>
+<h2>Exemplo 2: lote de 5 000 peças</h2>
+<p>5 000 está no intervalo 3 201 – 10 000: letra <b>L</b>, amostra de <b>200</b> peças. Com AQL 2,5: aceitas até <b>10</b>, rejeitas a partir de <b>11</b>. Com AQL 4,0: aceitas até 14, rejeitas a partir de 15.</p>
+<p class="note">Valores para inspeção normal, amostragem simples e nível geral de inspeção II, como nas tabelas das normas ISO 2859-1 e ANSI/ASQ Z1.4. Confirma sempre na norma ou no teu caderno de encargos antes de decidir.</p>
+<h2>E os cartões, caixas e amostra aleatória?</h2>
+<p>A amostra deve ser retirada ao acaso de várias caixas, não só das de cima. Anota quantas caixas abriste e de que posição vieram as peças. Se o lote tem várias referências, calcula cada uma separadamente.</p>
+<h2>O que fazer depois de contar os defeitos</h2>
+<ul><li>Defeitos <b>até ao número de aceitação</b>: o lote passa nesse critério.</li><li>Defeitos <b>iguais ou acima do número de rejeição</b>: o lote falha; abre uma não conformidade e define a ação corretiva.</li><li>Em qualquer caso, guarda as fotografias e o relatório como evidência.</li></ul>
+<div class="pcard who2"><h3>Faz isto sem tabelas</h3><p>A HCR Inspection Suite conduz a inspeção AQL com um assistente, regista defeitos com fotografias e gera o relatório PDF. Funciona offline, em Windows, e o acesso é por convite durante o lançamento.</p>
+<div class="btn-row" style="margin-top:18px"><a class="btn btn-gold" href="inspection-suite.html">Conhecer a HCR Inspection Suite</a></div></div>
+</div></section>
+<section class="s faq"><div class="wrap art"><div class="s-head"><h2>Perguntas frequentes</h2></div><details><summary>Como se calcula o tamanho da amostra AQL?</summary><p>Pelo tamanho do lote e pelo nível de inspeção obténs a letra-código; a letra dá o tamanho da amostra. Para um lote de 500 peças no nível II, são 50 peças.</p></details><details><summary>Posso usar uma folha Excel?</summary><p>Sim, desde que use a tabela correta da norma. O mais comum é perder tempo a refazer relatórios e a juntar fotografias, e é aí que uma aplicação dedicada ajuda.</p></details><details><summary>O que faço se o lote falhar?</summary><p>Regista a não conformidade, define uma ação corretiva com o fornecedor e, se acordado, inspeciona de novo depois da correção.</p></details></div></section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <span class="logo-crop" style="--s:80px;margin-bottom:10px"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="80" height="80" /></span>
+      <p>Startup portuguesa de software · Santa Maria da Feira</p>
+    </div>
+    <div><ul><li><a href="index.html">HCR Digital Solutions</a></li><li><a href="inspection-suite.html">HCR Inspection Suite</a></li><li><a href="tabela-aql-explicada.html">Tabela AQL explicada</a></li><li><a href="como-calcular-amostra-aql.html">Como calcular a amostra AQL</a></li></ul></div>
+    <div><p>© 2026 HCR Digital Solutions<br />Todos os direitos reservados</p></div>
+  </div>
+</footer>
+<script>
+(function(){var b=document.getElementById("menuBtn"),m=document.getElementById("mnav");if(!b||!m)return;
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});})();
+</script>
+</body>
+</html>

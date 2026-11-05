@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Family Budget and Expense Tracker | HCR Finance Master</title>
+<meta name="description" content="Free (beta) personal and family finance app for Windows and web: track expenses and net worth, import CSV statements and export your data." />
+<meta name="author" content="HCR Digital Solutions" />
+<meta name="theme-color" content="#05080f" />
+<link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/family-budget-app.html" />
+<link rel="alternate" hreflang="pt" href="https://hugo-c-resende.github.io/hcr-digital-solutions/orcamento-familiar.html" />
+<link rel="alternate" hreflang="en" href="https://hugo-c-resende.github.io/hcr-digital-solutions/family-budget-app.html" />
+<link rel="alternate" hreflang="fr" href="https://hugo-c-resende.github.io/hcr-digital-solutions/budget-familial-application.html" />
+<link rel="alternate" hreflang="x-default" href="https://hugo-c-resende.github.io/hcr-digital-solutions/orcamento-familiar.html" />
+<meta property="og:title" content="Family Budget and Expense Tracker | HCR Finance Master" />
+<meta property="og:description" content="Free (beta) personal and family finance app for Windows and web: track expenses and net worth, import CSV statements and export your data." />
+<meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="HCR Digital Solutions" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/family-budget-app.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Family Budget and Expense Tracker | HCR Finance Master" />
+<meta name="twitter:description" content="Free (beta) personal and family finance app for Windows and web: track expenses and net worth, import CSV statements and export your data." />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon-192x192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=20261103" />
+<style>
+.lang a{display:inline-flex;align-items:center;background:transparent;border:1px solid rgba(255,255,255,.22);color:var(--text);font:600 12px/1 inherit;border-radius:999px;padding:0 10px;min-height:36px;text-decoration:none}
+.lang a[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#05080f}
+.who2{margin-top:6px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://hugo-c-resende.github.io/hcr-digital-solutions/family-budget-app.html#app",
+   "name": "HCR Finance Master",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Windows, Web",
+   "description": "Personal and family finance app for Windows and web: expense tracking, net worth, local CSV import, data export and deletion (GDPR).",
+   "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/family-budget-app.html",
+   "downloadUrl": "https://apps.microsoft.com/detail/9PLTVV6BQPVH",
+   "inLanguage": [
+    "pt-PT",
+    "en",
+    "fr"
+   ],
+   "featureList": [
+    "Expense and income tracking",
+    "Family budget",
+    "Local CSV import",
+    "Offline use with sync",
+    "Data export and deletion"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "HCR Digital Solutions",
+    "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "HCR Digital Solutions",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "HCR Finance Master",
+     "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/family-budget-app.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is HCR Finance Master free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, during the beta. No card is requested."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use it for a family budget?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You can manage the household finances and invite other people to the same household."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it connect to my bank?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You import CSV statements; the file is read on your device and only the imported transactions are synced with your account."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it a virtual wallet (e-wallet)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It does not store cards or make payments: it is an expense-tracking and personal-finance app."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I delete my account and data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. In Settings → Privacy you can export your transactions as CSV and delete the account with your password."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which devices does it run on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On Windows (Microsoft Store) and in any modern browser, including mobile."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="HCR Digital Solutions"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="64" height="64" /></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#apps">Products</a><a href="sobre.html">About</a><a href="index.html#contact">Contact</a></nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Language"><a href="orcamento-familiar.html" hreflang="pt" aria-pressed="false">PT</a><a href="family-budget-app.html" hreflang="en" aria-pressed="true">EN</a><a href="budget-familial-application.html" hreflang="fr" aria-pressed="false">FR</a></div>
+      <a class="btn btn-gold btn-sm hdr-cta" href="https://hcr-finance-web.hugocresende.workers.dev/demo">Try the demo</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu"><a href="index.html#apps">Products</a><a href="sobre.html">About</a><a href="index.html#contact">Contact</a><a class="cta" href="https://hcr-finance-web.hugocresende.workers.dev/demo">Try the demo</a></nav>
+</header>
+
+<main id="main">
+<div class="wrap crumbs"><a href="index.html">HCR Digital Solutions</a> › <span>HCR Finance Master</span></div>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Free beta · Windows and web</span>
+      <h1>Family budget and <em>expense tracking</em> in one place</h1>
+      <p class="lead">HCR Finance Master is a personal and family finance app: follow income, expenses and net worth, import CSV statements without uploading the file to the internet, and keep your data yours.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="https://hcr-finance-web.hugocresende.workers.dev/demo" target="_blank" rel="noopener">Try the demo</a>
+        <a class="btn btn-line" href="https://apps.microsoft.com/detail/9PLTVV6BQPVH" target="_blank" rel="noopener">Get it on the Microsoft Store</a>
+      </div>
+      <p class="hero-note">No-sign-up demo. The account is free during the beta, no card needed.</p>
+    </div>
+    <div class="kpis"><div class="kpi"><b>No-sign-up demo</b><span>See the app with sample data</span></div><div class="kpi"><b>Local CSV</b><span>The file stays on your device</span></div><div class="kpi"><b>Offline-first</b><span>Syncs when you reconnect</span></div><div class="kpi"><b>GDPR</b><span>Export and delete your data</span></div></div>
+  </div>
+</section>
+
+<section class="s" id="features">
+  <div class="wrap">
+    <div class="s-head"><h2>What you can do</h2></div>
+    <div class="cards c3"><article class="card"><h3>Track expenses and income</h3><p>Record transactions, see the trend and understand where your household&#x27;s money goes.</p></article><article class="card"><h3>Follow your net worth</h3><p>Get an overall view of your personal and family finances.</p></article><article class="card"><h3>Import CSV statements</h3><p>The file is read on your device; only the imported transactions enter your account.</p></article><article class="card"><h3>Family budget</h3><p>Manage the household finances and invite other people to the same household.</p></article><article class="card"><h3>Works offline</h3><p>Keep using the app offline; changes sync when the connection is back.</p></article><article class="card"><h3>Privacy by default</h3><p>EU servers, per-user data isolation and CSV export of your transactions.</p></article></div>
+  </div>
+</section>
+
+<section class="s" id="no-bank">
+  <div class="wrap">
+    <div class="s-head"><h2>No bank connection, by design</h2><p>You do not have to give access to your bank account: export the statement as CSV from your bank, choose the file in the app and review before importing. The file is read on your device.</p></div>
+  </div>
+</section>
+
+<section class="s" id="start">
+  <div class="wrap">
+    <div class="s-head"><h2>Get started in 3 steps</h2></div>
+    <ol class="steps"><li><b>Try the demo</b><span>Open the demo in your browser, no sign-up, and explore with sample data.</span></li><li><b>Create your account</b><span>Install from the Microsoft Store or use it in the browser. Free during the beta.</span></li><li><b>Import your transactions</b><span>Choose a CSV file from your bank and review before importing.</span></li></ol>
+  </div>
+</section>
+
+<section class="s" id="team">
+  <div class="wrap">
+    <div class="pcard who2">
+      <h3>Who is behind it</h3>
+      <p>HCR Finance Master is a product of HCR Digital Solutions, a Portuguese software startup (micro-company) based in Santa Maria da Feira. We are in beta and looking for testers: talk to us, your feedback decides what we do next.</p>
+      <div class="btn-row" style="margin-top:18px"><a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSdM8YlKTdpindyph5f2wPcA3DhMVTlIIKnzeq6ngemmEgT3TQ/viewform" target="_blank" rel="noopener">Join the beta</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="s faq" id="faq">
+  <div class="wrap">
+    <div class="s-head"><h2>Frequently asked questions</h2></div>
+    <details><summary>Is HCR Finance Master free?</summary><p>Yes, during the beta. No card is requested.</p></details><details><summary>Can I use it for a family budget?</summary><p>Yes. You can manage the household finances and invite other people to the same household.</p></details><details><summary>Does it connect to my bank?</summary><p>No. You import CSV statements; the file is read on your device and only the imported transactions are synced with your account.</p></details><details><summary>Is it a virtual wallet (e-wallet)?</summary><p>No. It does not store cards or make payments: it is an expense-tracking and personal-finance app.</p></details><details><summary>Can I delete my account and data?</summary><p>Yes. In Settings → Privacy you can export your transactions as CSV and delete the account with your password.</p></details><details><summary>Which devices does it run on?</summary><p>On Windows (Microsoft Store) and in any modern browser, including mobile.</p></details>
+    <p class="roadmap"><a href="privacidade-finance-master.html">Privacy policy (Portuguese)</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <span class="logo-crop" style="--s:80px;margin-bottom:10px"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="80" height="80" /></span>
+      <p>Portuguese software startup · Santa Maria da Feira</p>
+    </div>
+    <div><ul><li><a href="index.html">HCR Digital Solutions</a></li><li><a href="finance-master.html">HCR Finance Master (details)</a></li><li><a href="inspection-suite-en.html">HCR Inspection Suite</a></li><li><a href="sobre.html">About us</a></li></ul></div>
+    <div><p>© 2026 HCR Digital Solutions<br />All rights reserved</p></div>
+  </div>
+</footer>
+<script>
+(function(){var b=document.getElementById("menuBtn"),m=document.getElementById("mnav");if(!b||!m)return;
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});})();
+</script>
+</body>
+</html>
