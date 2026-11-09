@@ -8,7 +8,7 @@
      antecipado" and points at #contact. Fill in once published (Store ID
      9PP3BQ017GNN) and the CTA switches itself to "Obter na Microsoft
      Store", opening STORE_URL in a new tab — no other code change needed. */
-  var STORE_URL = "";
+  var STORE_URL = "https://apps.microsoft.com/detail/9PP3BQ017GNN";
 
   var EN = {
     "skip": "Skip to content",
@@ -31,7 +31,7 @@
     "fm.text": "Personal and family finance in one place: track transactions and net worth, import CSV statements (the file stays on your device) and export or delete your data whenever you want.",
     "fm.c1": "Try the demo without signing up", "fm.c2": "Works on Windows and in the browser", "fm.c3": "Local CSV import and GDPR export",
     "fm.b1": "See details", "fm.b2": "Try the demo",
-    "is.badge": "Coming soon to the Microsoft Store",
+    "is.badge": "Available on the Microsoft Store",
     "is.text": "The whole quality-inspection cycle in one place: inspections with AQL sampling, defects with photos, PDF reports, non-conformities and corrective actions (CAPA), calendar and statistics. A Windows app that works offline and syncs when you are connected.",
     "is.c1": "AQL inspection wizard, with defects and photos", "is.c2": "Professional PDF reports for the client or the factory", "is.c3": "In Portuguese, English and French · HCR account required",
     "is.cta": "Request early access", "is.ctaLive": "Get it on Microsoft Store", "is.priv": "Privacy policy",
@@ -118,7 +118,7 @@
     "fm.text": "Finances personnelles et familiales au même endroit : suivez vos transactions et votre patrimoine, importez vos relevés CSV (le fichier reste sur votre appareil) et exportez ou supprimez vos données quand vous voulez.",
     "fm.c1": "Essayez la démo sans inscription", "fm.c2": "Fonctionne sous Windows et dans le navigateur", "fm.c3": "Import CSV local et export RGPD",
     "fm.b1": "Voir les détails", "fm.b2": "Essayer la démo",
-    "is.badge": "Bientôt sur le Microsoft Store",
+    "is.badge": "Disponible sur le Microsoft Store",
     "is.text": "Tout le cycle d'une inspection qualité au même endroit : inspections avec échantillonnage AQL, défauts avec photos, rapports PDF, non-conformités et actions correctives (CAPA), calendrier et statistiques. Une application Windows qui fonctionne hors ligne et se synchronise dès que la connexion revient.",
     "is.c1": "Assistant d'inspection AQL, avec défauts et photos", "is.c2": "Rapports PDF professionnels pour le client ou l'usine", "is.c3": "En portugais, anglais et français · compte HCR requis",
     "is.cta": "Demander un accès anticipé", "is.ctaLive": "Obtenir sur le Microsoft Store", "is.priv": "Politique de confidentialité",
