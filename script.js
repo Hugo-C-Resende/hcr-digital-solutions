@@ -25,28 +25,11 @@ pt: {
 
 "apps.title": "Apps & Pré-Lançamentos",
 "apps.lead": "Estamos também a validar novas ideias de produto. A HCR Finance Master já está disponível em beta; as restantes apps são conceitos em exploração, ainda sem desenvolvimento iniciado.",
-"apps.card1.badge": "Em Breve",
-"apps.card1.title": "Canal Horeca",
-"apps.card1.text": "Plataforma dedicada ao setor Horeca (hotelaria e restauração), pensada para simplificar encomendas, comunicação e gestão entre fornecedores e estabelecimentos.",
-"apps.card1.cta": "Saber Mais",
-
 "apps.card2.badge": "Disponível",
 "apps.card2.title": "HCR Finance Master",
 "apps.card2.text": "Finanças pessoais e familiares num só lugar: acompanha movimentos e património, importa CSV e exporta os teus dados. Beta gratuita para Windows e web.",
 "apps.card2.cta": "Experimentar a Demo",
 "apps.card2.cta2": "Microsoft Store",
-
-"apps.card3.badge": "Em Breve",
-"apps.card3.title": "Orçamentos",
-"apps.card3.text": "Aplicação para criar, enviar e gerir orçamentos profissionais de forma rápida e organizada.",
-"apps.card3.cta": "Saber Mais",
-
-"apps.card4.badge": "Em Breve",
-"apps.card4.text": "Plataforma SaaS de inspeções de qualidade baseada na tabela AQL, com apoio à norma ISO 9001 e alertas automáticos sempre que surgem problemas a resolver. Disponível em Windows, Mac, iOS, Android e iPad, com integração com PHC, Primavera e Sage.",
-"apps.card4.cta": "Pedir Acesso Antecipado",
-"aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
-"aql.tag.erp": "Integração PHC · Primavera · Sage",
-"aql.tag.iso": "Alinhado com ISO 9001",
 
 "about.title": "Sobre Nós",
 "about.text": "A HCR Digital Solutions é uma empresa especializada no desenvolvimento de aplicações empresariais e soluções de automação. Criamos tecnologia que melhora processos, reduz custos e aumenta a eficiência operacional.",
@@ -127,28 +110,11 @@ en: {
 
 "apps.title": "Apps & Pre-Launches",
 "apps.lead": "We're also validating new product ideas. HCR Finance Master is already available in beta; the other apps are concepts still being explored, with no development started yet.",
-"apps.card1.badge": "Coming Soon",
-"apps.card1.title": "Canal Horeca",
-"apps.card1.text": "A platform dedicated to the Horeca sector (hospitality and food service), designed to simplify ordering, communication and management between suppliers and businesses.",
-"apps.card1.cta": "Learn More",
-
 "apps.card2.badge": "Available",
 "apps.card2.title": "HCR Finance Master",
 "apps.card2.text": "Personal and family finance in one place: track transactions and net worth, import CSV and export your data. Free beta for Windows and web.",
 "apps.card2.cta": "Try the Demo",
 "apps.card2.cta2": "Microsoft Store",
-
-"apps.card3.badge": "Coming Soon",
-"apps.card3.title": "Orçamentos",
-"apps.card3.text": "An app to create, send and manage professional quotes quickly and in an organised way.",
-"apps.card3.cta": "Learn More",
-
-"apps.card4.badge": "Coming Soon",
-"apps.card4.text": "SaaS platform for quality inspections based on the AQL table, aligned with ISO 9001. It covers the full closed-loop quality cycle — inspection → audit (internal or external) → corrective action → verification → closure — with automatic alerts at every stage whenever an issue needs resolving. Available on Windows, Mac, iOS, Android and iPad, with integration with PHC, Primavera and Sage.",
-"apps.card4.cta": "Request Early Access",
-"aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
-"aql.tag.erp": "Integration with PHC · Primavera · Sage",
-"aql.tag.iso": "Aligned with ISO 9001",
 
 "about.title": "About Us",
 "about.text": "HCR Digital Solutions specializes in enterprise application development and automation solutions. We create technology that improves processes, reduces costs and increases operational efficiency.",
@@ -229,28 +195,11 @@ fr: {
 
 "apps.title": "Apps & Pré-Lancements",
 "apps.lead": "Nous validons également de nouvelles idées de produits. HCR Finance Master est déjà disponible en bêta ; les autres applications sont des concepts en cours d'exploration, sans développement entamé.",
-"apps.card1.badge": "Bientôt Disponible",
-"apps.card1.title": "Canal Horeca",
-"apps.card1.text": "Plateforme dédiée au secteur Horeca (hôtellerie et restauration), conçue pour simplifier les commandes, la communication et la gestion entre fournisseurs et établissements.",
-"apps.card1.cta": "En Savoir Plus",
-
 "apps.card2.badge": "Disponible",
 "apps.card2.title": "HCR Finance Master",
 "apps.card2.text": "Finances personnelles et familiales au même endroit : suivez vos transactions et votre patrimoine, importez du CSV et exportez vos données. Bêta gratuite pour Windows et le web.",
 "apps.card2.cta": "Essayer la démo",
 "apps.card2.cta2": "Microsoft Store",
-
-"apps.card3.badge": "Bientôt Disponible",
-"apps.card3.title": "Orçamentos",
-"apps.card3.text": "Application pour créer, envoyer et gérer des devis professionnels de façon rapide et organisée.",
-"apps.card3.cta": "En Savoir Plus",
-
-"apps.card4.badge": "Bientôt Disponible",
-"apps.card4.text": "Plateforme SaaS d'inspections qualité basée sur la table AQL, alignée avec la norme ISO 9001. Elle couvre tout le cycle fermé de la qualité — inspection → audit (interne ou externe) → action corrective → vérification → clôture — avec des alertes automatiques à chaque étape dès qu'un problème survient. Disponible sur Windows, Mac, iOS, Android et iPad, avec intégration à PHC, Primavera et Sage.",
-"apps.card4.cta": "Demander un Accès Anticipé",
-"aql.tag.platforms": "Windows · Mac · iOS · Android · iPad",
-"aql.tag.erp": "Intégration PHC · Primavera · Sage",
-"aql.tag.iso": "Aligné avec la norme ISO 9001",
 
 "about.title": "À Propos",
 "about.text": "HCR Digital Solutions est spécialisée dans le développement d’applications professionnelles et de solutions d’automatisation. Nous créons des technologies qui améliorent les processus, réduisent les coûts et augmentent l’efficacité opérationnelle.",
