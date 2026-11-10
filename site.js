@@ -21,8 +21,6 @@
     "hero.lead": "We design and build applications, dashboards and integrations with technical rigour, a user focus and measurable results.",
     "hero.cta2": "See products",
     "hero.note": "We reply quickly. Hours: 9:00–18:00 (Mon–Fri).",
-    "mock.aria": "Real HCR Finance Master screens (demo with fictional data): budget on desktop and transactions on mobile",
-    "mock.cap": "Demo with fictional data · Windows · Web",
     "t1": "Privacy and GDPR rights", "t2": "Windows and web", "t3": "Offline-first with sync", "t4": "Exportable and deletable data",
     "apps.eyebrow": "Our own products",
     "apps.title": "Products built with the same standards as client projects",
@@ -32,9 +30,12 @@
     "fm.c1": "Try the demo without signing up", "fm.c2": "Works on Windows and in the browser", "fm.c3": "Local CSV import and GDPR export",
     "fm.b1": "See details", "fm.b2": "Try the demo",
     "is.badge": "Available on the Microsoft Store",
-    "is.text": "The whole quality-inspection cycle in one place: inspections with AQL sampling, defects with photos, PDF reports, non-conformities and corrective actions (CAPA), calendar and statistics. A Windows app that works offline and syncs when you are connected, plus a web version (SaaS) in the browser.",
+    "is.text": "The whole quality-inspection cycle in one place: inspections with AQL sampling, defects with photos, PDF reports, non-conformities and corrective actions (CAPA). In the Windows app: calendar, statistics and offline mode with sync. In the web version (SaaS): access in the browser, nothing to install.",
     "is.c1": "AQL inspection wizard, with defects and photos", "is.c2": "Professional PDF reports for the client or the factory", "is.c3": "In Portuguese, English and French · HCR account required",
     "is.cta": "Request early access", "is.ctaLive": "Get it on Microsoft Store", "is.priv": "Privacy policy",
+    "is.shotAria": "See HCR Inspection Suite", "is.shotAlt": "Orders list in HCR Inspection Suite, showing status and progress of each order",
+    "is.shot.src": "assets/inspection-suite/en-02-orders.jpg", "is.shot.srcset": "assets/inspection-suite/en-02-orders.webp",
+    "fm.shotAria": "See HCR Finance Master", "fm.shotAlt": "HCR Finance Master screen, demo with fictional data",
     "apps.roadmap": "Being explored: Canal Horeca (ordering and management between suppliers and venues) · Quotes (professional proposals).",
     "svc.eyebrow": "Services",
     "svc.title": "Tailor-made solutions for your company's reality",
@@ -108,8 +109,6 @@
     "hero.lead": "Nous concevons des applications, tableaux de bord et intégrations avec rigueur technique, focus utilisateur et résultats mesurables.",
     "hero.cta2": "Voir les produits",
     "hero.note": "Nous répondons rapidement. Horaires : 9h00–18h00 (lun–ven).",
-    "mock.aria": "Écrans réels de HCR Finance Master (démo avec données fictives) : budget sur ordinateur et transactions sur mobile",
-    "mock.cap": "Démo avec données fictives · Windows · Web",
     "t1": "Confidentialité et droits RGPD", "t2": "Windows et web", "t3": "Offline-first avec synchronisation", "t4": "Données exportables et supprimables",
     "apps.eyebrow": "Nos produits",
     "apps.title": "Des produits conçus avec la même exigence que les projets clients",
@@ -119,9 +118,12 @@
     "fm.c1": "Essayez la démo sans inscription", "fm.c2": "Fonctionne sous Windows et dans le navigateur", "fm.c3": "Import CSV local et export RGPD",
     "fm.b1": "Voir les détails", "fm.b2": "Essayer la démo",
     "is.badge": "Disponible sur le Microsoft Store",
-    "is.text": "Tout le cycle d'une inspection qualité au même endroit : inspections avec échantillonnage AQL, défauts avec photos, rapports PDF, non-conformités et actions correctives (CAPA), calendrier et statistiques. Une application Windows qui fonctionne hors ligne et se synchronise dès que la connexion revient, et une version web (SaaS) dans le navigateur.",
+    "is.text": "Tout le cycle d'une inspection qualité au même endroit : inspections avec échantillonnage AQL, défauts avec photos, rapports PDF, non-conformités et actions correctives (CAPA). Dans l'application Windows : calendrier, statistiques et mode hors ligne avec synchronisation. Dans la version web (SaaS) : accès dans le navigateur, sans rien installer.",
     "is.c1": "Assistant d'inspection AQL, avec défauts et photos", "is.c2": "Rapports PDF professionnels pour le client ou l'usine", "is.c3": "En portugais, anglais et français · compte HCR requis",
     "is.cta": "Demander un accès anticipé", "is.ctaLive": "Obtenir sur le Microsoft Store", "is.priv": "Politique de confidentialité",
+    "is.shotAria": "Voir HCR Inspection Suite", "is.shotAlt": "Tableau de bord de HCR Inspection Suite avec les indicateurs d'inspections et de non-conformités",
+    "is.shot.src": "assets/inspection-suite/fr-01-tableau-de-bord.jpg", "is.shot.srcset": "assets/inspection-suite/fr-01-tableau-de-bord.webp",
+    "fm.shotAria": "Voir HCR Finance Master", "fm.shotAlt": "Écran de HCR Finance Master, démo avec données fictives",
     "apps.roadmap": "En exploration : Canal Horeca (commandes et gestion entre fournisseurs et établissements) · Devis (propositions professionnelles).",
     "svc.eyebrow": "Services",
     "svc.title": "Des solutions sur mesure pour la réalité de votre entreprise",
@@ -188,11 +190,17 @@
   var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n]"));
   var phNodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n-ph]"));
   var ariaNodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n-aria]"));
+  var altNodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n-alt]"));
+  var srcNodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n-src]"));
+  var srcsetNodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n-srcset]"));
   var metaDesc = document.querySelector('meta[name="description"]');
 
   /* captura o PT original (do HTML) */
   nodes.forEach(function (el) { DICT.pt[el.getAttribute("data-i18n")] = el.innerHTML; });
   ariaNodes.forEach(function (el) { DICT.pt[el.getAttribute("data-i18n-aria")] = el.getAttribute("aria-label"); });
+  altNodes.forEach(function (el) { DICT.pt[el.getAttribute("data-i18n-alt")] = el.getAttribute("alt"); });
+  srcNodes.forEach(function (el) { DICT.pt[el.getAttribute("data-i18n-src")] = el.getAttribute("src"); });
+  srcsetNodes.forEach(function (el) { DICT.pt[el.getAttribute("data-i18n-srcset")] = el.getAttribute("srcset"); });
   DICT.pt["meta.title"] = document.title;
   if (metaDesc) DICT.pt["meta.desc"] = metaDesc.getAttribute("content");
   /* não vêm de nenhum nó data-i18n (o botão da Store é controlado por
@@ -221,6 +229,21 @@
       var k = el.getAttribute("data-i18n-ph");
       var v = DICT[lang][k] || DICT.pt[k];
       if (v) el.setAttribute("placeholder", v);
+    });
+    altNodes.forEach(function (el) {
+      var k = el.getAttribute("data-i18n-alt");
+      var v = DICT[lang][k] || DICT.pt[k];
+      if (v) el.setAttribute("alt", v);
+    });
+    srcNodes.forEach(function (el) {
+      var k = el.getAttribute("data-i18n-src");
+      var v = DICT[lang][k] || DICT.pt[k];
+      if (v) el.setAttribute("src", v);
+    });
+    srcsetNodes.forEach(function (el) {
+      var k = el.getAttribute("data-i18n-srcset");
+      var v = DICT[lang][k] || DICT.pt[k];
+      if (v) el.setAttribute("srcset", v);
     });
     if (!pageOwnMeta) {
       if (DICT[lang]["meta.title"] || lang === "pt") document.title = DICT[lang]["meta.title"] || DICT.pt["meta.title"];

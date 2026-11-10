@@ -60,6 +60,11 @@ h1 em{font-style:normal;color:var(--gold)}
 .mock svg,.mock img{width:100%;height:auto}
 .mock-cap{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:12px 18px 14px;font-size:13px;color:var(--muted)}
 .mock-cap b{color:var(--text)}
+.mock2 .mock-shots{display:grid;grid-template-columns:1fr 1fr}
+.mock2 .mock-shot{display:block;color:inherit;text-decoration:none;background:rgba(255,255,255,.02)}
+.mock2 .mock-shot:first-child{border-right:1px solid rgba(255,255,255,.08)}
+.mock2 .mock-shot picture,.mock2 .mock-shot img{display:block;width:100%;height:auto}
+.mock2 .mock-shot-cap{display:block;padding:10px 12px;font-size:12px;font-weight:700;color:var(--text);text-align:center}
 
 /* trust */
 .trust{padding:14px 0 6px}
@@ -86,6 +91,8 @@ h2{font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.15;letter-spacing:-.01em;mar
 .badge.dim{background:transparent;border:1px solid var(--line);color:var(--gold)}
 .pcard h3{font-size:1.5rem;margin-bottom:10px}
 .pcard>p{color:var(--muted)}
+.pshot{display:block;margin:-26px -26px 18px;border-radius:20px 20px 0 0;overflow:hidden}
+.pshot img{display:block;width:100%;height:auto}
 .checks{list-style:none;margin:16px 0 22px;display:grid;gap:8px}
 .checks li{padding-left:26px;position:relative;font-size:15px}
 .checks li::before{content:"";position:absolute;left:0;top:.55em;width:14px;height:8px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg) translateY(-50%)}

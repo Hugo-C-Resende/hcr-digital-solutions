@@ -46,6 +46,9 @@
 .lightbox{position:fixed;inset:0;background:rgba(5,8,15,.92);display:none;align-items:center;justify-content:center;padding:24px;z-index:300;cursor:zoom-out}
 .lightbox.open{display:flex}
 .lightbox img{max-width:100%;max-height:100%;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.hero-shot{margin-top:32px}
+.hero-shot picture{display:block;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 60px rgba(247,198,0,.06)}
+.hero-shot img{display:block;width:100%;height:auto}
 </style>
 <script type="application/ld+json">
 {
@@ -69,7 +72,7 @@
     "Défauts avec photos",
     "Rapports PDF",
     "Non-conformités et actions correctives (CAPA)",
-    "Calendrier et statistiques",
+    "Calendrier et statistiques (application Windows)",
     "Fonctionne hors ligne avec synchronisation"
    ],
    "publisher": {
@@ -211,12 +214,8 @@
     </div>
     <div class="kpis"><div class="kpi"><b>Échantillonnage AQL</b><span>Assistant d&#x27;inspection pas à pas</span></div><div class="kpi"><b>Offline-first</b><span>Synchronise dès que la connexion revient</span></div><div class="kpi"><b>Rapports PDF</b><span>Pour le client ou l&#x27;usine</span></div><div class="kpi"><b>PT · EN · FR</b><span>Interface en trois langues</span></div></div>
   </div>
-</section>
-
-<section class="s" id="features">
-  <div class="wrap">
-    <div class="s-head"><h2>Tout le cycle de l&#x27;inspection qualité</h2></div>
-    <div class="cards c3"><article class="card"><h3>Inspections avec échantillonnage AQL</h3><p>Définissez le lot et le niveau de qualité acceptable, puis conduisez l&#x27;inspection avec un assistant, du début à la décision.</p></article><article class="card"><h3>Défauts avec photos</h3><p>Enregistrez chaque défaut avec photos et commentaires, pour montrer et discuter facilement le résultat.</p></article><article class="card"><h3>Rapports PDF professionnels</h3><p>Générez des rapports PDF pour le client ou l&#x27;usine, prêts à envoyer, sans refaire le travail dans Excel ou Word.</p></article><article class="card"><h3>Non-conformités et CAPA</h3><p>Ouvrez des non-conformités et suivez les actions correctives jusqu&#x27;à la clôture, au même endroit que l&#x27;inspection.</p></article><article class="card"><h3>Calendrier et statistiques</h3><p>Planifiez les inspections dans le calendrier (avec synchronisation optionnelle Google Calendar ou Outlook) et suivez les résultats.</p></article><article class="card"><h3>Fonctionne sans internet</h3><p>Travaillez en usine ou en entrepôt, même sans réseau. Les données se synchronisent au retour de la connexion.</p></article></div>
+  <div class="wrap hero-shot">
+    <picture><source srcset="assets/inspection-suite/fr-01-tableau-de-bord.webp" type="image/webp" /><img src="assets/inspection-suite/fr-01-tableau-de-bord.jpg" alt="Tableau de bord de HCR Inspection Suite avec les indicateurs d'inspections et de non-conformités" width="1600" height="900" loading="eager" decoding="async" /></picture>
   </div>
 </section>
 
@@ -226,6 +225,13 @@
     <div class="cards c3 shots">
       <figure class="card shot"><button class="shot-btn" type="button" data-full="assets/inspection-suite/fr-01-tableau-de-bord.jpg" aria-label="Agrandir l'image : Tableau de bord"><picture><source srcset="assets/inspection-suite/fr-01-tableau-de-bord.webp" type="image/webp" /><img src="assets/inspection-suite/fr-01-tableau-de-bord.jpg" alt="Tableau de bord de HCR Inspection Suite avec les indicateurs d'inspections et de non-conformités" width="1600" height="900" loading="lazy" /></picture></button><figcaption>Tableau de bord</figcaption></figure>
     </div>
+  </div>
+</section>
+
+<section class="s" id="features">
+  <div class="wrap">
+    <div class="s-head"><h2>Tout le cycle de l&#x27;inspection qualité</h2></div>
+    <div class="cards c3"><article class="card"><h3>Inspections avec échantillonnage AQL</h3><p>Définissez le lot et le niveau de qualité acceptable, puis conduisez l&#x27;inspection avec un assistant, du début à la décision.</p></article><article class="card"><h3>Défauts avec photos</h3><p>Enregistrez chaque défaut avec photos et commentaires, pour montrer et discuter facilement le résultat.</p></article><article class="card"><h3>Rapports PDF professionnels</h3><p>Générez des rapports PDF pour le client ou l&#x27;usine, prêts à envoyer, sans refaire le travail dans Excel ou Word.</p></article><article class="card"><h3>Non-conformités et CAPA</h3><p>Ouvrez des non-conformités et suivez les actions correctives jusqu&#x27;à la clôture, au même endroit que l&#x27;inspection.</p></article><article class="card"><h3>Calendrier et statistiques (application Windows)</h3><p>Planifiez les inspections dans le calendrier (avec synchronisation optionnelle Google Calendar ou Outlook) et suivez les résultats.</p></article><article class="card"><h3>Fonctionne sans internet</h3><p>Travaillez en usine ou en entrepôt, même sans réseau. Les données se synchronisent au retour de la connexion.</p></article></div>
   </div>
 </section>
 
