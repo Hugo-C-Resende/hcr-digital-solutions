@@ -52,7 +52,22 @@
 .theme-toggle{display:inline-flex;gap:4px;margin-top:16px;padding:4px;border:1px solid var(--line);border-radius:999px}
 .theme-toggle-btn{border:0;background:transparent;color:var(--muted);font:600 13px/1 inherit;padding:8px 18px;border-radius:999px;cursor:pointer}
 .theme-toggle-btn.is-active{background:var(--gold);color:#05080f}
+
+.vid{position:relative;max-width:900px;margin:0 auto;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.vid-btn{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;display:block}
+.vid-btn img{width:100%;height:100%;object-fit:cover;opacity:.72;transition:opacity .2s}
+.vid-btn:hover img,.vid-btn:focus-visible img{opacity:.9}
+.vid-btn:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.vid-play{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--gold);box-shadow:0 8px 28px rgba(0,0,0,.5)}
+.vid-play:after{content:"";position:absolute;left:30px;top:22px;border-left:24px solid #05080f;border-top:16px solid transparent;border-bottom:16px solid transparent}
+.vid-len{position:absolute;right:12px;bottom:12px;background:rgba(5,8,15,.85);color:var(--text);font:600 12px/1 inherit;padding:6px 9px;border-radius:999px}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid-note{max-width:900px;margin:14px auto 0;color:var(--muted);font-size:13px;text-align:center}
+.vid-note a{color:var(--gold)}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"HCR Inspection Suite: 3-minute demo","description":"3-minute demo of HCR Inspection Suite: from an AQL inspection to a PDF report, with defects, non-conformities and corrective actions (CAPA). Portuguese narration, English subtitles.","thumbnailUrl":"https://hugo-c-resende.github.io/hcr-digital-solutions/assets/inspection-suite/en-02-orders.jpg","uploadDate":"2026-11-12","duration":"PT3M2S","embedUrl":"https://www.youtube-nocookie.com/embed/ylsG8v5VVWw","url":"https://youtu.be/ylsG8v5VVWw","inLanguage":"pt-PT"}
+</script>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -222,6 +237,16 @@
   </div>
 </section>
 
+<section class="s" id="demo">
+  <div class="wrap">
+    <div class="s-head"><h2>3-minute demo</h2><p>From an AQL inspection to a PDF report ready to send: AQL assistant, defects, non-conformities with corrective actions (CAPA), calendar and statistics.</p></div>
+    <div class="vid" id="demoVideo" data-yt="ylsG8v5VVWw" data-hl="en" data-cc="&cc_load_policy=1&cc_lang_pref=en">
+      <button class="vid-btn" type="button" aria-label="Play the HCR Inspection Suite demo (3 minutes)"><picture><source srcset="assets/inspection-suite/en-02-orders.webp" type="image/webp" /><img src="assets/inspection-suite/en-02-orders.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async" /></picture><span class="vid-play" aria-hidden="true"></span><span class="vid-len" aria-hidden="true">3:02</span></button>
+    </div>
+    <p class="vid-note">The video loads from YouTube only when you press play. The narration is in Portuguese with English subtitles. <a href="https://youtu.be/ylsG8v5VVWw" target="_blank" rel="noopener">Watch on YouTube</a> (subtitles in EN, FR, ES and Chinese).</p>
+  </div>
+</section>
+
 <section class="s" id="screenshots">
   <div class="wrap">
     <div class="s-head"><h2>See the app</h2><p>A few screens of HCR Inspection Suite, with demo data.</p>
@@ -321,6 +346,13 @@ document.querySelectorAll("[data-srcset-light]").forEach(function(s){s.srcset=s.
 document.querySelectorAll("[data-full-light]").forEach(function(btn){btn.setAttribute("data-full",btn.getAttribute(mode==="light"?"data-full-light":"data-full-dark"));});
 });});
 })();
+</script>
+<script>
+(function(){var v=document.getElementById('demoVideo');if(!v)return;var b=v.querySelector('.vid-btn');if(!b)return;
+b.addEventListener('click',function(){var f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0&hl='+v.dataset.hl+(v.dataset.cc||'');
+f.title=b.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';
+v.replaceChild(f,b);f.focus();});})();
 </script>
 </body>
 </html>
