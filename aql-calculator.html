@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free AQL calculator: sample size and Ac/Re by lot | HCR</title>
+<meta name="description" content="Free AQL calculator: enter the lot size, the inspection level and the AQL for each defect class to get the code letter, the sample size and the Ac/Re numbers." />
+<meta name="author" content="HCR Digital Solutions" />
+<meta name="theme-color" content="#05080f" />
+<link rel="canonical" href="https://hugo-c-resende.github.io/hcr-digital-solutions/aql-calculator.html" />
+<link rel="alternate" hreflang="pt" href="https://hugo-c-resende.github.io/hcr-digital-solutions/calculadora-aql.html" />
+<link rel="alternate" hreflang="en" href="https://hugo-c-resende.github.io/hcr-digital-solutions/aql-calculator.html" />
+<link rel="alternate" hreflang="fr" href="https://hugo-c-resende.github.io/hcr-digital-solutions/calculateur-aql.html" />
+<link rel="alternate" hreflang="x-default" href="https://hugo-c-resende.github.io/hcr-digital-solutions/calculadora-aql.html" />
+<meta property="og:title" content="Free AQL calculator: sample size and Ac/Re by lot | HCR" />
+<meta property="og:description" content="Enter the lot, the level and the AQL for each class to get the code letter, the sample size and the Ac/Re numbers. Runs in your browser." />
+<meta property="og:image" content="https://hugo-c-resende.github.io/hcr-digital-solutions/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="HCR Digital Solutions" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:url" content="https://hugo-c-resende.github.io/hcr-digital-solutions/aql-calculator.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Free AQL calculator: sample size and Ac/Re by lot | HCR" />
+<meta name="twitter:description" content="Enter the lot, the level and the AQL for each class to get the code letter, the sample size and the Ac/Re numbers. Runs in your browser." />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="favicon-192x192.png" />
+<link rel="stylesheet" href="site.css?v=20261103" />
+<style>
+.lang a{display:inline-flex;align-items:center;background:transparent;border:1px solid rgba(255,255,255,.22);color:var(--text);font:600 12px/1 inherit;border-radius:999px;padding:0 10px;min-height:36px;text-decoration:none}
+.lang a[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#05080f}
+.art{max-width:46em}.art p,.art li{color:var(--muted);margin-bottom:12px}.art h2{margin-top:34px}.art ol,.art ul{padding-left:22px}.art a{color:var(--gold);text-underline-offset:3px}
+.aql{display:grid;gap:20px;align-items:start}
+.aql-form,.aql-out{background:rgba(12,47,56,.35);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px;min-width:0}
+.aql-out{border-color:var(--line)}
+.aql-field{display:grid;gap:6px;margin-bottom:18px;border:0;min-width:0}
+.aql-field>label,.aql-field legend{font-size:14px;color:var(--muted);font-weight:600}
+.aql-field legend{margin-bottom:6px}
+.aql-form input[type=text],.aql-form select{width:100%;font:16px/1.4 inherit;color:var(--text);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);border-radius:10px;padding:12px 14px;min-height:48px}
+.aql-form select option{background:#08111a;color:var(--text)}
+.aql-form input[aria-invalid=true]{border-color:#ff8a80}
+.aql-fielderr{min-height:1.2em;font-size:13px;color:#ffb4a9}
+.aql-help{font-size:13px;color:var(--muted)}
+.aql-seg{display:flex;gap:8px;flex-wrap:wrap}
+.aql-seg label{position:relative}
+.aql-seg input{position:absolute;opacity:0;width:1px;height:1px}
+.aql-seg span{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:44px;padding:0 16px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-weight:600;cursor:pointer}
+.aql-seg input:checked+span{background:var(--gold);border-color:var(--gold);color:#05080f}
+.aql-seg input:focus-visible+span{outline:2px solid var(--gold2);outline-offset:3px}
+.aql-classes{display:grid;gap:12px;grid-template-columns:1fr}
+.aql-out h2{font-size:1.25rem;margin-bottom:14px}
+.aql-kpis{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.aql-kpis .kpi b{font-size:1.6rem}
+.aql-phrase{border-left:3px solid var(--gold);background:rgba(247,198,0,.07);padding:12px 14px;border-radius:0 10px 10px 0;margin:4px 0 16px;color:var(--text)}
+.aql-tablewrap{overflow-x:auto}
+.aql-table{width:100%;border-collapse:collapse;font-size:15px}
+.aql-table th,.aql-table td{border:1px solid rgba(255,255,255,.12);padding:9px 10px;text-align:left;vertical-align:top}
+.aql-table thead th{color:var(--gold);background:rgba(12,47,56,.4);font-size:13px}
+.aql-table tbody th{font-weight:600}
+.aql-plan{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.aql-ac{color:#8fe3a8;font-weight:700}.aql-re{color:#ffb4a9;font-weight:700}
+.aql-tag{display:inline-block;font-size:11px;font-weight:700;color:#05080f;background:var(--gold);border-radius:999px;padding:1px 7px}
+.aql-notes{margin:14px 0 0;padding-left:20px;font-size:14px;color:var(--muted)}
+.aql-notes li{margin-bottom:6px}
+.aql-meta{margin-top:12px;font-size:13px;color:var(--muted)}
+.aql-hint,.aql-err{color:var(--muted)}
+.aql-err{color:#ffb4a9}
+.aql-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px}
+.aql-actions button[disabled]{opacity:.5;cursor:not-allowed;transform:none}
+.aql-status{font-size:14px;color:var(--gold);min-height:1.2em}
+.aql-cta{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:var(--muted)}
+.aql-cta a{color:var(--gold);text-underline-offset:3px}
+.aql-warn{border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 16px;background:rgba(255,255,255,.03);font-size:14px;color:var(--muted);margin-top:20px}
+.aql-warn p+p{margin-top:6px}
+.who2{margin-top:6px}
+@media (max-width:639px){.aql-form,.aql-out{padding:16px}.aql-table{font-size:14px}.aql-table th,.aql-table td{padding:8px 6px}}
+@media (min-width:640px){.aql-classes{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:960px){.aql{grid-template-columns:.9fr 1.1fr}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "@id": "https://hugo-c-resende.github.io/hcr-digital-solutions/aql-calculator.html#app",
+   "name": "AQL calculator",
+   "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/aql-calculator.html",
+   "description": "Free AQL calculator for normal inspection by attributes with single sampling: code letter, sample size and Ac/Re numbers per defect class, based on commonly used AQL tables (ISO 2859-1 / ANSI Z1.4).",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Any",
+   "browserRequirements": "Requires JavaScript",
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+   "publisher": {"@type": "Organization", "name": "HCR Digital Solutions", "url": "https://hugo-c-resende.github.io/hcr-digital-solutions/"}
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "HCR Digital Solutions", "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/"},
+    {"@type": "ListItem", "position": 2, "name": "HCR Inspection Suite", "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/inspection-suite-en.html"},
+    {"@type": "ListItem", "position": 3, "name": "AQL calculator", "item": "https://hugo-c-resende.github.io/hcr-digital-solutions/aql-calculator.html"}
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="HCR Digital Solutions"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="64" height="64" /></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#apps">Products</a><a href="sobre.html">About</a><a href="index.html#contact">Contact</a></nav>
+    <div class="hdr-right">
+      <div class="lang" role="group" aria-label="Language"><a href="calculadora-aql.html" hreflang="pt" aria-pressed="false">PT</a><a href="aql-calculator.html" hreflang="en" aria-pressed="true">EN</a><a href="calculateur-aql.html" hreflang="fr" aria-pressed="false">FR</a></div>
+      <a class="btn btn-gold btn-sm hdr-cta" href="mailto:HCRFinanceMaster@gmail.com?subject=HCR%20Inspection%20Suite%20early%20access">Request access</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu"><a href="index.html#apps">Products</a><a href="sobre.html">About</a><a href="index.html#contact">Contact</a><a class="cta" href="mailto:HCRFinanceMaster@gmail.com?subject=HCR%20Inspection%20Suite%20early%20access">Request access</a></nav>
+</header>
+
+<main id="main">
+<div class="wrap crumbs"><a href="index.html">HCR Digital Solutions</a> › <a href="inspection-suite-en.html">HCR Inspection Suite</a> › <span>AQL calculator</span></div>
+<section class="hero"><div class="wrap art">
+  <span class="eyebrow">Free tool · Quality</span>
+  <h1>AQL calculator: sample size and Ac/Re</h1>
+  <p class="lead">Enter the lot size, the inspection level and the AQL for each defect class. The calculator shows the code letter, how many units to inspect and how many defects you can accept.</p>
+</div></section>
+
+<section class="s" style="padding-top:8px" aria-label="AQL calculator"><div class="wrap">
+  <div class="aql">
+    <form class="aql-form" id="aqlForm" novalidate>
+      <div class="aql-field">
+        <label for="aqlLot">Lot size (units)</label>
+        <input type="text" id="aqlLot" name="lot" inputmode="numeric" autocomplete="off" placeholder="e.g. 1000" aria-describedby="aqlLotHelp aqlLotErr" />
+        <span class="aql-help" id="aqlLotHelp">Whole number, 2 or more.</span>
+        <span class="aql-fielderr" id="aqlLotErr" aria-live="polite"></span>
+      </div>
+      <fieldset class="aql-field">
+        <legend>General inspection level</legend>
+        <div class="aql-seg">
+          <label><input type="radio" name="aqlLevel" value="I" /><span>I</span></label>
+          <label><input type="radio" name="aqlLevel" value="II" checked /><span>II</span></label>
+          <label><input type="radio" name="aqlLevel" value="III" /><span>III</span></label>
+        </div>
+        <span class="aql-help">Level II is the most common; level I gives smaller samples and level III larger ones.</span>
+      </fieldset>
+      <fieldset class="aql-field">
+        <legend>AQL per defect class</legend>
+        <div class="aql-classes">
+          <div class="aql-field" style="margin:0"><label for="aql_critical">Critical</label><select id="aql_critical" name="critical"></select></div>
+          <div class="aql-field" style="margin:0"><label for="aql_major">Major</label><select id="aql_major" name="major"></select></div>
+          <div class="aql-field" style="margin:0"><label for="aql_minor">Minor</label><select id="aql_minor" name="minor"></select></div>
+        </div>
+        <span class="aql-help">Critical with AQL 0 = zero tolerance (AQL 0 does not exist in the standard). Defaults: 0 / 2.5 / 4.0.</span>
+      </fieldset>
+      <noscript><p class="aql-err">The calculator needs JavaScript. Without it, see the <a href="tabela-aql-explicada.html">AQL table explained</a> (in Portuguese).</p></noscript>
+    </form>
+
+    <div class="aql-out">
+      <h2>Result</h2>
+      <div id="aqlResult" aria-live="polite" aria-atomic="true"><p class="aql-hint">Enter the lot size to see the sampling plan.</p></div>
+      <div class="aql-actions">
+        <button type="button" class="btn btn-line btn-sm" id="aqlCopy" disabled>Copy result</button>
+        <span class="aql-status" id="aqlCopyStatus" role="status"></span>
+      </div>
+      <p class="aql-cta">Doing this for every inspection? <a href="inspection-suite-en.html">HCR Inspection Suite</a> works out the AQL plan inside the inspection, records the defects and generates the PDF report. It is on the <a href="https://apps.microsoft.com/detail/9PP3BQ017GNN" target="_blank" rel="noopener">Microsoft Store</a> and has a <a href="inspection-suite-en.html#demo">video demo</a>; accounts are by invitation: <a href="mailto:HCRFinanceMaster@gmail.com?subject=HCR%20Inspection%20Suite%20early%20access">request access by email</a>.</p>
+    </div>
+  </div>
+
+  <div class="aql-warn" role="note">
+    <p><strong>Support tool</strong> for normal inspection by attributes, single sampling, based on commonly used AQL tables (ISO 2859-1 / ANSI Z1.4). It does not replace the standard or the plan agreed with your customer. It does not cover reduced/tightened inspection or double/multiple sampling.</p>
+    <p>The values you enter never leave your browser.</p>
+  </div>
+</div></section>
+
+<section class="s"><div class="wrap art">
+<h2>How to read the result</h2>
+<ol>
+<li><b>Code letter</b>: comes from the lot size and the inspection level (lot of 1000, level II: letter <b>J</b>).</li>
+<li><b>Sample</b>: how many units you draw at random from the lot. With letter J that is <b>80</b> units.</li>
+<li><b>Ac and Re</b>: with AQL 2.5 and 80 units, you accept the lot with up to <b>5</b> defects (Ac) and reject it with <b>6</b> or more (Re). Each class has its own AQL and its own numbers.</li>
+<li><b>Arrows</b>: for some combinations the table has no plan at that letter and points to another letter's plan, with its sample size. The calculator tells you when this happens (for example, lot of 60, level II, AQL 2.5: letter E, but the plan of letter F is used, with 20 units and 1/2).</li>
+<li><b>100%</b>: if the plan's sample size is equal to or larger than the lot, inspect every unit.</li>
+</ol>
+<p>If you inspect all classes on the same sample, use the largest one and apply each class's criteria: this is a practical convention; confirm the procedure with your customer.</p>
+<p>To understand the table behind the calculation, see the <a href="tabela-aql-explicada.html">AQL table explained</a> and the guide <a href="como-calcular-amostra-aql.html">how to calculate the AQL sample</a> (both in Portuguese).</p>
+</div></section>
+
+<section class="s faq"><div class="wrap art"><div class="s-head"><h2>Frequently asked questions</h2></div>
+<details><summary>What is AQL?</summary><p>AQL (Acceptable Quality Limit) is the defect level the buyer accepts, on average, over a continuing series of lots. It sets how many units to inspect and how many defects to accept in the sample. AQL 2.5 does not mean that the lot has 2.5% defects.</p></details>
+<details><summary>Which inspection level should I choose: I, II or III?</summary><p>General level II is the most common and the starting point when the contract says nothing else. Level I uses smaller samples (less cost, less discrimination) and level III larger ones (stricter). The level should be in the plan agreed with your customer.</p></details>
+<details><summary>What do Ac and Re mean?</summary><p>Ac is the acceptance number: up to that many defects, the lot passes for that class. Re is the rejection number: from that number on, the lot fails. Example: lot of 3500 units, level II, AQL 2.5: letter L, sample of 200, Ac 10 / Re 11.</p></details>
+<details><summary>What if the lot is small?</summary><p>With small lots the table often uses an arrow. Lot of 20 units, level II, AQL 2.5: letter C, sample of 5, Ac 0 / Re 1. Lot of 60: letter E, but the arrow points to the plan of letter F, with 20 units and Ac 1 / Re 2. If the sample is equal to or larger than the lot, inspect everything.</p></details>
+<details><summary>Do I follow the standard or my customer's plan?</summary><p>The plan agreed with your customer comes first: inspection level, AQL per class and how to handle critical defects. The standard (ISO 2859-1 or ANSI/ASQ Z1.4) is the reference for the tables. This calculator helps you read the commonly used tables, but it replaces neither.</p></details>
+</div></section>
+
+<section class="s" style="padding-top:0"><div class="wrap art">
+<div class="pcard who2"><h3>From sample to report, without tables</h3><p>HCR Inspection Suite guides the AQL inspection with a wizard, records defects, attaches photos and generates the PDF report. It is available on the Microsoft Store and accounts are by invitation during the launch.</p>
+<div class="btn-row" style="margin-top:18px"><a class="btn btn-gold" href="https://apps.microsoft.com/detail/9PP3BQ017GNN" target="_blank" rel="noopener">Get it on Microsoft Store</a><a class="btn btn-line" href="inspection-suite-en.html">Discover HCR Inspection Suite</a><a class="btn btn-line" href="inspection-suite-en.html#demo">Watch the video demo</a></div>
+<p style="margin-top:14px;font-size:14px">To get an invitation: <a href="mailto:HCRFinanceMaster@gmail.com?subject=HCR%20Inspection%20Suite%20early%20access">request access by email</a>.</p></div>
+</div></section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <span class="logo-crop" style="--s:80px;margin-bottom:10px"><img src="logo-hcr.png" alt="HCR Digital Solutions" width="80" height="80" /></span>
+      <p>Portuguese software startup · Santa Maria da Feira</p>
+    </div>
+    <div><ul><li><a href="index.html">HCR Digital Solutions</a></li><li><a href="inspection-suite-en.html">HCR Inspection Suite</a></li><li><a href="aql-calculator.html">AQL calculator</a></li><li><a href="privacy-inspection-suite.html">Privacy — Inspection Suite</a></li></ul></div>
+    <div><p>© 2026 HCR Digital Solutions<br />All rights reserved</p></div>
+  </div>
+</footer>
+
+<script type="application/json" id="aqlStrings">
+{
+ "locale": "en-GB",
+ "defaults": {"critical": 0, "major": 2.5, "minor": 4},
+ "aqlZeroOption": "0",
+ "classes": {"critical": "Critical", "major": "Major", "minor": "Minor"},
+ "hintEmpty": "Enter the lot size to see the sampling plan.",
+ "kpiCode": "Code letter",
+ "kpiSample": "Units to inspect",
+ "kpiSampleAll": "Units to inspect (whole lot)",
+ "tableCaption": "Sampling plan per defect class",
+ "colClass": "Class",
+ "colSample": "Sample",
+ "planDirect": "plan of letter {letter}",
+ "planArrowDown": "arrow ↓: plan of letter {letter}",
+ "planArrowUp": "arrow ↑: plan of letter {letter}",
+ "planZero": "AQL 0: zero tolerance",
+ "phraseInspect": "Inspect {n} units",
+ "phraseAll": "Inspect all {lot} units in the lot",
+ "phrasePerClass": "(critical: {critical}; major: {major}; minor: {minor})",
+ "phraseCriteria": "accept the lot if major defects ≤ {major} and minor ≤ {minor}; {crit}",
+ "phraseCritZero": "critical: 0",
+ "phraseCritMax": "critical ≤ {ac}",
+ "meta": "Lot of {lot} units · general level {level} · normal inspection, single sampling",
+ "notes": {
+  "ARROW_DOWN": "{cls}: the table has a ↓ arrow at letter {from}; the plan of letter {to} is used, with {n} units.",
+  "ARROW_UP": "{cls}: the table has a ↑ arrow at letter {from}; the plan of letter {to} is used, with {n} units.",
+  "AQL_ZERO": "{cls}: AQL 0 does not exist in the standard; it is a zero-tolerance practice (Ac 0 / Re 1, with the code letter's sample size).",
+  "INSPECT_ALL": "{cls}: the plan's sample size ({planN}) is equal to or larger than the lot ({lot}): inspect every unit.",
+  "DIFFERENT_SAMPLE_SIZES": "If you inspect all classes on the same sample, use the largest one and apply each class's criteria: this is a practical convention; confirm the procedure with your customer."
+ },
+ "errors": {
+  "LOT_REQUIRED": "Enter the lot size.",
+  "LOT_NOT_INTEGER": "The lot size must be a whole number, with no decimals.",
+  "LOT_TOO_SMALL": "The lot must have at least 2 units.",
+  "GENERIC": "Could not calculate with these values."
+ },
+ "copied": "Result copied.",
+ "copyFailed": "Could not copy; please select the result text.",
+ "copyTitle": "AQL plan (HCR calculator)",
+ "copyFooter": "Support tool based on commonly used AQL tables (ISO 2859-1 / ANSI Z1.4). It does not replace the standard or the plan agreed with your customer."
+}
+</script>
+<script src="aql-calc.js?v=20261116"></script>
+<script src="aql-calc-ui.js?v=20261116"></script>
+<script>
+(function(){var b=document.getElementById("menuBtn"),m=document.getElementById("mnav");if(!b||!m)return;
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});})();
+</script>
+</body>
+</html>

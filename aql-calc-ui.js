@@ -97,7 +97,7 @@
         critical: nf.format(pc.critical.sampleSize), major: nf.format(pc.major.sampleSize), minor: nf.format(pc.minor.sampleSize),
       });
     }
-    return head + '; ' + criteria(r) + '.';
+    return head + (T.sep || '; ') + criteria(r) + '.';
   }
 
   function render() {
