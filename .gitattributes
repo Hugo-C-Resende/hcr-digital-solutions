@@ -1,0 +1,2 @@
+tests/aql-vectors.json text eol=lf
+tests/aql-vectors.sha256 text eol=lf

@@ -1,0 +1,5423 @@
+{
+  "format": "hcr-aql-vectors/1",
+  "standard": "ISO 2859-1 / ANSI/ASQ Z1.4",
+  "table": "Tabela 1 (letras-código, níveis I/II/III) e Tabela 2-A (inspeção normal, amostragem simples)",
+  "source": "reprodução V-Trust da Tabela B (ISO 2859-1 / ANSI Z1.4); a confirmar na norma impressa",
+  "generatedBy": "tools/gen-aql-vectors.js a partir de aql-calc.js",
+  "semantics": {
+    "aql": "valores normalizados; 0 só nos críticos (tolerância zero: Ac 0 / Re 1 com a amostra da letra-código)",
+    "cells": "kind: plan | arrowDown (usa o primeiro plano abaixo) | arrowUp (usa o primeiro plano acima); sampleSize/ac/re são os do plano usado (useLetter)",
+    "cases": "perClass.sampleSize é a amostra a inspecionar: a do plano, ou o lote se o plano for igual ou maior (100 %); source zeroTolerance = AQL 0; inspectAll = alguma classe a 100 %",
+    "errors": "expectedError é o código do erro (AqlError.code)"
+  },
+  "aqlColumns": [
+    0.065,
+    0.1,
+    0.15,
+    0.25,
+    0.4,
+    0.65,
+    1,
+    1.5,
+    2.5,
+    4,
+    6.5
+  ],
+  "levels": [
+    "I",
+    "II",
+    "III"
+  ],
+  "cells": [
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 0.065,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 0.065,
+      "kind": "arrowUp",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 0.065,
+      "kind": "arrowDown",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 0.065,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 0.065,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 0.065,
+      "kind": "plan",
+      "useLetter": "R",
+      "sampleSize": 2000,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 0.1,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 0.1,
+      "kind": "arrowUp",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 0.1,
+      "kind": "arrowDown",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 0.1,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 0.1,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 0.1,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 0.1,
+      "kind": "plan",
+      "useLetter": "R",
+      "sampleSize": 2000,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 0.15,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 0.15,
+      "kind": "arrowUp",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 0.15,
+      "kind": "arrowDown",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 0.15,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 0.15,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 0.15,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 0.15,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 0.15,
+      "kind": "plan",
+      "useLetter": "R",
+      "sampleSize": 2000,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 0.25,
+      "kind": "arrowUp",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 0.25,
+      "kind": "arrowDown",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 0.25,
+      "kind": "plan",
+      "useLetter": "R",
+      "sampleSize": 2000,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 0.4,
+      "kind": "arrowUp",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 0.4,
+      "kind": "arrowDown",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 0.4,
+      "kind": "plan",
+      "useLetter": "R",
+      "sampleSize": 2000,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 0.65,
+      "kind": "arrowDown",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 0.65,
+      "kind": "arrowDown",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 0.65,
+      "kind": "arrowDown",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 0.65,
+      "kind": "arrowDown",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 0.65,
+      "kind": "arrowDown",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 0.65,
+      "kind": "arrowUp",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 0.65,
+      "kind": "arrowDown",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 0.65,
+      "kind": "plan",
+      "useLetter": "R",
+      "sampleSize": 2000,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 1,
+      "kind": "arrowDown",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 1,
+      "kind": "arrowDown",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 1,
+      "kind": "arrowDown",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 1,
+      "kind": "arrowDown",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 1,
+      "kind": "arrowUp",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 1,
+      "kind": "arrowDown",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 1,
+      "kind": "plan",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 1,
+      "kind": "arrowUp",
+      "useLetter": "Q",
+      "sampleSize": 1250,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 1.5,
+      "kind": "arrowDown",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 1.5,
+      "kind": "arrowDown",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 1.5,
+      "kind": "arrowDown",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 1.5,
+      "kind": "arrowUp",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 1.5,
+      "kind": "arrowDown",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 1.5,
+      "kind": "plan",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 1.5,
+      "kind": "arrowUp",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 1.5,
+      "kind": "arrowUp",
+      "useLetter": "P",
+      "sampleSize": 800,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 2.5,
+      "kind": "arrowDown",
+      "useLetter": "C",
+      "sampleSize": 5,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 2.5,
+      "kind": "arrowDown",
+      "useLetter": "C",
+      "sampleSize": 5,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "C",
+      "sampleSize": 5,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 2.5,
+      "kind": "arrowUp",
+      "useLetter": "C",
+      "sampleSize": 5,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 2.5,
+      "kind": "arrowDown",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 2.5,
+      "kind": "plan",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 2.5,
+      "kind": "arrowUp",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 2.5,
+      "kind": "arrowUp",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 2.5,
+      "kind": "arrowUp",
+      "useLetter": "N",
+      "sampleSize": 500,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 4,
+      "kind": "arrowDown",
+      "useLetter": "B",
+      "sampleSize": 3,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "B",
+      "sampleSize": 3,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 4,
+      "kind": "arrowUp",
+      "useLetter": "B",
+      "sampleSize": 3,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 4,
+      "kind": "arrowDown",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 4,
+      "kind": "plan",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 4,
+      "kind": "arrowUp",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 4,
+      "kind": "arrowUp",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 4,
+      "kind": "arrowUp",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 4,
+      "kind": "arrowUp",
+      "useLetter": "M",
+      "sampleSize": 315,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "A",
+      "n": 2,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "A",
+      "sampleSize": 2,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "B",
+      "n": 3,
+      "aql": 6.5,
+      "kind": "arrowUp",
+      "useLetter": "A",
+      "sampleSize": 2,
+      "ac": 0,
+      "re": 1
+    },
+    {
+      "letter": "C",
+      "n": 5,
+      "aql": 6.5,
+      "kind": "arrowDown",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "D",
+      "n": 8,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "D",
+      "sampleSize": 8,
+      "ac": 1,
+      "re": 2
+    },
+    {
+      "letter": "E",
+      "n": 13,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "E",
+      "sampleSize": 13,
+      "ac": 2,
+      "re": 3
+    },
+    {
+      "letter": "F",
+      "n": 20,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "F",
+      "sampleSize": 20,
+      "ac": 3,
+      "re": 4
+    },
+    {
+      "letter": "G",
+      "n": 32,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "G",
+      "sampleSize": 32,
+      "ac": 5,
+      "re": 6
+    },
+    {
+      "letter": "H",
+      "n": 50,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "H",
+      "sampleSize": 50,
+      "ac": 7,
+      "re": 8
+    },
+    {
+      "letter": "J",
+      "n": 80,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "J",
+      "sampleSize": 80,
+      "ac": 10,
+      "re": 11
+    },
+    {
+      "letter": "K",
+      "n": 125,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "K",
+      "sampleSize": 125,
+      "ac": 14,
+      "re": 15
+    },
+    {
+      "letter": "L",
+      "n": 200,
+      "aql": 6.5,
+      "kind": "plan",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "M",
+      "n": 315,
+      "aql": 6.5,
+      "kind": "arrowUp",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "N",
+      "n": 500,
+      "aql": 6.5,
+      "kind": "arrowUp",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "P",
+      "n": 800,
+      "aql": 6.5,
+      "kind": "arrowUp",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "Q",
+      "n": 1250,
+      "aql": 6.5,
+      "kind": "arrowUp",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 21,
+      "re": 22
+    },
+    {
+      "letter": "R",
+      "n": 2000,
+      "aql": 6.5,
+      "kind": "arrowUp",
+      "useLetter": "L",
+      "sampleSize": 200,
+      "ac": 21,
+      "re": 22
+    }
+  ],
+  "cases": [
+    {
+      "level": "II",
+      "lot": 20,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      },
+      "label": "lote 20, AQL 2,5: C, n=5, 0/1"
+    },
+    {
+      "level": "II",
+      "lot": 60,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      },
+      "label": "lote 60, AQL 2,5: E, ↓F, n=20, 1/2"
+    },
+    {
+      "level": "II",
+      "lot": 1000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      },
+      "label": "lote 1000, AQL 2,5: J, n=80, 5/6"
+    },
+    {
+      "level": "II",
+      "lot": 3500,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      },
+      "label": "lote 3500, AQL 2,5: L, n=200, 10/11"
+    },
+    {
+      "level": "I",
+      "lot": 2,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": true
+      }
+    },
+    {
+      "level": "I",
+      "lot": 8,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 9,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 15,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 16,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "B",
+        "perClass": {
+          "critical": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "B"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 25,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "B",
+        "perClass": {
+          "critical": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "B"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 26,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 50,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 51,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 90,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 91,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "D",
+        "perClass": {
+          "critical": {
+            "sampleSize": 8,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "D"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 150,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "D",
+        "perClass": {
+          "critical": {
+            "sampleSize": 8,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "D"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 151,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 280,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 281,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 20,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "F"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 500,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 20,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "F"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 501,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "G",
+        "perClass": {
+          "critical": {
+            "sampleSize": 32,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "G"
+          },
+          "major": {
+            "sampleSize": 32,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "G"
+          },
+          "minor": {
+            "sampleSize": 32,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "G"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 1200,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "G",
+        "perClass": {
+          "critical": {
+            "sampleSize": 32,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "G"
+          },
+          "major": {
+            "sampleSize": 32,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "G"
+          },
+          "minor": {
+            "sampleSize": 32,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "G"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 1201,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "H",
+        "perClass": {
+          "critical": {
+            "sampleSize": 50,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "H"
+          },
+          "major": {
+            "sampleSize": 50,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "H"
+          },
+          "minor": {
+            "sampleSize": 50,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "H"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 3200,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "H",
+        "perClass": {
+          "critical": {
+            "sampleSize": 50,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "H"
+          },
+          "major": {
+            "sampleSize": 50,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "H"
+          },
+          "minor": {
+            "sampleSize": 50,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "H"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 3201,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 10000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 10001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "K",
+        "perClass": {
+          "critical": {
+            "sampleSize": 125,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "K"
+          },
+          "major": {
+            "sampleSize": 125,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "K"
+          },
+          "minor": {
+            "sampleSize": 125,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "K"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 35000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "K",
+        "perClass": {
+          "critical": {
+            "sampleSize": 125,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "K"
+          },
+          "major": {
+            "sampleSize": 125,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "K"
+          },
+          "minor": {
+            "sampleSize": 125,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "K"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 35001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 150000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 150001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "M",
+        "perClass": {
+          "critical": {
+            "sampleSize": 315,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "M"
+          },
+          "major": {
+            "sampleSize": 315,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "M"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 500000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "M",
+        "perClass": {
+          "critical": {
+            "sampleSize": 315,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "M"
+          },
+          "major": {
+            "sampleSize": 315,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "M"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 500001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "N",
+        "perClass": {
+          "critical": {
+            "sampleSize": 500,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "N"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "I",
+      "lot": 1000000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "N",
+        "perClass": {
+          "critical": {
+            "sampleSize": 500,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "N"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 2,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": true
+      }
+    },
+    {
+      "level": "II",
+      "lot": 8,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 9,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "B",
+        "perClass": {
+          "critical": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "B"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 15,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "B",
+        "perClass": {
+          "critical": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "B"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 16,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 25,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 26,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "D",
+        "perClass": {
+          "critical": {
+            "sampleSize": 8,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "D"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 50,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "D",
+        "perClass": {
+          "critical": {
+            "sampleSize": 8,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "D"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 51,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 90,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 91,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 20,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "F"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 150,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 20,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "F"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 151,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "G",
+        "perClass": {
+          "critical": {
+            "sampleSize": 32,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "G"
+          },
+          "major": {
+            "sampleSize": 32,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "G"
+          },
+          "minor": {
+            "sampleSize": 32,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "G"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 280,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "G",
+        "perClass": {
+          "critical": {
+            "sampleSize": 32,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "G"
+          },
+          "major": {
+            "sampleSize": 32,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "G"
+          },
+          "minor": {
+            "sampleSize": 32,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "G"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 281,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "H",
+        "perClass": {
+          "critical": {
+            "sampleSize": 50,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "H"
+          },
+          "major": {
+            "sampleSize": 50,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "H"
+          },
+          "minor": {
+            "sampleSize": 50,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "H"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 500,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "H",
+        "perClass": {
+          "critical": {
+            "sampleSize": 50,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "H"
+          },
+          "major": {
+            "sampleSize": 50,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "H"
+          },
+          "minor": {
+            "sampleSize": 50,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "H"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 501,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 1200,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 1201,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "K",
+        "perClass": {
+          "critical": {
+            "sampleSize": 125,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "K"
+          },
+          "major": {
+            "sampleSize": 125,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "K"
+          },
+          "minor": {
+            "sampleSize": 125,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "K"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 3200,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "K",
+        "perClass": {
+          "critical": {
+            "sampleSize": 125,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "K"
+          },
+          "major": {
+            "sampleSize": 125,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "K"
+          },
+          "minor": {
+            "sampleSize": 125,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "K"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 3201,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 10000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 10001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "M",
+        "perClass": {
+          "critical": {
+            "sampleSize": 315,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "M"
+          },
+          "major": {
+            "sampleSize": 315,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "M"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 35000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "M",
+        "perClass": {
+          "critical": {
+            "sampleSize": 315,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "M"
+          },
+          "major": {
+            "sampleSize": 315,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "M"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 35001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "N",
+        "perClass": {
+          "critical": {
+            "sampleSize": 500,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "N"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 150000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "N",
+        "perClass": {
+          "critical": {
+            "sampleSize": 500,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "N"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 150001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "P",
+        "perClass": {
+          "critical": {
+            "sampleSize": 800,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "P"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 500000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "P",
+        "perClass": {
+          "critical": {
+            "sampleSize": 800,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "P"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 500001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "Q",
+        "perClass": {
+          "critical": {
+            "sampleSize": 1250,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "Q"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 1000000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "Q",
+        "perClass": {
+          "critical": {
+            "sampleSize": 1250,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "Q"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 2,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "B",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "B"
+          },
+          "major": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": true
+      }
+    },
+    {
+      "level": "III",
+      "lot": 8,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "B",
+        "perClass": {
+          "critical": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "B"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 9,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 15,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "C",
+        "perClass": {
+          "critical": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "C"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "plan",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 16,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "D",
+        "perClass": {
+          "critical": {
+            "sampleSize": 8,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "D"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 25,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "D",
+        "perClass": {
+          "critical": {
+            "sampleSize": 8,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "D"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowUp",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 26,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 50,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "E",
+        "perClass": {
+          "critical": {
+            "sampleSize": 13,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "E"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "arrowDown",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 13,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "E"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 51,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 20,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "F"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 90,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 20,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "F"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 91,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "G",
+        "perClass": {
+          "critical": {
+            "sampleSize": 32,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "G"
+          },
+          "major": {
+            "sampleSize": 32,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "G"
+          },
+          "minor": {
+            "sampleSize": 32,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "G"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 150,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "G",
+        "perClass": {
+          "critical": {
+            "sampleSize": 32,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "G"
+          },
+          "major": {
+            "sampleSize": 32,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "G"
+          },
+          "minor": {
+            "sampleSize": 32,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "G"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 151,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "H",
+        "perClass": {
+          "critical": {
+            "sampleSize": 50,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "H"
+          },
+          "major": {
+            "sampleSize": 50,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "H"
+          },
+          "minor": {
+            "sampleSize": 50,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "H"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 280,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "H",
+        "perClass": {
+          "critical": {
+            "sampleSize": 50,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "H"
+          },
+          "major": {
+            "sampleSize": 50,
+            "ac": 3,
+            "re": 4,
+            "source": "plan",
+            "useLetter": "H"
+          },
+          "minor": {
+            "sampleSize": 50,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "H"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 281,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 500,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 501,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "K",
+        "perClass": {
+          "critical": {
+            "sampleSize": 125,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "K"
+          },
+          "major": {
+            "sampleSize": 125,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "K"
+          },
+          "minor": {
+            "sampleSize": 125,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "K"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 1200,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "K",
+        "perClass": {
+          "critical": {
+            "sampleSize": 125,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "K"
+          },
+          "major": {
+            "sampleSize": 125,
+            "ac": 7,
+            "re": 8,
+            "source": "plan",
+            "useLetter": "K"
+          },
+          "minor": {
+            "sampleSize": 125,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "K"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 1201,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 3200,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "L",
+        "perClass": {
+          "critical": {
+            "sampleSize": 200,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 10,
+            "re": 11,
+            "source": "plan",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 3201,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "M",
+        "perClass": {
+          "critical": {
+            "sampleSize": 315,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "M"
+          },
+          "major": {
+            "sampleSize": 315,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "M"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 10000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "M",
+        "perClass": {
+          "critical": {
+            "sampleSize": 315,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "M"
+          },
+          "major": {
+            "sampleSize": 315,
+            "ac": 14,
+            "re": 15,
+            "source": "plan",
+            "useLetter": "M"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 10001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "N",
+        "perClass": {
+          "critical": {
+            "sampleSize": 500,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "N"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 35000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "N",
+        "perClass": {
+          "critical": {
+            "sampleSize": 500,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "N"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "plan",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 35001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "P",
+        "perClass": {
+          "critical": {
+            "sampleSize": 800,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "P"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 150000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "P",
+        "perClass": {
+          "critical": {
+            "sampleSize": 800,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "P"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 150001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "Q",
+        "perClass": {
+          "critical": {
+            "sampleSize": 1250,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "Q"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 500000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "Q",
+        "perClass": {
+          "critical": {
+            "sampleSize": 1250,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "Q"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 500001,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "R",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2000,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "R"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "III",
+      "lot": 1000000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "R",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2000,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "R"
+          },
+          "major": {
+            "sampleSize": 500,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "N"
+          },
+          "minor": {
+            "sampleSize": 315,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "M"
+          }
+        },
+        "inspectAll": false
+      }
+    },
+    {
+      "level": "II",
+      "lot": 1000,
+      "aql": {
+        "critical": 0.65,
+        "major": 1,
+        "minor": 2.5
+      },
+      "expected": {
+        "code": "J",
+        "perClass": {
+          "critical": {
+            "sampleSize": 80,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "major": {
+            "sampleSize": 80,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "J"
+          },
+          "minor": {
+            "sampleSize": 80,
+            "ac": 5,
+            "re": 6,
+            "source": "plan",
+            "useLetter": "J"
+          }
+        },
+        "inspectAll": false
+      },
+      "label": "críticos com AQL 0,65"
+    },
+    {
+      "level": "II",
+      "lot": 150,
+      "aql": {
+        "critical": 0.065,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "F",
+        "perClass": {
+          "critical": {
+            "sampleSize": 150,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "L"
+          },
+          "major": {
+            "sampleSize": 20,
+            "ac": 1,
+            "re": 2,
+            "source": "plan",
+            "useLetter": "F"
+          },
+          "minor": {
+            "sampleSize": 20,
+            "ac": 2,
+            "re": 3,
+            "source": "plan",
+            "useLetter": "F"
+          }
+        },
+        "inspectAll": true
+      },
+      "label": "AQL 0,065: plano n=200 ≥ lote → 100 %"
+    },
+    {
+      "level": "II",
+      "lot": 5,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expected": {
+        "code": "A",
+        "perClass": {
+          "critical": {
+            "sampleSize": 2,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "A"
+          },
+          "major": {
+            "sampleSize": 5,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "C"
+          },
+          "minor": {
+            "sampleSize": 3,
+            "ac": 0,
+            "re": 1,
+            "source": "arrowDown",
+            "useLetter": "B"
+          }
+        },
+        "inspectAll": true
+      },
+      "label": "lote 5: maiores ↓C n=5 = lote → 100 %"
+    },
+    {
+      "level": "III",
+      "lot": 500000,
+      "aql": {
+        "critical": 0,
+        "major": 6.5,
+        "minor": 6.5
+      },
+      "expected": {
+        "code": "Q",
+        "perClass": {
+          "critical": {
+            "sampleSize": 1250,
+            "ac": 0,
+            "re": 1,
+            "source": "zeroTolerance",
+            "useLetter": "Q"
+          },
+          "major": {
+            "sampleSize": 200,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "L"
+          },
+          "minor": {
+            "sampleSize": 200,
+            "ac": 21,
+            "re": 22,
+            "source": "arrowUp",
+            "useLetter": "L"
+          }
+        },
+        "inspectAll": false
+      },
+      "label": "AQL 6,5 na letra Q: seta ↑ para L"
+    }
+  ],
+  "errors": [
+    {
+      "level": "II",
+      "lot": 1,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expectedError": "LOT_TOO_SMALL"
+    },
+    {
+      "level": "II",
+      "lot": 0,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expectedError": "LOT_TOO_SMALL"
+    },
+    {
+      "level": "II",
+      "lot": 10.5,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expectedError": "LOT_NOT_INTEGER"
+    },
+    {
+      "level": "II",
+      "lot": null,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expectedError": "LOT_REQUIRED"
+    },
+    {
+      "level": "S-1",
+      "lot": 1000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expectedError": "LEVEL_UNSUPPORTED"
+    },
+    {
+      "level": "IV",
+      "lot": 1000,
+      "aql": {
+        "critical": 0,
+        "major": 2.5,
+        "minor": 4
+      },
+      "expectedError": "LEVEL_INVALID"
+    },
+    {
+      "level": "II",
+      "lot": 1000,
+      "aql": {
+        "critical": 0,
+        "major": 2.6,
+        "minor": 4
+      },
+      "expectedError": "AQL_INVALID"
+    },
+    {
+      "level": "II",
+      "lot": 1000,
+      "aql": {
+        "critical": 0,
+        "major": 10,
+        "minor": 4
+      },
+      "expectedError": "AQL_UNSUPPORTED"
+    },
+    {
+      "level": "II",
+      "lot": 1000,
+      "aql": {
+        "critical": 0,
+        "major": 0,
+        "minor": 4
+      },
+      "expectedError": "AQL_ZERO_NOT_CRITICAL"
+    }
+  ]
+}
