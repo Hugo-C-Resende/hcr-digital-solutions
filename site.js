@@ -12,7 +12,7 @@
 
   var EN = {
     "skip": "Skip to content",
-    "nav.apps": "Products", "nav.services": "Services", "nav.process": "How we work", "nav.about": "About", "nav.faq": "FAQ", "nav.contact": "Contact",
+    "nav.apps": "Products", "nav.aql": "AQL Calculator", "nav.services": "Services", "nav.process": "How we work", "nav.about": "About", "nav.faq": "FAQ", "nav.contact": "Contact",
     "cta.quote": "Request a quote",
     "meta.title": "HCR Digital Solutions — software startup: Inspection Suite and Finance Master",
     "meta.desc": "Portuguese software startup. Products: HCR Inspection Suite (AQL quality inspection) and HCR Finance Master (personal finance). Custom software.",
@@ -33,6 +33,7 @@
     "is.text": "The whole quality-inspection cycle in one place: inspections with AQL sampling, defects, photos in the PDF report, non-conformities and corrective actions (CAPA), calendar and statistics — in the Windows app and the web version (SaaS). Only in the Windows app: offline mode with sync.",
     "is.c1": "AQL inspection wizard, with defects and photos", "is.c2": "Professional PDF reports for the client or the factory", "is.c3": "In Portuguese, English and French · HCR account required",
     "is.cta": "Request early access", "is.ctaLive": "Get it on Microsoft Store", "is.priv": "Privacy policy",
+    "is.aqlCalc": "Free AQL calculator: sample size and acceptance criteria by lot",
     "is.shotAria": "See HCR Inspection Suite", "is.shotAlt": "Orders list in HCR Inspection Suite, showing status and progress of each order",
     "is.shot.src": "assets/inspection-suite/en-02-orders.jpg", "is.shot.srcset": "assets/inspection-suite/en-02-orders.webp",
     "fm.shotAria": "See HCR Finance Master", "fm.shotAlt": "HCR Finance Master screen, demo with fictional data",
@@ -100,7 +101,7 @@
 
   var FR = {
     "skip": "Aller au contenu",
-    "nav.apps": "Produits", "nav.services": "Services", "nav.process": "Notre méthode", "nav.about": "À propos", "nav.faq": "FAQ", "nav.contact": "Contact",
+    "nav.apps": "Produits", "nav.aql": "Calculateur AQL", "nav.services": "Services", "nav.process": "Notre méthode", "nav.about": "À propos", "nav.faq": "FAQ", "nav.contact": "Contact",
     "cta.quote": "Demander un devis",
     "meta.title": "HCR Digital Solutions — startup de logiciels : Inspection Suite et Finance Master",
     "meta.desc": "Startup portugaise de logiciels. Produits : HCR Inspection Suite (inspection qualité AQL) et HCR Finance Master (finances personnelles). Logiciels sur mesure.",
@@ -121,6 +122,7 @@
     "is.text": "Tout le cycle d'une inspection qualité au même endroit : inspections avec échantillonnage AQL, défauts, photos dans le rapport PDF, non-conformités et actions correctives (CAPA), calendrier et statistiques — dans l'application Windows et dans la version web (SaaS). Seulement dans l'application Windows : mode hors ligne avec synchronisation.",
     "is.c1": "Assistant d'inspection AQL, avec défauts et photos", "is.c2": "Rapports PDF professionnels pour le client ou l'usine", "is.c3": "En portugais, anglais et français · compte HCR requis",
     "is.cta": "Demander un accès anticipé", "is.ctaLive": "Obtenir sur le Microsoft Store", "is.priv": "Politique de confidentialité",
+    "is.aqlCalc": "Calculateur AQL gratuit : échantillon et critères d'acceptation par lot",
     "is.shotAria": "Voir HCR Inspection Suite", "is.shotAlt": "Tableau de bord de HCR Inspection Suite avec les indicateurs d'inspections et de non-conformités",
     "is.shot.src": "assets/inspection-suite/fr-01-tableau-de-bord.jpg", "is.shot.srcset": "assets/inspection-suite/fr-01-tableau-de-bord.webp",
     "fm.shotAria": "Voir HCR Finance Master", "fm.shotAlt": "Écran de HCR Finance Master, démo avec données fictives",
@@ -257,6 +259,17 @@
     store(false, lang);
     applyStoreCta(lang);
     applyPrivLink(lang);
+    applyAqlLinks(lang);
+  }
+
+  /* links para a calculadora AQL (menu e cartão da Inspection Suite): cada
+     língua tem a sua página; o texto vem do tradutor (data-i18n), aqui só
+     muda o href. */
+  var AQL_PAGES = { pt: "calculadora-aql.html", en: "aql-calculator.html", fr: "calculateur-aql.html" };
+  function applyAqlLinks(lang) {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-aql-link]"), function (a) {
+      a.setAttribute("href", AQL_PAGES[lang] || AQL_PAGES.pt);
+    });
   }
 
   /* link "Política de privacidade" do cartão da Inspection Suite: aponta
@@ -297,7 +310,7 @@
   var qs = /[?&]lang=(pt|en|fr)/.exec(location.search);
   var start = (qs && qs[1]) || store(true) || "pt";
   if (start !== "pt") setLang(start);
-  else { applyStoreCta("pt"); applyPrivLink("pt"); }
+  else { applyStoreCta("pt"); applyPrivLink("pt"); applyAqlLinks("pt"); }
 
   Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
