@@ -260,6 +260,16 @@
     applyStoreCta(lang);
     applyPrivLink(lang);
     applyAqlLinks(lang);
+    applyDetailsLink(lang);
+  }
+
+  /* "Ver detalhes" da Inspection Suite na home: página da língua ativa (o
+     texto vem do tradutor, via data-i18n="fm.b1"; aqui só muda o href). */
+  var IS_DETAILS_PAGES = { pt: "inspection-suite.html", en: "inspection-suite-en.html", fr: "inspection-suite-fr.html" };
+  function applyDetailsLink(lang) {
+    var link = document.getElementById("isDetailsLink");
+    if (!link) return;
+    link.setAttribute("href", IS_DETAILS_PAGES[lang] || IS_DETAILS_PAGES.pt);
   }
 
   /* links para a calculadora AQL (menu e cartão da Inspection Suite): cada
@@ -310,7 +320,7 @@
   var qs = /[?&]lang=(pt|en|fr)/.exec(location.search);
   var start = (qs && qs[1]) || store(true) || "pt";
   if (start !== "pt") setLang(start);
-  else { applyStoreCta("pt"); applyPrivLink("pt"); applyAqlLinks("pt"); }
+  else { applyStoreCta("pt"); applyPrivLink("pt"); applyAqlLinks("pt"); applyDetailsLink("pt"); }
 
   Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
