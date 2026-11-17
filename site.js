@@ -34,6 +34,9 @@
     "is.c1": "AQL inspection wizard, with defects and photos", "is.c2": "Professional PDF reports for the client or the factory", "is.c3": "In Portuguese, English and French · HCR account required",
     "is.cta": "Request early access", "is.ctaLive": "Get it on Microsoft Store", "is.priv": "Privacy policy",
     "is.aqlCalc": "Free AQL calculator: sample size and acceptance criteria by lot",
+    "ps.badge": "At design stage", "ps.name": "HCR Production Suite (in preparation)",
+    "ps.text": "Full-cost quoting, cutting optimisation, work orders and quoted-vs-actual for metal fabrication and wood furniture makers. Still at design stage. We are looking for 3 pilot companies: get in touch.",
+    "ps.more": "Learn more", "ps.pilot": "Become a pilot company",
     "is.shotAria": "See HCR Inspection Suite", "is.shotAlt": "Orders list in HCR Inspection Suite, showing status and progress of each order",
     "is.shot.src": "assets/inspection-suite/en-02-orders.jpg", "is.shot.srcset": "assets/inspection-suite/en-02-orders.webp",
     "fm.shotAria": "See HCR Finance Master", "fm.shotAlt": "HCR Finance Master screen, demo with fictional data",
@@ -123,6 +126,9 @@
     "is.c1": "Assistant d'inspection AQL, avec défauts et photos", "is.c2": "Rapports PDF professionnels pour le client ou l'usine", "is.c3": "En portugais, anglais et français · compte HCR requis",
     "is.cta": "Demander un accès anticipé", "is.ctaLive": "Obtenir sur le Microsoft Store", "is.priv": "Politique de confidentialité",
     "is.aqlCalc": "Calculateur AQL gratuit : échantillon et critères d'acceptation par lot",
+    "ps.badge": "Au stade de la conception", "ps.name": "HCR Production Suite (en préparation)",
+    "ps.text": "Chiffrage au coût complet, optimisation de découpe, ordres de fabrication et prévu vs réel pour la serrurerie métallique et le mobilier en bois. Encore au stade de la conception. Nous cherchons 3 entreprises pilotes : contactez-nous.",
+    "ps.more": "En savoir plus", "ps.pilot": "Devenir entreprise pilote",
     "is.shotAria": "Voir HCR Inspection Suite", "is.shotAlt": "Tableau de bord de HCR Inspection Suite avec les indicateurs d'inspections et de non-conformités",
     "is.shot.src": "assets/inspection-suite/fr-01-tableau-de-bord.jpg", "is.shot.srcset": "assets/inspection-suite/fr-01-tableau-de-bord.webp",
     "fm.shotAria": "Voir HCR Finance Master", "fm.shotAlt": "Écran de HCR Finance Master, démo avec données fictives",
@@ -261,6 +267,16 @@
     applyPrivLink(lang);
     applyAqlLinks(lang);
     applyDetailsLink(lang);
+    applyPsLinks(lang);
+  }
+
+  /* "Saber mais" da Production Suite na home: página da língua ativa (o
+     texto vem do tradutor, via data-i18n; aqui só muda o href). */
+  var PS_PAGES = { pt: "production-suite.html", en: "production-suite-en.html", fr: "production-suite-fr.html" };
+  function applyPsLinks(lang) {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-ps-link]"), function (a) {
+      a.setAttribute("href", PS_PAGES[lang] || PS_PAGES.pt);
+    });
   }
 
   /* "Ver detalhes" da Inspection Suite na home: página da língua ativa (o
@@ -320,7 +336,7 @@
   var qs = /[?&]lang=(pt|en|fr)/.exec(location.search);
   var start = (qs && qs[1]) || store(true) || "pt";
   if (start !== "pt") setLang(start);
-  else { applyStoreCta("pt"); applyPrivLink("pt"); applyAqlLinks("pt"); applyDetailsLink("pt"); }
+  else { applyStoreCta("pt"); applyPrivLink("pt"); applyAqlLinks("pt"); applyDetailsLink("pt"); applyPsLinks("pt"); }
 
   Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
